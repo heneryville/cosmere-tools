@@ -76,6 +76,12 @@ body {
   color: #1e3c60;
   margin-bottom: 1rem;
 }
+.page.home-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
 @media (max-width: 768px) {
   .navbar .navbar-content {
     padding: 0 15px;
@@ -215,4 +221,85 @@ article.npc section.skills > div > h3::after {
 article.npc section.traits > div > h3::after,
 article.npc section.actions > div > h3::after {
   content: ".";
+}
+form.creature-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+form.creature-editor .form-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0.5rem 0;
+}
+form.creature-editor .form-row .form-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  flex: 1 1 auto;
+}
+form.creature-editor .form-row .form-group label {
+  min-width: unset;
+  white-space: nowrap;
+}
+form.creature-editor .form-row .form-group select {
+  width: 100%;
+}
+form.creature-editor .form-group {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+form.creature-editor .form-group label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #1e3c60;
+}
+form.creature-editor .form-group input,
+form.creature-editor .form-group select {
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #ca9a56;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+form.creature-editor .form-group input:focus,
+form.creature-editor .form-group select:focus {
+  outline: none;
+  border-color: #ca9a56;
+  box-shadow: 0 0 0 2px rgba(202, 154, 86, 0.2);
+}
+form.creature-editor .form-group input[type="number"] {
+  width: 70px;
+}
+form.creature-editor .type-group .type-input-wrapper {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+}
+form.creature-editor .type-group .type-input-wrapper .type-select {
+  min-width: 120px;
+  flex: 0 0 auto;
+}
+form.creature-editor .type-group .type-input-wrapper .type-custom {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  form.creature-editor .form-group {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  form.creature-editor .form-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  form.creature-editor .form-row .form-group {
+    width: 100% !important;
+  }
 }

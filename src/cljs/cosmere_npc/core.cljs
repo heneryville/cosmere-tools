@@ -3,6 +3,7 @@
             [reagent.dom :as rdom]
             [cosmere-npc.router :as router]
             [cosmere-npc.pages.home :refer [home-page]]
+            [cosmere-npc.pages.library :refer [library-page]]
             [cosmere-npc.pages.about :refer [about-page]]))
 
 (defn navbar []
@@ -14,6 +15,8 @@
     [:div.nav-links
      [:a {:href "#/"
           :on-click #(router/navigate! :home)} "Home"]
+     [:a {:href "#/"
+          :on-click #(router/navigate! :library)} "Library"]
      [:a {:href "#/about"
           :on-click #(router/navigate! :about)} "About"]]]])
 
@@ -21,6 +24,7 @@
   [:div.page-container
    (case (:handler @router/current-route)
      :home [home-page]
+     :library [library-page]
      :about [about-page]
      [home-page])])  ; Default to home page
 

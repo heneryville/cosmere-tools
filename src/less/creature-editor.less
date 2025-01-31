@@ -1,0 +1,99 @@
+form.creature-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .form-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 0.5rem 0;
+
+    .form-group {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+      flex: 1 1 auto;
+
+
+      label {
+        min-width: unset;
+        white-space: nowrap;
+      }
+
+      select {
+        width: 100%;
+      }
+    }
+  }
+
+  .form-group {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    gap: 1rem;
+
+    label {
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: @text-color;
+    }
+
+    input, select {
+      padding: 0.35rem 0.5rem;
+      border: 1px solid @border-color;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      
+      &:focus {
+        outline: none;
+        border-color: @accent-color;
+        box-shadow: 0 0 0 2px fade(@accent-color, 20%);
+      }
+    }
+
+    input[type="number"] {
+      width: 70px;
+    }
+  }
+
+  .type-group {
+    .type-input-wrapper {
+      position: relative;
+      display: flex;
+      gap: 0.5rem;
+
+      .type-select {
+        min-width: 120px;
+        flex: 0 0 auto;
+      }
+
+      .type-custom {
+        flex: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  form.creature-editor {
+    .form-group {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+
+    .form-row {
+      flex-direction: column;
+      gap: 0.75rem;
+
+      .form-group {
+        width: 100% !important;  // Override both first-child and not(:first-child)
+      }
+    }
+  }
+}

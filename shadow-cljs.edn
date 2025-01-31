@@ -2,7 +2,7 @@
  :dependencies [[bidi "2.1.6"]
                 [funcool/bide "1.7.0"]
                 [thheller/shadow-cljs "2.19.10"]
-                [reagent "1.1.0"]]
+                [reagent "1.2.0"]]
  :builds {:app {:target :browser
                 :output-dir "public/js"
                 :asset-path "/js"

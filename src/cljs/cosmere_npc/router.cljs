@@ -8,6 +8,7 @@
 ;; Route definitions
 (def routes
   [["/" :home]
+  ["/library" :library]
    ["/about" :about]])
 
 ;; Create router instance
@@ -17,8 +18,8 @@
 ;; Route change handler
 (defn on-navigate [name params query]
   (reset! current-route {:handler name
-                        :params params
-                        :query query}))
+                         :params params
+                         :query query}))
 
 ;; Initialize router
 (defn init! []

@@ -124,7 +124,10 @@ body {
   }
 
   &.home-page {
-    // Add any home page specific styles
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
   }
 
   &.about-page {
@@ -168,3 +171,4 @@ body {
 }
 
 @import url("./creature.less");
+@import url("./creature-editor.less");
