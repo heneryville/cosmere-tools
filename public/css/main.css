@@ -76,7 +76,7 @@ body {
   color: #1e3c60;
   margin-bottom: 1rem;
 }
-.page.home-page {
+.page.home-page .editor-pane {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;

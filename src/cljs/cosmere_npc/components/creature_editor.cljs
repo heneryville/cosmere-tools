@@ -4,7 +4,7 @@
 
 (def sizes ["small" "medium" "large" "huge" "gargantuan"])
 (def roles ["minion" "rival" "boss"])
-(def preset-types ["Animal" "Humanoid" "Swarm"])
+(def preset-types ["animal" "humanoid" "swarm"])
 
 (defn creature-editor [{:keys [creature on-change]}]
   [:form.creature-editor
@@ -46,15 +46,18 @@
       {:value (if (some #{(:type creature)} preset-types)
                 (:type creature)
                 "custom")
-       :on-change #(when-not (= (.. % -target -value) "custom")
-                     (on-change (assoc creature :type (.. % -target -value))))}
+       :on-change #(let [new-type (.. % -target -value)]
+                     (on-change (assoc creature :type
+                                       (if (= new-type "custom")
+                                         ""  ; Reset to empty string for custom input
+                                         new-type))))}
       (for [type preset-types]
         ^{:key type}
-        [:option {:value type} type])
+        [:option {:value type} (str/capitalize type)])
       [:option {:value "custom"} "Custom..."]]
-     (when-not (some #{(:type creature)} preset-types)
+     (when (not (some #{(:type creature)} preset-types))
        [:input.type-custom
         {:type "text"
-         :value (:type creature "")
+         :value (:type creature)
          :placeholder "Enter custom type..."
          :on-change #(on-change (assoc creature :type (.. % -target -value)))}])]]])

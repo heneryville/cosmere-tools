@@ -3,7 +3,7 @@
     "tier": 1,
     "role": "minion",
     "size": "small",
-    "types": ["animal"],
+    "type": "animal",
     "strength": 2,
     "physical-defense": 14,
     "speed": 2,

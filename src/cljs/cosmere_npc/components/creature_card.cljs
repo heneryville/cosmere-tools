@@ -72,11 +72,11 @@
       [:h3 name]
       description])])
 
-(defn creature-card [{:keys [name tier role types size traits actions] :as creature}]
+(defn creature-card [{:keys [name tier role type size traits actions] :as creature}]
   [:article.npc
    [:header
     [:h1 name]
-    (str "Tier" tier " " (str/capitalize role) " - " (str/capitalize size) " " (str/join " " (map str/capitalize types)))]
+    (str "Tier" tier " " (str/capitalize role) " - " (str/capitalize size) " " (str/capitalize type))]
 
    [attributes-section creature]
    [attributes-etc creature]

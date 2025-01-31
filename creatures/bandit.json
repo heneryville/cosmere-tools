@@ -3,7 +3,7 @@
     "tier": 1,
     "role": "minion",
     "size": "medium",
-    "types": ["humanoid"],
+    "type": "humanoid",
     "strength": 1,
     "physical-defense": 12,
     "speed": 1,
