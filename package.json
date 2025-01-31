@@ -1,0 +1,25 @@
+{
+  "name": "cosmere-npc",
+  "version": "0.1.0",
+  "description": "A ClojureScript project using Shadow CLJS",
+  "scripts": {
+    "clean": "rm -rf public/js && rm -rf .shadow-cljs/builds",
+    "build": "shadow-cljs release app && npm run build:less",
+    "watch": "shadow-cljs watch app",
+    "dev": "shadow-cljs watch app & npm run watch:less",
+    "build:less": "lessc src/less/main.less public/css/main.css",
+    "watch:less": "less-watch-compiler src/less public/css main.less"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "shadow-cljs": "^2.11.23"
+  },
+  "devDependencies": {
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,138 @@
+article.npc {
+    border: 2px solid #ca9a56;
+    padding: 10px;
+    color: #1e3c60;
+    max-width: 500px;
+    min-width: @creature-card-min-width;
+    font-size: 12px;
+    font-family: sans-serif;
+
+    &>header>h1 {
+        font-size: 20px;
+        font-style: initial;
+        margin: 0;
+    }
+
+    &>header {
+        font-size: 11px;
+        font-style: italic;
+        margin-bottom: 4px;
+    }
+
+    .attributes {
+        border: 1px solid #ca9a56;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: 0 -7px;
+    }
+
+    .defense {
+        border: 1px solid #ca9a56;
+        border-top: none;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        padding: 2px 9px 12px 9px;
+        margin-bottom: -10px;
+        background-color: white;
+    }
+
+    .attributes>header {
+        background-color: #ca9a56;
+        ;
+        color: white;
+        display: flex;
+        width: 100%;
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    .attributes>header>div {
+        flex-grow: 1;
+        text-align: center;
+        font-weight: 600;
+        flex-basis: 0;
+    }
+
+    .attributes .attr-values {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .attr-values .attr-pair {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+
+    .attributes .attr-pair {
+        display: flex;
+        justify-content: center;
+    }
+
+    .attributes .attr {
+        padding: 2px 6px 0px 6px;
+    }
+
+    .attributes .attr-pair .label {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .attributes .attr-pair .value {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .attributes-etc {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .attributes-etc>div {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    .attributes-etc>div:last-child {
+        text-align: right;
+    }
+
+    .attributes-etc>div:nth-child(2) {
+        text-align: center;
+    }
+
+    .attributes-etc h3 {
+        font-size: 12;
+        display: inline;
+    }
+
+    hr {
+        border: 1px solid #ca9a56;
+        margin: 4px 0;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    section>div>h3 {
+        display: inline;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    section.skills>div>h3::after {
+        content: ": ";
+    }
+
+    section.traits>div>h3::after,
+    section.actions>div>h3::after {
+        content: ".";
+    }
+}

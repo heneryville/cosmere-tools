@@ -26,11 +26,15 @@
     "sense-range": 40,
     "sense-primary": "smell",
     "skills": {
-        "agility": 4,
-        "athletics": 4,
-        "stealth": 3,
-        "perception": 5,
-        "survival": 4
+        "physical": {
+            "agility": 4,
+            "athletics": 4,
+            "stealth": 3
+        },
+        "spiritual": {
+            "perception": 5,
+            "survival": 4
+        }
     },
     "languages": [],
     "traits": [
@@ -38,8 +42,8 @@
         {"name": "Minion", "description": "The axehound's attacks can't critcally hit, and they are immediatly defeated when they suffer an injury"}
     ],
     "actions": [
-        {"cost": "single", "name": "Strike: Bite", "description": "Attack +4, reach 5ft., one target. Graze: 2(1d4) keen damage. Hit: 4 (1d4+2) keen damage and the axehoud can spend 1 focus to knock the target Prhone, then move up to 10 feet while dragging the target along."},
-        {"cost": "free", "name": "Strike: Biteck Instincts", "description": "While within 5 feet of an ally, the axehound can use the Gain Advantage action as a free action"},
-        {"cost": "reaction", "name": "On the Hunt", "description": "After an enemy within 30 feet of the axehound falls Prone, the axehound moves up to 15 feet toward them."}
+        {"action-cost": "single", "name": "Strike: Bite", "description": "Attack +4, reach 5ft., one target. Graze: 2(1d4) keen damage. Hit: 4 (1d4+2) keen damage and the axehoud can spend 1 focus to knock the target Prhone, then move up to 10 feet while dragging the target along."},
+        {"action-cost": "free", "name": "Strike: Biteck Instincts", "description": "While within 5 feet of an ally, the axehound can use the Gain Advantage action as a free action"},
+        {"action-cost": "reaction", "name": "On the Hunt", "description": "After an enemy within 30 feet of the axehound falls Prone, the axehound moves up to 15 feet toward them."}
     ]
 }

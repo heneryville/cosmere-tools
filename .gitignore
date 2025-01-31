@@ -1,0 +1,30 @@
+# ClojureScript/Shadow-cljs
+/target
+/public/js
+/.shadow-cljs
+/.clj-kondo/.cache
+/.lsp
+
+# Node
+/node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+
+# Editor
+.vscode
+.calva
+.idea
+*.iml
+.lein-*
+.nrepl-*
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Logs
+*.log

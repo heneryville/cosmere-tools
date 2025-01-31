@@ -1,0 +1,6 @@
+
+.icon-action-single:before { content: '\e800'; } /* '' */
+.icon-action-reaction:before { content: '\e801'; } /* '' */
+.icon-action-free:before { content: '\e803'; } /* '' */
+.icon-action-double:before { content: '\e804'; } /* '' */
+.icon-play-1:before { content: '\e802'; } /* '' */

@@ -1,28 +1,16 @@
-# My ClojureScript Project
+# Cosmere NPC
+This is a project for creating and managing NPCs in your Cosmere campaign.
 
-This is a ClojureScript project set up using Shadow CLJS. Below are the details for setting up and running the project.
 
 ## Project Structure
 
-```
-my-clojurescript-project
-├── src
-│   ├── main
-│   │   └── my_clojurescript_project
-│   │       └── core.cljs
-├── public
-│   ├── index.html
-├── shadow-cljs.edn
-├── package.json
-└── README.md
-```
 
 ## Setup Instructions
 
 1. **Clone the repository:**
    ```
    git clone <repository-url>
-   cd my-clojurescript-project
+   cd cosmere-npc
    ```
 
 2. **Install dependencies:**
@@ -42,7 +30,7 @@ my-clojurescript-project
 
 ## Usage
 
-- The main application logic can be found in `src/main/my_clojurescript_project/core.cljs`.
+- The main application logic can be found in `src/cosmere-npc/core.cljs`.
 - Modify `public/index.html` to change the HTML structure or add additional assets.
 
 ## License

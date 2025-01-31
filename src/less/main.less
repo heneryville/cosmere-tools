@@ -1,0 +1,184 @@
+// Colors
+@primary-color: #1e3c60;  // Dark blue
+@accent-color: #ca9a56;    // Gold/bronze
+@bg-color: #ffffff;        // White
+@text-color: #333333;      // Dark gray
+@navbar-text-color: #ffffff;
+@border-color: #e0e0e0;
+@card-border-color: #ca9a56;
+@card-text-color: #1e3c60;
+
+// Measurements
+@navbar-height: 60px;
+@content-max-width: 1500px;
+@content-padding: 20px;
+
+// Variables
+@border-color: #ca9a56;
+@text-color: #1e3c60;
+@font-family: sans-serif;
+
+// Creatures
+@creature-card-min-width: 400px;
+
+
+// Mixins
+.border-radius(@radius: 10px) {
+  border-radius: @radius;
+}
+
+// Base styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  color: @text-color;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  background: #f5f5f5;
+}
+
+// Navbar
+.navbar {
+  background-color: @primary-color;
+  height: @navbar-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .navbar-content {
+    max-width: @content-max-width;
+    margin: 0 auto;
+    padding: 0 @content-padding;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .brand {
+      color: @navbar-text-color;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+
+      a {
+        color: @navbar-text-color;
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+// Main content
+.main-content {
+  margin-top: @navbar-height;
+  min-height: calc(100vh - @navbar-height);
+  padding: @content-padding;
+
+  .content-container {
+    max-width: @content-max-width;
+    margin: 0 auto;
+    background-color: @bg-color;
+    padding: @content-padding;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Utility classes
+.text-primary {
+  color: @primary-color;
+}
+
+.text-accent {
+  color: @accent-color;
+}
+
+// Page styles
+.page {
+  padding: @content-padding 0;
+
+  h1 {
+    color: @primary-color;
+    margin-bottom: 1rem;
+  }
+
+  &.home-page {
+    // Add any home page specific styles
+  }
+
+  &.about-page {
+    // Add any about page specific styles
+  }
+}
+
+// Icons for action types
+i {
+  &.icon-single-action { background-image: url("../images/single-action.png"); }
+  &.icon-free-action { background-image: url("../images/free-action.png"); }
+  &.icon-reaction { background-image: url("../images/reaction.png"); }
+  
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .navbar {
+    .navbar-content {
+      padding: 0 15px;
+    }
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+}
+
+.creatures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(@creature-card-min-width, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+// Responsive adjustments
+@media (max-width: 640px) {
+  body {
+    padding: 10px;
+  }
+  
+  .creatures-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
+}
+
+@import url("./creature.less");
