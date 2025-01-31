@@ -76,23 +76,6 @@ body {
   color: #1e3c60;
   margin-bottom: 1rem;
 }
-i {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-size: contain;
-  vertical-align: middle;
-  margin-right: 4px;
-}
-i.icon-single-action {
-  background-image: url("../images/single-action.png");
-}
-i.icon-free-action {
-  background-image: url("../images/free-action.png");
-}
-i.icon-reaction {
-  background-image: url("../images/reaction.png");
-}
 @media (max-width: 768px) {
   .navbar .navbar-content {
     padding: 0 15px;

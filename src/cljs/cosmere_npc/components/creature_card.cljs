@@ -76,7 +76,7 @@
   [:article.npc
    [:header
     [:h1 name]
-    (str "Tier" tier " " role " - " size " " (str/join types " "))]
+    (str "Tier" tier " " (str/capitalize role) " - " (str/capitalize size) " " (str/join " " (map str/capitalize types)))]
 
    [attributes-section creature]
    [attributes-etc creature]
