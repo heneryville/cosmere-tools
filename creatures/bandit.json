@@ -46,8 +46,8 @@
         {"name": "Minion", "description": "The bandit's attacks can't critcally hit, and they are immediatly defeated when they suffer an injury"}
     ],
     "actions": [
-        {"action": "single", "name": "Strike: Mace", "description": "Attack +2, reach 5ft., one target. Graze: 3(1d6) impact damage. Hit: 5 (1d6+2) impact damage"},
-        {"action": "single", "name": "Strike: Shortbow", "description": "Attack +2, range 80/320ft., one target. Graze: 3(1d6) keen damage. Hit: 5 (1d6+2) keen damage"},
-        {"action": "single", "name": "Trip", "focus": 1, "description": "The bandit makes an Athletics test against a target within 5 feet of them, opposed by the taret's choice of Athletics or Agility. If the bandit succeeds on this test, the target is knocked Prone."}
+        {"action-cost": "single", "name": "Strike: Mace", "description": "Attack +2, reach 5ft., one target. Graze: 3(1d6) impact damage. Hit: 5 (1d6+2) impact damage"},
+        {"action-cost": "single", "name": "Strike: Shortbow", "description": "Attack +2, range 80/320ft., one target. Graze: 3(1d6) keen damage. Hit: 5 (1d6+2) keen damage"},
+        {"action-cost": "single", "name": "Trip", "focus": 1, "description": "The bandit makes an Athletics test against a target within 5 feet of them, opposed by the taret's choice of Athletics or Agility. If the bandit succeeds on this test, the target is knocked Prone."}
     ]
 }

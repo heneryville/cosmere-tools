@@ -69,7 +69,6 @@
      ^{:key name}
      [:div
       [:i {:class (str "icon-action-" action-cost)}]
-      action-cost
       [:h3 name]
       description])])
 
