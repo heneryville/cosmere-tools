@@ -1,0 +1,47 @@
+{
+    "name": "Bandit",
+    "tier": 1,
+    "role": "minion",
+    "size": "medium",
+    "types": ["humanoid"],
+    "strength": 1,
+    "physical-defense": 12,
+    "speed": 1,
+    "intelligence": 1,
+    "cognitive-defense": 11,
+    "willpower": 0,
+    "awareness": 2,
+    "spiritual-defense": 13,
+    "presence": 1,
+
+    "health-min": 8,
+    "health-max": 13,
+    "health-avg": 11,
+    "focus": 0,
+    "investiture": 0,
+
+    "movement": 40,
+    "deflect": 1,
+    "deflect-explantion": "leather armor",
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "agility": 3,
+        "athletics": 3,
+        "light-weapons": 2,
+        "disipline": 1,
+        "intimidation": 3,
+        "perception": 3,
+        "survival": 3
+    },
+    "languages": ["defined by culture"],
+    "traits": [
+        {"name": "Momentum", "description": "If the bandit moves at least 10 feet in a straight line toward a target then makes a Mace attack against them on that turn, the bandit gains advantage on that attack."},
+        {"name": "Minion", "description": "The bandit's attacks can't critcally hit, and they are immediatly defeated when they suffer an injury"}
+    ],
+    "actions": [
+        {"cost": "single", "name": "Strike: Mace", "description": "Attack +2, reach 5ft., one target. Graze: 3(1d6) impact damage. Hit: 5 (1d6+2) impact damage"},
+        {"cost": "single", "name": "Strike: Shortbow", "description": "Attack +2, range 80/320ft., one target. Graze: 3(1d6) keen damage. Hit: 5 (1d6+2) keen damage"},
+        {"cost": "single", "name": "Trip", "focus": 1, "description": "The bandit makes an Athletics test against a target within 5 feet of them, opposed by the taret's choice of Athletics or Agility. If the bandit succeeds on this test, the target is knocked Prone."},
+    ]
+}

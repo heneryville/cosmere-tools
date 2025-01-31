@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/cosmere-actions.css">
+        <link rel="stylesheet" href="css/cosmere-actions-codes.css">
+        <style>
+            article * {
+                box-sizing: border-box;
+            }
+
+            article.npc {
+                border: 2px solid #ca9a56;
+                padding: 10px;
+                color: #1e3c60;
+                max-width: 500px;
+                font-size: 12px;
+                font-family: sans-serif;
+            }
+            article > header > h1 {
+                font-size: 20px;
+                font-style: initial;
+                margin: 0;
+            }
+            article > header {
+                font-size: 11px;
+                font-style: italic;
+                margin-bottom: 4px;
+            }
+
+            .attributes {
+                border: 1px solid #ca9a56;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                margin: 0 -7px;
+            }
+
+            .defense {
+                border: 1px solid #ca9a56;
+                border-top: none;
+                border-bottom-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+                padding: 2px 9px 12px 9px;
+                margin-bottom: -10px;
+                background-color: white;
+            }
+
+            .attributes > header {
+                background-color: #ca9a56;;
+                color: white;
+                display: flex;
+                width: 100%;
+                font-size: 12px;
+                padding: 2px;
+            }
+
+            .attributes > header > div {
+                flex-grow: 1;
+                text-align: center;
+                font-weight: 600;
+                flex-basis: 0;
+            }
+
+            .attributes .attr-values{
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .attr-values .attr-pair {
+                flex-grow: 1;
+                flex-basis: 0;
+            }
+
+
+            .attributes .attr-pair {
+                display: flex;
+                justify-content: center;
+            }
+
+            .attributes .attr {
+                padding: 2px 6px 0px 6px;
+            }
+
+            .attributes .attr-pair .label {
+                font-size: 9px;
+                text-align: center;
+            }
+
+            .attributes .attr-pair .value {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .attributes-etc {
+                margin-top: 16px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0 10px;
+            }
+
+            .attributes-etc > div {
+                flex-grow: 1;
+                flex-basis: 0;
+            }
+
+            .attributes-etc > div:last-child { text-align: right; }
+            .attributes-etc > div:nth-child(2) { text-align: center; }
+
+            .attributes-etc h3 {
+                font-size: 12;
+                display: inline;
+            }
+
+            hr {
+                border: 1px solid #ca9a56;
+                margin: 4px 0;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 10px;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+
+            section > div > h3 {
+                display: inline;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            section.skills > div > h3::after {
+                content: ":";
+            }
+            section.traits > div > h3::after,
+            section.actions > div > h3::after
+            {
+                content: ".";
+            }
+
+            i.single-action {
+                background-image: url("./single-action.png");
+                
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <article class="npc">
+            <header>
+                <h1>Axehound</h1>
+                Tier 1 Minion - Small Animal
+            </header>
+            <section class="attributes">
+                <header>
+                    <div>Physical</div>
+                    <div>Cognitive</div>
+                    <div>Spiritual</div>
+                </header>
+                <div class="attr-values">
+                    <div class="attr-pair">
+                        <div class="attr">
+                            <div class="label">STR</div>
+                            <div class="value">2</div>
+                        </div>
+                        <div class="defense">
+                            <div class="label">DEF</div>
+                            <div class="value">14</div>
+                        </div>
+                        <div class="attr">
+                            <div class="label">SPD</div>
+                            <div class="value">2</div>
+                        </div>
+                    </div>
+                    <div class="attr-pair">
+                        <div class="attr">
+                            <div class="label">INT</div>
+                            <div class="value">0</div>
+                        </div>
+                        <div class="defense">
+                            <div class="label">DEF</div>
+                            <div class="value">10</div>
+                        </div>
+                        <div class="attr">
+                            <div class="label">WIL</div>
+                            <div class="value">0</div>
+                        </div>
+                    </div>
+                    <div class="attr-pair">
+                        <div class="attr">
+                            <div class="label">AWA</div>
+                            <div class="value">3</div>
+                        </div>
+                        <div class="defense">
+                            <div class="label">DEF</div>
+                            <div class="value">13</div>
+                        </div>
+                        <div class="attr">
+                            <div class="label">PRE</div>
+                            <div class="value">0</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="attributes-etc">
+                <div> <h3>Health</h3> 12 (9-15)</div>
+                <div> <h3>Focus</h3> 2 </div>
+                <div> <h3>Investiture</h3> 0</div>
+            </section>
+            <hr/>
+            <section class="skills">
+                <div> <h3>Movement</h3> 40 ft</div>
+                <div> <h3>Senses</h3> 40 ft. (smell)</div>
+                <div> <h3>Physical Skills</h3> Agility +4, Athletics +4, Stealth +3</div>
+                <div> <h3>Spiritual Skills</h3> Perception +5, Survival +4</div>
+                <div> <h3>Languages</h3> none</div>
+            </section>
+            <h2>TRAITS</h2>
+            <hr/>
+            <section class="traits">
+                <div> <h3>Enhanced Senses</h3> The axehound gains an advantage on non-attack tests that rely on smell</div>
+                <div> <h3>Minon</h3> The axehound's attacks can't critcally hit, and they are immediatly defeated when they suffer an injury</div>
+            </section>
+            <h2>ACTIONS</h2>
+            <hr/>
+            <section class="actions">
+                <div> <i class="icon-single-action"></i> </span> <h3>Strike: Bite</h3>  Attack +4, reach 5ft., one target. Graze: 2(1d4) keen damage. Hit: 4 (1d4+2) keen damage and the axehoud can spend 1 focus to knock the target Prhone, then move up to 10 feet while dragging the target along.</div>
+                <div> <i class="icon-free-action"></i> </span> <h3>Pack Instincts</h3>  While within 5 feet of an ally, the axehound can use the Gain Advantage action as <i class="free-action"></i> </div>
+                <div> <i class="icon-reaction"></i> </span> <h3>On the Hunt</h3> After and enemy within 30 feet of the axehound falls Prone, the axehound moves up to 15 feet toward them.</div>
+            </section>
+        </article>
+    </body>
+</html>

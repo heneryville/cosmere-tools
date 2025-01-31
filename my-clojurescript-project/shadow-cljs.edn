@@ -1,0 +1,7 @@
+{:source-paths ["src/main"]
+ :dependencies [[thheller/shadow-cljs "2.19.10"]
+                [reagent "1.1.0"]]
+ :builds {:app {:target :browser
+                :output-dir "public/js"
+                :asset-path "/js"
+                :modules {:main {:init-fn my-clojurescript-project.core/init}}}}}
