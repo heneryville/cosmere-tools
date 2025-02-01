@@ -12,7 +12,7 @@
   (let [[dice-count dice-type] (utils/parse-dice (:damage-base strike))]
     [:div.strike-row
      [:div.form-group
-      [:label "Damage"]
+      [:label "Damage Amount"]
       [:input {:type "number"
                :min 1
                :max 20
@@ -20,12 +20,13 @@
                :on-change #(change path (str (js/parseInt (.. % -target -value)) "d" dice-type))}]]
      [:div.form-group
       [:label "Dice Type"]
-      [radio-buttons
-       {:options const/dice-types
-        :selected dice-type
-        :on-change #(change path (str dice-count "d" %))}]]
+      [:div.dice-buttons
+       [radio-buttons
+        {:options const/dice-types
+         :selected dice-type
+         :on-change #(change path (str dice-count "d" %))}]]]
      [:div.form-group
-      [:label "Type"]
+      [:label "Damage Type"]
       [:select {:value (:damage-type strike)
                 :on-change #(change (conj (pop path) :damage-type) (.. % -target -value))}
        (for [type const/damage-types]

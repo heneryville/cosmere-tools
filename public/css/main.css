@@ -590,10 +590,12 @@ form.creature-editor .skill-item .skill-ranks .radio-label input {
 }
 .strike-details .strike-row .form-group {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 .strike-details .strike-row .form-group label {
-  display: block;
-  margin-bottom: 0.25rem;
+  font-weight: bold;
   font-size: 0.9rem;
   color: #-1e3c60;
 }
@@ -645,11 +647,17 @@ form.creature-editor .skill-item .skill-ranks .radio-label input {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  align-items: flex-end;
 }
 .dice-section .dice-count {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.25rem;
+}
+.dice-section .dice-count label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #-1e3c60;
 }
 .dice-section .dice-count input {
   width: 60px;
@@ -659,9 +667,18 @@ form.creature-editor .skill-item .skill-ranks .radio-label input {
 }
 .dice-section .dice-type {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.5rem;
-  align-items: flex-end;
+  align-items: center;
+}
+.dice-section .dice-type label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #-1e3c60;
+}
+.dice-section .dice-type .dice-buttons {
+  display: flex;
+  gap: 0.25rem;
 }
 .dice-section .dice-type .dice-button {
   padding: 0.35rem 0.75rem;
