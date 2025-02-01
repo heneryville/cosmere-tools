@@ -232,6 +232,9 @@ form.creature-editor {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+form.creature-editor h2 {
+  font-size: 1.3rem;
+}
 form.creature-editor .form-row {
   display: flex;
   justify-content: flex-start;
@@ -402,4 +405,56 @@ form.creature-editor .skill-item .skill-ranks .radio-label input {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+}
+.traits-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.traits-section .trait {
+  border: 1px solid #ca9a56;
+  border-radius: 4px;
+  padding: 0.75rem;
+}
+.traits-section .trait .trait-header {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.traits-section .trait .trait-header .trait-name {
+  flex: 1;
+  font-weight: bold;
+}
+.traits-section .trait .trait-header .remove-trait {
+  background: none;
+  border: none;
+  color: #1e3c60;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  opacity: 0.5;
+}
+.traits-section .trait .trait-header .remove-trait:hover {
+  opacity: 1;
+}
+.traits-section .trait .trait-description {
+  width: 100%;
+  resize: vertical;
+  font-family: inherit;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #ca9a56;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.traits-section .trait .trait-description:focus {
+  outline: none;
+  border-color: #ca9a56;
+  box-shadow: 0 0 0 2px rgba(202, 154, 86, 0.2);
+}
+.traits-section .add-trait {
+  margin-top: 0.5rem;
+}
+.traits-section .add-trait .trait-select {
+  width: 100%;
 }

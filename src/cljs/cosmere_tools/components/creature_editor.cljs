@@ -2,7 +2,9 @@
   (:require
    [cljs.math :as math]
    [clojure.string :as str]
+   [cosmere-tools.components.trait-editor :refer [trait-editor]]
    [cosmere-tools.creature-constants :as const]
+   [cosmere-tools.trait-library :as traits]
    [cosmere-tools.utils :refer [dissoc-in]]))
 
 (def skill-ranks (range 6)) ; 0 to 5
@@ -17,7 +19,8 @@
   ;;(prn "write" path new-value)
   (let [new-creature (if (nil? new-value)
                        (dissoc-in prior-creature path)
-                       (assoc-in prior-creature path new-value))]
+                       (assoc-in prior-creature path new-value))
+        new-creature (update new-creature :traits traits/consolidate-traits)]
     (->> const/calculations
          (filter #(is-dependent-path? % path))
          (reduce (fn [c calc]
@@ -34,6 +37,9 @@
                        (assoc-in c target calculated-value)
                        c)))
                  new-creature))))
+
+(defn write-and-notify [creature path new-value on-change]
+  (on-change (write creature path new-value)))
 
 (defn stat-input [creature change {:keys [attr label step]}]
   (let [attr-path (if (vector? attr) attr [attr])
@@ -78,7 +84,7 @@
                   :value rank
                   :checked (= current-value rank)
                   :on-change #(change [:skills skill-type skill]
-                                    (js/parseInt (.. % -target -value)))}]
+                                      (js/parseInt (.. % -target -value)))}]
          rank])]]))
 
 (defn skills-column [{:keys [skill-type skills creature on-change]}]
@@ -88,9 +94,20 @@
      ^{:key skill}
      [skill-input creature on-change skill-type skill])])
 
+(defn handle-role-change [creature new-role on-change]
+  (-> creature
+      (write [:role] new-role)
+      ((fn [creature]
+         (if (= "minion" new-role)
+         ;; MKHTODO consolidate traits
+           (write creature [:traits] (conj (:traits creature)
+                                           traits/minion))
+           (write creature [:traits] (remove #(= (:name %) "Minion") (:traits creature))))))
+      (on-change)))
+
 (defn creature-editor [{:keys [creature on-change]}]
   (let [change (fn change [path value]
-                 (on-change (write creature path value)))]
+                 (write-and-notify creature path value on-change))]
     [:form.creature-editor
      [:div.form-group
       [:label "Name"]
@@ -110,7 +127,8 @@
       [:div.form-group
        [:label "Role"]
        [:select {:value (:role creature "minion")
-                 :on-change #(change [:role] (.. % -target -value))}
+                 :on-change #(let [new-role (.. % -target -value)]
+                               (handle-role-change creature new-role on-change))}
         (for [role const/roles]
           ^{:key role}
           [:option {:value role} (str/capitalize role)])]]
@@ -157,47 +175,47 @@
 
      [:hr]
 
-     [:div.derived-stats-section
-      [stat-input creature change
-       {:attr :health-avg
-        :label "Health"}]
+     #_[:div.derived-stats-section
+        [stat-input creature change
+         {:attr :health-avg
+          :label "Health"}]
 
-      [stat-input creature change
-       {:attr :focus
-        :label "Focus"}]
+        [stat-input creature change
+         {:attr :focus
+          :label "Focus"}]
 
-      [stat-input creature change
-       {:attr :investiture
-        :label "Investiture"}]]
+        [stat-input creature change
+         {:attr :investiture
+          :label "Investiture"}]]
 
-     [:div.derived-stats-section
-      [stat-input creature change
-       {:attr :movement
-        :step 5
-        :label "Movement"}]
+     #_[:div.derived-stats-section
+        [stat-input creature change
+         {:attr :movement
+          :step 5
+          :label "Movement"}]
 
-      [stat-input creature change
-       {:attr :sense-range
-        :label "Sense Range"}]
+        [stat-input creature change
+         {:attr :sense-range
+          :label "Sense Range"}]
 
-      [:div.attribute-pair
-       [:label "Primary Sense"]
-       [:select {:value (:sense-primary creature "sight")
-                 :on-change #(change [:sense-primary] (.. % -target -value))}
-        (for [sense-type const/sense-types]
-          ^{:key sense-type}
-          [:option {:value sense-type} (str/capitalize sense-type)])]]]
+        [:div.attribute-pair
+         [:label "Primary Sense"]
+         [:select {:value (:sense-primary creature "sight")
+                   :on-change #(change [:sense-primary] (.. % -target -value))}
+          (for [sense-type const/sense-types]
+            ^{:key sense-type}
+            [:option {:value sense-type} (str/capitalize sense-type)])]]]
 
      [:hr]
 
-     [:div.skills-section
-      (for [[type skills] const/skills]
-        ^{:key type}
-        [skills-column
-         {:skill-type type
-          :skills skills
-          :creature creature
-          :on-change change}])]
+     #_[:div.skills-section
+        (for [[type skills] const/skills]
+          ^{:key type}
+          [skills-column
+           {:skill-type type
+            :skills skills
+            :creature creature
+            :on-change change}])]
 
      [:div.form-group
       [:label "Languages: "]
@@ -206,4 +224,6 @@
                :placeholder "e.g. Alethi, Azish, Shin"
                :on-change #(change [:languages] (.. % -target -value))}]]
 
-     [:hr]]))
+     [:hr]
+     [:h2 "Traits"]
+     [trait-editor creature change]]))
