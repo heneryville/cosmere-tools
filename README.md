@@ -1,4 +1,4 @@
-# Cosmere NPC
+# Cosmere Tools
 This is a project for creating and managing NPCs in your Cosmere campaign.
 
 

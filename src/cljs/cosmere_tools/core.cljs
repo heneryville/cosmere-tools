@@ -11,7 +11,7 @@
    [:div.navbar-content
     [:a.brand {:href "#/" 
                :on-click #(router/navigate! :home)} 
-     "Cosmere NPC"]
+     "Cosmere Tools"]
     [:div.nav-links
      [:a {:href "#/"
           :on-click #(router/navigate! :home)} "Home"]

@@ -7,7 +7,7 @@
     "strength": 1,
     "physical-defense": 12,
     "speed": 1,
-    "intelligence": 1,
+    "intellect": 1,
     "cognitive-defense": 11,
     "willpower": 0,
     "awareness": 2,
@@ -40,7 +40,7 @@
             "survival": 3
         }
     },
-    "languages": ["defined by culture"],
+    "languages": "defined by culture",
     "traits": [
         {"name": "Momentum", "description": "If the bandit moves at least 10 feet in a straight line toward a target then makes a Mace attack against them on that turn, the bandit gains advantage on that attack."},
         {"name": "Minion", "description": "The bandit's attacks can't critcally hit, and they are immediatly defeated when they suffer an injury"}

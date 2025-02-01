@@ -15,7 +15,7 @@
     [:div.value value2]]])
 
 (defn attributes-section [{:keys [strength physical-defense speed
-                                  intelligence cognitive-defense willpower
+                                  intellect cognitive-defense willpower
                                   awareness spiritual-defense presence]}]
   [:section.attributes
    [:header
@@ -24,7 +24,7 @@
     [:div "Spiritual"]]
    [:div.attr-values
     [attribute-pair ["STR" strength physical-defense "SPD" speed]]
-    [attribute-pair ["INT" intelligence cognitive-defense "WIL" willpower]]
+    [attribute-pair ["INT" intellect cognitive-defense "WIL" willpower]]
     [attribute-pair ["AWA" awareness spiritual-defense "PRE" presence]]]])
 
 (defn attributes-etc [{:keys [health-avg health-min health-max focus investiture]}]
@@ -50,10 +50,7 @@
    [skills "Physical Skills" physical]
    [skills "Cognitive Skills" cognitive]
    [skills "Spiritual Skils" spiritual]
-   [:div [:h3 "Languages"]
-    (if (seq languages)
-      (str/join ", " languages)
-      "none")]])
+   [:div [:h3 "Languages"] (or languages "none")]])
 
 (defn traits-section [traits]
   [:section.traits

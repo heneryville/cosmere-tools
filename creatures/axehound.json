@@ -7,7 +7,7 @@
     "strength": 2,
     "physical-defense": 14,
     "speed": 2,
-    "intelligence": 0,
+    "intellect": 0,
     "cognitive-defense": 10,
     "willpower": 0,
     "awareness": 3,
@@ -36,7 +36,7 @@
             "survival": 4
         }
     },
-    "languages": [],
+    "languages": "none",
     "traits": [
         {"name": "Enhanced Senses", "description": "The axehound gains an advantage on non-attack tests that rely on smell"},
         {"name": "Minion", "description": "The axehound's attacks can't critcally hit, and they are immediatly defeated when they suffer an injury"}

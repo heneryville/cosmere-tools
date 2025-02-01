@@ -1,52 +1,11 @@
 (ns cosmere-tools.components.creature-editor
   (:require
    [cljs.math :as math]
-   [clojure.string :as str]))
-
-(def sizes ["small" "medium" "large" "huge" "gargantuan"])
-(def roles ["minion" "rival" "boss"])
-(def preset-types ["animal" "humanoid" "swarm"])
-(def sense-types ["sight" "smell" "hearing" "life" "investiture" "metallic"])
-(def attributes [:strength :speed :intelligence :willpower :awareness :presence])
-(def defenses [:physical-defense :cognitive-defense :spiritual-defense])
-
-(def skills
-  {:physical  [:agility :athletics :heavy-weapons :light-weapons :stealth :thievery]
-   :cognitive [:crafting :deduction :discipline :intimidation :lore :medicine]
-   :spiritual [:deception :insight :leadership :perception :persuasion :survival]})
+   [clojure.string :as str]
+   [cosmere-tools.creature-constants :as const]
+   [cosmere-tools.utils :refer [dissoc-in]]))
 
 (def skill-ranks (range 6)) ; 0 to 5
-
-(def calculations
-  [{:target [:physical-defense]
-    :dependents #{[:strength] [:speed]}
-    :calc-fn #(+ 10 (get % :strength 0) (get % :speed 0))}
-   {:target [:cognitive-defense]
-    :dependents #{[:intelligence] [:willpower]}
-    :calc-fn #(+ 10 (get % :intelligence 0) (get % :willpower 0))}
-   {:target [:spiritual-defense]
-    :dependents #{[:awareness] [:presence]}
-    :calc-fn #(+ 10 (get % :awareness 0) (get % :presence 0))}
-   {:target [:health-avg]
-    :dependents #{[:strength]}
-    :calc-fn #(+ 10 (get % :strength 0))}
-   {:target [:focus]
-    :dependents #{[:willpower]}
-    :calc-fn #(+ 2 (get % :willpower 0))}
-   {:target [:health-min]
-    :dependents #{[:health-avg]}
-    :forced true
-    :calc-fn #(math/round (* 0.75 (get % :health-avg)))}
-   {:target [:health-max]
-    :dependents #{[:health-avg]}
-    :forced true
-    :calc-fn #(math/round (* 1.20 (get % :health-avg)))}
-   {:target [:movement]
-    :dependents #{[:speed]}
-    :calc-fn #(-> % :speed ({0 20 1 25 2 25 3 30 4 30 5 40 6 40 7 60 8 60} 80))}
-   {:target [:sense-range]
-    :dependents #{[:awareness]}
-    :calc-fn #(-> % :awareness ({0 5 1 10 2 10 3 20 4 20 5 50 6 50 7 100 8 100} 1000))}])
 
 (defn calculate-field [creature calc]
   ((:calc-fn calc) creature))
@@ -56,8 +15,10 @@
 
 (defn write [prior-creature path new-value]
   ;;(prn "write" path new-value)
-  (let [new-creature (assoc-in prior-creature path new-value)]
-    (->> calculations
+  (let [new-creature (if (nil? new-value)
+                       (dissoc-in prior-creature path)
+                       (assoc-in prior-creature path new-value))]
+    (->> const/calculations
          (filter #(is-dependent-path? % path))
          (reduce (fn [c calc]
                    (let [target (:target calc)
@@ -76,7 +37,7 @@
 
 (defn stat-input [creature change {:keys [attr label step]}]
   (let [attr-path (if (vector? attr) attr [attr])
-        calc (first (filter #(= attr-path (:target %)) calculations))
+        calc (first (filter #(= attr-path (:target %)) const/calculations))
         calculated-value (when calc (calculate-field creature calc))
         display-label (or label (-> (last attr-path) name (str/replace "-" " ") str/capitalize))]
     [:div.attribute-pair
@@ -89,20 +50,36 @@
                calculated-value (assoc :placeholder calculated-value
                                        :class "derived-input"))]]))
 
-(defn skill-input [creature change skill-type skill]
-  [:div.skill-item
-   [:div.skill-label (-> skill name (str/replace "-" " ") str/capitalize)]
-   [:div.skill-ranks
-    (for [rank skill-ranks]
-      ^{:key rank}
-      [:label.radio-label
+(defn get-attr-value [creature attr]
+  (get creature attr 0))
+
+(defn skill-input [creature change skill-type [skill attr]]
+  (let [attr-value (get-attr-value creature attr)
+        max-rank 5
+        ranks (range attr-value (+ attr-value max-rank 1))
+        current-value (get-in creature [:skills skill-type skill])]
+    [:div.skill-item
+     [:div.skill-label
+      [:span (-> skill name (str/replace "-" " ") str/capitalize)]
+      [:span.skill-attr (str " (" (const/attr-abbrev attr) ")")]]
+     [:div.skill-ranks
+      [:label.radio-label.clear
        [:input {:type "radio"
                 :name (name skill)
-                :value rank
-                :checked (= (get-in creature [:skills skill-type skill]) rank)
-                :on-change #(change [:skills skill-type skill]
+                :value ""
+                :checked (nil? current-value)
+                :on-change #(change [:skills skill-type skill] nil)}]
+       " ⃠"]
+      (for [rank ranks]
+        ^{:key rank}
+        [:label.radio-label
+         [:input {:type "radio"
+                  :name (name skill)
+                  :value rank
+                  :checked (= current-value rank)
+                  :on-change #(change [:skills skill-type skill]
                                     (js/parseInt (.. % -target -value)))}]
-       rank])]])
+         rank])]]))
 
 (defn skills-column [{:keys [skill-type skills creature on-change]}]
   [:div.skills-column
@@ -134,7 +111,7 @@
        [:label "Role"]
        [:select {:value (:role creature "minion")
                  :on-change #(change [:role] (.. % -target -value))}
-        (for [role roles]
+        (for [role const/roles]
           ^{:key role}
           [:option {:value role} (str/capitalize role)])]]
 
@@ -142,7 +119,7 @@
        [:label "Size"]
        [:select {:value (:size creature "medium")
                  :on-change #(change [:size] (.. % -target -value))}
-        (for [size sizes]
+        (for [size const/sizes]
           ^{:key size}
           [:option {:value size} (str/capitalize size)])]]]
 
@@ -150,7 +127,7 @@
       [:label "Type"]
       [:div.type-input-wrapper
        [:select.type-select
-        {:value (if (some #{(:type creature)} preset-types)
+        {:value (if (some #{(:type creature)} const/preset-types)
                   (:type creature)
                   "custom")
          :on-change #(let [new-type (.. % -target -value)]
@@ -158,11 +135,11 @@
                                (if (= new-type "custom")
                                  ""
                                  new-type)))}
-        (for [type preset-types]
+        (for [type const/preset-types]
           ^{:key type}
           [:option {:value type} (str/capitalize type)])
         [:option {:value "custom"} "Custom..."]]
-       (when (not (some #{(:type creature)} preset-types))
+       (when (not (some #{(:type creature)} const/preset-types))
          [:input.type-custom
           {:type "text"
            :value (:type creature)
@@ -173,7 +150,7 @@
 
      [:div.attributes-section
       (for [attr [:strength :physical-defense :speed
-                  :intelligence :cognitive-defense :willpower
+                  :intellect :cognitive-defense :willpower
                   :awareness :spiritual-defense :presence]]
         ^{:key (name attr)}
         [stat-input creature change {:attr attr}])]
@@ -207,19 +184,26 @@
        [:label "Primary Sense"]
        [:select {:value (:sense-primary creature "sight")
                  :on-change #(change [:sense-primary] (.. % -target -value))}
-        (for [sense-type sense-types]
+        (for [sense-type const/sense-types]
           ^{:key sense-type}
           [:option {:value sense-type} (str/capitalize sense-type)])]]]
 
      [:hr]
 
      [:div.skills-section
-      (for [[type skills] skills]
+      (for [[type skills] const/skills]
         ^{:key type}
         [skills-column
          {:skill-type type
           :skills skills
           :creature creature
           :on-change change}])]
+
+     [:div.form-group
+      [:label "Languages: "]
+      [:input {:type "text"
+               :value (:languages creature "")
+               :placeholder "e.g. Alethi, Azish, Shin"
+               :on-change #(change [:languages] (.. % -target -value))}]]
 
      [:hr]]))

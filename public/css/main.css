@@ -353,6 +353,12 @@ form.creature-editor .skill-item .skill-label {
   font-weight: bold;
   color: #1e3c60;
 }
+form.creature-editor .skill-item .skill-label .skill-attr {
+  color: #666;
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: normal;
+}
 form.creature-editor .skill-item .skill-ranks {
   display: flex;
   gap: 0.5rem;
@@ -366,6 +372,9 @@ form.creature-editor .skill-item .skill-ranks .radio-label {
   cursor: pointer;
   font-size: 0.8rem;
   color: #1e3c60;
+}
+form.creature-editor .skill-item .skill-ranks .radio-label.clear {
+  color: #999;
 }
 form.creature-editor .skill-item .skill-ranks .radio-label input {
   margin: 0;

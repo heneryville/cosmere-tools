@@ -153,6 +153,13 @@ form.creature-editor {
       font-size: 0.9rem;
       font-weight: bold;
       color: @text-color;
+
+      .skill-attr {
+        color: #666;
+        font-size: 0.9em;
+        font-style: italic;
+        font-weight: normal;
+      }
     }
 
     .skill-ranks {
@@ -168,6 +175,10 @@ form.creature-editor {
         cursor: pointer;
         font-size: 0.8rem;
         color: @text-color;
+
+        &.clear {
+          color: #999;
+        }
 
         input {
           margin: 0;
