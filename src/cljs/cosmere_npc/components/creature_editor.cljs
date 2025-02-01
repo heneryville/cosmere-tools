@@ -1,5 +1,6 @@
 (ns cosmere-npc.components.creature-editor
   (:require
+   [cljs.math :as math]
    [clojure.string :as str]))
 
 (def sizes ["small" "medium" "large" "huge" "gargantuan"])
@@ -9,22 +10,29 @@
 (def defenses [:physical-defense :cognitive-defense :spiritual-defense])
 
 (def calculations
-  [
-   {:dependents [:strength :speed]
+  [{:dependents [:strength :speed]
     :target :physical-defense
     :calc-fn #(+ 10 (get % :strength 0) (get % :speed 0))}
-   #_{:dependents [:intelligence :willpower]
+   {:dependents [:intelligence :willpower]
     :target :cognitive-defense
     :calc-fn #(+ 10 (get % :intelligence 0) (get % :willpower 0))}
-   #_{:dependents [:awareness :presence]
+   {:dependents [:awareness :presence]
     :target :spiritual-defense
     :calc-fn #(+ 10 (get % :awareness 0) (get % :presence 0))}
-   #_{:dependents [:strength]
+   {:dependents [:strength]
     :target :health-avg
     :calc-fn #(+ 10 (get % :strength 0))}
-   #_{:dependents [:willpower]
+   {:dependents [:willpower]
     :target :focus
-    :calc-fn #(+ 2 (get % :willpower 0))}])
+    :calc-fn #(+ 2 (get % :willpower 0))}
+   {:dependents [:health-avg]
+    :target :health-min
+    :forced true
+    :calc-fn #(math/round (* 0.75 (get % :health-avg)))}
+   {:dependents [:health-avg]
+    :target :health-max
+    :forced true
+    :calc-fn #(math/round (* 1.20 (get % :health-avg)))}])
 
 (defn calculate-field [creature calc]
   ((:calc-fn calc) creature))
@@ -34,45 +42,44 @@
             (let [calculated-value (calculate-field c calc)
                   prior-calculated-value (calculate-field existing-creature calc)
                   prior-actual-value (get existing-creature (:target calc) 0)
-                  followed-calc? (= prior-calculated-value prior-actual-value)]
-              (prn "calc" (:target calc) calculated-value prior-calculated-value prior-actual-value followed-calc?)
-              (if followed-calc?
+                  use-recalc (or (:forced calc) (= prior-calculated-value prior-actual-value))]
+              (prn "calc" (:target calc) calculated-value prior-calculated-value prior-actual-value use-recalc)
+              (if use-recalc
                 ; Only update if the field was following its calculation
                 (assoc c (:target calc) calculated-value)
                 c)))
           new-creature
           calculations))
 
+(defn is-dependent-field? [attr]
+  (some #(some #{attr} (:dependents %)) calculations))
+
 (defn wrap-on-change [on-change creature]
   (fn [new-creature]
-    (on-change (recalculate-all-fields creature new-creature))))
+    (let [changed-key (first (filter #(not= (get creature %)
+                                            (get new-creature %))
+                                     (keys new-creature)))]
+      (if (is-dependent-field? changed-key)
+        (on-change (recalculate-all-fields creature new-creature))
+        (on-change new-creature)))))
 
-(defn attribute-input [creature on-change attr]
-  (let [is-calculated (some #(= attr (:target %)) calculations)
-        calc (first (filter #(= attr (:target %)) calculations))
-        calculated-value (when calc (calculate-field creature calc))]
-    [:div.attribute-pair
-     [:label (-> attr name (str/replace "-" " ") str/capitalize)]
-     [:input (cond-> {:type "number"
-                      :min 0
-                      :value (get creature attr 0)
-                      :on-change #(on-change (assoc creature attr
-                                                   (js/parseInt (.. % -target -value))))}
-               is-calculated (assoc :placeholder calculated-value
-                                  :class "defense-input"))]]))
-
-(defn derived-stat-input [creature on-change {:keys [attr label]}]
+(defn stat-input [creature on-change {:keys [attr label]}]
   (let [calc (first (filter #(= attr (:target %)) calculations))
-        calculated-value (when calc (calculate-field creature calc))]
+        calculated-value (when calc (calculate-field creature calc))
+        display-label (or label (-> attr name (str/replace "-" " ") str/capitalize))]
     [:div.attribute-pair
-     [:label label]
+     [:label display-label]
      [:input (cond-> {:type "number"
                       :min 0
                       :value (get creature attr (or calculated-value 0))
-                      :on-change #(on-change (assoc creature attr
-                                                   (js/parseInt (.. % -target -value))))}
+                      :on-change (fn [e]
+                                   (prn "Changing " attr "->" (js/parseInt (.. e -target -value)))
+                                   (on-change (assoc creature attr
+                                                     (js/parseInt (.. e -target -value)))))}
                calculated-value (assoc :placeholder calculated-value
-                                     :class "derived-input"))]]))
+                                       :class (if (some #{attr} defenses)
+                                                "defense-input"
+                                                "derived-input")))]]))
 
 (defn creature-editor [{:keys [creature on-change]}]
   (let [wrapped-on-change (wrap-on-change on-change creature)]
@@ -132,25 +139,25 @@
            :on-change #(wrapped-on-change (assoc creature :type (.. % -target -value)))}])]]
 
      [:hr]
-     
+
      [:div.attributes-section
       (for [attr [:strength :physical-defense :speed
                   :intelligence :cognitive-defense :willpower
                   :awareness :spiritual-defense :presence]]
         ^{:key (name attr)}
-        [attribute-input creature wrapped-on-change attr])]
+        [stat-input creature wrapped-on-change {:attr attr}])]
 
      [:hr]
-     
+
      [:div.derived-stats-section
-      [derived-stat-input creature wrapped-on-change
-       {:attr :health
+      [stat-input creature wrapped-on-change
+       {:attr :health-avg
         :label "Health"}]
-      
-      [derived-stat-input creature wrapped-on-change
+
+      [stat-input creature wrapped-on-change
        {:attr :focus
         :label "Focus"}]
-      
-      [derived-stat-input creature wrapped-on-change
+
+      [stat-input creature wrapped-on-change
        {:attr :investiture
         :label "Investiture"}]]]))
