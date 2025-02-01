@@ -10,7 +10,7 @@
   (let [creature (r/atom (first creatures))]
     (fn []
       [:div.page.home-page
-       [:pre (with-out-str (pprint/pprint (select-keys @creature  [:type])))]
+       [:pre (with-out-str (pprint/pprint (select-keys @creature  [:skills :agility])))]
        [:div.editor-pane
         [:div.editor-column
          [creature-editor {:creature @creature

@@ -310,13 +310,6 @@ form.creature-editor .attribute-pair label {
 form.creature-editor .attribute-pair input {
   width: 100%;
 }
-form.creature-editor .attribute-pair .defense-input {
-  background-color: rgba(202, 154, 86, 0.05);
-  border-style: dashed;
-}
-form.creature-editor .attribute-pair .defense-input:placeholder-shown {
-  font-style: italic;
-}
 form.creature-editor hr {
   border-top: 1px solid #ca9a56;
 }
@@ -332,6 +325,51 @@ form.creature-editor .derived-input {
 }
 form.creature-editor .derived-input:placeholder-shown {
   font-style: italic;
+}
+form.creature-editor .skills-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 1rem 0;
+}
+form.creature-editor .skills-section h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #1e3c60;
+  font-size: 1.1rem;
+}
+form.creature-editor .skills-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+form.creature-editor .skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+form.creature-editor .skill-item .skill-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #1e3c60;
+}
+form.creature-editor .skill-item .skill-ranks {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+form.creature-editor .skill-item .skill-ranks .radio-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #1e3c60;
+}
+form.creature-editor .skill-item .skill-ranks .radio-label input {
+  margin: 0;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   form.creature-editor .form-group {
@@ -350,5 +388,9 @@ form.creature-editor .derived-input:placeholder-shown {
   }
   form.creature-editor .derived-stats-section {
     grid-template-columns: repeat(2, 1fr);
+  }
+  form.creature-editor .skills-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
