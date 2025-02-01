@@ -1,8 +1,7 @@
 (ns cosmere-tools.components.action-editor
   (:require
    [cosmere-tools.action-library :as actions]
-   [cosmere-tools.components.toggle-button :refer [action-toggle-button
-                                                   toggle-button]]))
+   [cosmere-tools.components.toggle-button :refer [action-toggle-button]]))
 
 (defn actions-editor [creature change]
   [:div.actions-section

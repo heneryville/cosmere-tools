@@ -12,6 +12,14 @@
 
 (def dice-types [4 6 8 10 12 20])
 
+(defn strength->unarmed-damage [strength]
+  (case strength
+    (0 1 2) "1"
+    (3 4) "1d4"
+    (5 6) "1d8"
+    (7 8) "2d6"
+    "2d10"))
+
 (def skills
   {:physical  [[:agility :speed]
                [:athletics :strength]

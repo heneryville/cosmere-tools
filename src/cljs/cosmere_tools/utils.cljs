@@ -18,4 +18,10 @@
 
 (defn parse-dice [dice-dsl]
   (map parse-long (str/split dice-dsl #"[dD]")))
-  
+
+(defn dice-avg
+  "Returns the average (mean) roll for the given number of dice and sides.
+   Example: (dice-avg 2 6) returns 7.0 (average roll of 2d6)"
+  [num-dice sides]
+  (* num-dice (/ (inc sides) 2)))
+

@@ -32,11 +32,13 @@
          ^{:key type}
          [:option {:value type} (str/capitalize type)])]]]))
 
-(defn strike-editor [{:keys [strike path change on-remove changes]}]
+(defn strike-editor [{:keys [strike path on-remove changes]}]
   (let [{:keys [description action-cost skill reach range]
          strike-name :name} strike
         skill (keyword skill)
-        range-mode? (nil? reach)]
+        range-mode? (nil? reach)
+        change  (fn [path value]
+                  (changes [[path value]]))]
     [:div.strike
      [:div.strike-header
       [action-toggle-button
@@ -108,42 +110,43 @@
        :on-change #(change (conj path :on-hit)
                            (.. % -target -value))}]]))
 
-(defn strikes-editor [creature change changes]
-  [:div.strikes-section
-   (map-indexed
-    (fn [idx strike]
-      ^{:key (or (:name strike) idx)}
-      [strike-editor {:strike strike
-                      :path [:strikes idx]
-                      :change change
-                      :changes changes
-                      :on-remove (fn [] (change [:strikes] (vec (remove #(= % strike) (:strikes creature)))))}])
-    (:strikes creature))
+(defn strikes-editor [creature changes]
+  (let [change  (fn [path value]
+                  (changes [[path value]]))]
+    [:div.strikes-section
+     (map-indexed
+      (fn [idx strike]
+        ^{:key (or (:name strike) idx)}
+        [strike-editor {:strike strike
+                        :path [:strikes idx]
+                        :changes changes
+                        :on-remove (fn [] (change [:strikes] (vec (remove #(= % strike) (:strikes creature)))))}])
+      (:strikes creature))
 
-   [:div.add-strike
-    [:select.strike-select
-     {:value ""
-      :on-change #(let [strike-name (.. % -target -value)]
-                    (when (not= strike-name "")
-                      (if (= strike-name "custom")
-                        (change [:strikes]
-                                (strikes/consolidate-strikes
-                                 (conj (vec (or (:strikes creature) []))
-                                       {:name ""
-                                        :description ""
-                                        :action-cost "single"
-                                        :skill "athletics"
-                                        :reach 5
-                                        :range [80 320]
-                                        :damage-type "keen"
-                                        :graze {:damage "1d6"}
-                                        :hit {:damage "1d6+2"}})))
-                        (change [:strikes]
-                                (strikes/consolidate-strikes
-                                 (conj (vec (or (:strikes creature) []))
-                                       (get strikes/all-strikes-by-name strike-name)))))))}
-     [:option {:value ""} "Add strike..."]
-     (for [[name _] (sort-by first strikes/all-strikes-by-name)]
-       ^{:key name}
-       [:option {:value name} name])
-     [:option {:value "custom"} "Custom..."]]]])
+     [:div.add-strike
+      [:select.strike-select
+       {:value ""
+        :on-change #(let [strike-name (.. % -target -value)]
+                      (when (not= strike-name "")
+                        (if (= strike-name "custom")
+                          (change [:strikes]
+                                  (strikes/consolidate-strikes
+                                   (conj (vec (or (:strikes creature) []))
+                                         {:name ""
+                                          :description ""
+                                          :action-cost "single"
+                                          :skill "athletics"
+                                          :reach 5
+                                          :range [80 320]
+                                          :damage-type "keen"
+                                          :graze {:damage "1d6"}
+                                          :hit {:damage "1d6+2"}})))
+                          (change [:strikes]
+                                  (strikes/consolidate-strikes
+                                   (conj (vec (or (:strikes creature) []))
+                                         (get strikes/all-strikes-by-name strike-name)))))))}
+       [:option {:value ""} "Add strike..."]
+       (for [[name _] (sort-by first strikes/all-strikes-by-name)]
+         ^{:key name}
+         [:option {:value name} name])
+       [:option {:value "custom"} "Custom..."]]]]))

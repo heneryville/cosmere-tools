@@ -7,7 +7,8 @@
    [cosmere-tools.trait-library :as traits]
    [cosmere-tools.utils :refer [dissoc-in]]
    [cosmere-tools.components.action-editor :refer [actions-editor]]
-   [cosmere-tools.components.strike-editor :refer [strikes-editor]]))
+   [cosmere-tools.components.strike-editor :refer [strikes-editor]]
+   [cosmere-tools.strike-library :as strikes]))
 
 (def skill-ranks (range 6)) ; 0 to 5
 
@@ -22,26 +23,28 @@
   (let [new-creature (if (nil? new-value)
                        (dissoc-in prior-creature path)
                        (assoc-in prior-creature path new-value))
-        new-creature (update new-creature :traits traits/consolidate-traits)]
-    (->> const/calculations
-         (filter #(is-dependent-path? % path))
-         (reduce (fn [c calc]
-                   (let [target (:target calc)
-                         calculated-value (calculate-field c calc)
-                         prior-calculated-value (calculate-field prior-creature calc)
-                         prior-actual-value (get-in prior-creature (:target calc) 0)
-                         use-recalc (and
-                                     (not= path target)
-                                     (or (:forced calc)
-                                         (= prior-calculated-value prior-actual-value)))]
+        new-creature (update new-creature :traits traits/consolidate-traits)
+        new-creature (->> const/calculations
+                          (filter #(is-dependent-path? % path))
+                          (reduce (fn [c calc]
+                                    (let [target (:target calc)
+                                          calculated-value (calculate-field c calc)
+                                          prior-calculated-value (calculate-field prior-creature calc)
+                                          prior-actual-value (get-in prior-creature (:target calc) 0)
+                                          use-recalc (and
+                                                      (not= path target)
+                                                      (or (:forced calc)
+                                                          (= prior-calculated-value prior-actual-value)))]
                      ;;(prn "calc" target prior-actual-value prior-calculated-value calculated-value use-recalc)
-                     (if use-recalc
-                       (assoc-in c target calculated-value)
-                       c)))
-                 new-creature))))
-
-(defn write-and-notify [creature path new-value on-change]
-  (on-change (write creature path new-value)))
+                                      (if use-recalc
+                                        (assoc-in c target calculated-value)
+                                        c)))
+                                  new-creature))
+        new-creature (update new-creature :strikes (fn [strikes]
+                                                     (mapv (fn [strike]
+                                                             (assoc strike :description (strikes/compose-description new-creature strike)))
+                                                           strikes)))]
+    new-creature))
 
 (defn stat-input [creature change {:keys [attr label step]}]
   (let [attr-path (if (vector? attr) attr [attr])
@@ -184,7 +187,7 @@
 
      [:hr]
 
-     #_[:div.derived-stats-section
+     [:div.derived-stats-section
         [stat-input creature change
          {:attr :health-avg
           :label "Health"}]
@@ -197,7 +200,7 @@
          {:attr :investiture
           :label "Investiture"}]]
 
-     #_[:div.derived-stats-section
+     [:div.derived-stats-section
         [stat-input creature change
          {:attr :movement
           :step 5
@@ -217,7 +220,7 @@
 
      [:hr]
 
-     #_[:div.skills-section
+     [:div.skills-section
         (for [[type skills] const/skills]
           ^{:key type}
           [skills-column
@@ -233,14 +236,14 @@
                :placeholder "e.g. Alethi, Azish, Shin"
                :on-change #(change [:languages] (.. % -target -value))}]]
 
-    ;;  [:hr]
-    ;;  [:h2 "Traits"]
-    ;;  [traits-editor creature change]
+     [:hr]
+     [:h2 "Traits"]
+     [traits-editor creature change]
 
-    ;;  [:hr]
-    ;;  [:h2 "Actions"]
-    ;;  [actions-editor creature change]
+     [:hr]
+     [:h2 "Actions"]
+     [actions-editor creature change]
 
      [:hr]
      [:h2 "Strikes"]
-     [strikes-editor creature change changes]]))
+     [strikes-editor creature changes]]))

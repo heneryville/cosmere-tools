@@ -7,7 +7,9 @@
      [:button.radio-button
       {:class [(when (= option selected) "active")
                (when class-prefix (str class-prefix option))]
-       :on-click #(on-change option)}
+       :on-click (fn [e]
+                   (.preventDefault e)
+                   (on-change option))}
       (if class-prefix
         [:span.visually-hidden option]
         option)])])
