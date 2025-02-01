@@ -32,19 +32,7 @@ form.creature-editor {
     }
   }
 
-  .form-group {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    align-items: center;
-    gap: 1rem;
-
-    label {
-      font-weight: bold;
-      font-size: 0.9rem;
-      color: @text-color;
-    }
-
-    input, select {
+  input, select {
       padding: 0.35rem 0.5rem;
       border: 1px solid @border-color;
       border-radius: 4px;
@@ -55,6 +43,19 @@ form.creature-editor {
         border-color: @accent-color;
         box-shadow: 0 0 0 2px fade(@accent-color, 20%);
       }
+    }
+
+
+  .form-group {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    gap: 1rem;
+
+    label {
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: @text-color;
     }
 
     input[type="number"] {
@@ -78,6 +79,59 @@ form.creature-editor {
       }
     }
   }
+
+  .attributes-section {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .attribute-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+
+    label {
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: @text-color;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    .defense-input {
+      background-color: fade(@accent-color, 5%);
+      border-style: dashed;
+
+      &:placeholder-shown {
+        font-style: italic;
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid @border-color;
+  }
+
+  .derived-stats-section {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .derived-input {
+    background-color: fade(@accent-color, 5%);
+    border-style: dashed;
+
+    &:placeholder-shown {
+      font-style: italic;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -94,6 +148,14 @@ form.creature-editor {
       .form-group {
         width: 100% !important;  // Override both first-child and not(:first-child)
       }
+    }
+
+    .attributes-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .derived-stats-section {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

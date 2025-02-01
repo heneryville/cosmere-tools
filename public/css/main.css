@@ -251,6 +251,19 @@ form.creature-editor .form-row .form-group label {
 form.creature-editor .form-row .form-group select {
   width: 100%;
 }
+form.creature-editor input,
+form.creature-editor select {
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #ca9a56;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+form.creature-editor input:focus,
+form.creature-editor select:focus {
+  outline: none;
+  border-color: #ca9a56;
+  box-shadow: 0 0 0 2px rgba(202, 154, 86, 0.2);
+}
 form.creature-editor .form-group {
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -261,19 +274,6 @@ form.creature-editor .form-group label {
   font-weight: bold;
   font-size: 0.9rem;
   color: #1e3c60;
-}
-form.creature-editor .form-group input,
-form.creature-editor .form-group select {
-  padding: 0.35rem 0.5rem;
-  border: 1px solid #ca9a56;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-form.creature-editor .form-group input:focus,
-form.creature-editor .form-group select:focus {
-  outline: none;
-  border-color: #ca9a56;
-  box-shadow: 0 0 0 2px rgba(202, 154, 86, 0.2);
 }
 form.creature-editor .form-group input[type="number"] {
   width: 70px;
@@ -290,6 +290,49 @@ form.creature-editor .type-group .type-input-wrapper .type-select {
 form.creature-editor .type-group .type-input-wrapper .type-custom {
   flex: 1;
 }
+form.creature-editor .attributes-section {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+form.creature-editor .attribute-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+form.creature-editor .attribute-pair label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #1e3c60;
+}
+form.creature-editor .attribute-pair input {
+  width: 100%;
+}
+form.creature-editor .attribute-pair .defense-input {
+  background-color: rgba(202, 154, 86, 0.05);
+  border-style: dashed;
+}
+form.creature-editor .attribute-pair .defense-input:placeholder-shown {
+  font-style: italic;
+}
+form.creature-editor hr {
+  border-top: 1px solid #ca9a56;
+}
+form.creature-editor .derived-stats-section {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+form.creature-editor .derived-input {
+  background-color: rgba(202, 154, 86, 0.05);
+  border-style: dashed;
+}
+form.creature-editor .derived-input:placeholder-shown {
+  font-style: italic;
+}
 @media (max-width: 768px) {
   form.creature-editor .form-group {
     grid-template-columns: 1fr;
@@ -301,5 +344,11 @@ form.creature-editor .type-group .type-input-wrapper .type-custom {
   }
   form.creature-editor .form-row .form-group {
     width: 100% !important;
+  }
+  form.creature-editor .attributes-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  form.creature-editor .derived-stats-section {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
