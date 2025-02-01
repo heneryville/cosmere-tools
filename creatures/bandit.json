@@ -13,13 +13,11 @@
     "awareness": 2,
     "spiritual-defense": 13,
     "presence": 1,
-
     "health-min": 8,
     "health-max": 13,
     "health-avg": 11,
     "focus": 0,
     "investiture": 0,
-
     "movement": 25,
     "deflect": 1,
     "deflect-explantion": "leather armor",
@@ -42,12 +40,41 @@
     },
     "languages": "defined by culture",
     "traits": [
-        {"name": "Momentum", "description": "If the bandit moves at least 10 feet in a straight line toward a target then makes a Mace attack against them on that turn, the bandit gains advantage on that attack."},
-        {"name": "Minion", "description": "The bandit's attacks can't critcally hit, and they are immediatly defeated when they suffer an injury"}
+        {
+            "name": "Momentum",
+            "description": "If the bandit moves at least 10 feet in a straight line toward a target then makes a Mace attack against them on that turn, the bandit gains advantage on that attack."
+        },
+        {
+            "name": "Minion",
+            "description": "The bandit's attacks can't critcally hit, and they are immediatly defeated when they suffer an injury"
+        }
     ],
     "actions": [
-        {"action-cost": "single", "name": "Strike: Mace", "description": "Attack +2, reach 5ft., one target. Graze: 3(1d6) impact damage. Hit: 5 (1d6+2) impact damage"},
-        {"action-cost": "single", "name": "Strike: Shortbow", "description": "Attack +2, range 80/320ft., one target. Graze: 3(1d6) keen damage. Hit: 5 (1d6+2) keen damage"},
-        {"action-cost": "single", "name": "Trip", "focus": 1, "description": "The bandit makes an Athletics test against a target within 5 feet of them, opposed by the taret's choice of Athletics or Agility. If the bandit succeeds on this test, the target is knocked Prone."}
+        {
+            "action-cost": "single",
+            "name": "Trip",
+            "focus": 1,
+            "description": "The bandit makes an Athletics test against a target within 5 feet of them, opposed by the taret's choice of Athletics or Agility. If the bandit succeeds on this test, the target is knocked Prone."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Mace",
+            "skill": "light-weapons",
+            "reach": 5,
+            "damage-base": "1d6",
+            "damage-type": "impact",
+            "description": "Attack +2, reach 5ft., one target. Graze: 3(1d6) impact damage. Hit: 5 (1d6+2) impact damage"
+        },
+        {
+            "action-cost": "single",
+            "name": "Shortbow",
+            "skill": "light-weapons",
+            "range": [80, 320],
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "description": "Attack +2, reach 5ft., one target. Graze: 3(1d6) impact damage. Hit: 5 (1d6+2) impact damage"
+        }
     ]
 }

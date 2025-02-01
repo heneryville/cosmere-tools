@@ -6,7 +6,7 @@
 
 ;; MKHTODO use templating for the owner of the trait
 
-(defn trait-editor [creature change]
+(defn traits-editor [creature change]
   [:div.traits-section
    (for [{:keys [name description] :as trait} (:traits creature)]
      ^{:key name}

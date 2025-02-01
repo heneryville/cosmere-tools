@@ -2,10 +2,12 @@
   (:require
    [cljs.math :as math]
    [clojure.string :as str]
-   [cosmere-tools.components.trait-editor :refer [trait-editor]]
+   [cosmere-tools.components.trait-editor :refer [traits-editor]]
    [cosmere-tools.creature-constants :as const]
    [cosmere-tools.trait-library :as traits]
-   [cosmere-tools.utils :refer [dissoc-in]]))
+   [cosmere-tools.utils :refer [dissoc-in]]
+   [cosmere-tools.components.action-editor :refer [actions-editor]]
+   [cosmere-tools.components.strike-editor :refer [strikes-editor]]))
 
 (def skill-ranks (range 6)) ; 0 to 5
 
@@ -224,6 +226,14 @@
                :placeholder "e.g. Alethi, Azish, Shin"
                :on-change #(change [:languages] (.. % -target -value))}]]
 
+    ;;  [:hr]
+    ;;  [:h2 "Traits"]
+    ;;  [traits-editor creature change]
+
+    ;;  [:hr]
+    ;;  [:h2 "Actions"]
+    ;;  [actions-editor creature change]
+
      [:hr]
-     [:h2 "Traits"]
-     [trait-editor creature change]]))
+     [:h2 "Strikes"]
+     [strikes-editor creature change]]))

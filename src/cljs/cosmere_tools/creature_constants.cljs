@@ -7,6 +7,11 @@
 (def attributes [:strength :speed :intellect :willpower :awareness :presence])
 (def defenses [:physical-defense :cognitive-defense :spiritual-defense])
 
+(def damage-types ["keen" "impact" "energy" "spirit" "vital"])
+(def action-costs ["free" "reaction" "single" "double"])
+
+(def dice-types [4 6 8 10 12 20])
+
 (def skills
   {:physical  [[:agility :speed]
                [:athletics :strength]
@@ -26,6 +31,8 @@
                [:perception :awareness]
                [:persuasion :presence]
                [:survival :awareness]]})
+
+(def combat-skills [:athletics :heavy-weapons :light-weapons])
 
 (def attr-abbrev
   {:speed "spd"

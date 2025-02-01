@@ -6,7 +6,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   line-height: 1.6;
-  color: #1e3c60;
+  color: #-1e3c60;
   background-color: #f5f5f5;
   margin: 0;
   padding: 20px;
@@ -14,8 +14,8 @@ body {
   background: #f5f5f5;
 }
 .navbar {
-  background-color: #1e3c60;
-  height: 60px;
+  background-color: #-1e3c60;
+  height: 58px;
   position: fixed;
   top: 0;
   left: 0;
@@ -24,9 +24,9 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .navbar .navbar-content {
-  max-width: 1500px;
+  max-width: 1498px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 18px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -51,29 +51,29 @@ body {
   opacity: 0.8;
 }
 .main-content {
-  margin-top: 60px;
-  min-height: calc(100vh - 60px);
-  padding: 20px;
+  margin-top: 58px;
+  min-height: calc(100vh - 58px);
+  padding: 18px;
 }
 .main-content .content-container {
-  max-width: 1500px;
+  max-width: 1498px;
   margin: 0 auto;
   background-color: #ffffff;
-  padding: 20px;
+  padding: 18px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .text-primary {
-  color: #1e3c60;
+  color: #-1e3c60;
 }
 .text-accent {
-  color: #ca9a56;
+  color: #ca7a56;
 }
 .page {
-  padding: 20px 0;
+  padding: 18px 0;
 }
 .page h1 {
-  color: #1e3c60;
+  color: #-1e3c60;
   margin-bottom: 1rem;
 }
 .page.home-page .editor-pane {
@@ -92,7 +92,7 @@ body {
 }
 .creatures-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(398px, 1fr));
   gap: 20px;
   padding: 20px;
   max-width: 1400px;
@@ -113,7 +113,7 @@ article.npc {
   padding: 10px;
   color: #1e3c60;
   max-width: 500px;
-  min-width: 400px;
+  min-width: 398px;
   font-size: 12px;
   font-family: sans-serif;
 }
@@ -257,15 +257,15 @@ form.creature-editor .form-row .form-group select {
 form.creature-editor input,
 form.creature-editor select {
   padding: 0.35rem 0.5rem;
-  border: 1px solid #ca9a56;
+  border: 1px solid #ca7a56;
   border-radius: 4px;
   font-size: 0.9rem;
 }
 form.creature-editor input:focus,
 form.creature-editor select:focus {
   outline: none;
-  border-color: #ca9a56;
-  box-shadow: 0 0 0 2px rgba(202, 154, 86, 0.2);
+  border-color: #ca7a56;
+  box-shadow: 0 0 0 2px rgba(202, 122, 86, 0.2);
 }
 form.creature-editor .form-group {
   display: grid;
@@ -276,7 +276,7 @@ form.creature-editor .form-group {
 form.creature-editor .form-group label {
   font-weight: bold;
   font-size: 0.9rem;
-  color: #1e3c60;
+  color: #-1e3c60;
 }
 form.creature-editor .form-group input[type="number"] {
   width: 70px;
@@ -308,13 +308,13 @@ form.creature-editor .attribute-pair {
 form.creature-editor .attribute-pair label {
   font-weight: bold;
   font-size: 0.9rem;
-  color: #1e3c60;
+  color: #-1e3c60;
 }
 form.creature-editor .attribute-pair input {
   width: 100%;
 }
 form.creature-editor hr {
-  border-top: 1px solid #ca9a56;
+  border-top: 1px solid #ca7a56;
 }
 form.creature-editor .derived-stats-section {
   margin: 1rem 0;
@@ -323,7 +323,7 @@ form.creature-editor .derived-stats-section {
   gap: 1rem;
 }
 form.creature-editor .derived-input {
-  background-color: rgba(202, 154, 86, 0.05);
+  background-color: rgba(202, 122, 86, 0.05);
   border-style: dashed;
 }
 form.creature-editor .derived-input:placeholder-shown {
@@ -338,7 +338,7 @@ form.creature-editor .skills-section {
 form.creature-editor .skills-section h3 {
   margin-bottom: 1rem;
   text-align: center;
-  color: #1e3c60;
+  color: #-1e3c60;
   font-size: 1.1rem;
 }
 form.creature-editor .skills-column {
@@ -354,7 +354,7 @@ form.creature-editor .skill-item {
 form.creature-editor .skill-item .skill-label {
   font-size: 0.9rem;
   font-weight: bold;
-  color: #1e3c60;
+  color: #-1e3c60;
 }
 form.creature-editor .skill-item .skill-label .skill-attr {
   color: #666;
@@ -374,7 +374,7 @@ form.creature-editor .skill-item .skill-ranks .radio-label {
   gap: 0.25rem;
   cursor: pointer;
   font-size: 0.8rem;
-  color: #1e3c60;
+  color: #-1e3c60;
 }
 form.creature-editor .skill-item .skill-ranks .radio-label.clear {
   color: #999;
@@ -412,7 +412,7 @@ form.creature-editor .skill-item .skill-ranks .radio-label input {
   gap: 1rem;
 }
 .traits-section .trait {
-  border: 1px solid #ca9a56;
+  border: 1px solid #ca7a56;
   border-radius: 4px;
   padding: 0.75rem;
 }
@@ -428,7 +428,7 @@ form.creature-editor .skill-item .skill-ranks .radio-label input {
 .traits-section .trait .trait-header .remove-trait {
   background: none;
   border: none;
-  color: #1e3c60;
+  color: #-1e3c60;
   cursor: pointer;
   padding: 0;
   font-size: 1.2rem;
@@ -443,18 +443,293 @@ form.creature-editor .skill-item .skill-ranks .radio-label input {
   resize: vertical;
   font-family: inherit;
   padding: 0.35rem 0.5rem;
-  border: 1px solid #ca9a56;
+  border: 1px solid #ca7a56;
   border-radius: 4px;
   font-size: 0.9rem;
 }
 .traits-section .trait .trait-description:focus {
   outline: none;
-  border-color: #ca9a56;
-  box-shadow: 0 0 0 2px rgba(202, 154, 86, 0.2);
+  border-color: #ca7a56;
+  box-shadow: 0 0 0 2px rgba(202, 122, 86, 0.2);
 }
 .traits-section .add-trait {
   margin-top: 0.5rem;
 }
 .traits-section .add-trait .trait-select {
   width: 100%;
+}
+.actions-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.actions-section .action {
+  border: 1px solid #ca7a56;
+  border-radius: 4px;
+  padding: 0.75rem;
+}
+.actions-section .action .action-header {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.actions-section .action .action-header .action-cost-button {
+  height: 2rem;
+  width: 2.5rem;
+  padding: 0;
+  border: 1px solid #ca7a56;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #-1e3c60;
+  font-size: 0.9rem;
+}
+.actions-section .action .action-header .action-cost-button:hover {
+  border-color: #ca7a56;
+  box-shadow: 0 0 0 2px rgba(202, 122, 86, 0.2);
+}
+.actions-section .action .action-header .action-name {
+  flex: 1;
+  font-weight: bold;
+}
+.actions-section .action .action-header .remove-action {
+  background: none;
+  border: none;
+  color: #-1e3c60;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  opacity: 0.5;
+}
+.actions-section .action .action-header .remove-action:hover {
+  opacity: 1;
+}
+.actions-section .action .action-description {
+  width: 100%;
+  resize: vertical;
+  font-family: inherit;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #ca7a56;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.actions-section .action .action-description:focus {
+  outline: none;
+  border-color: #ca7a56;
+  box-shadow: 0 0 0 2px rgba(202, 122, 86, 0.2);
+}
+.actions-section .add-action {
+  margin-top: 0.5rem;
+}
+.actions-section .add-action .action-select {
+  width: 100%;
+}
+.strikes-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.strikes-section .strike {
+  border: 1px solid #ca7a56;
+  border-radius: 4px;
+  padding: 0.75rem;
+}
+.strikes-section .strike .strike-header {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.strikes-section .strike .strike-header .strike-name {
+  flex: 1;
+  font-weight: bold;
+}
+.strikes-section .strike .strike-header .remove-strike {
+  background: none;
+  border: none;
+  color: #-1e3c60;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  opacity: 0.5;
+}
+.strikes-section .strike .strike-header .remove-strike:hover {
+  opacity: 1;
+}
+.strikes-section .strike .strike-description {
+  width: 100%;
+  resize: vertical;
+  font-family: inherit;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #ca7a56;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.strikes-section .strike .strike-description:focus {
+  outline: none;
+  border-color: #ca7a56;
+  box-shadow: 0 0 0 2px rgba(202, 122, 86, 0.2);
+}
+.strikes-section .add-strike {
+  margin-top: 0.5rem;
+}
+.strikes-section .add-strike .strike-select {
+  width: 100%;
+}
+.strike-details {
+  margin-top: 0.75rem;
+}
+.strike-details .strike-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.strike-details .strike-row .form-group {
+  flex: 1;
+}
+.strike-details .strike-row .form-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  color: #-1e3c60;
+}
+.strike-details .strike-row .form-group select,
+.strike-details .strike-row .form-group input {
+  width: 100%;
+  padding: 0.35rem;
+  border: 1px solid #ca7a56;
+  border-radius: 4px;
+}
+.strike-details .strike-row .form-group select:focus,
+.strike-details .strike-row .form-group input:focus {
+  outline: none;
+  border-color: #ca7a56;
+  box-shadow: 0 0 0 2px rgba(202, 122, 86, 0.2);
+}
+.strike-details .strike-row .form-group .range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.strike-details .strike-row .form-group .range-inputs input {
+  width: 70px;
+}
+.strike-details .damage-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.strike-details .damage-section label {
+  width: 60px;
+}
+.strike-details .damage-section select {
+  width: 100px;
+}
+.strike-details .damage-section .damage-input {
+  width: 100px;
+  padding: 0.35rem;
+  border: 1px solid #ca7a56;
+  border-radius: 4px;
+}
+.strike-details .damage-section .damage-input:focus {
+  outline: none;
+  border-color: #ca7a56;
+  box-shadow: 0 0 0 2px rgba(202, 122, 86, 0.2);
+}
+.dice-section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.dice-section .dice-count {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dice-section .dice-count input {
+  width: 60px;
+  padding: 0.35rem;
+  border: 1px solid #ca7a56;
+  border-radius: 4px;
+}
+.dice-section .dice-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+.dice-section .dice-type .dice-button {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #ca7a56;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  font-family: monospace;
+}
+.dice-section .dice-type .dice-button:hover {
+  border-color: #ca7a56;
+}
+.dice-section .dice-type .dice-button.active {
+  background: #ca7a56;
+  color: white;
+  border-color: #ca7a56;
+}
+.radio-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.radio-buttons .radio-button {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #ca7a56;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  color: #-1e3c60;
+  min-width: 2.5rem;
+  text-align: center;
+}
+.radio-buttons .radio-button:hover {
+  border-color: #ca7a56;
+  box-shadow: 0 0 0 2px rgba(202, 154, 86, 0.2);
+}
+.radio-buttons .radio-button.active {
+  background: #ca7a56;
+  color: white;
+  border-color: #ca7a56;
+}
+.radio-buttons .radio-button[class*="icon-"] {
+  width: 2.5rem;
+  height: 2rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle-button {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #ca7a56;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  color: #-1e3c60;
+}
+.toggle-button:hover {
+  border-color: #ca7a56;
+  box-shadow: 0 0 0 2px rgba(202, 154, 86, 0.2);
+}
+.toggle-button.active {
+  background: #ca7a56;
+  color: white;
+  border-color: #ca7a56;
 }

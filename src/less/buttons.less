@@ -1,0 +1,53 @@
+@import "./variables.less";
+
+// Shared button styles
+.button-base() {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid @accent-color;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  color: @text-color;
+
+  &:hover {
+    border-color: @accent-color;
+    box-shadow: 0 0 0 2px rgba(202, 154, 86, 0.2);
+  }
+
+  &.active {
+    background: @accent-color;
+    color: white;
+    border-color: @accent-color;
+  }
+}
+
+// Radio buttons component
+.radio-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .radio-button {
+    .button-base();
+    min-width: 2.5rem;
+    text-align: center;
+    
+    // Handle icon-based radio buttons
+    &[class*="icon-"] {
+      width: 2.5rem;
+      height: 2rem;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+// Toggle button component
+.toggle-button {
+  .button-base();
+}

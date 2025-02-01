@@ -1,0 +1,82 @@
+.actions-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .action {
+    border: 1px solid @border-color;
+    border-radius: 4px;
+    padding: 0.75rem;
+
+    .action-header {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+
+    .action-cost-button {
+        height: 2rem;
+        width: 2.5rem;
+        padding: 0;
+        border: 1px solid @border-color;
+        border-radius: 4px;
+        background: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: @text-color;
+        font-size: 0.9rem;
+
+        &:hover {
+          border-color: @accent-color;
+          box-shadow: 0 0 0 2px fade(@accent-color, 20%);
+        }
+      }
+
+
+      .action-name {
+        flex: 1;
+        font-weight: bold;
+      }
+
+      .remove-action {
+        background: none;
+        border: none;
+        color: @text-color;
+        cursor: pointer;
+        padding: 0;
+        font-size: 1.2rem;
+        line-height: 1;
+        opacity: 0.5;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .action-description {
+      width: 100%;
+      resize: vertical;
+      font-family: inherit;
+      padding: 0.35rem 0.5rem;
+      border: 1px solid @border-color;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      
+      &:focus {
+        outline: none;
+        border-color: @accent-color;
+        box-shadow: 0 0 0 2px fade(@accent-color, 20%);
+      }
+    }
+  }
+
+  .add-action {
+    margin-top: 0.5rem;
+
+    .action-select {
+      width: 100%;
+    }
+  }
+}

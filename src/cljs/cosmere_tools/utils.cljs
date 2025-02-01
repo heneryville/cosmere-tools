@@ -1,4 +1,6 @@
-(ns cosmere-tools.utils)
+(ns cosmere-tools.utils 
+  (:require
+   [clojure.string :as str]))
 
 (defn dissoc-in
   "Dissociates an entry from a nested associative structure returning a new
@@ -13,3 +15,7 @@
           (dissoc m k)))
       m)
     (dissoc m k)))
+
+(defn parse-dice [dice-dsl]
+  (map parse-long (str/split dice-dsl #"[dD]")))
+  

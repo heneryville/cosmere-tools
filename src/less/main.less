@@ -1,26 +1,4 @@
-// Colors
-@primary-color: #1e3c60;  // Dark blue
-@accent-color: #ca9a56;    // Gold/bronze
-@bg-color: #ffffff;        // White
-@text-color: #333333;      // Dark gray
-@navbar-text-color: #ffffff;
-@border-color: #e0e0e0;
-@card-border-color: #ca9a56;
-@card-text-color: #1e3c60;
-
-// Measurements
-@navbar-height: 60px;
-@content-max-width: 1500px;
-@content-padding: 20px;
-
-// Variables
-@border-color: #ca9a56;
-@text-color: #1e3c60;
-@font-family: sans-serif;
-
-// Creatures
-@creature-card-min-width: 400px;
-
+@import url("./variables.less");
 
 // Mixins
 .border-radius(@radius: 10px) {
@@ -173,3 +151,6 @@ body {
 @import url("./creature.less");
 @import url("./creature-editor.less");
 @import url("./trait-editor.less");
+@import url("./action-editor.less");
+@import url("./strike-editor.less");
+@import url("./buttons.less");

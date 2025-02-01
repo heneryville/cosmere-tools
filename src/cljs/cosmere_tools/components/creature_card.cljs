@@ -60,16 +60,16 @@
       [:h3 name]
       description])])
 
-(defn actions-section [actions]
+(defn actions-section [prefix actions]
   [:section.actions
    (for [{:keys [action-cost name description]} actions]
      ^{:key name}
      [:div
       [:i {:class (str "icon-action-" action-cost)}]
-      [:h3 name]
+      [:h3 (str prefix name)]
       description])])
 
-(defn creature-card [{:keys [name tier role type size traits actions] :as creature}]
+(defn creature-card [{:keys [name tier role type size traits actions strikes] :as creature}]
   [:article.npc
    [:header
     [:h1 name]
@@ -80,10 +80,20 @@
    [:hr]
    [skills-section creature]
 
-   [:h2 "TRAITS"]
-   [:hr]
-   [traits-section traits]
+   (when (seq actions)
+     [:<>
+      [:h2 "TRAITS"]
+      [:hr]
+      [traits-section traits]])
+   
+   (when (seq actions)
+     [:<>
+      [:h2 "ACTIONS"]
+      [:hr]
+      [actions-section "" actions]])
 
-   [:h2 "ACTIONS"]
-   [:hr]
-   [actions-section actions]])
+   (when (seq strikes)
+     [:<>
+      [:h2 "STRIKES"]
+      [:hr]
+      [actions-section "Strike: " strikes]])])
