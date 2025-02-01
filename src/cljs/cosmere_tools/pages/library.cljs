@@ -7,7 +7,6 @@
 
 (defn library-page []
   [:div.page.library-page
-   
    [:div.creatures-grid
     (doall (for [creature creatures]
              [creature-card (merge {:key (:name creature)}

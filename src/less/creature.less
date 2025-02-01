@@ -1,4 +1,5 @@
 article.npc {
+    position: relative;  // Add this to position the download button
     border: 2px solid #ca9a56;
     padding: 10px;
     color: #1e3c60;
@@ -134,5 +135,23 @@ article.npc {
     section.traits>div>h3::after,
     section.actions>div>h3::after {
         content: ". ";
+    }
+
+    .download-json {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        background: none;
+        border: 1px solid #ca9a56;
+        color: #ca9a56;
+        border-radius: 4px;
+        padding: 4px 8px;
+        font-size: 12px;
+
+        &:hover {
+            background: #ca9a56;
+            color: white;
+        }
     }
 }

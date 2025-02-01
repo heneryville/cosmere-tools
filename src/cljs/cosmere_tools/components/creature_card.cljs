@@ -2,6 +2,17 @@
   (:require
    [clojure.string :as str]))
 
+(defn download-json [creature]
+  (let [data-str (-> creature
+                     clj->js
+                     (js/JSON.stringify nil 2)
+                     js/encodeURIComponent)
+        data-uri (str "data:application/json;charset=utf-8," data-str)]
+    (doto (js/document.createElement "a")
+      (.setAttribute "href" data-uri)
+      (.setAttribute "download" (str (:name creature) ".json"))
+      (.click))))
+
 (defn attribute-pair [[label1 value1 defense label2 value2]]
   [:div.attr-pair
    [:div.attr
@@ -74,6 +85,9 @@
    [:header
     [:h1 name]
     (str "Tier " tier " " (str/capitalize (or role "")) " - " (str/capitalize size) " " (str/capitalize type))]
+   [:button.download-json
+    {:on-click #(download-json creature)}
+    "Download JSON"]
 
    [attributes-section creature]
    [attributes-etc creature]

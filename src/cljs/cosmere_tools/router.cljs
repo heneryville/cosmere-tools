@@ -8,7 +8,7 @@
 ;; Route definitions
 (def routes
   [["/" :home]
-  ["/library" :library]
+   ["/library" :library]
    ["/about" :about]])
 
 ;; Create router instance

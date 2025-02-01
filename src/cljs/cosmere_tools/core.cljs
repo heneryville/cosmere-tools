@@ -15,7 +15,7 @@
     [:div.nav-links
      [:a {:href "#/"
           :on-click #(router/navigate! :home)} "Home"]
-     [:a {:href "#/"
+     [:a {:href "#/library"
           :on-click #(router/navigate! :library)} "Library"]
      [:a {:href "#/about"
           :on-click #(router/navigate! :about)} "About"]]]])
