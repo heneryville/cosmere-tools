@@ -594,6 +594,34 @@ form.creature-editor .skill-item .skill-ranks .radio-label input {
   flex-direction: column;
   gap: 0.25rem;
 }
+.strike-details .strike-row .form-group .distance-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.strike-details .strike-row .form-group .distance-selector .distance-type {
+  display: flex;
+  gap: 0.5rem;
+}
+.strike-details .strike-row .form-group .distance-selector input {
+  width: 100%;
+  padding: 0.35rem;
+  border: 1px solid #ca7a56;
+  border-radius: 4px;
+}
+.strike-details .strike-row .form-group .distance-selector input:focus {
+  outline: none;
+  border-color: #ca7a56;
+  box-shadow: 0 0 0 2px rgba(202, 122, 86, 0.2);
+}
+.strike-details .strike-row .form-group .distance-selector .range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.strike-details .strike-row .form-group .distance-selector .range-inputs input {
+  width: 70px;
+}
 .strike-details .strike-row .form-group label {
   font-weight: bold;
   font-size: 0.9rem;

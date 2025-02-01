@@ -2,8 +2,7 @@
   (:require
    [clojure.string :as str]
    [cosmere-tools.components.radio-buttons :refer [radio-buttons]]
-   [cosmere-tools.components.toggle-button :refer [action-toggle-button
-                                                   toggle-button]]
+   [cosmere-tools.components.toggle-button :refer [action-toggle-button]]
    [cosmere-tools.creature-constants :as const]
    [cosmere-tools.strike-library :as strikes]
    [cosmere-tools.utils :as utils]))
@@ -33,12 +32,11 @@
          ^{:key type}
          [:option {:value type} (str/capitalize type)])]]]))
 
-(defn strike-editor [{:keys [strike path change on-remove]}]
+(defn strike-editor [{:keys [strike path change on-remove changes]}]
   (let [{:keys [description action-cost skill reach range]
-         strike-name :name
-         :or {reach 5
-              range [80 320]}} strike
-        skill (keyword skill)]
+         strike-name :name} strike
+        skill (keyword skill)
+        range-mode? (nil? reach)]
     [:div.strike
      [:div.strike-header
       [action-toggle-button
@@ -67,32 +65,41 @@
             (str/capitalize (name skill-option))])]]
 
        [:div.form-group
-        [:label "Reach"]
-        [:input {:type "number"
-                 :min 5
-                 :step 5
-                 :value reach
-                 :on-change #(change (conj path :reach)
-                                     (js/parseInt (.. % -target -value)))}]]
+        [:label "Attack Distance"]
+        [:div.distance-selector
+         [:div.distance-type
+          [radio-buttons
+           {:options ["Melee" "Ranged"]
+            :selected (if range-mode? "Ranged" "Melee")
+            :on-change #(if (= % "Melee")
+                          (changes [[(conj path :reach) 5]
+                                    [(conj path :range) nil]])
 
-       [:div.form-group
-        [:label "Range"]
-        [:div.range-inputs
-         [:input {:type "number"
-                  :min 0
-                  :step 5
-                  :value (first range)
-                  :on-change #(change (conj path :range)
-                                      [(js/parseInt (.. % -target -value))
-                                       (second range)])}]
-         [:span " / "]
-         [:input {:type "number"
-                  :min 0
-                  :step 5
-                  :value (second range)
-                  :on-change #(change (conj path :range)
-                                      [(first range)
-                                       (js/parseInt (.. % -target -value))])}]]]]]
+                          (changes [[(conj path :reach) nil]
+                                    [(conj path :range) [80 320]]]))}]]
+         (if range-mode?
+           [:div.range-inputs
+            [:input {:type "number"
+                     :min 0
+                     :step 5
+                     :value (first range)
+                     :on-change #(change (conj path :range)
+                                         [(js/parseInt (.. % -target -value))
+                                          (second range)])}]
+            [:span " / "]
+            [:input {:type "number"
+                     :min 0
+                     :step 5
+                     :value (second range)
+                     :on-change #(change (conj path :range)
+                                         [(first range)
+                                          (js/parseInt (.. % -target -value))])}]]
+           [:input {:type "number"
+                    :min 5
+                    :step 5
+                    :value reach
+                    :on-change #(change (conj path :reach)
+                                        (js/parseInt (.. % -target -value)))}])]]]]
 
      [:textarea.strike-description
       {:value description
@@ -101,7 +108,7 @@
        :on-change #(change (conj path :on-hit)
                            (.. % -target -value))}]]))
 
-(defn strikes-editor [creature change]
+(defn strikes-editor [creature change changes]
   [:div.strikes-section
    (map-indexed
     (fn [idx strike]
@@ -109,6 +116,7 @@
       [strike-editor {:strike strike
                       :path [:strikes idx]
                       :change change
+                      :changes changes
                       :on-remove (fn [] (change [:strikes] (vec (remove #(= % strike) (:strikes creature)))))}])
     (:strikes creature))
 

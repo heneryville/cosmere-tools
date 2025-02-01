@@ -73,6 +73,40 @@
       display: flex;
       flex-direction: column;
       gap: 0.25rem;
+
+      .distance-selector {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .distance-type {
+          display: flex;
+          gap: 0.5rem;
+        }
+
+        input {
+          width: 100%;
+          padding: 0.35rem;
+          border: 1px solid @border-color;
+          border-radius: 4px;
+          
+          &:focus {
+            outline: none;
+            border-color: @accent-color;
+            box-shadow: 0 0 0 2px fade(@accent-color, 20%);
+          }
+        }
+
+        .range-inputs {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          input {
+            width: 70px;
+          }
+        }
+      }
       
       label {
         font-weight: bold;

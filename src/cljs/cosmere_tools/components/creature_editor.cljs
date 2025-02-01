@@ -96,6 +96,7 @@
      ^{:key skill}
      [skill-input creature on-change skill-type skill])])
 
+;; MKHTODO re-write in terms of changes
 (defn handle-role-change [creature new-role on-change]
   (-> creature
       (write [:role] new-role)
@@ -108,8 +109,14 @@
       (on-change)))
 
 (defn creature-editor [{:keys [creature on-change]}]
-  (let [change (fn change [path value]
-                 (write-and-notify creature path value on-change))]
+  (let [changes (fn [change-pairs]
+                  (on-change
+                   (reduce (fn [creature [path new-value]]
+                             (write creature path new-value))
+                           creature
+                           change-pairs)))
+        change  (fn [path value]
+                  (changes [[path value]]))]
     [:form.creature-editor
      [:div.form-group
       [:label "Name"]
@@ -236,4 +243,4 @@
 
      [:hr]
      [:h2 "Strikes"]
-     [strikes-editor creature change]]))
+     [strikes-editor creature change changes]]))
