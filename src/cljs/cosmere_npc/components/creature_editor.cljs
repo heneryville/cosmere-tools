@@ -37,31 +37,33 @@
 (defn calculate-field [creature calc]
   ((:calc-fn calc) creature))
 
-(defn recalculate-all-fields [existing-creature new-creature]
-  (reduce (fn [c calc]
-            (let [calculated-value (calculate-field c calc)
-                  prior-calculated-value (calculate-field existing-creature calc)
-                  prior-actual-value (get existing-creature (:target calc) 0)
-                  use-recalc (or (:forced calc) (= prior-calculated-value prior-actual-value))]
-              (prn "calc" (:target calc) calculated-value prior-calculated-value prior-actual-value use-recalc)
-              (if use-recalc
-                ; Only update if the field was following its calculation
-                (assoc c (:target calc) calculated-value)
-                c)))
-          new-creature
-          calculations))
+(defn find-changed-keys [old-creature new-creature]
+  (set
+   (filter #(not= (get old-creature %)
+                  (get new-creature %))
+           (set (concat (keys old-creature)
+                        (keys new-creature))))))
 
-(defn is-dependent-field? [attr]
-  (some #(some #{attr} (:dependents %)) calculations))
+(defn recalculate-all-fields [existing-creature new-creature]
+  (let [changed-keys (find-changed-keys existing-creature new-creature)]
+      (reduce (fn [c calc]
+               (let [target (:target calc)
+                     calculated-value (calculate-field c calc)
+                     prior-calculated-value (calculate-field existing-creature calc)
+                     prior-actual-value (get existing-creature (:target calc) 0)
+                     use-recalc (and
+                                 (not (changed-keys target))
+                                 (or (:forced calc) (= prior-calculated-value prior-actual-value)))]
+                 (if use-recalc
+                   (assoc c (:target calc) calculated-value)
+                   c)))
+             new-creature
+             calculations)))
+
 
 (defn wrap-on-change [on-change creature]
   (fn [new-creature]
-    (let [changed-key (first (filter #(not= (get creature %)
-                                            (get new-creature %))
-                                     (keys new-creature)))]
-      (if (is-dependent-field? changed-key)
-        (on-change (recalculate-all-fields creature new-creature))
-        (on-change new-creature)))))
+    (on-change (recalculate-all-fields creature new-creature))))
 
 (defn stat-input [creature on-change {:keys [attr label]}]
   (let [calc (first (filter #(= attr (:target %)) calculations))
@@ -73,7 +75,6 @@
                       :min 0
                       :value (get creature attr (or calculated-value 0))
                       :on-change (fn [e]
-                                   (prn "Changing " attr "->" (js/parseInt (.. e -target -value)))
                                    (on-change (assoc creature attr
                                                      (js/parseInt (.. e -target -value)))))}
                calculated-value (assoc :placeholder calculated-value

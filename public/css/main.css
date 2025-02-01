@@ -220,7 +220,7 @@ article.npc section.skills > div > h3::after {
 }
 article.npc section.traits > div > h3::after,
 article.npc section.actions > div > h3::after {
-  content: ".";
+  content: ". ";
 }
 form.creature-editor {
   display: flex;
