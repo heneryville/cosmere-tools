@@ -1,7 +1,7 @@
-(ns cosmere-npc.pages.library
+(ns cosmere-tools.pages.library
   [:require 
-   [cosmere-npc.components.creature-card :refer[creature-card]]
-   [cosmere-npc.creature-library :refer [creatures]]
+   [cosmere-tools.components.creature-card :refer[creature-card]]
+   [cosmere-tools.creature-library :refer [creatures]]
    
    ])
 

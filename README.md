@@ -10,7 +10,7 @@ This is a project for creating and managing NPCs in your Cosmere campaign.
 1. **Clone the repository:**
    ```
    git clone <repository-url>
-   cd cosmere-npc
+   cd cosmere-tools
    ```
 
 2. **Install dependencies:**
@@ -30,7 +30,7 @@ This is a project for creating and managing NPCs in your Cosmere campaign.
 
 ## Usage
 
-- The main application logic can be found in `src/cosmere-npc/core.cljs`.
+- The main application logic can be found in `src/cosmere-tools/core.cljs`.
 - Modify `public/index.html` to change the HTML structure or add additional assets.
 
 ## License

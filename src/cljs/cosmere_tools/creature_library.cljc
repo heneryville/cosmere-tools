@@ -1,10 +1,10 @@
-(ns cosmere-npc.creature-library
+(ns cosmere-tools.creature-library
   #?(:clj
      (:require
       [clojure.java.io :as io]
       [clojure.data.json :as json]))
   #?(:cljs
-     (:require-macros [cosmere-npc.creature-library :refer [import-creatures]])))
+     (:require-macros [cosmere-tools.creature-library :refer [import-creatures]])))
 
 
 #?(:clj

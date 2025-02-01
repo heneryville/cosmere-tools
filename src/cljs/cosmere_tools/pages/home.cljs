@@ -1,9 +1,9 @@
-(ns cosmere-npc.pages.home
+(ns cosmere-tools.pages.home
   (:require
    [clojure.pprint :as pprint]
-   [cosmere-npc.components.creature-card :refer [creature-card]]
-   [cosmere-npc.components.creature-editor :refer [creature-editor]]
-   [cosmere-npc.creature-library :refer [creatures]]
+   [cosmere-tools.components.creature-card :refer [creature-card]]
+   [cosmere-tools.components.creature-editor :refer [creature-editor]]
+   [cosmere-tools.creature-library :refer [creatures]]
    [reagent.core :as r]))
 
 (defn home-page []

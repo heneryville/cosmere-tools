@@ -1,4 +1,4 @@
-(ns cosmere-npc.router
+(ns cosmere-tools.router
   (:require [bide.core :as bide]
             [reagent.core :as r]))
 

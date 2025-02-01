@@ -1,4 +1,4 @@
-(ns cosmere-npc.components.creature-editor
+(ns cosmere-tools.components.creature-editor
   (:require
    [cljs.math :as math]
    [clojure.string :as str]))

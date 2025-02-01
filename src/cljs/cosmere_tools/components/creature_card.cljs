@@ -1,4 +1,4 @@
-(ns cosmere-npc.components.creature-card
+(ns cosmere-tools.components.creature-card
   (:require
    [clojure.string :as str]))
 

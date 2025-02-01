@@ -1,4 +1,4 @@
-(ns cosmere-npc.pages.about)
+(ns cosmere-tools.pages.about)
 
 (defn about-page []
   [:div.page.about-page

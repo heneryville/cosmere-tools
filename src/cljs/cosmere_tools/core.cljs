@@ -1,10 +1,10 @@
-(ns cosmere-npc.core
+(ns cosmere-tools.core
   (:require [reagent.core :as r]
             [reagent.dom :as rdom]
-            [cosmere-npc.router :as router]
-            [cosmere-npc.pages.home :refer [home-page]]
-            [cosmere-npc.pages.library :refer [library-page]]
-            [cosmere-npc.pages.about :refer [about-page]]))
+            [cosmere-tools.router :as router]
+            [cosmere-tools.pages.home :refer [home-page]]
+            [cosmere-tools.pages.library :refer [library-page]]
+            [cosmere-tools.pages.about :refer [about-page]]))
 
 (defn navbar []
   [:nav.navbar

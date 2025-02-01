@@ -1,5 +1,5 @@
 {
-  "name": "cosmere-npc",
+  "name": "cosmere-tools",
   "version": "0.1.0",
   "description": "A ClojureScript project using Shadow CLJS",
   "scripts": {
