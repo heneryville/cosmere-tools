@@ -9,7 +9,7 @@
     "dev": "shadow-cljs watch app & npm run watch:less",
     "build:less": "lessc src/less/main.less public/css/main.css",
     "watch:less": "less-watch-compiler src/less public/css main.less",
-    "release": "npm run build && npm run build:less"
+    "release": "npm run build && npm run build:less && aws s3 sync public/ s3://cosmere.mitchellkharris.com"
   },
   "dependencies": {
     "react": "^18.2.0",

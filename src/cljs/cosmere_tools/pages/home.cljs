@@ -27,4 +27,4 @@
          [creature-editor {:creature @creature
                            :on-change #(reset! creature %)}]]
         [:div.preview-column
-         [creature-card @creature]]]])))
+         ]]])))

@@ -1,6 +1,5 @@
 (ns cosmere-tools.components.creature-editor
   (:require
-   [cljs.math :as math]
    [clojure.string :as str]
    [cosmere-tools.components.trait-editor :refer [traits-editor]]
    [cosmere-tools.creature-constants :as const]
@@ -9,8 +8,6 @@
    [cosmere-tools.components.action-editor :refer [actions-editor]]
    [cosmere-tools.components.strike-editor :refer [strikes-editor]]
    [cosmere-tools.strike-library :as strikes]))
-
-(def skill-ranks (range 6)) ; 0 to 5
 
 (defn calculate-field [creature calc]
   ((:calc-fn calc) creature))

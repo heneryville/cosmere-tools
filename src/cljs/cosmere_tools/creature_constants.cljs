@@ -1,4 +1,6 @@
-(ns cosmere-tools.creature-constants)
+(ns cosmere-tools.creature-constants 
+  (:require
+   [cljs.math :as math]))
 
 (def sizes ["small" "medium" "large" "huge" "gargantuan"])
 (def roles ["minion" "rival" "boss"])
@@ -69,11 +71,11 @@
    {:target [:health-min]
     :dependents #{[:health-avg]}
     :forced true
-    :calc-fn #(* 0.75 (get % :health-avg))}
+    :calc-fn #(math/round (* 0.75 (get % :health-avg)))}
    {:target [:health-max]
     :dependents #{[:health-avg]}
     :forced true
-    :calc-fn #(* 1.20 (get % :health-avg))}
+    :calc-fn #(math/round (* 1.20 (get % :health-avg)))}
    {:target [:movement]
     :dependents #{[:speed]}
     :calc-fn #(-> % :speed ({0 20 1 25 2 25 3 30 4 30 5 40 6 40 7 60 8 60} 80))}

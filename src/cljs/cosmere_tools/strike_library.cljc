@@ -30,11 +30,11 @@
        (keep #(get % (keyword (:skill strike))))
        first))
 
+;; MKHTODO Add an on-hit effect to strikes
 (defn compose-description [creature {:keys [damage-base damage-type] :as strike}]
   (let [attack-modifier (attack-modifier creature strike)
         [dice-count dice-type] (utils/parse-dice damage-base)
         graze-damage (math/round (utils/dice-avg dice-count dice-type))]
-    (prn attack-modifier strike)
     (str "Attack +"  attack-modifier
          ", " (if (:reach strike)
                 (str "reach " (:reach strike))

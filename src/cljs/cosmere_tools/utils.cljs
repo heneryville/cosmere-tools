@@ -1,4 +1,4 @@
-(ns cosmere-tools.utils 
+(ns cosmere-tools.utils
   (:require
    [clojure.string :as str]))
 
@@ -25,3 +25,7 @@
   [num-dice sides]
   (* num-dice (/ (inc sides) 2)))
 
+(defn prevent-default [f]
+  (fn [e]
+    (.preventDefault e)
+    (f e)))
