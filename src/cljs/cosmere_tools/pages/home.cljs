@@ -22,9 +22,5 @@
         [:input {:type "file"
                  :accept "application/json"
                  :on-change #(handle-file-upload % creature)}]]
-       [:div.editor-pane
-        [:div.editor-column
-         [creature-editor {:creature @creature
-                           :on-change #(reset! creature %)}]]
-        [:div.preview-column
-         ]]])))
+       [creature-editor {:creature @creature
+                         :on-change #(reset! creature %)}]])))

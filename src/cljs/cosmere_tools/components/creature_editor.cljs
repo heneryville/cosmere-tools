@@ -1,13 +1,14 @@
 (ns cosmere-tools.components.creature-editor
   (:require
    [clojure.string :as str]
+   [cosmere-tools.components.action-editor :refer [actions-editor]]
+   [cosmere-tools.components.creature-card :refer [creature-card]]
+   [cosmere-tools.components.strike-editor :refer [strikes-editor]]
    [cosmere-tools.components.trait-editor :refer [traits-editor]]
    [cosmere-tools.creature-constants :as const]
+   [cosmere-tools.strike-library :as strikes]
    [cosmere-tools.trait-library :as traits]
-   [cosmere-tools.utils :refer [dissoc-in]]
-   [cosmere-tools.components.action-editor :refer [actions-editor]]
-   [cosmere-tools.components.strike-editor :refer [strikes-editor]]
-   [cosmere-tools.strike-library :as strikes]))
+   [cosmere-tools.utils :refer [dissoc-in]]))
 
 (defn calculate-field [creature calc]
   ((:calc-fn calc) creature))
@@ -118,73 +119,72 @@
         change  (fn [path value]
                   (changes [[path value]]))]
     [:form.creature-editor
-     [:div.form-group
-      [:label "Name"]
-      [:input {:type "text"
-               :value (:name creature "")
-               :on-change #(change [:name] (.. % -target -value))}]]
+     [:div.columns
+      [:div.left-column
+       [:div.form-group
+        [:label "Name"]
+        [:input {:type "text"
+                 :value (:name creature "")
+                 :on-change #(change [:name] (.. % -target -value))}]]
 
-     [:div.form-row
-      [:div.form-group {:style {:max-width 50}}
-       [:label "Tier"]
-       [:input {:type "number"
-                :min 1
-                :max 5
-                :value (:tier creature 1)
-                :on-change #(change [:tier] (js/parseInt (.. % -target -value)))}]]
+       [:div.form-row
+        [:div.form-group {:style {:max-width 50}}
+         [:label "Tier"]
+         [:input {:type "number"
+                  :min 1
+                  :max 5
+                  :value (:tier creature 1)
+                  :on-change #(change [:tier] (js/parseInt (.. % -target -value)))}]]
 
-      [:div.form-group
-       [:label "Role"]
-       [:select {:value (:role creature "minion")
-                 :on-change #(let [new-role (.. % -target -value)]
-                               (handle-role-change creature new-role on-change))}
-        (for [role const/roles]
-          ^{:key role}
-          [:option {:value role} (str/capitalize role)])]]
+        [:div.form-group
+         [:label "Role"]
+         [:select {:value (:role creature "minion")
+                   :on-change #(let [new-role (.. % -target -value)]
+                                 (handle-role-change creature new-role on-change))}
+          (for [role const/roles]
+            ^{:key role}
+            [:option {:value role} (str/capitalize role)])]]
 
-      [:div.form-group
-       [:label "Size"]
-       [:select {:value (:size creature "medium")
-                 :on-change #(change [:size] (.. % -target -value))}
-        (for [size const/sizes]
-          ^{:key size}
-          [:option {:value size} (str/capitalize size)])]]]
+        [:div.form-group
+         [:label "Size"]
+         [:select {:value (:size creature "medium")
+                   :on-change #(change [:size] (.. % -target -value))}
+          (for [size const/sizes]
+            ^{:key size}
+            [:option {:value size} (str/capitalize size)])]]]
 
-     [:div.form-group.type-group
-      [:label "Type"]
-      [:div.type-input-wrapper
-       [:select.type-select
-        {:value (if (some #{(:type creature)} const/preset-types)
-                  (:type creature)
-                  "custom")
-         :on-change #(let [new-type (.. % -target -value)]
-                       (change [:type]
-                               (if (= new-type "custom")
-                                 ""
-                                 new-type)))}
-        (for [type const/preset-types]
-          ^{:key type}
-          [:option {:value type} (str/capitalize type)])
-        [:option {:value "custom"} "Custom..."]]
-       (when (not (some #{(:type creature)} const/preset-types))
-         [:input.type-custom
-          {:type "text"
-           :value (:type creature)
-           :placeholder "Enter custom type..."
-           :on-change #(change [:type] (.. % -target -value))}])]]
+       [:div.form-group.type-group
+        [:label "Type"]
+        [:div.type-input-wrapper
+         [:select.type-select
+          {:value (if (some #{(:type creature)} const/preset-types)
+                    (:type creature)
+                    "custom")
+           :on-change #(let [new-type (.. % -target -value)]
+                         (change [:type]
+                                 (if (= new-type "custom")
+                                   ""
+                                   new-type)))}
+          (for [type const/preset-types]
+            ^{:key type}
+            [:option {:value type} (str/capitalize type)])
+          [:option {:value "custom"} "Custom..."]]
+         (when (not (some #{(:type creature)} const/preset-types))
+           [:input.type-custom
+            {:type "text"
+             :value (:type creature)
+             :placeholder "Enter custom type..."
+             :on-change #(change [:type] (.. % -target -value))}])]]
 
-     [:hr]
+       [:div.attributes-section
+        (for [attr [:strength :physical-defense :speed
+                    :intellect :cognitive-defense :willpower
+                    :awareness :spiritual-defense :presence]]
+          ^{:key (name attr)}
+          [stat-input creature change {:attr attr}])]
 
-     [:div.attributes-section
-      (for [attr [:strength :physical-defense :speed
-                  :intellect :cognitive-defense :willpower
-                  :awareness :spiritual-defense :presence]]
-        ^{:key (name attr)}
-        [stat-input creature change {:attr attr}])]
 
-     [:hr]
-
-     [:div.derived-stats-section
+       [:div.derived-stats-section
         [stat-input creature change
          {:attr :health-avg
           :label "Health"}]
@@ -197,50 +197,34 @@
          {:attr :investiture
           :label "Investiture"}]]
 
-     [:div.derived-stats-section
-        [stat-input creature change
-         {:attr :movement
-          :step 5
-          :label "Movement"}]
+       [:div.form-group
+        [:label "Languages: "]
+        [:input {:type "text"
+                 :value (:languages creature "")
+                 :placeholder "e.g. Alethi, Azish, Shin"
+                 :on-change #(change [:languages] (.. % -target -value))}]]
 
-        [stat-input creature change
-         {:attr :sense-range
-          :label "Sense Range"}]
+       [:hr]
+       [:h2 "Traits"]
+       [traits-editor creature change]
 
-        [:div.attribute-pair
-         [:label "Primary Sense"]
-         [:select {:value (:sense-primary creature "sight")
-                   :on-change #(change [:sense-primary] (.. % -target -value))}
-          (for [sense-type const/sense-types]
-            ^{:key sense-type}
-            [:option {:value sense-type} (str/capitalize sense-type)])]]]
+       [:hr]
+       [:h2 "Actions"]
+       [actions-editor creature change]]
 
-     [:hr]
+      [:div.right-column
 
-     [:div.skills-section
+       [creature-card creature]
+       [:h2 "Skills"]
+       [:div.skills-section
         (for [[type skills] const/skills]
           ^{:key type}
           [skills-column
            {:skill-type type
             :skills skills
             :creature creature
-            :on-change change}])]
-
-     [:div.form-group
-      [:label "Languages: "]
-      [:input {:type "text"
-               :value (:languages creature "")
-               :placeholder "e.g. Alethi, Azish, Shin"
-               :on-change #(change [:languages] (.. % -target -value))}]]
-
-     [:hr]
-     [:h2 "Traits"]
-     [traits-editor creature change]
-
-     [:hr]
-     [:h2 "Actions"]
-     [actions-editor creature change]
-
+            :on-change change}])]]]
+     
      [:hr]
      [:h2 "Strikes"]
      [strikes-editor creature changes]]))
