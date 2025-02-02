@@ -205,17 +205,16 @@
                  :on-change #(change [:languages] (.. % -target -value))}]]
 
        [:hr]
-       [:h2 "Traits"]
+       [:h2.section-head "Traits"]
        [traits-editor creature change]
 
        [:hr]
-       [:h2 "Actions"]
+       [:h2.section-head "Actions"]
        [actions-editor creature change]]
 
       [:div.right-column
-
        [creature-card creature]
-       [:h2 "Skills"]
+       [:h2.section-head "Skills"]
        [:div.skills-section
         (for [[type skills] const/skills]
           ^{:key type}
@@ -226,5 +225,5 @@
             :on-change change}])]]]
      
      [:hr]
-     [:h2 "Strikes"]
-     [strikes-editor creature changes]]))
+     [:h2.section-head "Strikes"]
+     [strikes-editor  creature changes]]))
