@@ -21,4 +21,4 @@
        creatures)))
 
 #?(:cljs
-   (def creatures (import-creatures))) (defn find-creature-by-id [id])
+   (def creatures (import-creatures))) 

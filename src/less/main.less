@@ -180,6 +180,32 @@ body {
   }
 }
 
+.creature-controls {
+  button {
+    &.delete-button {
+      margin-right: 0.5rem;
+      background: white;
+      color: @danger-color;
+      border-color: @danger-color;
+
+      &:hover {
+        background: @danger-color;
+        color: white;
+      }
+    }
+  }
+
+  .source-label {
+    margin-left: auto;
+    padding: 0.15rem 0.35rem;
+    background: #f8f8f8;
+    border-radius: 3px;
+    font-size: 0.65rem;
+    color: #999;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  }
+}
+
 @import url("./creature-editor.less");
 @import url("./trait-editor.less");
 @import url("./action-editor.less");

@@ -54,7 +54,7 @@
 (defn skills-section [{:keys [movement sense-range sense-primary languages]
                        {:keys [physical cognitive spiritual]} :skills}]
   [:section.skills
-   [:div [:h3 "Movement"] movement]
+   [:div [:h3 "Movement"] movement " ft."]
    [:div [:h3 "Senses"]
     sense-range " ft."
     (when sense-primary (str " (" sense-primary ")"))]

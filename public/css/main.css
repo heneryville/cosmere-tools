@@ -133,6 +133,25 @@ body {
 .edit-controls button.save-button:hover {
   background: #122439;
 }
+.creature-controls button.delete-button {
+  margin-right: 0.5rem;
+  background: white;
+  color: #dc3545;
+  border-color: #dc3545;
+}
+.creature-controls button.delete-button:hover {
+  background: #dc3545;
+  color: white;
+}
+.creature-controls .source-label {
+  margin-left: auto;
+  padding: 0.15rem 0.35rem;
+  background: #f8f8f8;
+  border-radius: 3px;
+  font-size: 0.65rem;
+  color: #999;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
 form.creature-editor {
   width: 100%;
   padding: 1rem;

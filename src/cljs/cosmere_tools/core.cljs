@@ -1,10 +1,11 @@
 (ns cosmere-tools.core
-  (:require [reagent.core :as r]
-            [reagent.dom :as rdom]
-            [cosmere-tools.router :as router]
-            [cosmere-tools.pages.edit :refer [edit-page]]
-            [cosmere-tools.pages.home :refer [home-page]]
-            [cosmere-tools.pages.about :refer [about-page]]))
+  (:require
+   [cosmere-tools.pages.about :refer [about-page]]
+   [cosmere-tools.pages.edit :refer [edit-page]]
+   [cosmere-tools.pages.home :refer [home-page]]
+   [cosmere-tools.router :as router]
+   [cosmere-tools.utils :refer [prevent-default]]
+   [reagent.dom :as rdom]))
 
 (defn navbar []
   [:nav.navbar
@@ -14,11 +15,11 @@
      "Cosmere Tools"]
     [:div.nav-links
      [:a {:href "/home"
-          :on-click #(router/navigate! :home)} "Home"]
+          :on-click (prevent-default #(router/navigate! :home))} "Home"]
      [:a {:href "/create"
-          :on-click #(router/navigate! :edit)} "Create"]  ; No params = new creature
+          :on-click (prevent-default #(router/navigate! :edit))} "Create"]  ; No params = new creature
      [:a {:href "/about"
-          :on-click #(router/navigate! :about)} "About"]]]])
+          :on-click (prevent-default #(router/navigate! :about))} "About"]]]])
 
 (defn page-container []
   [:div.page-container

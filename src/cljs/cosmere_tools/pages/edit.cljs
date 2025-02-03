@@ -31,7 +31,9 @@
     "Download"]
    [:button.save-button
     {:on-click #(creatures/save-creature! @creature)}
-    "Save"]])
+    (if (creatures/static-creature? @creature) 
+      "Save As" 
+      "Save")]])
 
 (defn empty-creature []
   {:id (str (.getTime (js/Date.)))

@@ -7,5 +7,5 @@
    [:div.creatures-grid
     (doall
      (for [creature creatures]
-       ^{:key (:name creature)}
+       ^{:key (:id creature)}
        [decorated-creature-card creature]))]])
