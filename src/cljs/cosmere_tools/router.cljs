@@ -9,7 +9,9 @@
 (def routes
   [["/" :home]
    ["/library" :library]
-   ["/about" :about]])
+   ["/about" :about]
+   ["/create" :edit]  ; Add create path that maps to edit handler
+   ["/edit/:id" :edit]])  ; Keep existing edit with ID route
 
 ;; Create router instance
 (def router
@@ -24,8 +26,9 @@
 ;; Initialize router
 (defn init! []
   (bide/start! router {:default :home
+                       :html5? true  ; Enable HTML5 push state
                        :on-navigate on-navigate}))
 
 ;; Navigation helpers
-(defn navigate! [route]
-  (bide/navigate! router route))
+(defn navigate! [route & [params query]]
+  (bide/navigate! router route params query))

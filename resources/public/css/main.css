@@ -1,0 +1,25 @@
+/* ...existing code... */
+
+.decorated-creature-card {
+  margin: 1em;
+}
+
+.creature-controls {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.creature-controls button {
+  padding: 0.5em 1em;
+  border: 1px solid #ca9a56;
+  background: white;
+  color: #1e3c60;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.creature-controls button:hover {
+  background: #ca9a56;
+  color: white;
+}

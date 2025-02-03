@@ -1,10 +1,10 @@
-(ns cosmere-tools.creature-library
+(ns cosmere-tools.static-creatures
   #?(:clj
      (:require
       [clojure.java.io :as io]
       [clojure.data.json :as json]))
   #?(:cljs
-     (:require-macros [cosmere-tools.creature-library :refer [import-creatures]])))
+     (:require-macros [cosmere-tools.static-creatures :refer [import-creatures]])))
 
 
 #?(:clj
@@ -21,4 +21,4 @@
        creatures)))
 
 #?(:cljs
-   (def creatures (import-creatures)))
+   (def creatures (import-creatures))) (defn find-creature-by-id [id])

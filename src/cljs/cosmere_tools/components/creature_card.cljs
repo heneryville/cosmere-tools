@@ -85,10 +85,7 @@
    [:header
     [:h1 name]
     (str "Tier " tier " " (str/capitalize (or role "")) " - " (str/capitalize size) " " (str/capitalize type))]
-   [:button.download-json
-    {:on-click #(download-json creature)}
-    "Download JSON"]
-
+   
    [attributes-section creature]
    [attributes-etc creature]
    [:hr]

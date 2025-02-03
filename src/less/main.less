@@ -144,6 +144,42 @@ body {
   }
 }
 
+.edit-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  button {
+    padding: 0.5rem 1rem;
+    border: 1px solid @primary-color;
+    background: white;
+    color: @primary-color;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+    min-width: 120px;
+
+    &:hover {
+      background: @primary-color;
+      color: white;
+    }
+
+    &.save-button {
+      margin-left: auto;
+      background: @primary-color;
+      color: white;
+
+      &:hover {
+        background: darken(@primary-color, 10%);
+      }
+    }
+  }
+}
+
 @import url("./creature-editor.less");
 @import url("./trait-editor.less");
 @import url("./action-editor.less");

@@ -1,4 +1,5 @@
 {
+    "id": "axehound",
     "name": "Axehound",
     "tier": 1,
     "role": "minion",
@@ -20,7 +21,7 @@
     "investiture": 0,
     "movement": 40,
     "deflect": 0,
-    "deflect-explantion": null,
+    "deflect-explanation": null,
     "sense-range": 40,
     "sense-primary": "smell",
     "skills": {

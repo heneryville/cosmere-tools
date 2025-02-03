@@ -102,6 +102,37 @@ body {
     padding: 10px;
   }
 }
+.edit-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.edit-controls button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #1e3c60;
+  background: white;
+  color: #1e3c60;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+  min-width: 120px;
+}
+.edit-controls button:hover {
+  background: #1e3c60;
+  color: white;
+}
+.edit-controls button.save-button {
+  margin-left: auto;
+  background: #1e3c60;
+  color: white;
+}
+.edit-controls button.save-button:hover {
+  background: #122439;
+}
 form.creature-editor {
   width: 100%;
   padding: 1rem;
@@ -204,6 +235,24 @@ form.creature-editor .attribute-pair label {
   color: #1e3c60;
 }
 form.creature-editor .attribute-pair input {
+  width: 100%;
+}
+form.creature-editor .deflect-row {
+  display: grid;
+  grid-template-columns: 80px 70px 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+form.creature-editor .deflect-row label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #1e3c60;
+}
+form.creature-editor .deflect-row input[type="number"] {
+  width: 70px;
+}
+form.creature-editor .deflect-row input[type="text"] {
   width: 100%;
 }
 form.creature-editor hr {
@@ -314,6 +363,26 @@ form.creature-editor .strikes-section {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+}
+.decorated-creature-card {
+  margin: 1em;
+}
+.creature-controls {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+.creature-controls button {
+  padding: 0.5em 1em;
+  border: 1px solid #ca9a56;
+  background: white;
+  color: #1e3c60;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.creature-controls button:hover {
+  background: #ca9a56;
+  color: white;
 }
 .traits-section {
   display: flex;

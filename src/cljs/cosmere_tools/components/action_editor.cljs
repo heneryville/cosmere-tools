@@ -1,37 +1,44 @@
 (ns cosmere-tools.components.action-editor
   (:require
    [cosmere-tools.action-library :as actions]
-   [cosmere-tools.components.toggle-button :refer [action-toggle-button]]))
+   [cosmere-tools.components.toggle-button :refer [action-toggle-button]]
+   [cosmere-tools.utils :as utils]
+   [reagent.core :as r]))
 
-(defn actions-editor [creature change]
-  [:div.actions-section
-   (map-indexed
-    (fn [idx {:keys [name description action-cost]}]
-      ^{:key (or name idx)}
+(defn action-editor [{{action-name :name} :action}]
+  (let [name-r (r/atom action-name)]
+    (fn [{:keys [action path change on-remove]}]
       [:div.action
        [:div.action-header
         [action-toggle-button
-         {:value action-cost
-          :on-change #(change [:actions idx :action-cost] %)}]
+         {:value (:action-cost action)
+          :on-change #(change (conj path :action-cost) %)}]
         [:input.action-name
          {:type "text"
-          :value name
+          :value @name-r
           :placeholder "Action name"
-          :on-change #(change [:actions idx :name]
-                              (.. % -target -value))}]
+          :on-change #(reset! name-r (.. % -target -value))
+          :on-blur #(change (conj path :name) @name-r)}]
         [:button.remove-action
-         {:on-click #(change [:actions]
-                             (vec (concat
-                                   (take idx (:actions creature))
-                                   (drop (inc idx) (:actions creature)))))}
+         {:on-click (utils/prevent-default on-remove)}
          "×"]]
        [:textarea.action-description
-        {:value description
+        {:value (:description action)
          :placeholder "Action description"
          :rows 3
-         :on-change #(change [:actions idx :description]
-                            (.. % -target -value))}]])
-    (:actions creature))
+         :on-change #(change (conj path :description)
+                            (.. % -target -value))}]])))
+
+(defn actions-editor [creature change]
+  [:div.actions-section
+   (doall
+    (for [[idx action] (map-indexed vector (:actions creature))]
+      ^{:key (or (:name action) idx)}
+      [action-editor
+       {:action action
+        :path [:actions idx]
+        :change change
+        :on-remove #(change [:actions] (vec (remove (fn [a] (= a action)) (:actions creature))))}]))
    
    [:div.add-action
     [:select.action-select

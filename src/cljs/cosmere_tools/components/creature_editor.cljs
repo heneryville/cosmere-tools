@@ -8,7 +8,9 @@
    [cosmere-tools.creature-constants :as const]
    [cosmere-tools.strike-library :as strikes]
    [cosmere-tools.trait-library :as traits]
-   [cosmere-tools.utils :refer [dissoc-in]]))
+   [cosmere-tools.utils :refer [dissoc-in]]
+   [cosmere-tools.components.creature-editor.top-matter :refer [top-matter]]
+   [cosmere-tools.components.creature-editor.attributes :refer [attributes]]))
 
 (defn calculate-field [creature calc]
   ((:calc-fn calc) creature))
@@ -43,21 +45,6 @@
                                                              (assoc strike :description (strikes/compose-description new-creature strike)))
                                                            strikes)))]
     new-creature))
-
-(defn stat-input [creature change {:keys [attr label step]}]
-  (let [attr-path (if (vector? attr) attr [attr])
-        calc (first (filter #(= attr-path (:target %)) const/calculations))
-        calculated-value (when calc (calculate-field creature calc))
-        display-label (or label (-> (last attr-path) name (str/replace "-" " ") str/capitalize))]
-    [:div.attribute-pair
-     [:label display-label]
-     [:input (cond-> {:type "number"
-                      :min 0
-                      :step (or step 1)
-                      :value (get-in creature attr-path (or calculated-value 0))
-                      :on-change #(change attr-path (js/parseInt (.. % -target -value)))}
-               calculated-value (assoc :placeholder calculated-value
-                                       :class "derived-input"))]]))
 
 (defn get-attr-value [creature attr]
   (get creature attr 0))
@@ -121,88 +108,8 @@
     [:form.creature-editor
      [:div.columns
       [:div.left-column
-       [:div.form-group
-        [:label "Name"]
-        [:input {:type "text"
-                 :value (:name creature "")
-                 :on-change #(change [:name] (.. % -target -value))}]]
-
-       [:div.form-row
-        [:div.form-group {:style {:max-width 50}}
-         [:label "Tier"]
-         [:input {:type "number"
-                  :min 1
-                  :max 5
-                  :value (:tier creature 1)
-                  :on-change #(change [:tier] (js/parseInt (.. % -target -value)))}]]
-
-        [:div.form-group
-         [:label "Role"]
-         [:select {:value (:role creature "minion")
-                   :on-change #(let [new-role (.. % -target -value)]
-                                 (handle-role-change creature new-role on-change))}
-          (for [role const/roles]
-            ^{:key role}
-            [:option {:value role} (str/capitalize role)])]]
-
-        [:div.form-group
-         [:label "Size"]
-         [:select {:value (:size creature "medium")
-                   :on-change #(change [:size] (.. % -target -value))}
-          (for [size const/sizes]
-            ^{:key size}
-            [:option {:value size} (str/capitalize size)])]]]
-
-       [:div.form-group.type-group
-        [:label "Type"]
-        [:div.type-input-wrapper
-         [:select.type-select
-          {:value (if (some #{(:type creature)} const/preset-types)
-                    (:type creature)
-                    "custom")
-           :on-change #(let [new-type (.. % -target -value)]
-                         (change [:type]
-                                 (if (= new-type "custom")
-                                   ""
-                                   new-type)))}
-          (for [type const/preset-types]
-            ^{:key type}
-            [:option {:value type} (str/capitalize type)])
-          [:option {:value "custom"} "Custom..."]]
-         (when (not (some #{(:type creature)} const/preset-types))
-           [:input.type-custom
-            {:type "text"
-             :value (:type creature)
-             :placeholder "Enter custom type..."
-             :on-change #(change [:type] (.. % -target -value))}])]]
-
-       [:div.attributes-section
-        (for [attr [:strength :physical-defense :speed
-                    :intellect :cognitive-defense :willpower
-                    :awareness :spiritual-defense :presence]]
-          ^{:key (name attr)}
-          [stat-input creature change {:attr attr}])]
-
-
-       [:div.derived-stats-section
-        [stat-input creature change
-         {:attr :health-avg
-          :label "Health"}]
-
-        [stat-input creature change
-         {:attr :focus
-          :label "Focus"}]
-
-        [stat-input creature change
-         {:attr :investiture
-          :label "Investiture"}]]
-
-       [:div.form-group
-        [:label "Languages: "]
-        [:input {:type "text"
-                 :value (:languages creature "")
-                 :placeholder "e.g. Alethi, Azish, Shin"
-                 :on-change #(change [:languages] (.. % -target -value))}]]
+       [top-matter {:creature creature :change change}]
+       [attributes {:creature creature :change change}]
 
        [:hr]
        [:h2.section-head "Traits"]
@@ -226,4 +133,4 @@
      
      [:hr]
      [:h2.section-head "Strikes"]
-     [strikes-editor  creature changes]]))
+     [strikes-editor creature changes]]))

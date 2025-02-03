@@ -5,7 +5,8 @@
    [cosmere-tools.components.toggle-button :refer [action-toggle-button]]
    [cosmere-tools.creature-constants :as const]
    [cosmere-tools.strike-library :as strikes]
-   [cosmere-tools.utils :as utils]))
+   [cosmere-tools.utils :as utils]
+   [reagent.core :as r]))
 
 (defn damage-selector [path strike change]
   (let [[dice-count dice-type] (utils/parse-dice (:damage-base strike))]
@@ -32,96 +33,94 @@
          ^{:key type}
          [:option {:value type} (str/capitalize type)])]]]))
 
-(defn strike-editor [{:keys [strike path on-remove changes]}]
-  (let [{:keys [description action-cost skill reach range]
-         strike-name :name} strike
-        skill (keyword skill)
-        range-mode? (nil? reach)
-        change  (fn [path value]
-                  (changes [[path value]]))]
-    [:div.strike
-     [:div.strike-header
-      [action-toggle-button
-       {:value action-cost
-        :on-change #(change (conj path :action-cost) %)}]
-      [:input.strike-name
-       {:type "text"
-        :value strike-name
-        :placeholder "Strike name"
-        :on-change #(change (conj path :name)
-                            (.. % -target -value))}]
-      [:button.remove-strike
-       {:on-click on-remove}
-       "×"]]
+(defn strike-editor [{{strike-name :name} :strike}]
+  (let [name-r (r/atom strike-name)]
+    (fn [{:keys [strike path on-remove changes]}]
+      (let [change (fn [path value]
+                    (changes [[path value]]))]
+        [:div.strike
+         [:div.strike-header
+          [action-toggle-button
+           {:value (:action-cost strike)
+            :on-change #(change (conj path :action-cost) %)}]
+          [:input.strike-name
+           {:type "text"
+            :value @name-r
+            :placeholder "Strike name"
+            :on-change #(reset! name-r (.. % -target -value))
+            :on-blur #(change (conj path :name) @name-r)}]
+          [:button.remove-strike
+           {:on-click on-remove}
+           "×"]]
 
-     [:div.strike-details
-      [damage-selector (conj path :damage-base) strike change]
-      [:div.strike-row
-       [:div.form-group
-        [:label "Skill"]
-        [:select {:value skill
-                  :on-change #(change (conj path :skill) (.. % -target -value))}
-         (for [skill-option const/combat-skills]
-           ^{:key skill-option}
-           [:option {:value skill-option}
-            (str/capitalize (name skill-option))])]]
+         [:div.strike-details
+          [damage-selector (conj path :damage-base) strike change]
+          [:div.strike-row
+           [:div.form-group
+            [:label "Skill"]
+            [:select {:value (keyword (:skill strike))
+                      :on-change #(change (conj path :skill) (.. % -target -value))}
+             (for [skill-option const/combat-skills]
+               ^{:key skill-option}
+               [:option {:value skill-option}
+                (str/capitalize (name skill-option))])]]
 
-       [:div.form-group
-        [:label "Attack Distance"]
-        [:div.distance-selector
-         [:div.distance-type
-          [radio-buttons
-           {:options ["Melee" "Ranged"]
-            :selected (if range-mode? "Ranged" "Melee")
-            :on-change #(if (= % "Melee")
-                          (changes [[(conj path :reach) 5]
-                                    [(conj path :range) nil]])
+           [:div.form-group
+            [:label "Attack Distance"]
+            [:div.distance-selector
+             [:div.distance-type
+              [radio-buttons
+               {:options ["Melee" "Ranged"]
+                :selected (if (nil? (:reach strike)) "Ranged" "Melee")
+                :on-change #(if (= % "Melee")
+                              (changes [[(conj path :reach) 5]
+                                        [(conj path :range) nil]])
 
-                          (changes [[(conj path :reach) nil]
-                                    [(conj path :range) [80 320]]]))}]]
-         (if range-mode?
-           [:div.range-inputs
-            [:input {:type "number"
-                     :min 0
-                     :step 5
-                     :value (first range)
-                     :on-change #(change (conj path :range)
-                                         [(js/parseInt (.. % -target -value))
-                                          (second range)])}]
-            [:span " / "]
-            [:input {:type "number"
-                     :min 0
-                     :step 5
-                     :value (second range)
-                     :on-change #(change (conj path :range)
-                                         [(first range)
-                                          (js/parseInt (.. % -target -value))])}]]
-           [:input {:type "number"
-                    :min 5
-                    :step 5
-                    :value reach
-                    :on-change #(change (conj path :reach)
-                                        (js/parseInt (.. % -target -value)))}])]]]]
+                              (changes [[(conj path :reach) nil]
+                                        [(conj path :range) [80 320]]]))}]]
+             (if (nil? (:reach strike))
+               [:div.range-inputs
+                [:input {:type "number"
+                         :min 0
+                         :step 5
+                         :value (first (:range strike))
+                         :on-change #(change (conj path :range)
+                                             [(js/parseInt (.. % -target -value))
+                                              (second (:range strike))])}]
+                [:span " / "]
+                [:input {:type "number"
+                         :min 0
+                         :step 5
+                         :value (second (:range strike))
+                         :on-change #(change (conj path :range)
+                                             [(first (:range strike))
+                                              (js/parseInt (.. % -target -value))])}]]
+               [:input {:type "number"
+                        :min 5
+                        :step 5
+                        :value (:reach strike)
+                        :on-change #(change (conj path :reach)
+                                            (js/parseInt (.. % -target -value)))}])]]]]
 
-     [:textarea.strike-description
-      {:value description
-       :placeholder "On Hit"
-       :rows 3
-       :on-change #(change (conj path :on-hit)
-                           (.. % -target -value))}]]))
+         [:textarea.strike-description
+          {:value (:description strike)
+           :placeholder "On Hit"
+           :rows 3
+           :on-change #(change (conj path :on-hit)
+                               (.. % -target -value))}]]))))
 
 (defn strikes-editor [creature changes]
   (let [change  (fn [path value]
                   (changes [[path value]]))]
     [:div.strikes-section
-     (map-indexed
-      (fn [idx strike]
-        ^{:key (or (:name strike) idx)}
-        [strike-editor {:strike strike
-                        :path [:strikes idx]
-                        :changes changes
-                        :on-remove (fn [] (change [:strikes] (vec (remove #(= % strike) (:strikes creature)))))}])
-      (:strikes creature))
+     (doall (map-indexed
+             (fn [idx strike]
+               ^{:key (or (:name strike) idx)}
+               [strike-editor {:strike strike
+                               :path [:strikes idx]
+                               :changes changes
+                               :on-remove (fn [] (change [:strikes] (vec (remove #(= % strike) (:strikes creature)))))}])
+             (:strikes creature)))
 
      [:div.add-strike
       [:select.strike-select

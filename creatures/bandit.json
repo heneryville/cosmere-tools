@@ -1,4 +1,5 @@
 {
+    "id": "Bandit",
     "name": "Bandit",
     "tier": 1,
     "role": "minion",
@@ -20,7 +21,7 @@
     "investiture": 0,
     "movement": 25,
     "deflect": 1,
-    "deflect-explantion": "leather armor",
+    "deflect-explanation": "leather armor",
     "sense-range": 10,
     "sense-primary": "sight",
     "skills": {
