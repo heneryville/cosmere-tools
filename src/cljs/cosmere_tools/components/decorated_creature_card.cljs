@@ -5,6 +5,16 @@
    [cosmere-tools.router :as router]
    [cosmere-tools.utils :refer [prevent-default]]))
 
+(defn creature-tag-pills [creature]
+  [:div.creature-tags
+   (for [tag (:tags creature)]
+     ^{:key tag}
+     [:span.creature-tag tag])
+   [:code.source-label
+    (if (creatures/static-creature? creature)
+      "Server"
+      "Local")]])
+
 (defn decorated-creature-card [creature]
   [:div.decorated-creature-card
    [:div.creature-controls
@@ -19,8 +29,5 @@
        {:on-click (prevent-default #(when (js/confirm "Are you sure you want to delete this creature?")
                                       (creatures/delete-creature! creature)))}
        "Delete"])
-    [:code.source-label
-     (if (creatures/static-creature? creature)
-       "predefined"
-       "personal")]]
+    [creature-tag-pills creature]]
    [creature-card creature]])
