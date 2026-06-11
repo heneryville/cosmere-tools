@@ -1,0 +1,88 @@
+{
+    "id": "yu-nerig",
+    "name": "Yu-Nerig",
+    "tier": 2,
+    "role": "boss",
+    "size": "large",
+    "type": "animal",
+    "strength": 5,
+    "physical-defense": 18,
+    "speed": 3,
+    "intellect": 2,
+    "cognitive-defense": 15,
+    "willpower": 3,
+    "awareness": 4,
+    "spiritual-defense": 16,
+    "presence": 2,
+    "health-min": 120,
+    "health-max": 168,
+    "health-avg": 144,
+    "focus": 5,
+    "investiture": 0,
+    "movement": 15,
+    "deflect": 2,
+    "deflect-explanation": "carapace",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 6,
+            "athletics": 8
+        },
+        "cognitive": {
+            "intimidation": 6
+        },
+        "spiritual": {
+            "perception": 5
+        }
+    },
+    "languages": "none",
+    "traits": [
+        {
+            "name": "Boss",
+            "description": "The yu-nerig can take both a fast turn and a slow turn each round. After an enemy finishes a turn, the yu-nerig can spend 1 focus to immediately use an extra single or double action. Additionally, they can spend 1 focus on their turn to remove a condition from themself."
+        },
+        {
+            "name": "Thick Carapace",
+            "description": "Before the yu-nerig is hit by an attack, they can spend 1 focus to turn the hit into a graze (no action required)."
+        },
+        {
+            "name": "Immunities",
+            "description": "The yu-nerig is immune to the Stunned condition."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Hurl",
+            "description": "The yu-nerig throws an enemy who is Restrained in their claw to a space the yu-nerig can sense within 30 feet of them. The thrown enemy must make a DC 16 Agility test. On a failure, the thrown enemy takes 1d8 impact damage for every 10 feet they were thrown. On a success, the thrown enemy takes half that much damage. If the enemy is thrown at a space occupied by another character, the thrown enemy lands in the nearest unoccupied space, and the other character must succeed on a DC 16 Agility test or take the same damage as the thrown enemy."
+        },
+        {
+            "action-cost": "double",
+            "name": "Vital Slam",
+            "description": "Costs 1 Focus. The yu-nerig flips an enemy who is Restrained in their claw and slams them against the ground. The target must make a DC 16 Athletics test. On a success, the target takes 6 (1d10) impact damage. On a failure, the target takes 16 (3d10) impact damage and is knocked Prone."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Claw",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "2d6",
+            "damage-type": "keen",
+            "on-hit": "and the target becomes Restrained by one of the yu-nerig's claws while the yu-nerig remains within 5 feet of them. As a single action, the target or a character who can reach them can make a DC 16 Agility or Athletics test, ending the Restrained condition on a success. The yu-nerig has two claws, each of which can restrain one enemy. While restraining an enemy in a claw, that claw can only attack the Restrained enemy.",
+            "description": "Attack +8, reach 5 ft., one target. Graze: 7 (2d6) keen damage. Hit: 15 (2d6 + 8) keen damage, and the target becomes Restrained by one of the yu-nerig's claws while the yu-nerig remains within 5 feet of them. As a single action, the target or a character who can reach them can make a DC 16 Agility or Athletics test, ending the Restrained condition on a success. The yu-nerig has two claws, each of which can restrain one enemy. While restraining an enemy in a claw, that claw can only attack the Restrained enemy."
+        },
+        {
+            "action-cost": "double",
+            "name": "Hammer Claw",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "2d8",
+            "damage-type": "impact",
+            "on-hit": null,
+            "description": "Attack +8, reach 5 ft., up to five targets. The yu-nerig can't use this action if both claws are restraining enemies. Graze: 9 (2d8) impact damage. Hit: 17 (2d8 + 8) impact damage."
+        }
+    ]
+}

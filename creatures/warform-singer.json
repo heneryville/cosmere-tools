@@ -1,0 +1,82 @@
+{
+    "id": "warform-singer",
+    "name": "Warform Singer",
+    "tier": 1,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 3,
+    "physical-defense": 14,
+    "speed": 1,
+    "intellect": 1,
+    "cognitive-defense": 13,
+    "willpower": 2,
+    "awareness": 2,
+    "spiritual-defense": 14,
+    "presence": 2,
+    "health-min": 20,
+    "health-max": 28,
+    "health-avg": 24,
+    "focus": 4,
+    "investiture": 0,
+    "movement": 25,
+    "deflect": 2,
+    "deflect-explanation": "carapace",
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "athletics": 5,
+            "heavy-weaponry": 4,
+            "light-weaponry": 3
+        },
+        "cognitive": {
+            "discipline": 5,
+            "intimidation": 4
+        },
+        "spiritual": {
+            "leadership": 4,
+            "perception": 4
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "External Carapace",
+            "description": "The warform can use their carapace like a shield, allowing them to use the Brace action."
+        },
+        {
+            "name": "Martial Experience",
+            "description": "The warform can use their Strike action twice on their turn."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Warpair Coordination",
+            "description": "Costs 1 Focus. After another warform within 5 feet of this warform takes the Move action, this warform moves up to their movement rate, ending their movement within 5 feet of the other warform."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Axe",
+            "skill": "heavy-weaponry",
+            "reach": 5,
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +4, reach 5 ft., one target. The warform can jump up to 10 feet before or after making this attack. Graze: 3 (1d6) keen damage. Hit: 7 (1d6 + 4) keen damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Shortbow",
+            "skill": "light-weaponry",
+            "reach": 80,
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +3, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 6 (1d6 + 3) keen damage."
+        }
+    ]
+}

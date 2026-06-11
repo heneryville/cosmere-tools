@@ -1,0 +1,90 @@
+{
+    "id": "elite-shardbearer",
+    "name": "Elite Shardbearer",
+    "tier": 3,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 5,
+    "physical-defense": 17,
+    "speed": 6,
+    "intellect": 1,
+    "cognitive-defense": 16,
+    "willpower": 5,
+    "awareness": 3,
+    "spiritual-defense": 17,
+    "presence": 4,
+    "health-min": 44,
+    "health-max": 66,
+    "health-avg": 55,
+    "focus": 7,
+    "investiture": 0,
+    "movement": 40,
+    "deflect": 5,
+    "deflect-explanation": "Shardplate",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 10,
+            "heavy-weapons": 10,
+            "light-weapons": 10
+        },
+        "cognitive": {
+            "discipline": 8,
+            "intimidation": 9
+        },
+        "spiritual": {
+            "leadership": 9,
+            "perception": 7,
+            "persuasion": 8
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Shardplate (4 Charges)",
+            "description": "The elite is equipped with Shardplate. Before they take damage, they can expend a charge (no action required) to increase their deflect value against that damage by 10. While the armor has charges, all Invested tests against the elite gain a disadvantage, and the armor's deflect value applies to all damage types. After the armor runs out of charges, some of the elite's attributes and skills are reduced by 2, along with their related modifiers; these statistics are marked with an asterisk (*)."
+        },
+        {
+            "name": "Breakable Armor",
+            "description": "After the elite is hit by an attack, the attacker can spend an advantage to cause the elite's Shardplate to lose 1 charge."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Test Blow",
+            "description": "Attack +10*, reach 5 ft., one target. Graze: no effect. Hit: The target takes no damage, but their Physical defense is reduced by 2 until the end of their next turn."
+        },
+        {
+            "action-cost": "single",
+            "name": "Change Stance",
+            "focus": 1,
+            "description": "The elite shifts into one of the following stances, losing the effects of any previous stance and gaining the effects of the new stance. Bloodstance: The elite's Opportunity range for attack tests and physical tests increases by 2, and their Physical, Cognitive, and Spiritual defenses decrease by 2. Flamestance: While there's only one enemy within 5 feet of the elite and no allies within 5 feet of them or that enemy, the elite can use an advantage to gain focus, which they can spend only on the Gain Advantage action or on an action that includes an attack test. Ironstance: After an enemy within 5 feet of the elite misses or grazes them with an attack, the elite can use the Reactive Strike reaction against that enemy as if they had voluntarily left the elite's reach."
+        },
+        {
+            "action-cost": "single",
+            "name": "Distracting Banter",
+            "description": "The elite baits their enemy into a smug repartee, making an opposed Intimidation test against the target's Discipline. If the elite succeeds, the target loses 1d4 focus."
+        },
+        {
+            "action-cost": "single",
+            "name": "Stand Firm",
+            "focus": 1,
+            "description": "Before the elite is unwillingly moved or knocked Prone, they ignore that effect."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Shardblade",
+            "skill": "heavy-weapons",
+            "reach": 5,
+            "damage-base": "2d8",
+            "damage-type": "spirit",
+            "on-hit": null,
+            "description": "Attack +10*, reach 5 ft., one target. Graze: 9 (2d8) spirit damage. Hit: 22 (2d8 + 10*) spirit damage."
+        }
+    ]
+}

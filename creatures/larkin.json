@@ -1,0 +1,73 @@
+{
+    "id": "larkin",
+    "name": "Larkin",
+    "tier": 2,
+    "role": "rival",
+    "size": "small",
+    "type": "animal",
+    "strength": 1,
+    "physical-defense": 14,
+    "speed": 3,
+    "intellect": 1,
+    "cognitive-defense": 13,
+    "willpower": 2,
+    "awareness": 3,
+    "spiritual-defense": 14,
+    "presence": 1,
+    "health-min": 12,
+    "health-max": 16,
+    "health-avg": 14,
+    "focus": 4,
+    "investiture": 5,
+    "movement": 30,
+    "deflect": 2,
+    "deflect-explanation": "carapace",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 5
+        },
+        "cognitive": {},
+        "spiritual": {
+            "insight": 4,
+            "perception": 5,
+            "survival": 4
+        }
+    },
+    "languages": "understands every Rosharan language, but can't speak",
+    "traits": [
+        {
+            "name": "Hungry for Light",
+            "description": "The larkin begins the scene with 1d4 Investiture, rather than their usual maximum of 5."
+        },
+        {
+            "name": "Weak Wings",
+            "description": "The larkin can't fly further than their flying rate on a turn, even if they use the Move action again."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Drain Light",
+            "description": "If the larkin isn't at full Investiture, they choose one of the following targets within 5 feet of them, draining the chosen target of power: Object with Charges — a fabrial or other object with charges loses 2 (1d4) charges; Group of Spheres — up to 2 (1d4) infused marks or broams within range lose the Stormlight or other Light infused in them; Infused Object or Character — the target (or effect infused in the target) loses 2 (1d4) Investiture. If the target is a character, or if it is an object worn or held by a character, the larkin must succeed on an Agility test against that character's Spiritual defense or the target isn't drained. The larkin regains the same amount of Investiture as they drained from the target. A character wearing Invested Shardplate can't have their Investiture drained in this way, but the Shardplate itself can be drained of charges."
+        },
+        {
+            "action-cost": "single",
+            "name": "Invested Healing",
+            "description": "The larkin can spend 1 Investiture to recover 5 (1d6 + 2) health."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Bite",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": "The larkin can spend 2 focus to use their Drain Light (no action required) on that target or an effect infusing them. The larkin automatically succeeds on their Agility test to do so.",
+            "description": "Attack +5, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 7 (1d4 + 5) keen damage, and the larkin can spend 2 focus to use their Drain Light (no action required) on that target or an effect infusing them. The larkin automatically succeeds on their Agility test to do so."
+        }
+    ]
+}

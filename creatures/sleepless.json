@@ -1,0 +1,93 @@
+{
+    "id": "sleepless",
+    "name": "Sleepless",
+    "tier": 3,
+    "role": "rival",
+    "size": "medium",
+    "type": "entity",
+    "strength": 3,
+    "physical-defense": 16,
+    "speed": 3,
+    "intellect": 4,
+    "cognitive-defense": 18,
+    "willpower": 4,
+    "awareness": 6,
+    "spiritual-defense": 19,
+    "presence": 3,
+    "health-min": 40,
+    "health-max": 72,
+    "health-avg": 60,
+    "focus": 6,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 50,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 6,
+            "stealth": 7
+        },
+        "cognitive": {
+            "discipline": 7,
+            "intimidation": 8,
+            "lore": 6
+        },
+        "spiritual": {
+            "deception": 6,
+            "insight": 10,
+            "perception": 10
+        }
+    },
+    "languages": "Sleepless language, two other languages",
+    "traits": [
+        {
+            "name": "Immunities",
+            "description": "The Sleepless is immune to the Stunned and Surprised conditions."
+        },
+        {
+            "name": "Divisible",
+            "description": "After the Sleepless takes impact or keen damage, they can immediately use their Divide to send out one hordeling (no action required)."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Unsettle",
+            "description": "Costs 1 Focus. The Sleepless eerily distorts their form toward an enemy they can sense within 30 feet of them. The target must succeed on a DC 15 Discipline test or lose 1d4 focus."
+        },
+        {
+            "action-cost": "single",
+            "name": "Divide",
+            "description": "The Sleepless can divide the swarm that comprises them, decreasing their health by 5 per hordeling sent out. Each hordeling is a Small character with 5 health who otherwise uses the statistics of a Sleepless. These hordelings immediately gain a reaction, but they can't use actions until the next round. Anything a hordeling learns is known by the rest of their horde."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Swarm Weapon",
+            "description": "After the Sleepless is hit by a melee attack, the hordelings that comprise them can momentarily swarm the attacker's weapon, giving the attacker a disadvantage on their next test against the Sleepless."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Overwhelm",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "2d6",
+            "damage-type": "keen",
+            "on-hit": "if the Sleepless has at least 25 health, they can smother the target. While smothering a target, the Sleepless occupies the target's space and can't attack other enemies. At the start of each of the Sleepless's turns, a smothered target takes 7 (2d6) vital damage. If the Sleepless takes more than 20 damage from a single attack or is reduced below 25 health, they release the smothered target, fall Prone within 5 feet of the target, and no longer occupy the target's space.",
+            "description": "Attack +7, reach 5 ft., one target. Graze: 7 (2d6) keen damage. Hit: 17 (2d6 + 10) keen damage, and if the Sleepless has at least 25 health, they can smother the target. While smothering a target, the Sleepless occupies the target's space and can't attack other enemies. At the start of each of the Sleepless's turns, a smothered target takes 7 (2d6) vital damage. If the Sleepless takes more than 20 damage from a single attack or is reduced below 25 health, they release the smothered target, fall Prone within 5 feet of the target, and no longer occupy the target's space."
+        },
+        {
+            "action-cost": "single",
+            "name": "Ravage",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "2d10",
+            "damage-type": "keen",
+            "on-hit": "the target becomes Afflicted [1d8 keen] for 2 rounds.",
+            "description": "Attack +7, reach 5 ft., one target. Graze: 11 (2d10) keen damage. Hit: 24 (2d10 + 13) keen damage, and the target becomes Afflicted [1d8 keen] for 2 rounds."
+        }
+    ]
+}

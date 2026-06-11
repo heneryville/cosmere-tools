@@ -1,0 +1,87 @@
+{
+    "id": "duelist-shardbearer",
+    "name": "Duelist Shardbearer",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 3,
+    "physical-defense": 17,
+    "speed": 4,
+    "intellect": 2,
+    "cognitive-defense": 15,
+    "willpower": 3,
+    "awareness": 2,
+    "spiritual-defense": 16,
+    "presence": 4,
+    "health-min": 31,
+    "health-max": 49,
+    "health-avg": 40,
+    "focus": 5,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 6,
+            "heavy-weapons": 6,
+            "light-weapons": 7
+        },
+        "cognitive": {
+            "discipline": 4,
+            "intimidation": 5
+        },
+        "spiritual": {
+            "insight": 4,
+            "leadership": 6,
+            "persuasion": 6
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Inspiring Leadership",
+            "description": "When the duelist successfully uses the Gain Advantage action, they can choose one ally they can influence. That ally also gains an advantage on the next test they make against the duelist's target."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Change Stance",
+            "focus": 1,
+            "description": "The duelist shifts into one of the following stances, losing the effects of any previous stance and gaining the effects of the new stance. Flamestance: While there's only one enemy within 5 feet of the duelist and no allies within 5 feet of them or that enemy, the duelist can use momentum to gain focus, which they can spend only on the Gain Advantage action or on an action that includes an attack test. Windstance: While there are two or more enemies within 5 feet of the duelist, the duelist can use momentum to gain focus, which they can spend only on the Disengage action or on an action that includes an attack test."
+        },
+        {
+            "action-cost": "single",
+            "name": "Feint",
+            "focus": 1,
+            "description": "The duelist tests Heavy Weaponry against the Cognitive defense of a target within 5 feet of them. If the duelist succeeds, the target loses momentum and 1d4 focus. If the duelist fails, the target loses 1 focus. The duelist can spend momentum from this test to use their Change Stance action as a free action without spending focus."
+        },
+        {
+            "action-cost": "single",
+            "name": "Jarring Insight",
+            "description": "The duelist reads their enemy with practiced ease, making an opposed Insight test against the target's Discipline. If the duelist succeeds, the target loses one momentum at the beginning of their next turn, or if they're in a conversation, the target gains a disadvantage on their next contribution."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Reposition",
+            "focus": 1,
+            "description": "Before the duelist is unwillingly moved, they ignore that effect and use the Disengage action as a free action."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Shardblade",
+            "skill": "heavy-weapons",
+            "reach": 5,
+            "damage-base": "2d8",
+            "damage-type": "spirit",
+            "on-hit": null,
+            "description": "Attack +6, reach 5 ft., one target. Graze: 9 (2d8) spirit damage. Hit: 22 (2d8 + 6) spirit damage."
+        }
+    ]
+}

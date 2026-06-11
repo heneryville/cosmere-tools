@@ -1,0 +1,80 @@
+{
+    "id": "brightlord",
+    "name": "Brightlord",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 2,
+    "physical-defense": 16,
+    "speed": 4,
+    "intellect": 1,
+    "cognitive-defense": 14,
+    "willpower": 3,
+    "awareness": 2,
+    "spiritual-defense": 16,
+    "presence": 4,
+    "health-min": 30,
+    "health-max": 46,
+    "health-avg": 38,
+    "focus": 5,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 7,
+            "light-weapons": 7
+        },
+        "cognitive": {
+            "deduction": 4,
+            "discipline": 6,
+            "intimidation": 7
+        },
+        "spiritual": {
+            "insight": 5,
+            "leadership": 7,
+            "persuasion": 6
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Inspiring Leadership",
+            "description": "When the brightlord successfully uses the Gain Advantage action, they can choose one ally they can influence. That ally also gains an advantage on the next test they make against the brightlord's target."
+        },
+        {
+            "name": "Bulwark of Discipline",
+            "description": "When an enemy targets the brightlord or the brightlord's ally with an effect that causes the target to lose focus, the target can reduce the amount of focus lost by 1d4."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Influential Instruction",
+            "focus": 1,
+            "description": "The brightlord spends 1 focus or more to influence that many allies. Each target can choose one of their defenses to increase by 2 until the end of the brightlord's next turn."
+        },
+        {
+            "action-cost": "single",
+            "name": "Diversion",
+            "focus": 1,
+            "description": "The brightlord distracts one enemy they can influence. The target must succeed on a DC 14 Discipline test or lose 1d4 focus and remove the Determined and Focused conditions, if they have them."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Sidesword",
+            "skill": "light-weapons",
+            "reach": 5,
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": "The brightlord can spend 2 focus to attempt to disarm the target. The target must succeed on a DC 15 Athletics test or drop their weapon and have it flung up to 10 feet away in any direction.",
+            "description": "Attack +7, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 10 (1d6 + 7) keen damage, and the brightlord can spend 2 focus to attempt to disarm the target. The target must succeed on a DC 15 Athletics test or drop their weapon and have it flung up to 10 feet away in any direction."
+        }
+    ]
+}

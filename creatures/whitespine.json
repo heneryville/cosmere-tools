@@ -1,0 +1,81 @@
+{
+    "id": "whitespine",
+    "name": "Whitespine",
+    "tier": 2,
+    "role": "rival",
+    "size": "large",
+    "type": "animal",
+    "strength": 4,
+    "physical-defense": 17,
+    "speed": 3,
+    "intellect": 0,
+    "cognitive-defense": 12,
+    "willpower": 2,
+    "awareness": 4,
+    "spiritual-defense": 14,
+    "presence": 0,
+    "health-min": 33,
+    "health-max": 51,
+    "health-avg": 42,
+    "focus": 4,
+    "investiture": 0,
+    "movement": 60,
+    "deflect": 1,
+    "deflect-explanation": "carapace",
+    "sense-range": 40,
+    "sense-primary": "smell",
+    "skills": {
+        "physical": {
+            "agility": 6,
+            "athletics": 7,
+            "stealth": 6
+        },
+        "cognitive": {
+            "intimidation": 5
+        },
+        "spiritual": {
+            "perception": 6,
+            "survival": 6
+        }
+    },
+    "languages": "none",
+    "traits": [
+        {
+            "name": "Enhanced Senses",
+            "description": "The whitespine gains an advantage on non-attack tests that rely on smell."
+        },
+        {
+            "name": "Spined Carapace",
+            "description": "After an enemy within 5 feet of the whitespine grazes them with a weapon attack, that enemy takes 3 (1d6) keen damage."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "double",
+            "name": "Pheromone Release",
+            "description": "The whitespine releases foul pheromones. Each non-whitespine character within 10 feet of them must succeed on a DC 15 Discipline test or become Stunned until the end of the whitespine's next turn."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Claws",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": "and the whitespine can spend 1 focus to make the target Afflicted [1d4 vital] until the target regains at least 1 health.",
+            "description": "Attack +7, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 10 (1d6 + 7) keen damage, and the whitespine can spend 1 focus to make the target Afflicted [1d4 vital] until the target regains at least 1 health."
+        },
+        {
+            "action-cost": "single",
+            "name": "Goring Tusks",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "1d10",
+            "damage-type": "impact",
+            "on-hit": "If the whitespine hits with this attack immediately after moving at least 15 feet, the target takes an extra 5 (1d10) impact damage and must succeed on a DC 14 Athletics test or be knocked Prone.",
+            "description": "Attack +7, reach 5 ft., one target. Graze: 5 (1d10) impact damage. Hit: 12 (1d10 + 7) impact damage. If the whitespine hits with this attack immediately after moving at least 15 feet, the target takes an extra 5 (1d10) impact damage and must succeed on a DC 14 Athletics test or be knocked Prone."
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "id": "greater-larkin",
+    "name": "Greater Larkin",
+    "tier": 4,
+    "role": "rival",
+    "size": "small",
+    "type": "animal",
+    "strength": 2,
+    "physical-defense": 17,
+    "speed": 5,
+    "intellect": 2,
+    "cognitive-defense": 15,
+    "willpower": 3,
+    "awareness": 4,
+    "spiritual-defense": 16,
+    "presence": 2,
+    "health-min": 36,
+    "health-max": 48,
+    "health-avg": 42,
+    "focus": 5,
+    "investiture": 6,
+    "movement": 40,
+    "deflect": 2,
+    "deflect-explanation": "carapace",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 8
+        },
+        "cognitive": {
+            "discipline": 5
+        },
+        "spiritual": {
+            "insight": 6,
+            "perception": 7,
+            "persuasion": 4,
+            "survival": 6
+        }
+    },
+    "languages": "understands every Rosharan language, and can speak short, simple sentences",
+    "traits": [
+        {
+            "name": "Hungry for Light",
+            "description": "The larkin begins the scene with 1d4 Investiture, rather than their usual maximum of 6."
+        },
+        {
+            "name": "Skyborn",
+            "description": "The larkin doesn't trigger Reactive Strikes while flying."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Invested Enhancement",
+            "description": "Costs 1 Investiture. The larkin becomes Enhanced [Strength + 1] and Enhanced [Speed + 1] until the end of their next turn. This temporarily increases each of their Physical skills by 1, including their Bite action's attack and damage rolls. At the end of each of the larkin's turns, they can spend 1 Investiture to maintain this effect for an additional round."
+        },
+        {
+            "action-cost": "single",
+            "name": "Drain Light",
+            "description": "If the larkin isn't at full Investiture, they choose one of the following targets within 10 feet of them, draining the chosen target of power: Object with Charges — a fabrial or other object with charges loses 3 (1d6) charges; Group of Spheres — up to 3 (1d6) infused marks or broams within range lose the Stormlight or other Light infused in them; Infused Object or Character — the target (or effect infused in the target) loses 3 (1d6) Investiture. If the target is a character, or if it is an object worn or held by a character, the larkin must succeed on an Agility test against that character's Spiritual defense or the target isn't drained. The larkin regains the same amount of Investiture as they drained from the target. A character wearing Invested Shardplate can't have their Investiture drained in this way, but the Shardplate itself can be drained of charges."
+        },
+        {
+            "action-cost": "single",
+            "name": "Invested Healing",
+            "description": "The larkin can spend 1 Investiture to recover 7 (1d6 + 4) health."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Bite",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "2d6",
+            "damage-type": "keen",
+            "on-hit": "The larkin can spend 1 focus to use their Drain Light (no action required) on that target or an effect infusing them. The larkin automatically succeeds on their Agility test to do so.",
+            "description": "Attack +8, reach 5 ft., one target. Graze: 7 (2d6) keen damage. Hit: 18 (2d6 + 11) keen damage, and the larkin can spend 1 focus to use their Drain Light (no action required) on that target or an effect infusing them. The larkin automatically succeeds on their Agility test to do so."
+        }
+    ]
+}

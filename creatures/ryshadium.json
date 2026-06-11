@@ -1,0 +1,84 @@
+{
+    "id": "ryshadium",
+    "name": "Ryshadium",
+    "tier": 2,
+    "role": "rival",
+    "size": "large",
+    "type": "animal",
+    "strength": 4,
+    "physical-defense": 19,
+    "speed": 5,
+    "intellect": 1,
+    "cognitive-defense": 13,
+    "willpower": 2,
+    "awareness": 4,
+    "spiritual-defense": 15,
+    "presence": 1,
+    "health-min": 38,
+    "health-max": 58,
+    "health-avg": 48,
+    "focus": 4,
+    "investiture": 0,
+    "movement": 40,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 8,
+            "athletics": 7
+        },
+        "cognitive": {},
+        "spiritual": {
+            "insight": 7,
+            "perception": 6
+        }
+    },
+    "languages": "none",
+    "traits": [
+        {
+            "name": "Beast of Burden",
+            "description": "The Ryshadium's carrying capacity is 1,000 lbs. They ignore the weight of Shardplate worn by their chosen rider."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "double",
+            "name": "Charge",
+            "description": "The Ryshadium moves up to 40 feet in a straight line without triggering Reactive Strikes. When they do, they can move through the spaces of unwilling characters. Enemies in this line must succeed on a DC 17 Athletics test or be knocked Prone and take 11 (2d10) impact damage as they are trampled underfoot."
+        },
+        {
+            "action-cost": "free",
+            "name": "Loyal Companion",
+            "description": "While within 60 feet of their chosen rider, the Ryshadium can use the Move action as a free action."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Danger Sense",
+            "description": "Costs 2 Focus. Before the Ryshadium's chosen rider is attacked by an enemy the Ryshadium can sense, the Ryshadium can increase the rider's Physical defense by 5 against the attack if the rider is within 5 feet of the Ryshadium."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Hooves",
+            "skill": "athletics",
+            "reach": 10,
+            "damage-base": "1d10",
+            "damage-type": "impact",
+            "on-hit": null,
+            "description": "Attack +7, reach 10 ft., one target. Graze: 5 (1d10) impact damage. Hit: 12 (1d10 + 7) impact damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Kick",
+            "skill": "athletics",
+            "reach": 10,
+            "damage-base": "1d8",
+            "damage-type": "impact",
+            "on-hit": "and the target is knocked back 15 feet.",
+            "description": "Attack +7, reach 10 ft., one target. Graze: 4 (1d8) impact damage. Hit: 11 (1d8 + 7) impact damage, and the target is knocked back 15 feet."
+        }
+    ]
+}

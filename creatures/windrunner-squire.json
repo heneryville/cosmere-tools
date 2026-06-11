@@ -1,0 +1,79 @@
+{
+    "id": "windrunner-squire",
+    "name": "Windrunner Squire",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 1,
+    "physical-defense": 13,
+    "speed": 2,
+    "intellect": 1,
+    "cognitive-defense": 13,
+    "willpower": 2,
+    "awareness": 3,
+    "spiritual-defense": 16,
+    "presence": 3,
+    "health-min": 32,
+    "health-max": 48,
+    "health-avg": 40,
+    "focus": 4,
+    "investiture": 2,
+    "movement": 25,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 5,
+            "heavy-weapons": 4,
+            "light-weapons": 5
+        },
+        "cognitive": {
+            "discipline": 5
+        },
+        "spiritual": {
+            "insight": 6,
+            "perception": 6,
+            "survival": 6
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Squire",
+            "description": "The squire can only use surge skills and actions that cost Investiture while they're within 50 miles of their Knight Radiant."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Adhesion",
+            "description": "Costs 1 Investiture or More. The squire uses Adhesion to infuse two Small objects, sticking them together for a number of rounds equal to the Investiture spent. The squire can infuse a surface of any size in place of one of the objects. If this action is used during combat, the squire must make a DC 15 Adhesion test. On a failure, the objects aren't infused and the Investiture isn't spent."
+        },
+        {
+            "action-cost": "single",
+            "name": "Gravitation",
+            "description": "Costs 1 Investiture. The squire gives themselves a flying rate of 25 feet until the start of their next turn. At the start of each of their turns, they can spend 1 Investiture to maintain this effect for an additional round."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Parry",
+            "description": "Costs 1 Focus. Before the squire is hit by a melee attack, they increase their Physical defense by 3 against that attack, potentially causing it to miss. To do so, the squire must sense the attacker and be wielding a melee weapon."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Shortspear",
+            "skill": "light-weapons",
+            "reach": 5,
+            "range": null,
+            "damage-base": "1d8",
+            "damage-type": "keen",
+            "on-hit": "The squire can spend 1 focus to gain the Determined condition until the end of their next turn.",
+            "description": "Attack +5, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 9 (1d8 + 5) keen damage, and the squire can spend 1 focus to gain the Determined condition until the end of their next turn."
+        }
+    ]
+}

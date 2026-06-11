@@ -1,0 +1,88 @@
+{
+    "id": "soulcaster-savant",
+    "name": "Soulcaster Savant",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 1,
+    "physical-defense": 13,
+    "speed": 2,
+    "intellect": 2,
+    "cognitive-defense": 16,
+    "willpower": 4,
+    "awareness": 5,
+    "spiritual-defense": 18,
+    "presence": 3,
+    "health-min": 25,
+    "health-max": 39,
+    "health-avg": 32,
+    "focus": 6,
+    "investiture": 0,
+    "movement": 25,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 50,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {},
+        "cognitive": {
+            "discipline": 7,
+            "intimidation": 6,
+            "lore": 4
+        },
+        "spiritual": {
+            "insight": 8,
+            "survival": 8
+        }
+    },
+    "languages": "determined by culture",
+    "traits": [
+        {
+            "name": "Soulcaster Essences",
+            "description": "The Soulcaster's fabrial is set with a smokestone (smoke), a ruby (fire), and a topaz (stone). If one of the Soulcaster's attacks reduces an enemy to 0 health, the enemy is killed and transforms into the Essence corresponding to that attack."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Soulcasting",
+            "description": "The Soulcaster touches a Medium or smaller object and makes a DC 17 Discipline test. On a success, they transform the object into one of their Essences. They can spend 2 focus to target a Large object instead."
+        },
+        {
+            "action-cost": "double",
+            "name": "Fire",
+            "description": "The Soulcaster transforms air into fire around their foes. Each enemy within 5 feet of them takes 9 (2d8) energy damage. The Soulcaster can spend 1 focus per enemy in range to cause that fire to set the enemies' clothes aflame. A character in burning clothes becomes Afflicted [2d8 energy] until they or a character who can reach them uses a single action to put out the fire."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Soulcast Protection",
+            "focus": 2,
+            "description": "Costs 2 Focus. Before a ranged attack hits the Soulcaster or an ally within 5 feet of them, the Soulcaster makes a Discipline test. If their result is greater than the triggering attack test, the Soulcaster transforms the attack's projectile into one of their Essences and causes the attack to miss."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Stone",
+            "skill": "discipline",
+            "reach": 5,
+            "range": null,
+            "damage-base": "1d6",
+            "damage-type": "spirit",
+            "on-hit": "the Soulcaster can spend 1 focus to make the target Slowed until the end of the target's next turn.",
+            "description": "Attack +7 vs. Spiritual, reach 5 ft., one target. Graze: 3 (1d6) spirit damage. Hit: 10 (1d6 + 7) spirit damage, and the Soulcaster can spend 1 focus to make the target Slowed until the end of the target's next turn."
+        },
+        {
+            "action-cost": "single",
+            "name": "Smoke",
+            "skill": "discipline",
+            "reach": 5,
+            "range": null,
+            "damage-base": "2d6",
+            "damage-type": "spirit",
+            "on-hit": null,
+            "description": "Attack +7 vs. Spiritual, reach 5 ft., one target. Graze: 7 (2d6) spirit damage. Hit: 14 (2d6 + 7) spirit damage."
+        }
+    ]
+}

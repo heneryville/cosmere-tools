@@ -1,0 +1,70 @@
+{
+    "id": "commoner",
+    "name": "Commoner",
+    "tier": 1,
+    "role": "minion",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 0,
+    "physical-defense": 11,
+    "speed": 1,
+    "intellect": 1,
+    "cognitive-defense": 12,
+    "willpower": 0,
+    "awareness": 1,
+    "spiritual-defense": 11,
+    "presence": 0,
+    "health-min": 8,
+    "health-max": 12,
+    "health-avg": 10,
+    "focus": 2,
+    "investiture": 0,
+    "movement": 25,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "athletics": 1
+        },
+        "cognitive": {
+            "crafting": 2
+        },
+        "spiritual": {
+            "insight": 2,
+            "perception": 2
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Minion",
+            "description": "The commoner's attacks can't critically hit, and they're immediately defeated when they suffer an injury."
+        },
+        {
+            "name": "Capable",
+            "description": "The commoner has a utility expertise in one profession, and they gain an advantage on skill tests related to that profession."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Distract",
+            "focus": 1,
+            "description": "When an ally makes a test against an enemy who is within reach of the commoner, the commoner grants the ally an advantage on that test."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Improvised Weapon",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "1d4",
+            "damage-type": "impact",
+            "on-hit": null,
+            "description": "Attack +1, reach 5 ft., one target. On a Complication, this improvised weapon breaks. Graze: 2 (1d4) impact damage. Hit: 3 (1d4 + 1) impact damage."
+        }
+    ]
+}

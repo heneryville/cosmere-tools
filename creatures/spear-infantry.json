@@ -1,0 +1,85 @@
+{
+    "id": "spear-infantry",
+    "name": "Spear Infantry",
+    "tier": 1,
+    "role": "minion",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 2,
+    "physical-defense": 14,
+    "speed": 2,
+    "intellect": 1,
+    "cognitive-defense": 12,
+    "willpower": 1,
+    "awareness": 2,
+    "spiritual-defense": 13,
+    "presence": 1,
+    "health-min": 11,
+    "health-max": 17,
+    "health-avg": 14,
+    "focus": 3,
+    "investiture": 0,
+    "movement": 25,
+    "deflect": 2,
+    "deflect-explanation": "chain",
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "athletics": 4,
+            "heavy-weapons": 4,
+            "light-weapons": 3
+        },
+        "cognitive": {
+            "discipline": 2,
+            "intimidation": 3
+        },
+        "spiritual": {
+            "perception": 4
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Minion",
+            "description": "The spear infantry's attacks can't critically hit, and they're immediately defeated when they suffer an injury."
+        },
+        {
+            "name": "Martial Drill",
+            "description": "At the start of each scene, if the spear infantry has their shield and isn't Surprised, they gain the benefits of the Brace action until the start of their first turn."
+        },
+        {
+            "name": "Military Tactics",
+            "description": "Once per round, the spear infantry can spend 1 additional focus to use the Aid or Reactive Strike reaction without using their reaction."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Shield Bash",
+            "description": "The spear infantry makes an Athletics test against the target's Physical defense, knocking them Prone on a success."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Shortspear",
+            "skill": "light-weapons",
+            "reach": 5,
+            "damage-base": "1d8",
+            "damage-type": "keen",
+            "on-hit": "if the target is Prone, they take an extra 4 (1d8) keen damage.",
+            "description": "Attack +3, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 7 (1d8 + 3) keen damage, and if the target is Prone, they take an extra 4 (1d8) keen damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Shortbow",
+            "skill": "light-weapons",
+            "range": [80, 320],
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +3, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 6 (1d6 + 3) keen damage."
+        }
+    ]
+}

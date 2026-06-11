@@ -1,0 +1,96 @@
+{
+    "id": "assassin",
+    "name": "Assassin",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 1,
+    "physical-defense": 16,
+    "speed": 5,
+    "intellect": 2,
+    "cognitive-defense": 15,
+    "willpower": 3,
+    "awareness": 3,
+    "spiritual-defense": 15,
+    "presence": 2,
+    "health-min": 32,
+    "health-max": 48,
+    "health-avg": 40,
+    "focus": 5,
+    "investiture": 0,
+    "movement": 40,
+    "deflect": 1,
+    "deflect-explanation": "leather",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 8,
+            "athletics": 4,
+            "light-weapons": 8,
+            "stealth": 8
+        },
+        "cognitive": {
+            "crafting": 5,
+            "deduction": 5,
+            "intimidation": 6
+        },
+        "spiritual": {
+            "deception": 5,
+            "perception": 6
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Skulking Approach",
+            "description": "At the start of each scene, if the assassin is in cover or an area where their enemy's primary sense is obscured, the assassin can make a Stealth test (no action required) with an advantage against the Spiritual defense of each enemy who can sense them. Each enemy they succeed against loses track of them and can no longer sense them until the assassin attacks or takes another action that would expose them."
+        },
+        {
+            "name": "Stay in the Shadows",
+            "description": "While the assassin is in cover or an area where their enemy's primary sense is obscured, their Physical defense increases by 2 (to 18) against that enemy."
+        },
+        {
+            "name": "Immunities",
+            "description": "The assassin is immune to the Surprised condition."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "free",
+            "name": "Killer Instinct",
+            "description": "After the assassin ends a Move action within 5 feet of an enemy, if the assassin moved at least 20 feet this turn, they can use the Gain Advantage action as a free action."
+        },
+        {
+            "action-cost": "single",
+            "name": "Twist the Knife",
+            "focus": 1,
+            "description": "Once per turn, when the assassin grazes, they can add their attack test modifier to that graze's damage."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Dagger",
+            "skill": "light-weapons",
+            "reach": 5,
+            "range": [20, 60],
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": "If the assassin had at least one advantage on this attack, they can spend 1 focus to deal an extra 10 (4d4) keen damage.",
+            "description": "Attack +8, reach 5 ft. or range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 10 (1d4 + 8) keen damage, and if the assassin had at least one advantage on this attack, they can spend 1 focus to deal an extra 10 (4d4) keen damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Shortbow",
+            "skill": "light-weapons",
+            "reach": null,
+            "range": [80, 320],
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": "The target must succeed on a DC 13 Athletics test or be Slowed until the end of the target's next turn.",
+            "description": "Attack +8, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 11 (1d6 + 8) keen damage, and the target must succeed on a DC 13 Athletics test or be Slowed until the end of the target's next turn."
+        }
+    ]
+}

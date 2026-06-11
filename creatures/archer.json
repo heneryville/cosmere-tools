@@ -1,0 +1,83 @@
+{
+    "id": "archer",
+    "name": "Archer",
+    "tier": 1,
+    "role": "minion",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 2,
+    "physical-defense": 13,
+    "speed": 1,
+    "intellect": 2,
+    "cognitive-defense": 13,
+    "willpower": 1,
+    "awareness": 2,
+    "spiritual-defense": 13,
+    "presence": 1,
+    "health-min": 9,
+    "health-max": 15,
+    "health-avg": 12,
+    "focus": 3,
+    "investiture": 0,
+    "movement": 25,
+    "deflect": 1,
+    "deflect-explanation": "leather",
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 3,
+            "heavy-weapons": 4,
+            "light-weapons": 3
+        },
+        "cognitive": {
+            "discipline": 3
+        },
+        "spiritual": {
+            "perception": 4,
+            "survival": 3
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Minion",
+            "description": "The archer's attacks can't critically hit, and they're immediately defeated when they suffer an injury."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Take Aim",
+            "description": "On the archer's first turn of each scene, if they aren't Surprised, they can use the Gain Advantage action as a single action."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Immobilizing Shot",
+            "focus": 1,
+            "description": "When an enemy the archer can sense moves while the archer is within 150 feet of them, the archer makes a Longbow attack against them. On a hit, the target is also Immobilized until the end of the archer's next turn."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Knife",
+            "skill": "light-weapons",
+            "reach": 5,
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +3, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 5 (1d4 + 3) keen damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Longbow",
+            "skill": "light-weapons",
+            "range": [150, 600],
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +4, range 150/600 ft., one target. Graze: 3 (1d6) keen damage. Hit: 7 (1d6 + 4) keen damage."
+        }
+    ]
+}

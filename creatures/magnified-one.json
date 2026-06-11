@@ -1,0 +1,104 @@
+{
+    "id": "magnified-one",
+    "name": "Magnified One",
+    "tier": 3,
+    "role": "boss",
+    "size": "large",
+    "type": "humanoid",
+    "strength": 7,
+    "physical-defense": 18,
+    "speed": 1,
+    "intellect": 3,
+    "cognitive-defense": 16,
+    "willpower": 3,
+    "awareness": 6,
+    "spiritual-defense": 18,
+    "presence": 2,
+    "health-min": 160,
+    "health-max": 240,
+    "health-avg": 200,
+    "focus": 7,
+    "investiture": 8,
+    "movement": 25,
+    "deflect": 3,
+    "deflect-explanation": "carapace",
+    "sense-range": 50,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "athletics": 10,
+            "heavy-weapons": 11
+        },
+        "cognitive": {
+            "discipline": 6,
+            "intimidation": 4
+        },
+        "spiritual": {
+            "leadership": 5,
+            "perception": 10
+        }
+    },
+    "languages": "Dawnchant",
+    "traits": [
+        {
+            "name": "Boss",
+            "description": "The Magnified One can take both a fast turn and a slow turn each round. After an enemy finishes a turn, the Magnified One can spend 1 focus to immediately use an extra single or double action. Additionally, they can spend 1 focus on their turn to remove a condition from themself."
+        },
+        {
+            "name": "External Carapace",
+            "description": "The Magnified One can use their carapace like a shield, allowing them to use the Brace action."
+        },
+        {
+            "name": "Shell Binding",
+            "description": "When the Magnified One succeeds on the Grapple action against a target, they can spend 1 Investiture to grow a carapace shell over the target, causing the target to also become Immobilized. Even if the target is no longer in the Magnified One's reach, the target remains Immobilized and Restrained until the target or a character who can reach them succeeds on a DC 18 Athletics test to free them from the carapace."
+        },
+        {
+            "name": "Immunities",
+            "description": "The Magnified One is immune to the Stunned condition."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Grow Carapace",
+            "description": "Costs 1 Investiture. The Magnified One grows their carapace for additional armor or spikes, gaining the corresponding benefit. Carapace Armor: The Magnified One can't be grazed until the end of their next turn. Carapace Spikes: Until the end of the Magnified One's next turn, the first time each turn that a character either hits the Magnified One with a melee attack or successfully Grapples or Shoves the Magnified One, that character takes 11 (2d10) keen damage."
+        },
+        {
+            "action-cost": "double",
+            "name": "Magnified Charge",
+            "description": "Costs 2 Focus. The Magnified One moves up to 25 feet in a straight line without triggering Reactive Strikes. The first time the Magnified One comes within 5 feet of each enemy during this move, the Magnified One can make a Carapace Weapon attack against that enemy as a free action. On a hit, the enemy is also knocked Prone."
+        },
+        {
+            "action-cost": "double",
+            "name": "Surge of Progression",
+            "description": "Costs 2 Investiture. The Magnified One chooses a Huge (15-foot) or smaller area within 30 feet of them, growing their carapace with incredible speed in a way they choose, though not violently enough to cause damage. Depending on the nature of the carapace construction, this can cause an effect such as the creation of cover, difficult terrain, or a structure, or it can cause characters in that area to become Immobilized. If the effect would apply a condition to a character, they can avoid it with a successful DC 16 Agility or Athletics test."
+        },
+        {
+            "action-cost": "free",
+            "name": "Regenerate",
+            "description": "Costs 1 Investiture. The Magnified One recovers 15 (1d10 + 10) health and recovers from up to one injury of their choice. They can use this free action even while Unconscious or otherwise prevented from using actions."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Carapace Weapon",
+            "skill": "heavy-weapons",
+            "reach": 5,
+            "damage-base": "2d6",
+            "damage-type": "impact",
+            "on-hit": null,
+            "description": "Attack +11, reach 5 ft., one target. Graze: 7 (2d6) impact or keen damage. Hit: 21 (2d6 + 14) impact or keen damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Spike Spear",
+            "skill": "heavy-weapons",
+            "reach": 60,
+            "damage-base": "1d10",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Costs 1 Investiture. Attack +11, range 60 ft., one target. Graze: 5 (1d10) keen damage. Hit: 19 (1d10 + 14) keen damage."
+        }
+    ]
+}

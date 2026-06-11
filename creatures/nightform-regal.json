@@ -1,0 +1,86 @@
+{
+    "id": "nightform-regal",
+    "name": "Nightform Regal",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 1,
+    "physical-defense": 14,
+    "speed": 3,
+    "intellect": 4,
+    "cognitive-defense": 16,
+    "willpower": 2,
+    "awareness": 5,
+    "spiritual-defense": 16,
+    "presence": 1,
+    "health-min": 27,
+    "health-max": 37,
+    "health-avg": 32,
+    "focus": 4,
+    "investiture": 7,
+    "movement": 30,
+    "deflect": 1,
+    "deflect-explanation": "carapace",
+    "sense-range": 50,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "light-weaponry": 6,
+            "stealth": 6
+        },
+        "cognitive": {
+            "deduction": 8,
+            "lore": 8
+        },
+        "spiritual": {
+            "insight": 7,
+            "perception": 7
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Conflict of Fortune",
+            "description": "Characters can't supernaturally view past or future events for which the Regal is present. Additionally, the Regal and each ally within 20 feet of them are immune to any unwanted effect that would force them to reroll or replace the result of their die rolls."
+        },
+        {
+            "name": "Glimpses of the Future",
+            "description": "Costs 1 Investiture or More. Once per round, after the Regal rolls the dice for a test, the Regal can spend 1 Investiture or more to reroll that number of dice."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Predict",
+            "description": "Costs 1 Focus. The Regal makes a Deduction test against the Cognitive defense of a target they can sense, gaining an advantage if the target has already acted this round. On a success, the Regal and each ally within 20 feet of them gain an advantage on Reactive Strikes against the target until the end of the target's next turn."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Intervening Premonition",
+            "description": "Costs 1 Investiture. When a character the Regal can sense makes a test, but before the test is resolved, the Regal can roll a d20, then if they wish, choose one d20 the character rolled for that test and replace it with the number the Regal rolled."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Sidesword",
+            "skill": "light-weaponry",
+            "reach": 5,
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +6, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9 (1d6 + 6) keen damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Shortbow",
+            "skill": "light-weaponry",
+            "reach": 80,
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +6, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9 (1d6 + 6) keen damage."
+        }
+    ]
+}

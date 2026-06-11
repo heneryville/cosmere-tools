@@ -1,0 +1,91 @@
+{
+    "id": "thrill-berserker",
+    "name": "Thrill Berserker",
+    "tier": 1,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 2,
+    "physical-defense": 14,
+    "speed": 2,
+    "intellect": 1,
+    "cognitive-defense": 14,
+    "willpower": 3,
+    "awareness": 2,
+    "spiritual-defense": 14,
+    "presence": 2,
+    "health-min": 18,
+    "health-max": 26,
+    "health-avg": 22,
+    "focus": 5,
+    "investiture": 0,
+    "movement": 25,
+    "deflect": 2,
+    "deflect-explanation": "breastplate",
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "athletics": 4,
+            "heavy-weapons": 4,
+            "light-weapons": 3
+        },
+        "cognitive": {
+            "intimidation": 5
+        },
+        "spiritual": {
+            "leadership": 3,
+            "perception": 4
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Infectious Thrill",
+            "description": "When an enemy rolls a critical success on an attack test against the berserker, the enemy gains a +3 bonus to that d20 roll. Regardless of whether the attack hits or misses, if any other characters are within 5 feet of the berserker, the enemy must choose one. The enemy's attack also grazes the chosen character (without spending focus)."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Shield Bash",
+            "focus": 1,
+            "description": "The berserker makes an Athletics test against the Physical defense of a Large or smaller character within 5 feet of them, knocking them Prone on a success."
+        },
+        {
+            "action-cost": "double",
+            "name": "Berserker Rage",
+            "focus": 2,
+            "description": "The Thrill surges within the berserker. Their next Strike targets each character within 5 feet of them and deals an extra 3 (1d6) damage on a hit."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Lash Out",
+            "focus": 1,
+            "description": "After the berserker is attacked by an enemy within 5 feet of them, the berserker deals 4 (1d8) keen damage to the attacker."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Longsword",
+            "skill": "heavy-weapons",
+            "reach": 5,
+            "damage-base": "1d8",
+            "damage-type": "keen",
+            "on-hit": "If the target is Prone, they take an extra 4 (1d8) damage.",
+            "description": "Attack +4, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 8 (1d8 + 4) keen damage, and if the target is Prone, they take an extra 4 (1d8) damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Dagger",
+            "skill": "light-weapons",
+            "reach": 5,
+            "range": [20, 60],
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +3, range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 5 (1d4 + 3) keen damage."
+        }
+    ]
+}

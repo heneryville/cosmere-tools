@@ -1,0 +1,60 @@
+{
+    "id": "painspren",
+    "name": "Painspren",
+    "tier": 1,
+    "role": "minion",
+    "size": "small",
+    "type": "entity",
+    "strength": 1,
+    "physical-defense": 14,
+    "speed": 3,
+    "intellect": 0,
+    "cognitive-defense": 13,
+    "willpower": 3,
+    "awareness": 0,
+    "spiritual-defense": 10,
+    "presence": 0,
+    "health-min": 9,
+    "health-max": 15,
+    "health-avg": 12,
+    "focus": 5,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 5,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 5
+        },
+        "cognitive": {},
+        "spiritual": {
+            "perception": 2
+        }
+    },
+    "languages": "none",
+    "traits": [
+        {
+            "name": "Minion",
+            "description": "The painspren's attacks can't critically hit, and they're immediately defeated when they suffer an injury."
+        },
+        {
+            "name": "Investiture Hunger",
+            "description": "The painspren can sense the use of Investiture within 5 miles of them."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Grip Enemy",
+            "description": "Attack +3, reach 5 ft., one target. Graze: 2 (1d4) impact damage. Hit: 5 (1d4 + 3) impact damage, and the painspren can spend 1 focus to attach to the target, making them Restrained while the painspren remains within 5 feet of them. At the start of this Restrained target's turn, they take 2 (1d4) vital damage from each attached painspren. The Restrained target or a character who can reach them can make a DC 10 Discipline test as a free action, freeing the target from one attached painspren on a success. While attached to a target, the painspren can't use their Grip Enemy action."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Painsense",
+            "description": "After a character within 60 feet of the painspren takes damage, the painspren moves up to 10 feet toward them."
+        }
+    ],
+    "strikes": []
+}

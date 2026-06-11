@@ -1,0 +1,64 @@
+{
+    "id": "cremling-swarm",
+    "name": "Cremling Swarm",
+    "tier": 1,
+    "role": "rival",
+    "size": "medium",
+    "type": "animal",
+    "strength": 1,
+    "physical-defense": 14,
+    "speed": 3,
+    "intellect": 1,
+    "cognitive-defense": 13,
+    "willpower": 2,
+    "awareness": 2,
+    "spiritual-defense": 13,
+    "presence": 1,
+    "health-min": 17,
+    "health-max": 27,
+    "health-avg": 22,
+    "focus": 4,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 5
+        },
+        "cognitive": {},
+        "spiritual": {}
+    },
+    "languages": "none",
+    "traits": [
+        {
+            "name": "Swarm",
+            "description": "The swarm is comprised of many tiny creatures, and it can't regain health. It can move through spaces occupied by other characters or through openings with a diameter of 3 inches, as long as it ends its movement fully on the other side of the character or obstacle."
+        },
+        {
+            "name": "Immunities",
+            "description": "The cremling swarm is immune to the Immobilized, Prone, Restrained, and Stunned conditions."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "double",
+            "name": "Screech",
+            "description": "Costs 2 Focus. The swarm emits an ear-piercing cacophony of screeching and clicking. Each character within 10 feet of the swarm must make a DC 14 Discipline test. On a failure, a character must spend 2 focus or become Disoriented until the end of their next turn. Cremlings and characters who can't hear automatically succeed on this test."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Bite",
+            "skill": "agility",
+            "reach": 5,
+            "damage-base": "2d4",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +5, reach 5 ft., one target. Graze: 5 (2d4) keen damage, or 2 (1d4) keen damage if the swarm has half its health or less. Hit: 10 (2d4 + 5) keen damage, or 4 (1d4 + 2) keen damage if the swarm has half its health or less."
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "id": "direform-regal",
+    "name": "Direform Regal",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 5,
+    "physical-defense": 18,
+    "speed": 3,
+    "intellect": 1,
+    "cognitive-defense": 14,
+    "willpower": 3,
+    "awareness": 3,
+    "spiritual-defense": 14,
+    "presence": 1,
+    "health-min": 33,
+    "health-max": 51,
+    "health-avg": 42,
+    "focus": 5,
+    "investiture": 5,
+    "movement": 30,
+    "deflect": 4,
+    "deflect-explanation": "carapace",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 5,
+            "athletics": 8,
+            "heavy-weaponry": 8,
+            "light-weaponry": 6
+        },
+        "cognitive": {
+            "discipline": 6,
+            "intimidation": 6
+        },
+        "spiritual": {
+            "perception": 5
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Martial Experience",
+            "description": "The direform can use their Strike action twice on their turn."
+        },
+        {
+            "name": "Obstinate Guard",
+            "description": "It costs the direform 1 fewer focus to resist an enemy's influence."
+        },
+        {
+            "name": "Spiked Carapace",
+            "description": "The direform can use their carapace like a shield, allowing them to use the Brace action. While benefiting from Brace, the first time on each turn that the direform either is hit or grazed by a melee attack or is successfully Grappled or Shoved by an enemy, that enemy takes 3 (1d6) keen damage."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Invested Enhancement",
+            "description": "Costs 1 Investiture. The direform becomes Enhanced [Strength + 1] and Enhanced [Speed +1] until the end of their next turn. This temporarily increases each of their Physical skills by 1, including their Hammer and Longbow actions' attack and damage rolls. At the end of each of the direform's turns, they can spend 1 Investiture to maintain this effect for an additional round."
+        },
+        {
+            "action-cost": "single",
+            "name": "Stand Firm",
+            "description": "Costs 1 Focus. Before the direform is unwillingly moved or knocked Prone, they ignore that effect."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Tackle",
+            "description": "When an enemy triggers a Reactive Strike from the direform, the direform can instead attempt to Grapple the enemy, spending focus as if they made a Reactive Strike. If the Grapple succeeds, the enemy also takes 3 (1d6) keen damage from the direform's carapace spikes."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Hammer",
+            "skill": "heavy-weaponry",
+            "reach": 5,
+            "damage-base": "1d10",
+            "damage-type": "impact",
+            "on-hit": null,
+            "description": "Attack +8, reach 5 ft., one target. The direform gains an advantage on this attack if they moved at least 10 feet in a straight line toward the target this turn. Graze: 5 (1d10) impact damage. Hit: 13 (1d10 + 8) impact damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Longbow",
+            "skill": "light-weaponry",
+            "reach": 150,
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +8, range 150/600 ft., one target. Graze: 3 (1d6) keen damage. Hit: 11 (1d6 + 8) keen damage."
+        }
+    ]
+}

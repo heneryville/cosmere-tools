@@ -1,0 +1,75 @@
+{
+    "id": "angerspren",
+    "name": "Angerspren",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "entity",
+    "strength": 3,
+    "physical-defense": 18,
+    "speed": 5,
+    "intellect": 0,
+    "cognitive-defense": 14,
+    "willpower": 4,
+    "awareness": 2,
+    "spiritual-defense": 14,
+    "presence": 2,
+    "health-min": 30,
+    "health-max": 46,
+    "health-avg": 38,
+    "focus": 6,
+    "investiture": 0,
+    "movement": 50,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 8,
+            "athletics": 6
+        },
+        "cognitive": {
+            "intimidation": 7
+        },
+        "spiritual": {
+            "perception": 5
+        }
+    },
+    "languages": "none",
+    "traits": [
+        {
+            "name": "Investiture Hunger",
+            "description": "The angerspren can sense the use of Investiture within 5 miles of them."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Rend",
+            "description": "Costs 2 Focus. The angerspren scrapes their claws and spines against one enemy they have Restrained with their Tail Wrap. That enemy takes 11 (2d10) keen damage at the start of each round while they remain Restrained in this way."
+        },
+        {
+            "action-cost": "free",
+            "name": "Pack Instincts",
+            "description": "While within 5 feet of an ally, the angerspren uses the Gain Advantage action as a free action."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Tail Wrap",
+            "description": "Costs 1 Focus. When an enemy triggers a Reactive Strike from the angerspren, the angerspren can instead use their tail to attempt to Grapple the enemy as a free action, spending focus as if they made a Reactive Strike. While the angerspren is grappling an enemy in this way, the effect ends if the target is more than 5 feet from the angerspren, if the target succeeds on a DC 14 Discipline test, or if the angerspren uses their Tail Wrap against another target."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Bite",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "1d10",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +8, reach 5 ft., one target. Graze: 5 (1d10) keen damage. Hit: 13 (1d10 + 8) keen damage."
+        }
+    ]
+}

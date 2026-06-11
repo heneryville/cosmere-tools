@@ -1,0 +1,83 @@
+{
+    "id": "nimbleform-singer",
+    "name": "Nimbleform Singer",
+    "tier": 1,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 1,
+    "physical-defense": 14,
+    "speed": 3,
+    "intellect": 3,
+    "cognitive-defense": 15,
+    "willpower": 2,
+    "awareness": 3,
+    "spiritual-defense": 15,
+    "presence": 2,
+    "health-min": 15,
+    "health-max": 25,
+    "health-avg": 20,
+    "focus": 4,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 5,
+            "light-weaponry": 5,
+            "stealth": 4
+        },
+        "cognitive": {
+            "crafting": 4,
+            "deduction": 5,
+            "lore": 4
+        },
+        "spiritual": {
+            "perception": 5,
+            "survival": 5
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Deadly Speed",
+            "description": "At the start of each scene, if the nimbleform singer isn't Surprised, they can take a fast turn before any other characters (this doesn't count as their turn this round)."
+        },
+        {
+            "name": "Keen Senses",
+            "description": "The nimbleform singer can spend 1 focus to gain an advantage on a Perception test (no action required)."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "double",
+            "name": "Chosen Target",
+            "description": "Costs 2 Focus. The nimbleform singer chooses an enemy they can sense within 120 feet of them. For 1 hour, when the nimbleform hits their chosen enemy with a weapon attack, they deal an extra 3 (1d6) damage. In addition, the nimbleform singer gains an advantage on Survival tests to track that enemy."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Mace",
+            "skill": "light-weaponry",
+            "reach": 5,
+            "damage-base": "1d6",
+            "damage-type": "impact",
+            "on-hit": null,
+            "description": "Attack +5, reach 5 ft., one target. Graze: 3 (1d6) impact damage. Hit: 8 (1d6 + 5) impact damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Shortbow",
+            "skill": "light-weaponry",
+            "reach": 80,
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +5, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 8 (1d6 + 5) keen damage."
+        }
+    ]
+}

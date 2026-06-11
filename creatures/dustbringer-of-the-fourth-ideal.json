@@ -1,0 +1,108 @@
+{
+    "id": "dustbringer-of-the-fourth-ideal",
+    "name": "Dustbringer of the Fourth Ideal",
+    "tier": 4,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 4,
+    "physical-defense": 16,
+    "speed": 6,
+    "intellect": 5,
+    "cognitive-defense": 19,
+    "willpower": 4,
+    "awareness": 5,
+    "spiritual-defense": 17,
+    "presence": 3,
+    "health-min": 50,
+    "health-max": 80,
+    "health-avg": 65,
+    "focus": 6,
+    "investiture": 7,
+    "movement": 50,
+    "deflect": 5,
+    "deflect-explanation": "Radiant Shardplate",
+    "sense-range": 50,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 11,
+            "light-weapons": 10,
+            "stealth": 10
+        },
+        "cognitive": {
+            "discipline": 9,
+            "intimidation": 8
+        },
+        "spiritual": {
+            "leadership": 7,
+            "perception": 8
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Radiant Shardplate (4 Charges)",
+            "description": "The Dustbringer is equipped with Shardplate. Before they take damage, they can expend a charge (no action required) to increase their deflect value against that damage by 10. While the armor has charges, all Invested tests against the Dustbringer gain a disadvantage, and the armor's deflect value applies to all damage types. After the armor runs out of charges, some of the Dustbringer's attributes and skills are reduced by 2, along with their related modifiers; these statistics are marked with an asterisk (*)."
+        },
+        {
+            "name": "Breakable Armor",
+            "description": "After the Dustbringer is hit by an attack, the attacker can spend an Opportunity to cause the Dustbringer's Shardplate to lose 1 charge."
+        },
+        {
+            "name": "Slippery",
+            "description": "While they have 1 Investiture or more, the Dustbringer can't be grazed and Reactive Strikes against them gain a disadvantage."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Decaying Touch",
+            "description": "Costs 1 Investiture. Attack +9 vs. Spiritual, reach 20 ft., one target. Graze: 16 (3d10) spirit damage. Hit: 25 (3d10 + 9) spirit damage, and the target must succeed on a DC 16 Agility test or their armor rusts and decays, permanently decreasing its deflect value by 1. Armor damaged in this way can be repaired with proper materials as a downtime activity."
+        },
+        {
+            "action-cost": "double",
+            "name": "Burst of Flame",
+            "description": "Costs 2 Investiture. The Dustbringer emits a burst of fire that deals 6 (1d12) energy damage to each character within 20 feet of them and sets unattended objects in that area ablaze. Additionally, the Dustbringer can spend 1 focus or more to shower sparks onto that number of enemies within 30 feet of them; each target must succeed on a DC 16 Agility test or lose one focus on their next turn."
+        },
+        {
+            "action-cost": "single",
+            "name": "Eroding Escape",
+            "description": "Costs 1 Investiture. The Dustbringer targets themself or an ally in reach, ending one condition on them that is either applying the Immobilized condition, the Restrained condition, or a disadvantage on any physical test."
+        },
+        {
+            "action-cost": "free",
+            "name": "Regenerate",
+            "description": "Costs 1 Investiture. The Dustbringer recovers 7 (1d6 + 4) health. They can use this free action even while Unconscious or otherwise prevented from using actions."
+        },
+        {
+            "action-cost": "single",
+            "name": "Skate",
+            "description": "Costs 1 Focus. The Dustbringer moves up to their movement rate."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Shardblade",
+            "skill": "light-weapons",
+            "reach": 5,
+            "range": null,
+            "damage-base": "2d10",
+            "damage-type": "spirit",
+            "on-hit": "The Dustbringer can spend 1 focus to use the Disengage action as a free action.",
+            "description": "Attack +10, reach 5 ft., one target. Graze: 11 (2d10) spirit damage. Hit: 21 (2d10 + 10) spirit damage, and the Dustbringer can spend 1 focus to use the Disengage action as a free action."
+        },
+        {
+            "action-cost": "single",
+            "name": "Shortbow",
+            "skill": "light-weapons",
+            "reach": null,
+            "range": [80, 320],
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +10, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 13 (1d6 + 10) keen damage."
+        }
+    ]
+}

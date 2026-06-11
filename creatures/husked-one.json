@@ -1,0 +1,97 @@
+{
+    "id": "husked-one",
+    "name": "Husked One",
+    "tier": 3,
+    "role": "boss",
+    "size": "large",
+    "type": "humanoid",
+    "strength": 2,
+    "physical-defense": 16,
+    "speed": 4,
+    "intellect": 7,
+    "cognitive-defense": 20,
+    "willpower": 3,
+    "awareness": 2,
+    "spiritual-defense": 16,
+    "presence": 4,
+    "health-min": 148,
+    "health-max": 222,
+    "health-avg": 185,
+    "focus": 7,
+    "investiture": 6,
+    "movement": 30,
+    "deflect": 2,
+    "deflect-explanation": "carapace",
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 8,
+            "light-weapons": 8
+        },
+        "cognitive": {
+            "deduction": 11,
+            "intimidation": 7
+        },
+        "spiritual": {
+            "insight": 6,
+            "leadership": 8,
+            "perception": 5
+        }
+    },
+    "languages": "Dawnchant",
+    "traits": [
+        {
+            "name": "Boss",
+            "description": "The Husked One can take both a fast turn and a slow turn each round. After an enemy finishes a turn, the Husked One can spend 1 focus to immediately use an extra single or double action. Additionally, they can spend 1 focus on their turn to remove a condition from themself."
+        },
+        {
+            "name": "External Carapace",
+            "description": "The Husked One can use their carapace like a shield, allowing them to use the Brace action."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Impairing Blow",
+            "description": "Attack +8, reach 5 ft., one target. Graze: 6 (1d12) keen damage. Hit: 20 (1d12 + 14) keen damage, and the Husked One strikes a vital nerve. The target must succeed on a DC 17 Athletics test or become Immobilized until they regain at least 1 health."
+        },
+        {
+            "action-cost": "single",
+            "name": "Chokehold",
+            "description": "The Husked One violently grabs a target within 5 feet of them. The target must succeed on a DC 18 Athletics test or become Restrained while the Husked One remains within 5 feet of them. The Husked One can spend 1 focus to also choke the target and make them Afflicted [2d10 vital] until the target is no longer Restrained. As a single action, the target or a character who can reach them can make a DC 18 Athletics test, ending the Restrained condition on a success."
+        },
+        {
+            "action-cost": "single",
+            "name": "Escape Husk",
+            "description": "The Husked One escapes their body as a ribbon of red light, leaving behind a husk and any objects they were wearing or carrying. While in ribbon form, the Husked One is under the following effects: They can't use any actions other than Disengage, Move, and their Reform Body. They have a flying rate of 30 feet. They still have mass and can't squeeze through gaps smaller than 1 inch. They're immune to all damage except for spirit damage and damage from Invested weapons. They're immune to the Immobilized, Prone, Restrained, and Slowed conditions."
+        },
+        {
+            "action-cost": "single",
+            "name": "Reform Body",
+            "description": "Costs 2 Investiture. While in ribbon form, the Husked One reforms their Physical body, exiting their ribbon form and recovering from all injuries. If they use their Regenerate free action on this turn, it costs them no Investiture."
+        },
+        {
+            "action-cost": "free",
+            "name": "Assassinate",
+            "description": "Costs 1 Focus. After the Husked One ends a Move action or uses their Reform Body action within 5 feet of an enemy, the Husked One can use their Impairing Blow on that enemy as a free action."
+        },
+        {
+            "action-cost": "free",
+            "name": "Regenerate",
+            "description": "Costs 1 Investiture. The Husked One recovers 6 (1d6 + 3) health. They can use this free action even while Unconscious or otherwise prevented from using actions."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Carapace Spike",
+            "skill": "light-weapons",
+            "reach": 5,
+            "damage-base": "2d8",
+            "damage-type": "keen",
+            "on-hit": "the Husked One can spend 1 focus to use the Disengage action as a free action.",
+            "description": "Attack +8, reach 5 ft., one target. Graze: 9 (2d8) keen damage. Hit: 20 (2d8 + 11) keen damage, and the Husked One can spend 1 focus to use the Disengage action as a free action."
+        }
+    ]
+}

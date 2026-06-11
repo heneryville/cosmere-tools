@@ -1,0 +1,102 @@
+{
+    "id": "ghostblood-spy",
+    "name": "Ghostblood Spy",
+    "tier": 1,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 0,
+    "physical-defense": 14,
+    "speed": 4,
+    "intellect": 2,
+    "cognitive-defense": 14,
+    "willpower": 2,
+    "awareness": 1,
+    "spiritual-defense": 13,
+    "presence": 2,
+    "health-min": 16,
+    "health-max": 26,
+    "health-avg": 21,
+    "focus": 4,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 1,
+    "deflect-explanation": "leather",
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 5,
+            "light-weapons": 6,
+            "stealth": 6
+        },
+        "cognitive": {
+            "deduction": 4,
+            "lore": 3
+        },
+        "spiritual": {
+            "deception": 4,
+            "insight": 3,
+            "perception": 3,
+            "survival": 2
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Infiltrator",
+            "description": "The spy can spend 1 focus (no action required) to give themself an advantage on a Deception, Insight, or Persuasion test."
+        },
+        {
+            "name": "Inured to Poison",
+            "description": "The spy gains an advantage on tests to resist the effects of poison. Additionally, before the spy takes vital damage, they reduce it by 2."
+        },
+        {
+            "name": "Skulking Approach",
+            "description": "At the start of each scene, if the spy isn't Surprised and if they're in cover or an area where their enemy's primary sense is obscured, the spy can make a Stealth test (no action required) with an advantage against the Spiritual defense of each enemy who can sense them. Each enemy they succeed against loses track of them and can no longer sense them until the spy attacks or takes another action that would expose them."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Disquiet",
+            "description": "The spy manipulates their knowledge of an enemy they can influence to unnerve them. If the spy knows one or more of the target's goals, their purpose, or their obstacle, the target loses 1d4 focus; otherwise, the target loses 1 focus."
+        },
+        {
+            "action-cost": "single",
+            "name": "Coat Weapon",
+            "focus": 1,
+            "description": "The spy coats either their Dagger or Shortbow in poison. The next enemy hit by an attack with the coated weapon must succeed on a DC 16 Athletics test or take 2d6 vital damage and gain a disadvantage on all tests for 1 minute."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Uncanny Evasion",
+            "focus": 1,
+            "description": "Before the spy is hit by a weapon attack made by an enemy they can sense within 60 feet of them, they take evasive action. The attacker must spend 2 focus or the hit becomes a miss."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Dagger",
+            "skill": "light-weapons",
+            "reach": 5,
+            "range": [20, 60],
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +6, reach 5 ft. or range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 8 (1d4 + 6) keen damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Shortbow",
+            "skill": "light-weapons",
+            "reach": null,
+            "range": [80, 320],
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +6, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9 (1d6 + 6) keen damage."
+        }
+    ]
+}

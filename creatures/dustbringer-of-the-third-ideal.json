@@ -1,0 +1,98 @@
+{
+    "id": "dustbringer-of-the-third-ideal",
+    "name": "Dustbringer of the Third Ideal",
+    "tier": 3,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 2,
+    "physical-defense": 16,
+    "speed": 4,
+    "intellect": 4,
+    "cognitive-defense": 17,
+    "willpower": 3,
+    "awareness": 4,
+    "spiritual-defense": 15,
+    "presence": 1,
+    "health-min": 37,
+    "health-max": 57,
+    "health-avg": 47,
+    "focus": 5,
+    "investiture": 6,
+    "movement": 40,
+    "deflect": 2,
+    "deflect-explanation": "chain",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 8,
+            "light-weapons": 8,
+            "stealth": 8
+        },
+        "cognitive": {
+            "discipline": 6,
+            "intimidation": 6
+        },
+        "spiritual": {
+            "leadership": 5,
+            "perception": 7
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Slippery",
+            "description": "While they have 1 Investiture or more, the Dustbringer can't be grazed and Reactive Strikes against them gain a disadvantage."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Decaying Touch",
+            "description": "Costs 1 Investiture. Attack +8 vs. Spiritual, reach 10 ft., one target. Graze: 16 (3d10) spirit damage. Hit: 24 (3d10 + 8) spirit damage, and the target must succeed on a DC 14 Agility test or their armor rusts and decays, permanently decreasing its deflect value by 1. Armor damaged in this way can be repaired with proper materials as a downtime activity."
+        },
+        {
+            "action-cost": "double",
+            "name": "Burst of Flame",
+            "description": "Costs 2 Investiture. The Dustbringer emits a burst of fire that deals 6 (1d12) energy damage to each character within 10 feet of them and sets unattended objects in that area ablaze. Additionally, the Dustbringer can spend 1 focus or more to shower sparks onto that number of enemies within 30 feet of them; each target must succeed on a DC 14 Agility test or lose one action on their next turn."
+        },
+        {
+            "action-cost": "single",
+            "name": "Eroding Escape",
+            "description": "Costs 1 Investiture. The Dustbringer targets themself or an ally in reach, ending one condition on them that is either applying the Immobilized condition, the Restrained condition, or a disadvantage on any physical test."
+        },
+        {
+            "action-cost": "free",
+            "name": "Regenerate",
+            "description": "Costs 1 Investiture. The Dustbringer recovers 6 (1d6 + 3) health. They can use this free action even while Unconscious or otherwise prevented from using actions."
+        },
+        {
+            "action-cost": "single",
+            "name": "Skate",
+            "description": "Costs 1 Focus. The Dustbringer moves up to their movement rate."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Shardblade",
+            "skill": "light-weapons",
+            "reach": 5,
+            "damage-base": "2d10",
+            "damage-type": "spirit",
+            "on-hit": "the Dustbringer can spend 1 focus to use the Disengage action as a free action.",
+            "description": "Attack +8, reach 5 ft., one target. Graze: 11 (2d10) spirit damage. Hit: 19 (2d10 + 8) spirit damage, and the Dustbringer can spend 1 focus to use the Disengage action as a free action."
+        },
+        {
+            "action-cost": "single",
+            "name": "Shortbow",
+            "skill": "light-weapons",
+            "reach": 0,
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +8, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 11 (1d6 + 8) keen damage."
+        }
+    ]
+}
