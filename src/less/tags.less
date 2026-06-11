@@ -1,0 +1,58 @@
+// Tag filter bar above creature grid
+.tag-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.tag-pill {
+  padding: 3px 10px;
+  border-radius: 12px;
+  border: 1px solid @accent-color;
+  background: transparent;
+  color: @text-color;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    background: fade(@accent-color, 20%);
+  }
+
+  &.active {
+    background: @accent-color;
+    color: #fff;
+  }
+
+  &.clear-pill {
+    border-color: @danger-color;
+    color: @danger-color;
+
+    &:hover {
+      background: @danger-color;
+      color: #fff;
+    }
+  }
+}
+
+// Tag pills on creature cards
+.creature-tags {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.creature-tag {
+  padding: 1px 7px;
+  border-radius: 10px;
+  border: 1px solid fade(@accent-color, 40%);
+  background: fade(@accent-color, 8%);
+  color: @text-color;
+  font-size: 0.65rem;
+}
