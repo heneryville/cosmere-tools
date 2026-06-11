@@ -37,7 +37,11 @@
         }
     },
     "languages": "defined by culture",
-    "tags": ["Book", "Human"],
+    "tags": [
+        "Book",
+        "Human",
+        "Civilian"
+    ],
     "traits": [
         {
             "name": "Minion",
