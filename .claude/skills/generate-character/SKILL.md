@@ -1,5 +1,5 @@
 ---
-name: cosmere-generate-creature
+name: generate-character
 description: Use when the user wants to create a new creature or NPC stat block for the Cosmere TTRPG system — whether inventing from scratch, adapting a book creature, or generating a variant of an existing one.
 ---
 
