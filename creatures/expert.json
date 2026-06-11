@@ -1,0 +1,75 @@
+{
+    "id": "expert",
+    "name": "Expert",
+    "tier": 1,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 1,
+    "physical-defense": 12,
+    "speed": 1,
+    "intellect": 1,
+    "cognitive-defense": 13,
+    "willpower": 2,
+    "awareness": 2,
+    "spiritual-defense": 13,
+    "presence": 1,
+    "health-min": 15,
+    "health-max": 21,
+    "health-avg": 18,
+    "focus": 4,
+    "investiture": 0,
+    "movement": 25,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 2,
+            "athletics": 2,
+            "light-weapons": 2
+        },
+        "cognitive": {
+            "crafting": 2,
+            "deduction": 2
+        },
+        "spiritual": {
+            "deception": 2,
+            "insight": 4,
+            "perception": 4,
+            "persuasion": 3
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Capable",
+            "description": "The expert has a utility expertise in one profession, and they gain an advantage on skill tests related to that profession."
+        },
+        {
+            "name": "Stern Countenance",
+            "description": "After the expert spends focus to resist a character's influence, that character loses 1 focus."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Counter Argument",
+            "focus": null,
+            "description": "During a conversation, the expert makes a Persuasion test against a character's Spiritual defense. On a success, the target loses 3 focus."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Improvised Weapon",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "1d4",
+            "damage-type": "impact",
+            "on-hit": null,
+            "description": "Attack +2, reach 5 ft., one target. On a Complication, this improvised weapon breaks. Graze: 2 (1d4) impact damage. Hit: 3 (1d4 + 2) impact damage."
+        }
+    ]
+}

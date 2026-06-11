@@ -1,0 +1,84 @@
+{
+    "id": "thief",
+    "name": "Thief",
+    "tier": 1,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 1,
+    "physical-defense": 14,
+    "speed": 3,
+    "intellect": 2,
+    "cognitive-defense": 13,
+    "willpower": 1,
+    "awareness": 2,
+    "spiritual-defense": 13,
+    "presence": 1,
+    "health-min": 16,
+    "health-max": 24,
+    "health-avg": 20,
+    "focus": 3,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 1,
+    "deflect-explanation": "leather",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 5,
+            "light-weapons": 5,
+            "stealth": 5,
+            "thievery": 5
+        },
+        "cognitive": {},
+        "spiritual": {
+            "deception": 3,
+            "perception": 4,
+            "persuasion": 3
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Quick Hands",
+            "description": "When a character triggers a Reactive Strike reaction from the thief, the thief can instead use their Pickpocket as a reaction (without spending focus for a Reactive Strike)."
+        },
+        {
+            "name": "Vanishing Act",
+            "description": "At the end of the thief's turn, if they're in cover or in an area where their enemy's primary sense is obscured, the thief can make a Stealth test (no action required) with advantage against the Spiritual defense of each enemy who can sense them. Each enemy they succeed against loses track of them and can no longer sense them until the thief attacks or takes another action that would expose them."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Disorienting Distraction",
+            "focus": 1,
+            "description": "The thief throws sand, flour, or a similar substance to distract and confuse foes. Each enemy within 10 feet of them must succeed on a DC 13 Agility test or become Disoriented until the end of the thief's next turn."
+        },
+        {
+            "action-cost": "double",
+            "name": "Pickpocket",
+            "focus": 2,
+            "description": "The thief attempts to rifle through the belongings of a humanoid within 5 feet of them, making an opposed Thievery test against the target's Perception. If the target is Disoriented, the target gains a disadvantage on their test. If the thief succeeds, they can choose to steal up to 50 marks or one item the target isn't wielding or wearing."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Slippery",
+            "description": "After an enemy ends a Move action within 5 feet of the thief, the thief can use the Disengage action as a reaction. If the thief ends this movement in cover or in an area where an enemy's primary sense is obscured, enemies affected by that cover or obscured senses gain a disadvantage on attacks against the thief until the end of the thief's next turn."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Dagger",
+            "skill": "light-weapons",
+            "reach": 5,
+            "range": [20, 60],
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": "On a hit or graze, if the target is Disoriented, they take an extra 2 (1d4) keen damage.",
+            "description": "Attack +5, reach 5 ft. or range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 7 (1d4 + 5) keen damage. On a hit or graze, if the target is Disoriented, they take an extra 2 (1d4) keen damage."
+        }
+    ]
+}

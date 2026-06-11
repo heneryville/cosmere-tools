@@ -1,0 +1,103 @@
+{
+    "id": "crime-boss",
+    "name": "Crime Boss",
+    "tier": 1,
+    "role": "boss",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 2,
+    "physical-defense": 15,
+    "speed": 3,
+    "intellect": 5,
+    "cognitive-defense": 17,
+    "willpower": 2,
+    "awareness": 2,
+    "spiritual-defense": 16,
+    "presence": 4,
+    "health-min": 40,
+    "health-max": 60,
+    "health-avg": 50,
+    "focus": 6,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 1,
+    "deflect-explanation": "leather",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "light-weapons": 6,
+            "thievery": 5
+        },
+        "cognitive": {
+            "deduction": 8,
+            "discipline": 6,
+            "intimidation": 6
+        },
+        "spiritual": {
+            "deception": 7,
+            "leadership": 7,
+            "perception": 5,
+            "persuasion": 6
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Boss",
+            "description": "The crime boss can take both a fast turn and a slow turn each round. After an enemy finishes a turn, the crime boss can spend 1 focus to immediately use an extra single or free action. Additionally, they can spend 1 focus on their turn to remove a condition from themself."
+        },
+        {
+            "name": "Compelling Leader",
+            "description": "When the crime boss successfully uses the Gain Advantage action or gains an Opportunity, they can grant that advantage or Opportunity to one of their allies within 60 feet of them."
+        },
+        {
+            "name": "Cunning Preparations",
+            "description": "At the start of each scene, the crime boss can reveal up to three nasty surprises (no action required). Each nasty surprise creates difficult or dangerous terrain in an area up to 5 feet square. Nasty surprises can't be revealed within 10 feet of an enemy."
+        },
+        {
+            "name": "Inured to Poison",
+            "description": "The crime boss gains an advantage on tests to resist the effects of poison. Additionally, before the crime boss takes vital damage, they reduce it by 2."
+        },
+        {
+            "name": "Immunity: Surprised",
+            "description": "The crime boss is immune to the Surprised condition."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Flash Fabrial",
+            "focus": 1,
+            "description": "The crime boss activates a fabrial that emits a piercing light from its gemstone. Each character within 10 feet of the crime boss must succeed on a DC 15 Discipline test or become Disoriented until the end of the crime boss's next turn."
+        },
+        {
+            "action-cost": "single",
+            "name": "Subdue",
+            "description": "The crime boss menaces a foe, making an opposed Intimidation test against the target's Discipline. If the crime boss succeeds, the target loses 1d4 focus and gains a disadvantage on tests against the crime boss until the end of the crime boss's next turn."
+        },
+        {
+            "action-cost": "free",
+            "name": "Firemoss",
+            "description": "The crime boss grinds firemoss and inhales the smoke, regaining 6 focus."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Don't Disappoint Me",
+            "focus": 1,
+            "description": "Before an ally misses with an attack, the crime boss allows them to reroll the d20 for the attack roll, potentially changing the miss into a hit. The ally must use the new result, and they can choose to graze after seeing the result."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Knife",
+            "skill": "light-weapons",
+            "reach": 5,
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": "8 (1d4 + 6) keen damage plus 7 (2d6) vital damage, and the target must succeed on a DC 16 Athletics test or become Exhausted [-1].",
+            "description": "Attack +6, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 8 (1d4 + 6) keen damage plus 7 (2d6) vital damage, and the target must succeed on a DC 16 Athletics test or become Exhausted [-1]."
+        }
+    ]
+}

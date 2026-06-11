@@ -1,0 +1,66 @@
+{
+    "id": "chull",
+    "name": "Chull",
+    "tier": 1,
+    "role": "rival",
+    "size": "large",
+    "type": "animal",
+    "strength": 4,
+    "physical-defense": 14,
+    "speed": 0,
+    "intellect": 0,
+    "cognitive-defense": 11,
+    "willpower": 1,
+    "awareness": 3,
+    "spiritual-defense": 13,
+    "presence": 0,
+    "health-min": 23,
+    "health-max": 37,
+    "health-avg": 30,
+    "focus": 3,
+    "investiture": 0,
+    "movement": 10,
+    "deflect": 2,
+    "deflect-explanation": "shell",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "athletics": 6
+        },
+        "cognitive": {},
+        "spiritual": {
+            "perception": 5
+        }
+    },
+    "languages": "none",
+    "traits": [
+        {
+            "name": "Beast of Burden",
+            "description": "The chull's carrying capacity is 1,500 lbs."
+        },
+        {
+            "name": "Plodding Pace",
+            "description": "The chull can only use the Move action once per turn."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Defense Curl",
+            "description": "The chull retracts their head and legs to defend themself until the start of their next turn. While retracted, the chull's deflect value increases to 6 and they can use the Brace action as if they were in cover. At the start of each of their turns, the chull can spend 1 focus to maintain this effect for an additional round."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Pincer",
+            "skill": "athletics",
+            "reach": 10,
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +4, reach 10 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9 (1d6 + 6) keen damage."
+        }
+    ]
+}

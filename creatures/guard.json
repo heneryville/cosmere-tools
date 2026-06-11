@@ -1,0 +1,74 @@
+{
+    "id": "guard",
+    "name": "Guard",
+    "tier": 1,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 3,
+    "physical-defense": 14,
+    "speed": 1,
+    "intellect": 1,
+    "cognitive-defense": 13,
+    "willpower": 2,
+    "awareness": 3,
+    "spiritual-defense": 14,
+    "presence": 1,
+    "health-min": 19,
+    "health-max": 29,
+    "health-avg": 24,
+    "focus": 4,
+    "investiture": 0,
+    "movement": 25,
+    "deflect": 2,
+    "deflect-explanation": "chainmail",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "athletics": 5,
+            "heavy-weapons": 5
+        },
+        "cognitive": {
+            "discipline": 4,
+            "intimidation": 4
+        },
+        "spiritual": {
+            "insight": 4,
+            "perception": 5
+        }
+    },
+    "languages": "determined by culture",
+    "traits": [
+        {
+            "name": "Raise the Alert!",
+            "description": "After an enemy the guard can sense within 60 feet of them fails a Stealth test, or after the guard succeeds on a test to notice that enemy, this guard and each allied guard who can sense that enemy gain the Focused condition until the end of the scene."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "double",
+            "name": "Debilitate",
+            "focus": 2,
+            "description": "Attack +5, reach 5 ft., one Prone target. Graze: 9 (2d8) impact damage. Hit: 14 (2d8 + 5) impact damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Work as One",
+            "focus": 1,
+            "description": "After the guard hits with an attack, they choose an ally they can influence, urging them to advance. That ally can immediately Disengage (no action required)."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Longspear",
+            "skill": "heavy-weapons",
+            "reach": 5,
+            "damage-base": "1d8",
+            "damage-type": "keen",
+            "on-hit": "The guard can spend 1 focus to knock the target Prone.",
+            "description": "Attack +5, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 9 (1d8 + 5) keen damage, and the guard can spend 1 focus to knock the target Prone."
+        }
+    ]
+}

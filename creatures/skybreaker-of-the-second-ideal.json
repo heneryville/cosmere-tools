@@ -1,0 +1,94 @@
+{
+    "id": "skybreaker-of-the-second-ideal",
+    "name": "Skybreaker of the Second Ideal",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 2,
+    "physical-defense": 15,
+    "speed": 3,
+    "intellect": 2,
+    "cognitive-defense": 15,
+    "willpower": 3,
+    "awareness": 4,
+    "spiritual-defense": 15,
+    "presence": 1,
+    "health-min": 30,
+    "health-max": 50,
+    "health-avg": 40,
+    "focus": 5,
+    "investiture": 6,
+    "movement": 30,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 6,
+            "heavy-weapons": 5,
+            "light-weapons": 6
+        },
+        "cognitive": {
+            "deduction": 5,
+            "discipline": 6,
+            "intimidation": 6,
+            "lore": 4
+        },
+        "spiritual": {
+            "insight": 7,
+            "perception": 6
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Truthseeker",
+            "description": "The Skybreaker gains an advantage on Deduction and Insight tests made to ascertain truth."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Lashing Shot",
+            "investiture": 1,
+            "description": "Attack +6, range 30 ft., one target. The Skybreaker touches a Medium or smaller unattended object and launches it at the target. Graze: 9 (2d8) impact or keen damage. Hit: 15 (2d8 + 6) impact or keen damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Offensive Gravitation",
+            "investiture": 1,
+            "description": "The Skybreaker makes a Gravitation test against the Physical defense of a target within reach. On a success, the Skybreaker moves the target up to 25 feet in any direction, and the target becomes Restrained until the start of the Skybreaker's next turn. If the target hits an object or surface, they take 9 (2d8) impact damage. If the target passes within reach of an object that they aren't going to hit, they can make a DC 16 Agility test, grabbing the object and stopping this forced movement on a success."
+        },
+        {
+            "action-cost": "single",
+            "name": "Gravitational Support",
+            "investiture": 1,
+            "description": "The Skybreaker gains a flying rate of 25 feet until the start of their next turn. At the start of each of their turns, they can spend 1 Investiture to maintain this effect for an additional round. Alternatively, they can infuse an ally with a flying rate of 25 feet until the end of the ally's next turn. When the Skybreaker does so, they can spend additional Investiture to extend this effect for a number of rounds equal to the Investiture spent."
+        },
+        {
+            "action-cost": "free",
+            "name": "Regenerate",
+            "investiture": 1,
+            "description": "The Skybreaker recovers 5 (1d6 + 2) health. They can use this free action even while Unconscious or otherwise prevented from using actions."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Menace",
+            "description": "After the Skybreaker is hit with an attack, they make an Intimidation test against the attacker's Cognitive defense. On a success, the attacker loses 1 focus."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Sidesword",
+            "skill": "light-weapons",
+            "reach": 5,
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +6, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9 (1d6 + 6) keen damage."
+        }
+    ]
+}

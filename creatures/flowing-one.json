@@ -1,0 +1,101 @@
+{
+    "id": "flowing-one",
+    "name": "Flowing One",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 1,
+    "physical-defense": 17,
+    "speed": 6,
+    "intellect": 1,
+    "cognitive-defense": 15,
+    "willpower": 4,
+    "awareness": 3,
+    "spiritual-defense": 15,
+    "presence": 2,
+    "health-min": 35,
+    "health-max": 55,
+    "health-avg": 45,
+    "focus": 6,
+    "investiture": 5,
+    "movement": 40,
+    "deflect": 2,
+    "deflect-explanation": "carapace",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 9,
+            "light-weapons": 9
+        },
+        "cognitive": {
+            "discipline": 7
+        },
+        "spiritual": {
+            "perception": 6,
+            "survival": 6
+        }
+    },
+    "languages": "Dawnchant",
+    "traits": [
+        {
+            "name": "Mobile",
+            "description": "When the Flowing One willingly moves on their turn, they can choose to pause moving and use another action before finishing their available movement. They can resume that movement as a free action any time before the end of their turn."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Twin Daggers",
+            "description": "Costs 2 Focus. The Flowing One makes an additional Raysium Dagger attack (no action required)."
+        },
+        {
+            "action-cost": "single",
+            "name": "Surge of Abrasion",
+            "description": "Costs 1 Investiture. The Flowing One chooses a Large (10-foot) area or object within 30 feet of them to alter the friction of. Depending on the nature of the alteration, this can cause an effect in that area such as making the ground into difficult terrain, making the ground slick to knock enemies Prone, or making a foe's non-Invested weapon nearly impossible to hold. If the effect would apply a condition or cause a character to drop something, they can avoid it with a successful DC 15 Agility or Athletics test."
+        },
+        {
+            "action-cost": "single",
+            "name": "Coarse Grip",
+            "description": "Costs 1 Investiture. The Flowing One strategically increases the friction of some parts of their body. Until the end of their next turn, their Physical tests have an Opportunity range of 18-20, and they can spend an Opportunity on any physical test to knock an enemy within 5 feet Prone."
+        },
+        {
+            "action-cost": "single",
+            "name": "Skate",
+            "description": "The Flowing One moves up to their movement rate in a straight line. They can spend 1 focus (no action required) to avoid triggering Reactive Strikes during this movement."
+        },
+        {
+            "action-cost": "free",
+            "name": "Regenerate",
+            "description": "Costs 1 Investiture. The Flowing One recovers 5 (1d6 + 2) health. They can use this free action even while Unconscious or otherwise prevented from using actions."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Deft Dodge",
+            "description": "Costs 1 Focus. Before an attack hits the Flowing One, they change that hit to a graze, then they can use the Disengage action as a free action."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Raysium Dagger",
+            "skill": "light-weapons",
+            "reach": 5,
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": "the target loses 1 Investiture.",
+            "description": "Attack +9, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 11 (1d4 + 9) keen damage, and the target loses 1 Investiture."
+        },
+        {
+            "action-cost": "single",
+            "name": "Hair Spike",
+            "skill": "light-weapons",
+            "reach": 5,
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +9, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 11 (1d4 + 9) keen damage."
+        }
+    ]
+}

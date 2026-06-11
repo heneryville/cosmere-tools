@@ -1,0 +1,112 @@
+{
+    "id": "focused-one",
+    "name": "Focused One",
+    "tier": 4,
+    "role": "boss",
+    "size": "large",
+    "type": "humanoid",
+    "strength": 9,
+    "physical-defense": 19,
+    "speed": 0,
+    "intellect": 3,
+    "cognitive-defense": 18,
+    "willpower": 5,
+    "awareness": 4,
+    "spiritual-defense": 19,
+    "presence": 5,
+    "health-min": 145,
+    "health-max": 235,
+    "health-avg": 190,
+    "focus": 11,
+    "investiture": 7,
+    "movement": 20,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "athletics": 14,
+            "heavy-weaponry": 14
+        },
+        "cognitive": {
+            "discipline": 10
+        },
+        "spiritual": {
+            "insight": 8,
+            "leadership": 10,
+            "perception": 8,
+            "persuasion": 10
+        }
+    },
+    "languages": "Dawnchant",
+    "traits": [
+        {
+            "name": "Boss",
+            "description": "The Focused One can take both a fast turn and a slow turn each round. After an enemy finishes a turn, the Focused One can spend 1 focus to immediately use an extra single or double action. Additionally, they can spend 1 focus on their turn to remove a condition from themself."
+        },
+        {
+            "name": "Colossal Mass",
+            "description": "The Focused One is always considered Gargantuan against unwanted effects, even while their size is reduced by their Tight Form."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Surge of Tension",
+            "description": "Costs 1 Investiture. The Focused One chooses a Gargantuan (20-foot) or smaller object made of soft materials within their reach, causing it to become rigid and tough. Depending on the nature of the object being stiffened, this can cause an effect such as giving an ally a +4 bonus to Physical defense, causing an enemy to be Restrained by their own clothing, or creating an improvised weapon that can be wielded as a Tense Spear without spending focus. If the effect would apply a condition to a character, they can avoid it with a successful DC 19 Agility or Athletics test."
+        },
+        {
+            "action-cost": "double",
+            "name": "Tight Form",
+            "description": "Costs 2 Investiture. Until the end of the Focused One's next turn, their size decreases to Medium and they gain the following benefits: their deflect value increases to 6 and it can also reduce spirit damage; their movement rate increases to 40 feet; their physical tests have an Opportunity range of 18–20; they can't be grazed by attacks that use weapons (including Shardblades) or that deal impact or keen damage; if they die while in this form, the explosive decompression of their flesh deals 26 (4d12) impact damage to each character within 10 feet of them. At the end of each of their turns, the Focused One can spend 1 Investiture to maintain this effect for an additional round."
+        },
+        {
+            "action-cost": "single",
+            "name": "Decompress Grip",
+            "description": "While the Focused One is in their Tight Form and has a character Restrained with the Grapple action, they end their Tight Form early to cause that character to take 52 (8d12) impact damage and suffer an injury."
+        },
+        {
+            "action-cost": "single",
+            "name": "Launch Boulder",
+            "description": "Costs 1 Focus. Attack +14, range 150/600 ft., one target. On a graze or hit, all other characters within 10 feet of the target must Avoid Danger (DC 19) or take the same damage. Graze: 9 (2d8) impact damage. Hit: 31 (2d8 + 22) impact damage."
+        },
+        {
+            "action-cost": "free",
+            "name": "Regenerate",
+            "description": "Costs 1 Investiture. The Focused One recovers 7 (1d6 + 4) health. They can use this free action even while Unconscious or otherwise prevented from using actions."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Unarmed Attack",
+            "skill": "athletics",
+            "reach": 10,
+            "damage-base": "2d10",
+            "damage-type": "impact",
+            "on-hit": null,
+            "description": "Attack +14, reach 10 ft., one target. Graze: 11 (2d10) impact damage. Hit: 29 (2d10 + 18) impact damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Whip",
+            "skill": "heavy-weaponry",
+            "reach": 20,
+            "damage-base": "1d12",
+            "damage-type": "keen",
+            "on-hit": "and if the target is Huge or Smaller, the Focused One can spend 1 focus to pull the target any number of feet closer to them. Alternatively, if the target is within 10 feet of the Focused One when the attack hits, the Focused One can spend 1 Investiture to make the target Restrained until the end of the target's next turn. While a character is Restrained in this way, the Focused One can't attack with their Whip or Tense Spear.",
+            "description": "Attack +14, reach 20 ft., one target. Graze: 6 (1d12) keen damage. Hit: 24 (1d12 + 18) keen damage, and if the target is Huge or Smaller, the Focused One can spend 1 focus to pull the target any number of feet closer to them. Alternatively, if the target is within 10 feet of the Focused One when the attack hits, the Focused One can spend 1 Investiture to make the target Restrained until the end of the target's next turn. While a character is Restrained in this way, the Focused One can't attack with their Whip or Tense Spear."
+        },
+        {
+            "action-cost": "single",
+            "name": "Tense Spear",
+            "skill": "heavy-weaponry",
+            "reach": 15,
+            "damage-base": "2d12",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Costs 1 Focus. Attack +14, reach 15 ft., one target. Graze: 13 (2d12) keen damage. Hit: 31 (2d12 + 18) keen damage."
+        }
+    ]
+}

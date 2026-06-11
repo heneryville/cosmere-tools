@@ -1,0 +1,78 @@
+{
+    "id": "khornak",
+    "name": "Khornak",
+    "tier": 1,
+    "role": "rival",
+    "size": "medium",
+    "type": "animal",
+    "strength": 3,
+    "physical-defense": 15,
+    "speed": 2,
+    "intellect": 0,
+    "cognitive-defense": 12,
+    "willpower": 2,
+    "awareness": 2,
+    "spiritual-defense": 12,
+    "presence": 0,
+    "health-min": 20,
+    "health-max": 32,
+    "health-avg": 26,
+    "focus": 4,
+    "investiture": 0,
+    "movement": 25,
+    "deflect": 2,
+    "deflect-explanation": "carapace",
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "athletics": 5,
+            "stealth": 4
+        },
+        "cognitive": {},
+        "spiritual": {
+            "perception": 3,
+            "survival": 4
+        }
+    },
+    "languages": "none",
+    "traits": [
+        {
+            "name": "Terrifying Ambush",
+            "description": "At the start of each scene, each enemy who can sense the khornak must make a DC 14 Discipline test (no action required). On a failure, that enemy can't take a fast turn this round unless they spend 2 focus."
+        },
+        {
+            "name": "Ruthless Predator",
+            "description": "When the khornak attacks and hits an enemy who hasn't taken a turn yet this round, the attack deals an extra 1d8 damage."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Drag",
+            "description": "The khornak moves up to 15 feet in any direction while dragging an enemy they have Restrained behind them."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Crushing Jaw",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "1d8",
+            "damage-type": "impact",
+            "on-hit": "The target becomes Restrained by the khornak's jaw while the khornak remains within 5 feet of them. The khornak can spend 1 focus to also make the target Afflicted [1d4 vital] until the target regains at least 1 health. As a single action, the target or a character who can reach them can make a DC 16 Agility or Athletics test, ending the Restrained condition on a success. While the khornak is restraining this target, the khornak can't make another Crushing Jaw attack.",
+            "description": "Attack +5, reach 5 ft., one target. Graze: 4 (1d8) impact damage. Hit: 9 (1d8 + 5) impact damage, and the target becomes Restrained by the khornak's jaw while the khornak remains within 5 feet of them. The khornak can spend 1 focus to also make the target Afflicted [1d4 vital] until the target regains at least 1 health. As a single action, the target or a character who can reach them can make a DC 16 Agility or Athletics test, ending the Restrained condition on a success. While the khornak is restraining this target, the khornak can't make another Crushing Jaw attack."
+        },
+        {
+            "action-cost": "single",
+            "name": "Tail Sweep",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "1d6",
+            "damage-type": "impact",
+            "on-hit": "The target must succeed on a DC 15 Athletics test or be knocked Prone. The khornak can spend up to 2 focus to target that many additional targets with the same attack.",
+            "description": "Attack +5, reach 5 ft., one target. The khornak can spend up to 2 focus to target that many additional targets with the same attack. Graze: 3 (1d6) impact damage. Hit: 8 (1d6 + 5) impact damage, and the target must succeed on a DC 15 Athletics test or be knocked Prone."
+        }
+    ]
+}

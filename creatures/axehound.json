@@ -30,6 +30,7 @@
             "athletics": 4,
             "stealth": 3
         },
+        "cognitive": {},
         "spiritual": {
             "perception": 5,
             "survival": 4
@@ -39,18 +40,18 @@
     "traits": [
         {
             "name": "Enhanced Senses",
-            "description": "The axehound gains an advantage on non-attack tests that rely on smell"
+            "description": "The axehound gains an advantage on non-attack tests that rely on smell."
         },
         {
             "name": "Minion",
-            "description": "The axehound's attacks can't critcally hit, and they are immediatly defeated when they suffer an injury"
+            "description": "The axehound's attacks can't critically hit, and they're immediately defeated when they suffer an injury."
         }
     ],
     "actions": [
         {
             "action-cost": "free",
             "name": "Pack Instincts",
-            "description": "While within 5 feet of an ally, the axehound can use the Gain Advantage action as a free action"
+            "description": "While within 5 feet of an ally, the axehound can use the Gain Advantage action as a free action."
         },
         {
             "action-cost": "reaction",
@@ -66,8 +67,8 @@
             "reach": 5,
             "damage-base": "1d4",
             "damage-type": "keen",
-            "on-hit": "and the axehoud can spend 1 focus to knock the target Prhone, then move up to 10 feet while dragging the target along.",
-            "description": "Attack +4, reach 5ft., one target. Graze: 2(1d4) keen damage. Hit: 4 (1d4+2) keen damage and the axehoud can spend 1 focus to knock the target Prhone, then move up to 10 feet while dragging the target along."
+            "on-hit": "If the target is Medium or smaller, the axehound can spend 1 focus to knock the target Prone, then move up to 10 feet while dragging the target behind them.",
+            "description": "Attack +4, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 6 (1d4 + 4) keen damage, and if the target is Medium or smaller, the axehound can spend 1 focus to knock the target Prone, then move up to 10 feet while dragging the target behind them."
         }
     ]
 }

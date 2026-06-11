@@ -1,0 +1,85 @@
+{
+    "id": "thunderclast",
+    "name": "Thunderclast",
+    "tier": 3,
+    "role": "boss",
+    "size": "gargantuan",
+    "type": "entity",
+    "strength": 9,
+    "physical-defense": 24,
+    "speed": 5,
+    "intellect": 2,
+    "cognitive-defense": 19,
+    "willpower": 7,
+    "awareness": 4,
+    "spiritual-defense": 16,
+    "presence": 2,
+    "health-min": 170,
+    "health-max": 260,
+    "health-avg": 215,
+    "focus": 11,
+    "investiture": 0,
+    "movement": 40,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "athletics": 13
+        },
+        "cognitive": {
+            "intimidation": 11
+        },
+        "spiritual": {}
+    },
+    "languages": "understands every Rosharan language but doesn't speak",
+    "traits": [
+        {
+            "name": "Boss",
+            "description": "The thunderclast can take both a fast turn and a slow turn each round. After an enemy finishes a turn, the thunderclast can spend 1 focus to immediately use an extra single or double action. Additionally, they can spend 1 focus on their turn to remove a condition from themself."
+        },
+        {
+            "name": "Devastator",
+            "description": "The thunderclast deals double damage to objects and structures."
+        },
+        {
+            "name": "Immunities",
+            "description": "The thunderclast is immune to the Prone and Stunned conditions."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "double",
+            "name": "Throw Boulder",
+            "description": "The thunderclast throws a boulder at an enemy they can sense within 120 feet of them. The target and each other character within 15 feet of them must make a DC 19 Agility test. On a failure, that character takes 22 (4d10) impact damage. On a success, they take 11 (2d10) impact damage."
+        },
+        {
+            "action-cost": "double",
+            "name": "Crushing Palm",
+            "description": "The thunderclast uses their palm to grind an enemy against the ground. The target must make a DC 19 Athletics test. On a failure, the target takes 26 (4d12) impact damage and is Stunned until the end of their next turn. On a success, the target takes 13 (2d12) impact damage and is Disoriented until the end of their next turn."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Kick",
+            "skill": "athletics",
+            "reach": 15,
+            "damage-base": "2d10",
+            "damage-type": "impact",
+            "on-hit": "the thunderclast can spend 1 focus to fling the target up to 60 feet away from them. If the target hits another character or an object during this movement, both take 11 (2d10) impact damage from the collision; a character who succeeds on a DC 19 Agility test takes half as much damage instead.",
+            "description": "Attack +13, reach 15 ft., one target. Graze: 11 (2d10) impact damage. Hit: 27 (2d10 + 16) impact damage, and the thunderclast can spend 1 focus to fling the target up to 60 feet away from them. If the target hits another character or an object during this movement, both take 11 (2d10) impact damage from the collision; a character who succeeds on a DC 19 Agility test takes half as much damage instead."
+        },
+        {
+            "action-cost": "single",
+            "name": "Smash",
+            "skill": "athletics",
+            "reach": 15,
+            "damage-base": "2d10",
+            "damage-type": "impact",
+            "on-hit": "the thunderclast can spend 1 focus to cause a violent quake. The attack's target and each enemy within 15 feet of them must succeed on a DC 19 Agility test or be knocked Prone.",
+            "description": "Attack +13, reach 15 ft., one target. Graze: 11 (2d10) impact damage. Hit: 27 (2d10 + 16) impact damage, and the thunderclast can spend 1 focus to cause a violent quake. The attack's target and each enemy within 15 feet of them must succeed on a DC 19 Agility test or be knocked Prone."
+        }
+    ]
+}

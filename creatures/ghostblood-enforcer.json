@@ -1,0 +1,90 @@
+{
+    "id": "ghostblood-enforcer",
+    "name": "Ghostblood Enforcer",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 3,
+    "physical-defense": 16,
+    "speed": 3,
+    "intellect": 2,
+    "cognitive-defense": 15,
+    "willpower": 3,
+    "awareness": 4,
+    "spiritual-defense": 18,
+    "presence": 4,
+    "health-min": 34,
+    "health-max": 50,
+    "health-avg": 42,
+    "focus": 5,
+    "investiture": 6,
+    "movement": 30,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "athletics": 5,
+            "heavy-weapons": 6,
+            "light-weapons": 6
+        },
+        "cognitive": {
+            "intimidation": 6
+        },
+        "spiritual": {
+            "deception": 5,
+            "perception": 7
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Inured to Poison",
+            "description": "The enforcer gains an advantage on tests to resist the effects of poison. Additionally, before the enforcer takes vital damage, they reduce it by 2."
+        },
+        {
+            "name": "Ruthless",
+            "description": "After the enforcer knocks an enemy Prone, they can make an additional Strike against that target on that turn (even if they've already used that Strike action)."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Burn Pewter",
+            "investiture": 1,
+            "description": "The enforcer uses the Invested Arts of another world to gain Enhanced [Strength +2], Enhanced [Speed +2], and a deflect value of 2 until the start of their next turn. At the start of each of their turns, the enforcer can spend 1 Investiture to maintain this effect for an additional round."
+        },
+        {
+            "action-cost": "single",
+            "name": "Intimidate",
+            "focus": 1,
+            "description": "The enforcer makes an opposed Intimidation test against the Discipline of a target they can influence. If the enforcer succeeds, the target loses 1 focus and is no longer Focused."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Dueling Cane",
+            "skill": "heavy-weapons",
+            "reach": 5,
+            "range": null,
+            "damage-base": "1d6",
+            "damage-type": "impact",
+            "on-hit": "The enforcer can spend 1 focus to knock the target Prone.",
+            "description": "Attack +6, reach 5 ft., one target. Graze: 3 (1d6) impact damage. Hit: 11 (1d6 + 8) impact damage, and the enforcer can spend 1 focus to knock the target Prone."
+        },
+        {
+            "action-cost": "single",
+            "name": "Obsidian Dagger",
+            "skill": "light-weapons",
+            "reach": 5,
+            "range": null,
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": "If the enforcer had at least one advantage on the attack, it deals an extra 5 (2d4) keen damage. On a Complication, this weapon breaks.",
+            "description": "Attack +6, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 10 (1d4 + 8) keen damage, and if the enforcer had at least one advantage on the attack, it deals an extra 5 (2d4) keen damage. On a Complication, this weapon breaks."
+        }
+    ]
+}

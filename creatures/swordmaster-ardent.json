@@ -1,0 +1,82 @@
+{
+    "id": "swordmaster-ardent",
+    "name": "Swordmaster Ardent",
+    "tier": 1,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 1,
+    "physical-defense": 14,
+    "speed": 3,
+    "intellect": 0,
+    "cognitive-defense": 11,
+    "willpower": 1,
+    "awareness": 3,
+    "spiritual-defense": 16,
+    "presence": 3,
+    "health-min": 18,
+    "health-max": 26,
+    "health-avg": 22,
+    "focus": 3,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 5,
+            "heavy-weapons": 3,
+            "light-weapons": 5
+        },
+        "cognitive": {
+            "discipline": 3,
+            "lore": 2,
+            "medicine": 2
+        },
+        "spiritual": {
+            "insight": 5,
+            "leadership": 5,
+            "perception": 4
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Swordmaster",
+            "description": "The swordmaster gains an advantage on Insight tests against any humanoid they've instructed before."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Staggering Blow",
+            "description": "Attack +5, reach 5 ft., one target. Graze: 3 (1d6) impact damage. Hit: 8 (1d6 + 5) impact damage, and the target gains a disadvantage on the next Discipline test they make before the end of the swordmaster's next turn."
+        },
+        {
+            "action-cost": "single",
+            "name": "Disarm Opponent",
+            "focus": 1,
+            "description": "The swordmaster moves up to 10 feet then attempts to disarm an enemy within reach who is wielding a melee weapon. The target must succeed on a DC 15 Discipline test or drop their weapon and have it flung up to 15 feet away in any direction."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Parry",
+            "description": "Before the swordmaster is hit by a melee attack, they increase their Physical defense by 3 against that attack, potentially causing it to miss. To do so, the swordmaster must sense the attacker and be wielding a melee weapon."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Sidesword",
+            "skill": "light-weapons",
+            "reach": 5,
+            "range": null,
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +5, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 8 (1d6 + 5) keen damage."
+        }
+    ]
+}

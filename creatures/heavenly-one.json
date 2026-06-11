@@ -1,0 +1,87 @@
+{
+    "id": "heavenly-one",
+    "name": "Heavenly One",
+    "tier": 3,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 3,
+    "physical-defense": 18,
+    "speed": 5,
+    "intellect": 1,
+    "cognitive-defense": 15,
+    "willpower": 4,
+    "awareness": 6,
+    "spiritual-defense": 18,
+    "presence": 2,
+    "health-min": 46,
+    "health-max": 70,
+    "health-avg": 58,
+    "focus": 6,
+    "investiture": 8,
+    "movement": 40,
+    "deflect": 1,
+    "deflect-explanation": "carapace",
+    "sense-range": 50,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 9,
+            "heavy-weapons": 7,
+            "light-weapons": 9
+        },
+        "cognitive": {
+            "discipline": 8,
+            "intimidation": 8
+        },
+        "spiritual": {
+            "leadership": 6,
+            "perception": 10,
+            "survival": 10
+        }
+    },
+    "languages": "Dawnchant",
+    "traits": [
+        {
+            "name": "Invariable Flight",
+            "description": "The Heavenly One can only fly using the Move action once per turn."
+        },
+        {
+            "name": "Skyborn",
+            "description": "The Heavenly One doesn't trigger Reactive Strikes while flying."
+        },
+        {
+            "name": "Harry the Foe",
+            "description": "When the Heavenly One hits with an attack immediately after flying at least 15 feet, the target loses 1 focus."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "double",
+            "name": "Surge of Gravitation",
+            "description": "Costs 1 Investiture. The Heavenly One performs a Basic Lashing on a Huge (15-foot) or smaller character or non-Invested object within their reach that isn't being worn or carried. An object Lashed in this way moves up to 30 feet in any direction. An ally Lashed in this way gains a 30-foot flying rate until the end of the Heavenly One's next turn, but that ally can only fly using the Move action once per turn. To Lash an enemy, the Heavenly One makes a Gravitation test against the enemy's Physical defense. On a success, they move the target up to 30 feet in any direction, and the target becomes Restrained until the start of the Heavenly One's next turn. If the target passes within reach of an object, they can make a DC 16 Agility test, grabbing the object and stopping this forced movement on a success. If a Lashed object collides with a character, or if a Lashed enemy collides with an object or surface during this movement, the character takes 20 (2d10 + 9) damage of a type appropriate to the object or surface, and the Lashed target stops moving. A character can use the Avoid Danger reaction to try to escape damage from an incoming Lashed object."
+        },
+        {
+            "action-cost": "free",
+            "name": "Regenerate",
+            "description": "Costs 1 Investiture. The Heavenly One recovers 6 (1d6 + 3) health. They can use this free action even while Unconscious or otherwise prevented from using actions."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Reflexive Strike",
+            "description": "Before an enemy voluntarily moves while within 10 feet of the Heavenly One, the Heavenly One uses their Raysium Lance action against that enemy. This reaction counts as a Reactive Strike but costs no focus."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Raysium Lance",
+            "skill": "light-weapons",
+            "reach": 10,
+            "damage-base": "1d8",
+            "damage-type": "keen",
+            "on-hit": "the target loses 1 Investiture.",
+            "description": "Attack +9, reach 10 ft., one target. Graze: 4 (1d8) keen damage. Hit: 16 (1d8 + 12) keen damage, and the target loses 1 Investiture."
+        }
+    ]
+}

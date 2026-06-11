@@ -1,0 +1,80 @@
+{
+    "id": "socialite",
+    "name": "Socialite",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 2,
+    "physical-defense": 14,
+    "speed": 2,
+    "intellect": 3,
+    "cognitive-defense": 16,
+    "willpower": 3,
+    "awareness": 2,
+    "spiritual-defense": 17,
+    "presence": 5,
+    "health-min": 30,
+    "health-max": 46,
+    "health-avg": 38,
+    "focus": 5,
+    "investiture": 0,
+    "movement": 25,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "light-weapons": 6
+        },
+        "cognitive": {
+            "deduction": 4,
+            "discipline": 4
+        },
+        "spiritual": {
+            "deception": 8,
+            "perception": 5,
+            "persuasion": 8
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Charming Personality",
+            "description": "Once during a conversation, after the socialite spends focus to resist a character's influence, the socialite can choose one character involved in the conversation to lose 2 focus."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Distracting Countenance",
+            "focus": 1,
+            "description": "The socialite chooses an enemy within 15 feet who can sense them. The target's deflect value becomes 0 until the end of the socialite's next turn."
+        },
+        {
+            "action-cost": "single",
+            "name": "Beguiling Influence",
+            "focus": null,
+            "description": "The socialite makes a Persuasion test against the Spiritual defense of an enemy within 30 feet who can sense them. On a success, the target loses 2 focus."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Down the Grapevine",
+            "focus": null,
+            "description": "When a character rolls a Complication during a conversation, the socialite reveals they know a compromising secret about one of the characters involved in that conversation."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Knife",
+            "skill": "light-weapons",
+            "reach": 5,
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +6, reach 5 ft., one target. The socialite gains an advantage on their first Knife attack during a scene. Graze: 2 (1d4) keen damage. Hit: 8 (1d4 + 6) keen damage."
+        }
+    ]
+}

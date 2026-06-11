@@ -1,0 +1,66 @@
+{
+    "id": "shellmite",
+    "name": "Shellmite",
+    "tier": 1,
+    "role": "minion",
+    "size": "small",
+    "type": "animal",
+    "strength": 2,
+    "physical-defense": 13,
+    "speed": 1,
+    "intellect": 0,
+    "cognitive-defense": 11,
+    "willpower": 1,
+    "awareness": 2,
+    "spiritual-defense": 12,
+    "presence": 0,
+    "health-min": 7,
+    "health-max": 11,
+    "health-avg": 9,
+    "focus": 3,
+    "investiture": 0,
+    "movement": 25,
+    "deflect": 0,
+    "deflect-explanation": null,
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "stealth": 3
+        },
+        "cognitive": {},
+        "spiritual": {
+            "perception": 4
+        }
+    },
+    "languages": "none",
+    "traits": [
+        {
+            "name": "Minion",
+            "description": "The shellmite's attacks can't critically hit, and they're immediately defeated when they suffer an injury."
+        },
+        {
+            "name": "Rugged Camouflage",
+            "description": "An undetected shellmite gains an advantage on attack tests. While the shellmite is motionless, they're almost indistinguishable from a normal rock, requiring a successful DC 14 Survival test to identify them. This test gains a disadvantage when the shellmite is in cover or in an area where the other character's primary sense is obscured."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "double",
+            "name": "Feeding Frenzy",
+            "description": "Costs 2 Focus. The shellmite whips up a frenzy against an enemy within 5 feet of them. Each shellmite within 5 feet of the target can use their reaction to join the frenzy. The target takes 2 (1d4) keen damage per frenzied shellmite."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Pincer",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +2, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 4 (1d4 + 2) keen damage."
+        }
+    ]
+}

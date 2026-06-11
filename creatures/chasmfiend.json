@@ -1,0 +1,88 @@
+{
+    "id": "chasmfiend",
+    "name": "Chasmfiend",
+    "tier": 3,
+    "role": "boss",
+    "size": "gargantuan",
+    "type": "animal",
+    "strength": 5,
+    "physical-defense": 22,
+    "speed": 7,
+    "intellect": 2,
+    "cognitive-defense": 17,
+    "willpower": 5,
+    "awareness": 5,
+    "spiritual-defense": 17,
+    "presence": 2,
+    "health-min": 168,
+    "health-max": 228,
+    "health-avg": 198,
+    "focus": 7,
+    "investiture": 0,
+    "movement": 60,
+    "deflect": 4,
+    "deflect-explanation": "carapace",
+    "sense-range": 50,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 11,
+            "athletics": 9
+        },
+        "cognitive": {
+            "intimidation": 9
+        },
+        "spiritual": {
+            "perception": 9
+        }
+    },
+    "languages": "none",
+    "traits": [
+        {
+            "name": "Boss",
+            "description": "The chasmfiend can take both a fast turn and a slow turn each round. After an enemy finishes a turn, the chasmfiend can spend 1 focus to immediately use an extra single or double action. Additionally, they can spend 1 focus on their turn to remove a condition from themself."
+        },
+        {
+            "name": "Thick Carapace",
+            "description": "Before the chasmfiend is hit by an attack, they can spend 1 focus to turn the hit into a graze (no action required)."
+        },
+        {
+            "name": "Unmatched Predator",
+            "description": "The chasmfiend can use their Claws action twice on their turn (without spending focus to do so)."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "double",
+            "name": "Trumpet",
+            "description": "The chasmfiend unleashes a trumpeting roar. Each character within 30 feet of them must make a DC 15 Discipline test. On a success, a character is Disoriented until the end of the chasmfiend's next turn. On a failure, a character is Stunned and Disoriented until the end of the chasmfiend's next turn. Chasmfiends and characters who can't hear are unaffected by this action."
+        },
+        {
+            "action-cost": "reaction",
+            "name": "Agile Blow",
+            "description": "Before an enemy the chasmfiend can sense within 30 feet of them spends focus, the chasmfiend moves within 5 feet of that enemy and uses their Claws action against that target. On a hit, the attack resolves as usual. On a graze, instead of the attack's usual effects, increase the focus cost of the target's action by 1. The target must pay the increased cost or choose a different action."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Claws",
+            "skill": "athletics",
+            "reach": 10,
+            "damage-base": "1d8",
+            "damage-type": "impact",
+            "on-hit": "and the chasmfiend can either deal an extra 4 (1d8) impact damage or knock the target Prone.",
+            "description": "Attack +11, reach 10 ft., one target. Graze: 4 (1d8) impact damage, and the chasmfiend can either deal an extra 4 (1d8) impact damage or knock the target Prone. Hit: 18 (1d8 + 14) keen damage, and the chasmfiend can either deal an extra 4 (1d8) impact damage or knock the target Prone."
+        },
+        {
+            "action-cost": "single",
+            "name": "Bite",
+            "skill": "athletics",
+            "reach": 5,
+            "damage-base": "1d12",
+            "damage-type": "keen",
+            "on-hit": "and the target becomes Afflicted [1d8 keen] for 1 minute or until they recover at least 1 health.",
+            "description": "Attack +11, reach 5 ft., one target. Graze: 6 (1d12) keen damage. Hit: 20 (1d12 + 14) keen damage, and the target becomes Afflicted [1d8 keen] for 1 minute or until they recover at least 1 health."
+        }
+    ]
+}

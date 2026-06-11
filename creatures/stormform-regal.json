@@ -1,0 +1,81 @@
+{
+    "id": "stormform-regal",
+    "name": "Stormform Regal",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 2,
+    "physical-defense": 16,
+    "speed": 4,
+    "intellect": 2,
+    "cognitive-defense": 16,
+    "willpower": 4,
+    "awareness": 1,
+    "spiritual-defense": 14,
+    "presence": 3,
+    "health-min": 30,
+    "health-max": 50,
+    "health-avg": 40,
+    "focus": 6,
+    "investiture": 5,
+    "movement": 30,
+    "deflect": 1,
+    "deflect-explanation": "carapace",
+    "sense-range": 10,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 7,
+            "athletics": 5,
+            "light-weaponry": 6
+        },
+        "cognitive": {
+            "discipline": 6,
+            "intimidation": 7
+        },
+        "spiritual": {
+            "perception": 4
+        }
+    },
+    "languages": "defined by culture",
+    "traits": [
+        {
+            "name": "Water Weakness",
+            "description": "While the stormform is drenched in water, they can't use their Bolt of Lightning or Electrical Charge."
+        },
+        {
+            "name": "Barbed Carapace",
+            "description": "While the stormform is Restrained by the Grapple action or a similar effect, the character restraining the stormform is Afflicted [1d8 keen]."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Bolt of Lightning",
+            "description": "Costs 1 Investiture. Attack +7, range 60 ft., one target. This attack gains a disadvantage unless the Regal spends 1 focus to ignore it. Graze: 8 (2d8) energy damage. Hit: 15 (2d8 + 7) energy damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Storm Leap",
+            "description": "Costs 1 Investiture. The Regal jumps up to 60 feet. If they land within 5 feet of an enemy, the Regal can use the Gain Advantage action as a free action."
+        },
+        {
+            "action-cost": "free",
+            "name": "Electrical Charge",
+            "description": "After the Regal uses the Move action, they become electrically charged until the start of their next turn. While charged, they're immune to energy damage, and whenever the charged Regal is hit by an attack by an enemy within 5 feet of them, the attacker takes 4 (1d8) energy damage."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Shortspear",
+            "skill": "light-weaponry",
+            "reach": 5,
+            "damage-base": "1d8",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +6, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 10 (1d8 + 6) keen damage."
+        }
+    ]
+}

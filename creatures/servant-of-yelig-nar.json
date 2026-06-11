@@ -1,0 +1,117 @@
+{
+    "id": "servant-of-yelig-nar",
+    "name": "Servant of Yelig-Nar",
+    "tier": 4,
+    "role": "boss",
+    "size": "large",
+    "type": "humanoid",
+    "strength": 7,
+    "physical-defense": 23,
+    "speed": 6,
+    "intellect": 4,
+    "cognitive-defense": 20,
+    "willpower": 6,
+    "awareness": 5,
+    "spiritual-defense": 17,
+    "presence": 2,
+    "health-min": 200,
+    "health-max": 280,
+    "health-avg": 240,
+    "focus": 10,
+    "investiture": 9,
+    "movement": 40,
+    "deflect": 4,
+    "deflect-explanation": "carapace",
+    "sense-range": 50,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 11,
+            "athletics": 12,
+            "heavy-weaponry": 12,
+            "light-weaponry": 11
+        },
+        "cognitive": {
+            "intimidation": 11
+        },
+        "spiritual": {
+            "perception": 10,
+            "surge-abrasion": 10,
+            "surge-cohesion": 10,
+            "surge-division": 8,
+            "surge-gravitation": 9,
+            "surge-illumination": 6,
+            "surge-progression": 9,
+            "surge-tension": 11,
+            "surge-transformation": 10,
+            "surge-transportation": 8
+        }
+    },
+    "languages": "those known by host",
+    "traits": [
+        {
+            "name": "Boss",
+            "description": "The servant of Yelig-nar can take both a fast turn and a slow turn each round. After an enemy finishes a turn, the servant of Yelig-nar can spend 1 focus to immediately use an extra single or double action. Additionally, they can spend 1 focus on their turn to remove a condition from themself."
+        },
+        {
+            "name": "Blightwind's Host",
+            "description": "When the servant of Yelig-nar dies, their soul is consumed by the Unmade and unable to form in the Cognitive Realm, and Yelig-nar escapes from the corpse as black smoke."
+        },
+        {
+            "name": "Crystal Carapace",
+            "description": "Before the servant of Yelig-nar is hit by an attack, they can spend 1 focus to turn it into a graze (no action required). Additionally, they can use their carapace like a shield, allowing them to use the Brace action."
+        },
+        {
+            "name": "Immunities",
+            "description": "The servant of Yelig-nar is immune to the Exhausted, Stunned, and Surprised conditions."
+        },
+        {
+            "name": "Mobile",
+            "description": "When the servant of Yelig-nar willingly moves on their turn, they can choose to pause moving and use another action before finishing their available movement. They can resume that movement as a free action any time before the end of their turn."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "double",
+            "name": "Unmade Cohesion",
+            "description": "Costs 1 Investiture. The servant of Yelig-nar chooses a Huge (15-foot) space within 30 feet of them, turning all stone in it to liquid. Each enemy standing on stone within that area sinks into the ground and becomes Slowed for as long as they're in the liquid stone. At the start of each round, the servant of Yelig-nar can spend 1 Investiture to maintain this effect for another round. If they don't, the stone hardens and any characters in it are Immobilized. A trapped target or a character who can reach them can use a Skill to make a DC 20 Athletics test, freeing the trapped target on a success; otherwise, the target remains trapped until they're dug out of the stone."
+        },
+        {
+            "action-cost": "single",
+            "name": "Unmade Gravitation",
+            "description": "Costs 1 Investiture. The servant of Yelig-nar chooses one of the following effects: Deadly Leap — They leap up to 40 feet without triggering Reactive Strikes, then use their Shardblade as a single action against a character within reach. When they do so, they can't spend focus to knock the target Prone. Flight — The servant of Yelig-nar gains a flying rate of 40 feet until the start of their next turn. At the start of each of their turns, they can spend 1 Investiture to maintain this effect for an additional round."
+        },
+        {
+            "action-cost": "double",
+            "name": "Unmade Transformation",
+            "description": "Costs 1 Investiture. The servant of Yelig-nar chooses a Huge (15-foot) space within 60 feet of them, transforming all air in it to fire. Each character in that area takes 11 (2d10) energy damage, and unaccompanied flammable objects in that area catch on fire."
+        },
+        {
+            "action-cost": "single",
+            "name": "Skate",
+            "description": "Costs 1 Focus. The servant of Yelig-nar moves up to their movement rate in a straight line."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Shardblade",
+            "skill": "heavy-weaponry",
+            "reach": 5,
+            "damage-base": "2d8",
+            "damage-type": "spirit",
+            "on-hit": "and the servant of Yelig-nar can spend 1 focus to knock the target Prone.",
+            "description": "Attack +12, reach 5 ft., one target. Graze: 9 (2d8) spirit damage. Hit: 25 (2d8 + 16) spirit damage, and the servant of Yelig-nar can spend 1 focus to knock the target Prone."
+        },
+        {
+            "action-cost": "single",
+            "name": "Unmade Division",
+            "skill": "surge-division",
+            "reach": 5,
+            "damage-base": "3d10",
+            "damage-type": "energy",
+            "on-hit": "and the target becomes Exhausted [−1].",
+            "description": "Costs 1 Investiture. Attack +8 vs. Spiritual, reach 5 ft., one target. Graze: 16 (3d10) energy damage. Hit: 24 (3d10 + 8) energy damage, and the target becomes Exhausted [−1]."
+        }
+    ]
+}

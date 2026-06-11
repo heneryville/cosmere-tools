@@ -1,0 +1,92 @@
+{
+    "id": "masked-one",
+    "name": "Masked One",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 1,
+    "physical-defense": 15,
+    "speed": 4,
+    "intellect": 3,
+    "cognitive-defense": 15,
+    "willpower": 2,
+    "awareness": 3,
+    "spiritual-defense": 19,
+    "presence": 6,
+    "health-min": 32,
+    "health-max": 44,
+    "health-avg": 38,
+    "focus": 4,
+    "investiture": 8,
+    "movement": 30,
+    "deflect": 1,
+    "deflect-explanation": "carapace",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "light-weapons": 7,
+            "stealth": 7,
+            "thievery": 6
+        },
+        "cognitive": {
+            "deduction": 5,
+            "intimidation": 5
+        },
+        "spiritual": {
+            "deception": 9,
+            "perception": 6,
+            "persuasion": 9
+        }
+    },
+    "languages": "Dawnchant, two Rosharan languages",
+    "traits": [
+        {
+            "name": "Infiltrator",
+            "description": "The Masked One can spend 1 focus to gain an advantage on a Deception, Insight, or Persuasion test."
+        },
+        {
+            "name": "Opportunistic",
+            "description": "The Masked One's tests all have an Opportunity range of 18–20."
+        },
+        {
+            "name": "Reflexive Illusion",
+            "description": "At the start of a scene, if the Masked One isn't Surprised, they can use their Illusory Disguise (no action required)."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "name": "Illusory Disguise",
+            "description": "Costs 1 Investiture. The Masked One creates an illusion to disguise themself as another character. While disguised, the Masked One has an advantage on attack tests against enemies unaware of their ruse. This disguise continues until they end it as a free action or use this action to change it."
+        },
+        {
+            "action-cost": "single",
+            "name": "Cunning Tongue",
+            "description": "The Masked One weaves manipulative words around an enemy they can influence, making a Deception or Persuasion test opposed by the target's Insight. The Masked One gains an advantage on this test if they know one or more of the target's goals, their purpose, or their obstacle. If the Masked One succeeds, the target loses 1d4 focus."
+        },
+        {
+            "action-cost": "single",
+            "name": "Surge of Illumination",
+            "description": "Costs 1 Investiture. The Masked One chooses a Large (10-foot) or smaller area or willing character within 30 feet of them, creating an illusion on the target which lasts until the end of the scene or until the Masked One chooses to end it as a free action. It's an animated hologram with no sound, and it's revealed to be an illusion if something passes through it. On a character's turn, they can Use a Skill to determine it's an illusion with a successful DC 15 Deduction test. Depending on the nature of the illusion, it can cause an effect such as disguising or duplicating an ally, blocking line of effect, or creating a flash of bright light that applies the Disoriented condition to characters within 10 feet of it. If the effect would apply a condition to a character, they can avoid it with a successful DC 15 Deduction test."
+        },
+        {
+            "action-cost": "free",
+            "name": "Regenerate",
+            "description": "Costs 1 Investiture. The Masked One recovers 5 (1d6 + 2) health. They can use this free action even while Unconscious or otherwise prevented from using actions."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Staff",
+            "skill": "light-weapons",
+            "reach": 5,
+            "damage-base": "1d6",
+            "damage-type": "impact",
+            "on-hit": "the Masked One can spend 1 focus to trip the target and knock them Prone.",
+            "description": "Attack +7, reach 5 ft., one target. Graze: 3 (1d6) impact damage. Hit: 10 (1d6 + 7) impact damage, and the Masked One can spend 1 focus to trip the target and knock them Prone."
+        }
+    ]
+}
