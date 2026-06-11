@@ -1,0 +1,3228 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "Cosmere Tools" [ref=e6] [cursor=pointer]:
+        - /url: /home
+      - generic [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: /home
+        - link "Create" [ref=e9] [cursor=pointer]:
+          - /url: /create
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: /about
+  - main [ref=e11]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - button "Animal" [ref=e16] [cursor=pointer]
+        - button "Book" [ref=e17] [cursor=pointer]
+        - button "Criminal" [ref=e18] [cursor=pointer]
+        - button "Fused" [ref=e19] [cursor=pointer]
+        - button "Homebrew" [ref=e20] [cursor=pointer]
+        - button "Human" [active] [ref=e21] [cursor=pointer]
+        - button "Named" [ref=e22] [cursor=pointer]
+        - button "Radiant" [ref=e23] [cursor=pointer]
+        - button "Singer" [ref=e24] [cursor=pointer]
+        - button "Soldier" [ref=e25] [cursor=pointer]
+        - button "Spren" [ref=e26] [cursor=pointer]
+        - button "Server" [ref=e27] [cursor=pointer]
+        - button "Local" [ref=e28] [cursor=pointer]
+        - button "✕ Clear" [ref=e5581] [cursor=pointer]
+      - generic [ref=e29]:
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - button "Edit" [ref=e122] [cursor=pointer]
+            - button "Download JSON" [ref=e123] [cursor=pointer]
+            - generic [ref=e124]:
+              - generic [ref=e125]: Book
+              - generic [ref=e126]: Human
+              - generic [ref=e127]: Radiant
+              - code [ref=e128]: Server
+          - article [ref=e129]:
+            - generic [ref=e130]:
+              - heading "Windrunner Squire" [level=1] [ref=e131]
+              - text: Tier 2 Rival - Medium Humanoid
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - generic [ref=e134]: Physical
+                - generic [ref=e135]: Cognitive
+                - generic [ref=e136]: Spiritual
+              - generic [ref=e137]:
+                - generic [ref=e138]:
+                  - generic [ref=e139]:
+                    - generic [ref=e140]: STR
+                    - generic [ref=e141]: "1"
+                  - generic [ref=e142]:
+                    - generic [ref=e143]: DEF
+                    - generic [ref=e144]: "13"
+                  - generic [ref=e145]:
+                    - generic [ref=e146]: SPD
+                    - generic [ref=e147]: "2"
+                - generic [ref=e148]:
+                  - generic [ref=e149]:
+                    - generic [ref=e150]: INT
+                    - generic [ref=e151]: "1"
+                  - generic [ref=e152]:
+                    - generic [ref=e153]: DEF
+                    - generic [ref=e154]: "13"
+                  - generic [ref=e155]:
+                    - generic [ref=e156]: WIL
+                    - generic [ref=e157]: "2"
+                - generic [ref=e158]:
+                  - generic [ref=e159]:
+                    - generic [ref=e160]: AWA
+                    - generic [ref=e161]: "3"
+                  - generic [ref=e162]:
+                    - generic [ref=e163]: DEF
+                    - generic [ref=e164]: "16"
+                  - generic [ref=e165]:
+                    - generic [ref=e166]: PRE
+                    - generic [ref=e167]: "3"
+            - generic [ref=e168]:
+              - generic [ref=e169]:
+                - heading "Health:" [level=3] [ref=e170]
+                - text: 40 (32-48)
+              - generic [ref=e171]:
+                - heading "Focus:" [level=3] [ref=e172]
+                - text: "4"
+              - generic [ref=e173]:
+                - heading "Investiture:" [level=3] [ref=e174]
+                - text: "2"
+            - separator [ref=e175]
+            - generic [ref=e176]:
+              - generic [ref=e177]:
+                - heading "Movement:" [level=3] [ref=e178]
+                - text: 25 ft.
+              - generic [ref=e179]:
+                - heading "Senses:" [level=3] [ref=e180]
+                - text: 20 ft. (sight)
+              - generic [ref=e181]:
+                - heading "Physical Skills:" [level=3] [ref=e182]
+                - text: Agility +5, Heavy-weapons +4, Light-weapons +5
+              - generic [ref=e183]:
+                - heading "Cognitive Skills:" [level=3] [ref=e184]
+                - text: Discipline +5
+              - generic [ref=e185]:
+                - heading "Spiritual Skills:" [level=3] [ref=e186]
+                - text: Insight +6, Perception +6, Survival +6
+              - generic [ref=e187]:
+                - heading "Languages:" [level=3] [ref=e188]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e189]
+            - separator [ref=e190]
+            - generic [ref=e192]:
+              - heading "Squire." [level=3] [ref=e193]
+              - text: The squire can only use surge skills and actions that cost Investiture while they're within 50 miles of their Knight Radiant.
+            - heading "ACTIONS" [level=2] [ref=e194]
+            - separator [ref=e195]
+            - generic [ref=e196]:
+              - generic [ref=e197]:
+                - generic [ref=e198]: 
+                - heading "Adhesion." [level=3] [ref=e199]
+                - text: Costs 1 Investiture or More. The squire uses Adhesion to infuse two Small objects, sticking them together for a number of rounds equal to the Investiture spent. The squire can infuse a surface of any size in place of one of the objects. If this action is used during combat, the squire must make a DC 15 Adhesion test. On a failure, the objects aren't infused and the Investiture isn't spent.
+              - generic [ref=e200]:
+                - generic [ref=e201]: 
+                - heading "Gravitation." [level=3] [ref=e202]
+                - text: Costs 1 Investiture. The squire gives themselves a flying rate of 25 feet until the start of their next turn. At the start of each of their turns, they can spend 1 Investiture to maintain this effect for an additional round.
+              - generic [ref=e203]:
+                - generic [ref=e204]: 
+                - heading "Parry." [level=3] [ref=e205]
+                - text: Costs 1 Focus. Before the squire is hit by a melee attack, they increase their Physical defense by 3 against that attack, potentially causing it to miss. To do so, the squire must sense the attacker and be wielding a melee weapon.
+            - heading "STRIKES" [level=2] [ref=e206]
+            - separator [ref=e207]
+            - generic [ref=e209]:
+              - generic [ref=e210]: 
+              - 'heading "Strike: Shortspear." [level=3] [ref=e211]'
+              - text: "Attack +5, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 9 (1d8 + 5) keen damage, and the squire can spend 1 focus to gain the Determined condition until the end of their next turn."
+        - generic [ref=e212]:
+          - generic [ref=e213]:
+            - button "Edit" [ref=e214] [cursor=pointer]
+            - button "Download JSON" [ref=e215] [cursor=pointer]
+            - generic [ref=e216]:
+              - generic [ref=e217]: Homebrew
+              - generic [ref=e218]: Human
+              - generic [ref=e219]: Criminal
+              - code [ref=e220]: Server
+          - article [ref=e221]:
+            - generic [ref=e222]:
+              - heading "Lobster Kremling" [level=1] [ref=e223]
+              - text: Tier 1 Minion - Medium Humanoid
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - generic [ref=e226]: Physical
+                - generic [ref=e227]: Cognitive
+                - generic [ref=e228]: Spiritual
+              - generic [ref=e229]:
+                - generic [ref=e230]:
+                  - generic [ref=e231]:
+                    - generic [ref=e232]: STR
+                    - generic [ref=e233]: "1"
+                  - generic [ref=e234]:
+                    - generic [ref=e235]: DEF
+                    - generic [ref=e236]: "13"
+                  - generic [ref=e237]:
+                    - generic [ref=e238]: SPD
+                    - generic [ref=e239]: "2"
+                - generic [ref=e240]:
+                  - generic [ref=e241]:
+                    - generic [ref=e242]: INT
+                    - generic [ref=e243]: "0"
+                  - generic [ref=e244]:
+                    - generic [ref=e245]: DEF
+                    - generic [ref=e246]: "10"
+                  - generic [ref=e247]:
+                    - generic [ref=e248]: WIL
+                    - generic [ref=e249]: "0"
+                - generic [ref=e250]:
+                  - generic [ref=e251]:
+                    - generic [ref=e252]: AWA
+                    - generic [ref=e253]: "1"
+                  - generic [ref=e254]:
+                    - generic [ref=e255]: DEF
+                    - generic [ref=e256]: "11"
+                  - generic [ref=e257]:
+                    - generic [ref=e258]: PRE
+                    - generic [ref=e259]: "0"
+            - generic [ref=e260]:
+              - generic [ref=e261]:
+                - heading "Health:" [level=3] [ref=e262]
+                - text: 9 (7-11)
+              - generic [ref=e263]:
+                - heading "Focus:" [level=3] [ref=e264]
+                - text: "0"
+              - generic [ref=e265]:
+                - heading "Investiture:" [level=3] [ref=e266]
+                - text: "0"
+            - separator [ref=e267]
+            - generic [ref=e268]:
+              - generic [ref=e269]:
+                - heading "Movement:" [level=3] [ref=e270]
+                - text: 30 ft.
+              - generic [ref=e271]:
+                - heading "Senses:" [level=3] [ref=e272]
+                - text: 10 ft. (touch)
+              - generic [ref=e273]:
+                - heading "Physical Skills:" [level=3] [ref=e274]
+                - text: Athletics +2
+              - generic [ref=e275]:
+                - heading "Spiritual Skills:" [level=3] [ref=e276]
+                - text: Perception +2, Survival +1
+              - generic [ref=e277]:
+                - heading "Languages:" [level=3] [ref=e278]
+                - text: None
+            - heading "TRAITS" [level=2] [ref=e279]
+            - separator [ref=e280]
+            - generic [ref=e281]:
+              - generic [ref=e282]:
+                - heading "Enhanced Senses." [level=3] [ref=e283]
+                - text: Gains an advantage on non-attack tests that rely on smell
+              - generic [ref=e284]:
+                - heading "Combat Pheromones." [level=3] [ref=e285]
+                - text: When an ally within 15 ft. deals damage to an opponent, this creature may move 10 ft. toward that opponent as a free action.
+              - generic [ref=e286]:
+                - heading "Minion." [level=3] [ref=e287]
+                - text: The axehound's attacks can't critcally hit, and they are immediatly defeated when they suffer an injury
+            - heading "ACTIONS" [level=2] [ref=e288]
+            - separator [ref=e289]
+            - generic [ref=e291]:
+              - generic [ref=e292]: 
+              - heading "Scuttle." [level=3] [ref=e293]
+              - text: While within 5 feet of an opponent, may travel through one or several opponents up to it's movement to another unoccupied space.
+            - heading "STRIKES" [level=2] [ref=e294]
+            - separator [ref=e295]
+            - generic [ref=e297]:
+              - generic [ref=e298]: 
+              - 'heading "Strike: Bite." [level=3] [ref=e299]'
+              - text: "Attack +2, reach 5 ft., one target. Graze: 3 (1d4) keen damage. Hit: 5 (1d4+2) keen damage."
+        - generic [ref=e300]:
+          - generic [ref=e301]:
+            - button "Edit" [ref=e302] [cursor=pointer]
+            - button "Download JSON" [ref=e303] [cursor=pointer]
+            - generic [ref=e304]:
+              - generic [ref=e305]: Book
+              - generic [ref=e306]: Human
+              - generic [ref=e307]: Soldier
+              - code [ref=e308]: Server
+          - article [ref=e309]:
+            - generic [ref=e310]:
+              - heading "Duelist Shardbearer" [level=1] [ref=e311]
+              - text: Tier 2 Rival - Medium Humanoid
+            - generic [ref=e312]:
+              - generic [ref=e313]:
+                - generic [ref=e314]: Physical
+                - generic [ref=e315]: Cognitive
+                - generic [ref=e316]: Spiritual
+              - generic [ref=e317]:
+                - generic [ref=e318]:
+                  - generic [ref=e319]:
+                    - generic [ref=e320]: STR
+                    - generic [ref=e321]: "3"
+                  - generic [ref=e322]:
+                    - generic [ref=e323]: DEF
+                    - generic [ref=e324]: "17"
+                  - generic [ref=e325]:
+                    - generic [ref=e326]: SPD
+                    - generic [ref=e327]: "4"
+                - generic [ref=e328]:
+                  - generic [ref=e329]:
+                    - generic [ref=e330]: INT
+                    - generic [ref=e331]: "2"
+                  - generic [ref=e332]:
+                    - generic [ref=e333]: DEF
+                    - generic [ref=e334]: "15"
+                  - generic [ref=e335]:
+                    - generic [ref=e336]: WIL
+                    - generic [ref=e337]: "3"
+                - generic [ref=e338]:
+                  - generic [ref=e339]:
+                    - generic [ref=e340]: AWA
+                    - generic [ref=e341]: "2"
+                  - generic [ref=e342]:
+                    - generic [ref=e343]: DEF
+                    - generic [ref=e344]: "16"
+                  - generic [ref=e345]:
+                    - generic [ref=e346]: PRE
+                    - generic [ref=e347]: "4"
+            - generic [ref=e348]:
+              - generic [ref=e349]:
+                - heading "Health:" [level=3] [ref=e350]
+                - text: 40 (31-49)
+              - generic [ref=e351]:
+                - heading "Focus:" [level=3] [ref=e352]
+                - text: "5"
+              - generic [ref=e353]:
+                - heading "Investiture:" [level=3] [ref=e354]
+                - text: "0"
+            - separator [ref=e355]
+            - generic [ref=e356]:
+              - generic [ref=e357]:
+                - heading "Movement:" [level=3] [ref=e358]
+                - text: 30 ft.
+              - generic [ref=e359]:
+                - heading "Senses:" [level=3] [ref=e360]
+                - text: 10 ft. (sight)
+              - generic [ref=e361]:
+                - heading "Physical Skills:" [level=3] [ref=e362]
+                - text: Agility +6, Heavy-weapons +6, Light-weapons +7
+              - generic [ref=e363]:
+                - heading "Cognitive Skills:" [level=3] [ref=e364]
+                - text: Discipline +4, Intimidation +5
+              - generic [ref=e365]:
+                - heading "Spiritual Skills:" [level=3] [ref=e366]
+                - text: Insight +4, Leadership +6, Persuasion +6
+              - generic [ref=e367]:
+                - heading "Languages:" [level=3] [ref=e368]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e369]
+            - separator [ref=e370]
+            - generic [ref=e372]:
+              - heading "Inspiring Leadership." [level=3] [ref=e373]
+              - text: When the duelist successfully uses the Gain Advantage action, they can choose one ally they can influence. That ally also gains an advantage on the next test they make against the duelist's target.
+            - heading "ACTIONS" [level=2] [ref=e374]
+            - separator [ref=e375]
+            - generic [ref=e376]:
+              - generic [ref=e377]:
+                - generic [ref=e378]: 
+                - heading "Change Stance." [level=3] [ref=e379]
+                - text: "The duelist shifts into one of the following stances, losing the effects of any previous stance and gaining the effects of the new stance. Flamestance: While there's only one enemy within 5 feet of the duelist and no allies within 5 feet of them or that enemy, the duelist can use momentum to gain focus, which they can spend only on the Gain Advantage action or on an action that includes an attack test. Windstance: While there are two or more enemies within 5 feet of the duelist, the duelist can use momentum to gain focus, which they can spend only on the Disengage action or on an action that includes an attack test."
+              - generic [ref=e380]:
+                - generic [ref=e381]: 
+                - heading "Feint." [level=3] [ref=e382]
+                - text: The duelist tests Heavy Weaponry against the Cognitive defense of a target within 5 feet of them. If the duelist succeeds, the target loses momentum and 1d4 focus. If the duelist fails, the target loses 1 focus. The duelist can spend momentum from this test to use their Change Stance action as a free action without spending focus.
+              - generic [ref=e383]:
+                - generic [ref=e384]: 
+                - heading "Jarring Insight." [level=3] [ref=e385]
+                - text: The duelist reads their enemy with practiced ease, making an opposed Insight test against the target's Discipline. If the duelist succeeds, the target loses one momentum at the beginning of their next turn, or if they're in a conversation, the target gains a disadvantage on their next contribution.
+              - generic [ref=e386]:
+                - generic [ref=e387]: 
+                - heading "Reposition." [level=3] [ref=e388]
+                - text: Before the duelist is unwillingly moved, they ignore that effect and use the Disengage action as a free action.
+            - heading "STRIKES" [level=2] [ref=e389]
+            - separator [ref=e390]
+            - generic [ref=e392]:
+              - generic [ref=e393]: 
+              - 'heading "Strike: Shardblade." [level=3] [ref=e394]'
+              - text: "Attack +6, reach 5 ft., one target. Graze: 9 (2d8) spirit damage. Hit: 22 (2d8 + 6) spirit damage."
+        - generic [ref=e395]:
+          - generic [ref=e396]:
+            - button "Edit" [ref=e397] [cursor=pointer]
+            - button "Download JSON" [ref=e398] [cursor=pointer]
+            - generic [ref=e399]:
+              - generic [ref=e400]: Book
+              - generic [ref=e401]: Human
+              - generic [ref=e402]: Criminal
+              - code [ref=e403]: Server
+          - article [ref=e404]:
+            - generic [ref=e405]:
+              - heading "Thief" [level=1] [ref=e406]
+              - text: Tier 1 Rival - Medium Humanoid
+            - generic [ref=e407]:
+              - generic [ref=e408]:
+                - generic [ref=e409]: Physical
+                - generic [ref=e410]: Cognitive
+                - generic [ref=e411]: Spiritual
+              - generic [ref=e412]:
+                - generic [ref=e413]:
+                  - generic [ref=e414]:
+                    - generic [ref=e415]: STR
+                    - generic [ref=e416]: "1"
+                  - generic [ref=e417]:
+                    - generic [ref=e418]: DEF
+                    - generic [ref=e419]: "14"
+                  - generic [ref=e420]:
+                    - generic [ref=e421]: SPD
+                    - generic [ref=e422]: "3"
+                - generic [ref=e423]:
+                  - generic [ref=e424]:
+                    - generic [ref=e425]: INT
+                    - generic [ref=e426]: "2"
+                  - generic [ref=e427]:
+                    - generic [ref=e428]: DEF
+                    - generic [ref=e429]: "13"
+                  - generic [ref=e430]:
+                    - generic [ref=e431]: WIL
+                    - generic [ref=e432]: "1"
+                - generic [ref=e433]:
+                  - generic [ref=e434]:
+                    - generic [ref=e435]: AWA
+                    - generic [ref=e436]: "2"
+                  - generic [ref=e437]:
+                    - generic [ref=e438]: DEF
+                    - generic [ref=e439]: "13"
+                  - generic [ref=e440]:
+                    - generic [ref=e441]: PRE
+                    - generic [ref=e442]: "1"
+            - generic [ref=e443]:
+              - generic [ref=e444]:
+                - heading "Health:" [level=3] [ref=e445]
+                - text: 20 (16-24)
+              - generic [ref=e446]:
+                - heading "Focus:" [level=3] [ref=e447]
+                - text: "3"
+              - generic [ref=e448]:
+                - heading "Investiture:" [level=3] [ref=e449]
+                - text: "0"
+            - separator [ref=e450]
+            - generic [ref=e451]:
+              - generic [ref=e452]:
+                - heading "Movement:" [level=3] [ref=e453]
+                - text: 30 ft.
+              - generic [ref=e454]:
+                - heading "Senses:" [level=3] [ref=e455]
+                - text: 20 ft. (sight)
+              - generic [ref=e456]:
+                - heading "Physical Skills:" [level=3] [ref=e457]
+                - text: Agility +5, Light-weapons +5, Stealth +5, Thievery +5
+              - generic [ref=e458]:
+                - heading "Spiritual Skills:" [level=3] [ref=e459]
+                - text: Deception +3, Perception +4, Persuasion +3
+              - generic [ref=e460]:
+                - heading "Languages:" [level=3] [ref=e461]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e462]
+            - separator [ref=e463]
+            - generic [ref=e464]:
+              - generic [ref=e465]:
+                - heading "Quick Hands." [level=3] [ref=e466]
+                - text: When a character triggers a Reactive Strike reaction from the thief, the thief can instead use their Pickpocket as a reaction (without spending focus for a Reactive Strike).
+              - generic [ref=e467]:
+                - heading "Vanishing Act." [level=3] [ref=e468]
+                - text: At the end of the thief's turn, if they're in cover or in an area where their enemy's primary sense is obscured, the thief can make a Stealth test (no action required) with advantage against the Spiritual defense of each enemy who can sense them. Each enemy they succeed against loses track of them and can no longer sense them until the thief attacks or takes another action that would expose them.
+            - heading "ACTIONS" [level=2] [ref=e469]
+            - separator [ref=e470]
+            - generic [ref=e471]:
+              - generic [ref=e472]:
+                - generic [ref=e473]: 
+                - heading "Disorienting Distraction." [level=3] [ref=e474]
+                - text: The thief throws sand, flour, or a similar substance to distract and confuse foes. Each enemy within 10 feet of them must succeed on a DC 13 Agility test or become Disoriented until the end of the thief's next turn.
+              - generic [ref=e475]:
+                - generic [ref=e476]: 
+                - heading "Pickpocket." [level=3] [ref=e477]
+                - text: The thief attempts to rifle through the belongings of a humanoid within 5 feet of them, making an opposed Thievery test against the target's Perception. If the target is Disoriented, the target gains a disadvantage on their test. If the thief succeeds, they can choose to steal up to 50 marks or one item the target isn't wielding or wearing.
+              - generic [ref=e478]:
+                - generic [ref=e479]: 
+                - heading "Slippery." [level=3] [ref=e480]
+                - text: After an enemy ends a Move action within 5 feet of the thief, the thief can use the Disengage action as a reaction. If the thief ends this movement in cover or in an area where an enemy's primary sense is obscured, enemies affected by that cover or obscured senses gain a disadvantage on attacks against the thief until the end of the thief's next turn.
+            - heading "STRIKES" [level=2] [ref=e481]
+            - separator [ref=e482]
+            - generic [ref=e484]:
+              - generic [ref=e485]: 
+              - 'heading "Strike: Dagger." [level=3] [ref=e486]'
+              - text: "Attack +5, reach 5 ft. or range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 7 (1d4 + 5) keen damage. On a hit or graze, if the target is Disoriented, they take an extra 2 (1d4) keen damage."
+        - generic [ref=e682]:
+          - generic [ref=e683]:
+            - button "Edit" [ref=e684] [cursor=pointer]
+            - button "Download JSON" [ref=e685] [cursor=pointer]
+            - generic [ref=e686]:
+              - generic [ref=e687]: Book
+              - generic [ref=e688]: Human
+              - generic [ref=e689]: Soldier
+              - code [ref=e690]: Server
+          - article [ref=e691]:
+            - generic [ref=e692]:
+              - heading "Guard" [level=1] [ref=e693]
+              - text: Tier 1 Rival - Medium Humanoid
+            - generic [ref=e694]:
+              - generic [ref=e695]:
+                - generic [ref=e696]: Physical
+                - generic [ref=e697]: Cognitive
+                - generic [ref=e698]: Spiritual
+              - generic [ref=e699]:
+                - generic [ref=e700]:
+                  - generic [ref=e701]:
+                    - generic [ref=e702]: STR
+                    - generic [ref=e703]: "3"
+                  - generic [ref=e704]:
+                    - generic [ref=e705]: DEF
+                    - generic [ref=e706]: "14"
+                  - generic [ref=e707]:
+                    - generic [ref=e708]: SPD
+                    - generic [ref=e709]: "1"
+                - generic [ref=e710]:
+                  - generic [ref=e711]:
+                    - generic [ref=e712]: INT
+                    - generic [ref=e713]: "1"
+                  - generic [ref=e714]:
+                    - generic [ref=e715]: DEF
+                    - generic [ref=e716]: "13"
+                  - generic [ref=e717]:
+                    - generic [ref=e718]: WIL
+                    - generic [ref=e719]: "2"
+                - generic [ref=e720]:
+                  - generic [ref=e721]:
+                    - generic [ref=e722]: AWA
+                    - generic [ref=e723]: "3"
+                  - generic [ref=e724]:
+                    - generic [ref=e725]: DEF
+                    - generic [ref=e726]: "14"
+                  - generic [ref=e727]:
+                    - generic [ref=e728]: PRE
+                    - generic [ref=e729]: "1"
+            - generic [ref=e730]:
+              - generic [ref=e731]:
+                - heading "Health:" [level=3] [ref=e732]
+                - text: 24 (19-29)
+              - generic [ref=e733]:
+                - heading "Focus:" [level=3] [ref=e734]
+                - text: "4"
+              - generic [ref=e735]:
+                - heading "Investiture:" [level=3] [ref=e736]
+                - text: "0"
+            - separator [ref=e737]
+            - generic [ref=e738]:
+              - generic [ref=e739]:
+                - heading "Movement:" [level=3] [ref=e740]
+                - text: 25 ft.
+              - generic [ref=e741]:
+                - heading "Senses:" [level=3] [ref=e742]
+                - text: 20 ft. (sight)
+              - generic [ref=e743]:
+                - heading "Physical Skills:" [level=3] [ref=e744]
+                - text: Athletics +5, Heavy-weapons +5
+              - generic [ref=e745]:
+                - heading "Cognitive Skills:" [level=3] [ref=e746]
+                - text: Discipline +4, Intimidation +4
+              - generic [ref=e747]:
+                - heading "Spiritual Skills:" [level=3] [ref=e748]
+                - text: Insight +4, Perception +5
+              - generic [ref=e749]:
+                - heading "Languages:" [level=3] [ref=e750]
+                - text: determined by culture
+            - heading "TRAITS" [level=2] [ref=e751]
+            - separator [ref=e752]
+            - generic [ref=e754]:
+              - heading "Raise the Alert!." [level=3] [ref=e755]
+              - text: After an enemy the guard can sense within 60 feet of them fails a Stealth test, or after the guard succeeds on a test to notice that enemy, this guard and each allied guard who can sense that enemy gain the Focused condition until the end of the scene.
+            - heading "ACTIONS" [level=2] [ref=e756]
+            - separator [ref=e757]
+            - generic [ref=e758]:
+              - generic [ref=e759]:
+                - generic [ref=e760]: 
+                - heading "Debilitate." [level=3] [ref=e761]
+                - text: "Attack +5, reach 5 ft., one Prone target. Graze: 9 (2d8) impact damage. Hit: 14 (2d8 + 5) impact damage."
+              - generic [ref=e762]:
+                - generic [ref=e763]: 
+                - heading "Work as One." [level=3] [ref=e764]
+                - text: After the guard hits with an attack, they choose an ally they can influence, urging them to advance. That ally can immediately Disengage (no action required).
+            - heading "STRIKES" [level=2] [ref=e765]
+            - separator [ref=e766]
+            - generic [ref=e768]:
+              - generic [ref=e769]: 
+              - 'heading "Strike: Longspear." [level=3] [ref=e770]'
+              - text: "Attack +5, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 9 (1d8 + 5) keen damage, and the guard can spend 1 focus to knock the target Prone."
+        - generic [ref=e859]:
+          - generic [ref=e860]:
+            - button "Edit" [ref=e861] [cursor=pointer]
+            - button "Download JSON" [ref=e862] [cursor=pointer]
+            - generic [ref=e863]:
+              - generic [ref=e864]: Book
+              - generic [ref=e865]: Human
+              - code [ref=e866]: Server
+          - article [ref=e867]:
+            - generic [ref=e868]:
+              - heading "Soulcaster Savant" [level=1] [ref=e869]
+              - text: Tier 2 Rival - Medium Humanoid
+            - generic [ref=e870]:
+              - generic [ref=e871]:
+                - generic [ref=e872]: Physical
+                - generic [ref=e873]: Cognitive
+                - generic [ref=e874]: Spiritual
+              - generic [ref=e875]:
+                - generic [ref=e876]:
+                  - generic [ref=e877]:
+                    - generic [ref=e878]: STR
+                    - generic [ref=e879]: "1"
+                  - generic [ref=e880]:
+                    - generic [ref=e881]: DEF
+                    - generic [ref=e882]: "13"
+                  - generic [ref=e883]:
+                    - generic [ref=e884]: SPD
+                    - generic [ref=e885]: "2"
+                - generic [ref=e886]:
+                  - generic [ref=e887]:
+                    - generic [ref=e888]: INT
+                    - generic [ref=e889]: "2"
+                  - generic [ref=e890]:
+                    - generic [ref=e891]: DEF
+                    - generic [ref=e892]: "16"
+                  - generic [ref=e893]:
+                    - generic [ref=e894]: WIL
+                    - generic [ref=e895]: "4"
+                - generic [ref=e896]:
+                  - generic [ref=e897]:
+                    - generic [ref=e898]: AWA
+                    - generic [ref=e899]: "5"
+                  - generic [ref=e900]:
+                    - generic [ref=e901]: DEF
+                    - generic [ref=e902]: "18"
+                  - generic [ref=e903]:
+                    - generic [ref=e904]: PRE
+                    - generic [ref=e905]: "3"
+            - generic [ref=e906]:
+              - generic [ref=e907]:
+                - heading "Health:" [level=3] [ref=e908]
+                - text: 32 (25-39)
+              - generic [ref=e909]:
+                - heading "Focus:" [level=3] [ref=e910]
+                - text: "6"
+              - generic [ref=e911]:
+                - heading "Investiture:" [level=3] [ref=e912]
+                - text: "0"
+            - separator [ref=e913]
+            - generic [ref=e914]:
+              - generic [ref=e915]:
+                - heading "Movement:" [level=3] [ref=e916]
+                - text: 25 ft.
+              - generic [ref=e917]:
+                - heading "Senses:" [level=3] [ref=e918]
+                - text: 50 ft. (sight)
+              - generic [ref=e919]:
+                - heading "Cognitive Skills:" [level=3] [ref=e920]
+                - text: Discipline +7, Intimidation +6, Lore +4
+              - generic [ref=e921]:
+                - heading "Spiritual Skills:" [level=3] [ref=e922]
+                - text: Insight +8, Survival +8
+              - generic [ref=e923]:
+                - heading "Languages:" [level=3] [ref=e924]
+                - text: determined by culture
+            - heading "TRAITS" [level=2] [ref=e925]
+            - separator [ref=e926]
+            - generic [ref=e928]:
+              - heading "Soulcaster Essences." [level=3] [ref=e929]
+              - text: The Soulcaster's fabrial is set with a smokestone (smoke), a ruby (fire), and a topaz (stone). If one of the Soulcaster's attacks reduces an enemy to 0 health, the enemy is killed and transforms into the Essence corresponding to that attack.
+            - heading "ACTIONS" [level=2] [ref=e930]
+            - separator [ref=e931]
+            - generic [ref=e932]:
+              - generic [ref=e933]:
+                - generic [ref=e934]: 
+                - heading "Soulcasting." [level=3] [ref=e935]
+                - text: The Soulcaster touches a Medium or smaller object and makes a DC 17 Discipline test. On a success, they transform the object into one of their Essences. They can spend 2 focus to target a Large object instead.
+              - generic [ref=e936]:
+                - generic [ref=e937]: 
+                - heading "Fire." [level=3] [ref=e938]
+                - text: The Soulcaster transforms air into fire around their foes. Each enemy within 5 feet of them takes 9 (2d8) energy damage. The Soulcaster can spend 1 focus per enemy in range to cause that fire to set the enemies' clothes aflame. A character in burning clothes becomes Afflicted [2d8 energy] until they or a character who can reach them uses a single action to put out the fire.
+              - generic [ref=e939]:
+                - generic [ref=e940]: 
+                - heading "Soulcast Protection." [level=3] [ref=e941]
+                - text: Costs 2 Focus. Before a ranged attack hits the Soulcaster or an ally within 5 feet of them, the Soulcaster makes a Discipline test. If their result is greater than the triggering attack test, the Soulcaster transforms the attack's projectile into one of their Essences and causes the attack to miss.
+            - heading "STRIKES" [level=2] [ref=e942]
+            - separator [ref=e943]
+            - generic [ref=e944]:
+              - generic [ref=e945]:
+                - generic [ref=e946]: 
+                - 'heading "Strike: Stone." [level=3] [ref=e947]'
+                - text: "Attack +7 vs. Spiritual, reach 5 ft., one target. Graze: 3 (1d6) spirit damage. Hit: 10 (1d6 + 7) spirit damage, and the Soulcaster can spend 1 focus to make the target Slowed until the end of the target's next turn."
+              - generic [ref=e948]:
+                - generic [ref=e949]: 
+                - 'heading "Strike: Smoke." [level=3] [ref=e950]'
+                - text: "Attack +7 vs. Spiritual, reach 5 ft., one target. Graze: 7 (2d6) spirit damage. Hit: 14 (2d6 + 7) spirit damage."
+        - generic [ref=e951]:
+          - generic [ref=e952]:
+            - button "Edit" [ref=e953] [cursor=pointer]
+            - button "Download JSON" [ref=e954] [cursor=pointer]
+            - generic [ref=e955]:
+              - generic [ref=e956]: Book
+              - generic [ref=e957]: Human
+              - generic [ref=e958]: Criminal
+              - code [ref=e959]: Server
+          - article [ref=e960]:
+            - generic [ref=e961]:
+              - heading "Ghostblood Spy" [level=1] [ref=e962]
+              - text: Tier 1 Rival - Medium Humanoid
+            - generic [ref=e963]:
+              - generic [ref=e964]:
+                - generic [ref=e965]: Physical
+                - generic [ref=e966]: Cognitive
+                - generic [ref=e967]: Spiritual
+              - generic [ref=e968]:
+                - generic [ref=e969]:
+                  - generic [ref=e970]:
+                    - generic [ref=e971]: STR
+                    - generic [ref=e972]: "0"
+                  - generic [ref=e973]:
+                    - generic [ref=e974]: DEF
+                    - generic [ref=e975]: "14"
+                  - generic [ref=e976]:
+                    - generic [ref=e977]: SPD
+                    - generic [ref=e978]: "4"
+                - generic [ref=e979]:
+                  - generic [ref=e980]:
+                    - generic [ref=e981]: INT
+                    - generic [ref=e982]: "2"
+                  - generic [ref=e983]:
+                    - generic [ref=e984]: DEF
+                    - generic [ref=e985]: "14"
+                  - generic [ref=e986]:
+                    - generic [ref=e987]: WIL
+                    - generic [ref=e988]: "2"
+                - generic [ref=e989]:
+                  - generic [ref=e990]:
+                    - generic [ref=e991]: AWA
+                    - generic [ref=e992]: "1"
+                  - generic [ref=e993]:
+                    - generic [ref=e994]: DEF
+                    - generic [ref=e995]: "13"
+                  - generic [ref=e996]:
+                    - generic [ref=e997]: PRE
+                    - generic [ref=e998]: "2"
+            - generic [ref=e999]:
+              - generic [ref=e1000]:
+                - heading "Health:" [level=3] [ref=e1001]
+                - text: 21 (16-26)
+              - generic [ref=e1002]:
+                - heading "Focus:" [level=3] [ref=e1003]
+                - text: "4"
+              - generic [ref=e1004]:
+                - heading "Investiture:" [level=3] [ref=e1005]
+                - text: "0"
+            - separator [ref=e1006]
+            - generic [ref=e1007]:
+              - generic [ref=e1008]:
+                - heading "Movement:" [level=3] [ref=e1009]
+                - text: 30 ft.
+              - generic [ref=e1010]:
+                - heading "Senses:" [level=3] [ref=e1011]
+                - text: 10 ft. (sight)
+              - generic [ref=e1012]:
+                - heading "Physical Skills:" [level=3] [ref=e1013]
+                - text: Agility +5, Light-weapons +6, Stealth +6
+              - generic [ref=e1014]:
+                - heading "Cognitive Skills:" [level=3] [ref=e1015]
+                - text: Deduction +4, Lore +3
+              - generic [ref=e1016]:
+                - heading "Spiritual Skills:" [level=3] [ref=e1017]
+                - text: Deception +4, Insight +3, Perception +3, Survival +2
+              - generic [ref=e1018]:
+                - heading "Languages:" [level=3] [ref=e1019]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e1020]
+            - separator [ref=e1021]
+            - generic [ref=e1022]:
+              - generic [ref=e1023]:
+                - heading "Infiltrator." [level=3] [ref=e1024]
+                - text: The spy can spend 1 focus (no action required) to give themself an advantage on a Deception, Insight, or Persuasion test.
+              - generic [ref=e1025]:
+                - heading "Inured to Poison." [level=3] [ref=e1026]
+                - text: The spy gains an advantage on tests to resist the effects of poison. Additionally, before the spy takes vital damage, they reduce it by 2.
+              - generic [ref=e1027]:
+                - heading "Skulking Approach." [level=3] [ref=e1028]
+                - text: At the start of each scene, if the spy isn't Surprised and if they're in cover or an area where their enemy's primary sense is obscured, the spy can make a Stealth test (no action required) with an advantage against the Spiritual defense of each enemy who can sense them. Each enemy they succeed against loses track of them and can no longer sense them until the spy attacks or takes another action that would expose them.
+            - heading "ACTIONS" [level=2] [ref=e1029]
+            - separator [ref=e1030]
+            - generic [ref=e1031]:
+              - generic [ref=e1032]:
+                - generic [ref=e1033]: 
+                - heading "Disquiet." [level=3] [ref=e1034]
+                - text: The spy manipulates their knowledge of an enemy they can influence to unnerve them. If the spy knows one or more of the target's goals, their purpose, or their obstacle, the target loses 1d4 focus; otherwise, the target loses 1 focus.
+              - generic [ref=e1035]:
+                - generic [ref=e1036]: 
+                - heading "Coat Weapon." [level=3] [ref=e1037]
+                - text: The spy coats either their Dagger or Shortbow in poison. The next enemy hit by an attack with the coated weapon must succeed on a DC 16 Athletics test or take 2d6 vital damage and gain a disadvantage on all tests for 1 minute.
+              - generic [ref=e1038]:
+                - generic [ref=e1039]: 
+                - heading "Uncanny Evasion." [level=3] [ref=e1040]
+                - text: Before the spy is hit by a weapon attack made by an enemy they can sense within 60 feet of them, they take evasive action. The attacker must spend 2 focus or the hit becomes a miss.
+            - heading "STRIKES" [level=2] [ref=e1041]
+            - separator [ref=e1042]
+            - generic [ref=e1043]:
+              - generic [ref=e1044]:
+                - generic [ref=e1045]: 
+                - 'heading "Strike: Dagger." [level=3] [ref=e1046]'
+                - text: "Attack +6, reach 5 ft. or range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 8 (1d4 + 6) keen damage."
+              - generic [ref=e1047]:
+                - generic [ref=e1048]: 
+                - 'heading "Strike: Shortbow." [level=3] [ref=e1049]'
+                - text: "Attack +6, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9 (1d6 + 6) keen damage."
+        - generic [ref=e1138]:
+          - generic [ref=e1139]:
+            - button "Edit" [ref=e1140] [cursor=pointer]
+            - button "Download JSON" [ref=e1141] [cursor=pointer]
+            - generic [ref=e1142]:
+              - generic [ref=e1143]: Homebrew
+              - generic [ref=e1144]: Human
+              - generic [ref=e1145]: Soldier
+              - code [ref=e1146]: Server
+          - article [ref=e1147]:
+            - generic [ref=e1148]:
+              - heading "Herdaz Resistance Fighter" [level=1] [ref=e1149]
+              - text: Tier 1 Minion - Medium Humanoid
+            - generic [ref=e1150]:
+              - generic [ref=e1151]:
+                - generic [ref=e1152]: Physical
+                - generic [ref=e1153]: Cognitive
+                - generic [ref=e1154]: Spiritual
+              - generic [ref=e1155]:
+                - generic [ref=e1156]:
+                  - generic [ref=e1157]:
+                    - generic [ref=e1158]: STR
+                    - generic [ref=e1159]: "2"
+                  - generic [ref=e1160]:
+                    - generic [ref=e1161]: DEF
+                    - generic [ref=e1162]: "15"
+                  - generic [ref=e1163]:
+                    - generic [ref=e1164]: SPD
+                    - generic [ref=e1165]: "3"
+                - generic [ref=e1166]:
+                  - generic [ref=e1167]:
+                    - generic [ref=e1168]: INT
+                    - generic [ref=e1169]: "1"
+                  - generic [ref=e1170]:
+                    - generic [ref=e1171]: DEF
+                    - generic [ref=e1172]: "13"
+                  - generic [ref=e1173]:
+                    - generic [ref=e1174]: WIL
+                    - generic [ref=e1175]: "2"
+                - generic [ref=e1176]:
+                  - generic [ref=e1177]:
+                    - generic [ref=e1178]: AWA
+                    - generic [ref=e1179]: "3"
+                  - generic [ref=e1180]:
+                    - generic [ref=e1181]: DEF
+                    - generic [ref=e1182]: "14"
+                  - generic [ref=e1183]:
+                    - generic [ref=e1184]: PRE
+                    - generic [ref=e1185]: "1"
+            - generic [ref=e1186]:
+              - generic [ref=e1187]:
+                - heading "Health:" [level=3] [ref=e1188]
+                - text: 16 (12-19)
+              - generic [ref=e1189]:
+                - heading "Focus:" [level=3] [ref=e1190]
+                - text: "4"
+              - generic [ref=e1191]:
+                - heading "Investiture:" [level=3] [ref=e1192]
+                - text: "0"
+            - separator [ref=e1193]
+            - generic [ref=e1194]:
+              - generic [ref=e1195]:
+                - heading "Movement:" [level=3] [ref=e1196]
+                - text: 30 ft.
+              - generic [ref=e1197]:
+                - heading "Senses:" [level=3] [ref=e1198]
+                - text: 20 ft. (sight)
+              - generic [ref=e1199]:
+                - heading "Physical Skills:" [level=3] [ref=e1200]
+                - text: Agility +4, Athletics +3, Light-weapons +4
+              - generic [ref=e1201]:
+                - heading "Cognitive Skills:" [level=3] [ref=e1202]
+                - text: Discipline +3
+              - generic [ref=e1203]:
+                - heading "Spiritual Skills:" [level=3] [ref=e1204]
+                - text: Perception +4, Survival +4
+              - generic [ref=e1205]:
+                - heading "Languages:" [level=3] [ref=e1206]
+                - text: Herdazian
+            - heading "TRAITS" [level=2] [ref=e1207]
+            - separator [ref=e1208]
+            - generic [ref=e1209]:
+              - generic [ref=e1210]:
+                - heading "Minion." [level=3] [ref=e1211]
+                - text: The fighter's attacks can't critically hit, and they're immediately defeated when they suffer an injury.
+              - generic [ref=e1212]:
+                - heading "Hit and Run." [level=3] [ref=e1213]
+                - text: After the fighter hits with an attack on their turn, they can use the Disengage action as a free action.
+              - generic [ref=e1214]:
+                - heading "Ambusher." [level=3] [ref=e1215]
+                - text: At the start of each scene, if the fighter is in cover or terrain that obscures an enemy's primary sense, they can make a Stealth test (no action required) against each nearby enemy's Spiritual defense. Enemies they succeed against are Surprised until the end of the first round.
+            - heading "ACTIONS" [level=2] [ref=e1216]
+            - separator [ref=e1217]
+            - generic [ref=e1219]:
+              - generic [ref=e1220]: 
+              - heading "Covering Fire." [level=3] [ref=e1221]
+              - text: The fighter makes a Hunting Bow attack against one target within 80 feet. Whether the attack hits or misses, the target must succeed on a DC 13 Discipline test or become Immobilized until the start of the fighter's next turn.
+            - heading "STRIKES" [level=2] [ref=e1222]
+            - separator [ref=e1223]
+            - generic [ref=e1224]:
+              - generic [ref=e1225]:
+                - generic [ref=e1226]: 
+                - 'heading "Strike: Hatchet." [level=3] [ref=e1227]'
+                - text: "Attack +4, reach 5 ft. or range 20/60 ft., one target. Graze: 3 (1d6) keen damage. Hit: 7 (1d6 + 4) keen damage."
+              - generic [ref=e1228]:
+                - generic [ref=e1229]: 
+                - 'heading "Strike: Hunting Bow." [level=3] [ref=e1230]'
+                - text: "Attack +4, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 7 (1d6 + 4) keen damage."
+        - generic [ref=e1504]:
+          - generic [ref=e1505]:
+            - button "Edit" [ref=e1506] [cursor=pointer]
+            - button "Download JSON" [ref=e1507] [cursor=pointer]
+            - generic [ref=e1508]:
+              - generic [ref=e1509]: Book
+              - generic [ref=e1510]: Human
+              - generic [ref=e1511]: Soldier
+              - code [ref=e1512]: Server
+          - article [ref=e1513]:
+            - generic [ref=e1514]:
+              - heading "Spear Infantry" [level=1] [ref=e1515]
+              - text: Tier 1 Minion - Medium Humanoid
+            - generic [ref=e1516]:
+              - generic [ref=e1517]:
+                - generic [ref=e1518]: Physical
+                - generic [ref=e1519]: Cognitive
+                - generic [ref=e1520]: Spiritual
+              - generic [ref=e1521]:
+                - generic [ref=e1522]:
+                  - generic [ref=e1523]:
+                    - generic [ref=e1524]: STR
+                    - generic [ref=e1525]: "2"
+                  - generic [ref=e1526]:
+                    - generic [ref=e1527]: DEF
+                    - generic [ref=e1528]: "14"
+                  - generic [ref=e1529]:
+                    - generic [ref=e1530]: SPD
+                    - generic [ref=e1531]: "2"
+                - generic [ref=e1532]:
+                  - generic [ref=e1533]:
+                    - generic [ref=e1534]: INT
+                    - generic [ref=e1535]: "1"
+                  - generic [ref=e1536]:
+                    - generic [ref=e1537]: DEF
+                    - generic [ref=e1538]: "12"
+                  - generic [ref=e1539]:
+                    - generic [ref=e1540]: WIL
+                    - generic [ref=e1541]: "1"
+                - generic [ref=e1542]:
+                  - generic [ref=e1543]:
+                    - generic [ref=e1544]: AWA
+                    - generic [ref=e1545]: "2"
+                  - generic [ref=e1546]:
+                    - generic [ref=e1547]: DEF
+                    - generic [ref=e1548]: "13"
+                  - generic [ref=e1549]:
+                    - generic [ref=e1550]: PRE
+                    - generic [ref=e1551]: "1"
+            - generic [ref=e1552]:
+              - generic [ref=e1553]:
+                - heading "Health:" [level=3] [ref=e1554]
+                - text: 14 (11-17)
+              - generic [ref=e1555]:
+                - heading "Focus:" [level=3] [ref=e1556]
+                - text: "3"
+              - generic [ref=e1557]:
+                - heading "Investiture:" [level=3] [ref=e1558]
+                - text: "0"
+            - separator [ref=e1559]
+            - generic [ref=e1560]:
+              - generic [ref=e1561]:
+                - heading "Movement:" [level=3] [ref=e1562]
+                - text: 25 ft.
+              - generic [ref=e1563]:
+                - heading "Senses:" [level=3] [ref=e1564]
+                - text: 10 ft. (sight)
+              - generic [ref=e1565]:
+                - heading "Physical Skills:" [level=3] [ref=e1566]
+                - text: Athletics +4, Heavy-weapons +4, Light-weapons +3
+              - generic [ref=e1567]:
+                - heading "Cognitive Skills:" [level=3] [ref=e1568]
+                - text: Discipline +2, Intimidation +3
+              - generic [ref=e1569]:
+                - heading "Spiritual Skills:" [level=3] [ref=e1570]
+                - text: Perception +4
+              - generic [ref=e1571]:
+                - heading "Languages:" [level=3] [ref=e1572]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e1573]
+            - separator [ref=e1574]
+            - generic [ref=e1575]:
+              - generic [ref=e1576]:
+                - heading "Minion." [level=3] [ref=e1577]
+                - text: The spear infantry's attacks can't critically hit, and they're immediately defeated when they suffer an injury.
+              - generic [ref=e1578]:
+                - heading "Martial Drill." [level=3] [ref=e1579]
+                - text: At the start of each scene, if the spear infantry has their shield and isn't Surprised, they gain the benefits of the Brace action until the start of their first turn.
+              - generic [ref=e1580]:
+                - heading "Military Tactics." [level=3] [ref=e1581]
+                - text: Once per round, the spear infantry can spend 1 additional focus to use the Aid or Reactive Strike reaction without using their reaction.
+            - heading "ACTIONS" [level=2] [ref=e1582]
+            - separator [ref=e1583]
+            - generic [ref=e1585]:
+              - generic [ref=e1586]: 
+              - heading "Shield Bash." [level=3] [ref=e1587]
+              - text: The spear infantry makes an Athletics test against the target's Physical defense, knocking them Prone on a success.
+            - heading "STRIKES" [level=2] [ref=e1588]
+            - separator [ref=e1589]
+            - generic [ref=e1590]:
+              - generic [ref=e1591]:
+                - generic [ref=e1592]: 
+                - 'heading "Strike: Shortspear." [level=3] [ref=e1593]'
+                - text: "Attack +3, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 7 (1d8 + 3) keen damage, and if the target is Prone, they take an extra 4 (1d8) keen damage."
+              - generic [ref=e1594]:
+                - generic [ref=e1595]: 
+                - 'heading "Strike: Shortbow." [level=3] [ref=e1596]'
+                - text: "Attack +3, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 6 (1d6 + 3) keen damage."
+        - generic [ref=e1867]:
+          - generic [ref=e1868]:
+            - button "Edit" [ref=e1869] [cursor=pointer]
+            - button "Download JSON" [ref=e1870] [cursor=pointer]
+            - generic [ref=e1871]:
+              - generic [ref=e1872]: Book
+              - generic [ref=e1873]: Human
+              - generic [ref=e1874]: Soldier
+              - code [ref=e1875]: Server
+          - article [ref=e1876]:
+            - generic [ref=e1877]:
+              - heading "Brightlord" [level=1] [ref=e1878]
+              - text: Tier 2 Rival - Medium Humanoid
+            - generic [ref=e1879]:
+              - generic [ref=e1880]:
+                - generic [ref=e1881]: Physical
+                - generic [ref=e1882]: Cognitive
+                - generic [ref=e1883]: Spiritual
+              - generic [ref=e1884]:
+                - generic [ref=e1885]:
+                  - generic [ref=e1886]:
+                    - generic [ref=e1887]: STR
+                    - generic [ref=e1888]: "2"
+                  - generic [ref=e1889]:
+                    - generic [ref=e1890]: DEF
+                    - generic [ref=e1891]: "16"
+                  - generic [ref=e1892]:
+                    - generic [ref=e1893]: SPD
+                    - generic [ref=e1894]: "4"
+                - generic [ref=e1895]:
+                  - generic [ref=e1896]:
+                    - generic [ref=e1897]: INT
+                    - generic [ref=e1898]: "1"
+                  - generic [ref=e1899]:
+                    - generic [ref=e1900]: DEF
+                    - generic [ref=e1901]: "14"
+                  - generic [ref=e1902]:
+                    - generic [ref=e1903]: WIL
+                    - generic [ref=e1904]: "3"
+                - generic [ref=e1905]:
+                  - generic [ref=e1906]:
+                    - generic [ref=e1907]: AWA
+                    - generic [ref=e1908]: "2"
+                  - generic [ref=e1909]:
+                    - generic [ref=e1910]: DEF
+                    - generic [ref=e1911]: "16"
+                  - generic [ref=e1912]:
+                    - generic [ref=e1913]: PRE
+                    - generic [ref=e1914]: "4"
+            - generic [ref=e1915]:
+              - generic [ref=e1916]:
+                - heading "Health:" [level=3] [ref=e1917]
+                - text: 38 (30-46)
+              - generic [ref=e1918]:
+                - heading "Focus:" [level=3] [ref=e1919]
+                - text: "5"
+              - generic [ref=e1920]:
+                - heading "Investiture:" [level=3] [ref=e1921]
+                - text: "0"
+            - separator [ref=e1922]
+            - generic [ref=e1923]:
+              - generic [ref=e1924]:
+                - heading "Movement:" [level=3] [ref=e1925]
+                - text: 30 ft.
+              - generic [ref=e1926]:
+                - heading "Senses:" [level=3] [ref=e1927]
+                - text: 10 ft. (sight)
+              - generic [ref=e1928]:
+                - heading "Physical Skills:" [level=3] [ref=e1929]
+                - text: Agility +7, Light-weapons +7
+              - generic [ref=e1930]:
+                - heading "Cognitive Skills:" [level=3] [ref=e1931]
+                - text: Deduction +4, Discipline +6, Intimidation +7
+              - generic [ref=e1932]:
+                - heading "Spiritual Skills:" [level=3] [ref=e1933]
+                - text: Insight +5, Leadership +7, Persuasion +6
+              - generic [ref=e1934]:
+                - heading "Languages:" [level=3] [ref=e1935]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e1936]
+            - separator [ref=e1937]
+            - generic [ref=e1938]:
+              - generic [ref=e1939]:
+                - heading "Inspiring Leadership." [level=3] [ref=e1940]
+                - text: When the brightlord successfully uses the Gain Advantage action, they can choose one ally they can influence. That ally also gains an advantage on the next test they make against the brightlord's target.
+              - generic [ref=e1941]:
+                - heading "Bulwark of Discipline." [level=3] [ref=e1942]
+                - text: When an enemy targets the brightlord or the brightlord's ally with an effect that causes the target to lose focus, the target can reduce the amount of focus lost by 1d4.
+            - heading "ACTIONS" [level=2] [ref=e1943]
+            - separator [ref=e1944]
+            - generic [ref=e1945]:
+              - generic [ref=e1946]:
+                - generic [ref=e1947]: 
+                - heading "Influential Instruction." [level=3] [ref=e1948]
+                - text: The brightlord spends 1 focus or more to influence that many allies. Each target can choose one of their defenses to increase by 2 until the end of the brightlord's next turn.
+              - generic [ref=e1949]:
+                - generic [ref=e1950]: 
+                - heading "Diversion." [level=3] [ref=e1951]
+                - text: The brightlord distracts one enemy they can influence. The target must succeed on a DC 14 Discipline test or lose 1d4 focus and remove the Determined and Focused conditions, if they have them.
+            - heading "STRIKES" [level=2] [ref=e1952]
+            - separator [ref=e1953]
+            - generic [ref=e1955]:
+              - generic [ref=e1956]: 
+              - 'heading "Strike: Sidesword." [level=3] [ref=e1957]'
+              - text: "Attack +7, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 10 (1d6 + 7) keen damage, and the brightlord can spend 2 focus to attempt to disarm the target. The target must succeed on a DC 15 Athletics test or drop their weapon and have it flung up to 10 feet away in any direction."
+        - generic [ref=e1958]:
+          - generic [ref=e1959]:
+            - button "Edit" [ref=e1960] [cursor=pointer]
+            - button "Download JSON" [ref=e1961] [cursor=pointer]
+            - generic [ref=e1962]:
+              - generic [ref=e1963]: Book
+              - generic [ref=e1964]: Human
+              - generic [ref=e1965]: Soldier
+              - code [ref=e1966]: Server
+          - article [ref=e1967]:
+            - generic [ref=e1968]:
+              - heading "Thrill Berserker" [level=1] [ref=e1969]
+              - text: Tier 1 Rival - Medium Humanoid
+            - generic [ref=e1970]:
+              - generic [ref=e1971]:
+                - generic [ref=e1972]: Physical
+                - generic [ref=e1973]: Cognitive
+                - generic [ref=e1974]: Spiritual
+              - generic [ref=e1975]:
+                - generic [ref=e1976]:
+                  - generic [ref=e1977]:
+                    - generic [ref=e1978]: STR
+                    - generic [ref=e1979]: "2"
+                  - generic [ref=e1980]:
+                    - generic [ref=e1981]: DEF
+                    - generic [ref=e1982]: "14"
+                  - generic [ref=e1983]:
+                    - generic [ref=e1984]: SPD
+                    - generic [ref=e1985]: "2"
+                - generic [ref=e1986]:
+                  - generic [ref=e1987]:
+                    - generic [ref=e1988]: INT
+                    - generic [ref=e1989]: "1"
+                  - generic [ref=e1990]:
+                    - generic [ref=e1991]: DEF
+                    - generic [ref=e1992]: "14"
+                  - generic [ref=e1993]:
+                    - generic [ref=e1994]: WIL
+                    - generic [ref=e1995]: "3"
+                - generic [ref=e1996]:
+                  - generic [ref=e1997]:
+                    - generic [ref=e1998]: AWA
+                    - generic [ref=e1999]: "2"
+                  - generic [ref=e2000]:
+                    - generic [ref=e2001]: DEF
+                    - generic [ref=e2002]: "14"
+                  - generic [ref=e2003]:
+                    - generic [ref=e2004]: PRE
+                    - generic [ref=e2005]: "2"
+            - generic [ref=e2006]:
+              - generic [ref=e2007]:
+                - heading "Health:" [level=3] [ref=e2008]
+                - text: 22 (18-26)
+              - generic [ref=e2009]:
+                - heading "Focus:" [level=3] [ref=e2010]
+                - text: "5"
+              - generic [ref=e2011]:
+                - heading "Investiture:" [level=3] [ref=e2012]
+                - text: "0"
+            - separator [ref=e2013]
+            - generic [ref=e2014]:
+              - generic [ref=e2015]:
+                - heading "Movement:" [level=3] [ref=e2016]
+                - text: 25 ft.
+              - generic [ref=e2017]:
+                - heading "Senses:" [level=3] [ref=e2018]
+                - text: 10 ft. (sight)
+              - generic [ref=e2019]:
+                - heading "Physical Skills:" [level=3] [ref=e2020]
+                - text: Athletics +4, Heavy-weapons +4, Light-weapons +3
+              - generic [ref=e2021]:
+                - heading "Cognitive Skills:" [level=3] [ref=e2022]
+                - text: Intimidation +5
+              - generic [ref=e2023]:
+                - heading "Spiritual Skills:" [level=3] [ref=e2024]
+                - text: Leadership +3, Perception +4
+              - generic [ref=e2025]:
+                - heading "Languages:" [level=3] [ref=e2026]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e2027]
+            - separator [ref=e2028]
+            - generic [ref=e2030]:
+              - heading "Infectious Thrill." [level=3] [ref=e2031]
+              - text: When an enemy rolls a critical success on an attack test against the berserker, the enemy gains a +3 bonus to that d20 roll. Regardless of whether the attack hits or misses, if any other characters are within 5 feet of the berserker, the enemy must choose one. The enemy's attack also grazes the chosen character (without spending focus).
+            - heading "ACTIONS" [level=2] [ref=e2032]
+            - separator [ref=e2033]
+            - generic [ref=e2034]:
+              - generic [ref=e2035]:
+                - generic [ref=e2036]: 
+                - heading "Shield Bash." [level=3] [ref=e2037]
+                - text: The berserker makes an Athletics test against the Physical defense of a Large or smaller character within 5 feet of them, knocking them Prone on a success.
+              - generic [ref=e2038]:
+                - generic [ref=e2039]: 
+                - heading "Berserker Rage." [level=3] [ref=e2040]
+                - text: The Thrill surges within the berserker. Their next Strike targets each character within 5 feet of them and deals an extra 3 (1d6) damage on a hit.
+              - generic [ref=e2041]:
+                - generic [ref=e2042]: 
+                - heading "Lash Out." [level=3] [ref=e2043]
+                - text: After the berserker is attacked by an enemy within 5 feet of them, the berserker deals 4 (1d8) keen damage to the attacker.
+            - heading "STRIKES" [level=2] [ref=e2044]
+            - separator [ref=e2045]
+            - generic [ref=e2046]:
+              - generic [ref=e2047]:
+                - generic [ref=e2048]: 
+                - 'heading "Strike: Longsword." [level=3] [ref=e2049]'
+                - text: "Attack +4, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 8 (1d8 + 4) keen damage, and if the target is Prone, they take an extra 4 (1d8) damage."
+              - generic [ref=e2050]:
+                - generic [ref=e2051]: 
+                - 'heading "Strike: Dagger." [level=3] [ref=e2052]'
+                - text: "Attack +3, range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 5 (1d4 + 3) keen damage."
+        - generic [ref=e2053]:
+          - generic [ref=e2054]:
+            - button "Edit" [ref=e2055] [cursor=pointer]
+            - button "Download JSON" [ref=e2056] [cursor=pointer]
+            - generic [ref=e2057]:
+              - generic [ref=e2058]: Book
+              - generic [ref=e2059]: Human
+              - generic [ref=e2060]: Soldier
+              - code [ref=e2061]: Server
+          - article [ref=e2062]:
+            - generic [ref=e2063]:
+              - heading "Archer" [level=1] [ref=e2064]
+              - text: Tier 1 Minion - Medium Humanoid
+            - generic [ref=e2065]:
+              - generic [ref=e2066]:
+                - generic [ref=e2067]: Physical
+                - generic [ref=e2068]: Cognitive
+                - generic [ref=e2069]: Spiritual
+              - generic [ref=e2070]:
+                - generic [ref=e2071]:
+                  - generic [ref=e2072]:
+                    - generic [ref=e2073]: STR
+                    - generic [ref=e2074]: "2"
+                  - generic [ref=e2075]:
+                    - generic [ref=e2076]: DEF
+                    - generic [ref=e2077]: "13"
+                  - generic [ref=e2078]:
+                    - generic [ref=e2079]: SPD
+                    - generic [ref=e2080]: "1"
+                - generic [ref=e2081]:
+                  - generic [ref=e2082]:
+                    - generic [ref=e2083]: INT
+                    - generic [ref=e2084]: "2"
+                  - generic [ref=e2085]:
+                    - generic [ref=e2086]: DEF
+                    - generic [ref=e2087]: "13"
+                  - generic [ref=e2088]:
+                    - generic [ref=e2089]: WIL
+                    - generic [ref=e2090]: "1"
+                - generic [ref=e2091]:
+                  - generic [ref=e2092]:
+                    - generic [ref=e2093]: AWA
+                    - generic [ref=e2094]: "2"
+                  - generic [ref=e2095]:
+                    - generic [ref=e2096]: DEF
+                    - generic [ref=e2097]: "13"
+                  - generic [ref=e2098]:
+                    - generic [ref=e2099]: PRE
+                    - generic [ref=e2100]: "1"
+            - generic [ref=e2101]:
+              - generic [ref=e2102]:
+                - heading "Health:" [level=3] [ref=e2103]
+                - text: 12 (9-15)
+              - generic [ref=e2104]:
+                - heading "Focus:" [level=3] [ref=e2105]
+                - text: "3"
+              - generic [ref=e2106]:
+                - heading "Investiture:" [level=3] [ref=e2107]
+                - text: "0"
+            - separator [ref=e2108]
+            - generic [ref=e2109]:
+              - generic [ref=e2110]:
+                - heading "Movement:" [level=3] [ref=e2111]
+                - text: 25 ft.
+              - generic [ref=e2112]:
+                - heading "Senses:" [level=3] [ref=e2113]
+                - text: 10 ft. (sight)
+              - generic [ref=e2114]:
+                - heading "Physical Skills:" [level=3] [ref=e2115]
+                - text: Agility +3, Heavy-weapons +4, Light-weapons +3
+              - generic [ref=e2116]:
+                - heading "Cognitive Skills:" [level=3] [ref=e2117]
+                - text: Discipline +3
+              - generic [ref=e2118]:
+                - heading "Spiritual Skills:" [level=3] [ref=e2119]
+                - text: Perception +4, Survival +3
+              - generic [ref=e2120]:
+                - heading "Languages:" [level=3] [ref=e2121]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e2122]
+            - separator [ref=e2123]
+            - generic [ref=e2125]:
+              - heading "Minion." [level=3] [ref=e2126]
+              - text: The archer's attacks can't critically hit, and they're immediately defeated when they suffer an injury.
+            - heading "ACTIONS" [level=2] [ref=e2127]
+            - separator [ref=e2128]
+            - generic [ref=e2129]:
+              - generic [ref=e2130]:
+                - generic [ref=e2131]: 
+                - heading "Take Aim." [level=3] [ref=e2132]
+                - text: On the archer's first turn of each scene, if they aren't Surprised, they can use the Gain Advantage action as a single action.
+              - generic [ref=e2133]:
+                - generic [ref=e2134]: 
+                - heading "Immobilizing Shot." [level=3] [ref=e2135]
+                - text: When an enemy the archer can sense moves while the archer is within 150 feet of them, the archer makes a Longbow attack against them. On a hit, the target is also Immobilized until the end of the archer's next turn.
+            - heading "STRIKES" [level=2] [ref=e2136]
+            - separator [ref=e2137]
+            - generic [ref=e2138]:
+              - generic [ref=e2139]:
+                - generic [ref=e2140]: 
+                - 'heading "Strike: Knife." [level=3] [ref=e2141]'
+                - text: "Attack +3, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 5 (1d4 + 3) keen damage."
+              - generic [ref=e2142]:
+                - generic [ref=e2143]: 
+                - 'heading "Strike: Longbow." [level=3] [ref=e2144]'
+                - text: "Attack +4, range 150/600 ft., one target. Graze: 3 (1d6) keen damage. Hit: 7 (1d6 + 4) keen damage."
+        - generic [ref=e2145]:
+          - generic [ref=e2146]:
+            - button "Edit" [ref=e2147] [cursor=pointer]
+            - button "Download JSON" [ref=e2148] [cursor=pointer]
+            - generic [ref=e2149]:
+              - generic [ref=e2150]: Book
+              - generic [ref=e2151]: Human
+              - code [ref=e2152]: Server
+          - article [ref=e2153]:
+            - generic [ref=e2154]:
+              - heading "Servant of Yelig-Nar" [level=1] [ref=e2155]
+              - text: Tier 4 Boss - Large Humanoid
+            - generic [ref=e2156]:
+              - generic [ref=e2157]:
+                - generic [ref=e2158]: Physical
+                - generic [ref=e2159]: Cognitive
+                - generic [ref=e2160]: Spiritual
+              - generic [ref=e2161]:
+                - generic [ref=e2162]:
+                  - generic [ref=e2163]:
+                    - generic [ref=e2164]: STR
+                    - generic [ref=e2165]: "7"
+                  - generic [ref=e2166]:
+                    - generic [ref=e2167]: DEF
+                    - generic [ref=e2168]: "23"
+                  - generic [ref=e2169]:
+                    - generic [ref=e2170]: SPD
+                    - generic [ref=e2171]: "6"
+                - generic [ref=e2172]:
+                  - generic [ref=e2173]:
+                    - generic [ref=e2174]: INT
+                    - generic [ref=e2175]: "4"
+                  - generic [ref=e2176]:
+                    - generic [ref=e2177]: DEF
+                    - generic [ref=e2178]: "20"
+                  - generic [ref=e2179]:
+                    - generic [ref=e2180]: WIL
+                    - generic [ref=e2181]: "6"
+                - generic [ref=e2182]:
+                  - generic [ref=e2183]:
+                    - generic [ref=e2184]: AWA
+                    - generic [ref=e2185]: "5"
+                  - generic [ref=e2186]:
+                    - generic [ref=e2187]: DEF
+                    - generic [ref=e2188]: "17"
+                  - generic [ref=e2189]:
+                    - generic [ref=e2190]: PRE
+                    - generic [ref=e2191]: "2"
+            - generic [ref=e2192]:
+              - generic [ref=e2193]:
+                - heading "Health:" [level=3] [ref=e2194]
+                - text: 240 (200-280)
+              - generic [ref=e2195]:
+                - heading "Focus:" [level=3] [ref=e2196]
+                - text: "10"
+              - generic [ref=e2197]:
+                - heading "Investiture:" [level=3] [ref=e2198]
+                - text: "9"
+            - separator [ref=e2199]
+            - generic [ref=e2200]:
+              - generic [ref=e2201]:
+                - heading "Movement:" [level=3] [ref=e2202]
+                - text: 40 ft.
+              - generic [ref=e2203]:
+                - heading "Senses:" [level=3] [ref=e2204]
+                - text: 50 ft. (sight)
+              - generic [ref=e2205]:
+                - heading "Physical Skills:" [level=3] [ref=e2206]
+                - text: Agility +11, Athletics +12, Heavy-weaponry +12, Light-weaponry +11
+              - generic [ref=e2207]:
+                - heading "Cognitive Skills:" [level=3] [ref=e2208]
+                - text: Intimidation +11
+              - generic [ref=e2209]:
+                - heading "Spiritual Skills:" [level=3] [ref=e2210]
+                - text: Surge-transportation +8, Surge-tension +11, Perception +10, Surge-illumination +6, Surge-transformation +10, Surge-division +8, Surge-abrasion +10, Surge-cohesion +10, Surge-progression +9, Surge-gravitation +9
+              - generic [ref=e2211]:
+                - heading "Languages:" [level=3] [ref=e2212]
+                - text: those known by host
+            - heading "TRAITS" [level=2] [ref=e2213]
+            - separator [ref=e2214]
+            - generic [ref=e2215]:
+              - generic [ref=e2216]:
+                - heading "Boss." [level=3] [ref=e2217]
+                - text: The servant of Yelig-nar can take both a fast turn and a slow turn each round. After an enemy finishes a turn, the servant of Yelig-nar can spend 1 focus to immediately use an extra single or double action. Additionally, they can spend 1 focus on their turn to remove a condition from themself.
+              - generic [ref=e2218]:
+                - heading "Blightwind's Host." [level=3] [ref=e2219]
+                - text: When the servant of Yelig-nar dies, their soul is consumed by the Unmade and unable to form in the Cognitive Realm, and Yelig-nar escapes from the corpse as black smoke.
+              - generic [ref=e2220]:
+                - heading "Crystal Carapace." [level=3] [ref=e2221]
+                - text: Before the servant of Yelig-nar is hit by an attack, they can spend 1 focus to turn it into a graze (no action required). Additionally, they can use their carapace like a shield, allowing them to use the Brace action.
+              - generic [ref=e2222]:
+                - heading "Immunities." [level=3] [ref=e2223]
+                - text: The servant of Yelig-nar is immune to the Exhausted, Stunned, and Surprised conditions.
+              - generic [ref=e2224]:
+                - heading "Mobile." [level=3] [ref=e2225]
+                - text: When the servant of Yelig-nar willingly moves on their turn, they can choose to pause moving and use another action before finishing their available movement. They can resume that movement as a free action any time before the end of their turn.
+            - heading "ACTIONS" [level=2] [ref=e2226]
+            - separator [ref=e2227]
+            - generic [ref=e2228]:
+              - generic [ref=e2229]:
+                - generic [ref=e2230]: 
+                - heading "Unmade Cohesion." [level=3] [ref=e2231]
+                - text: Costs 1 Investiture. The servant of Yelig-nar chooses a Huge (15-foot) space within 30 feet of them, turning all stone in it to liquid. Each enemy standing on stone within that area sinks into the ground and becomes Slowed for as long as they're in the liquid stone. At the start of each round, the servant of Yelig-nar can spend 1 Investiture to maintain this effect for another round. If they don't, the stone hardens and any characters in it are Immobilized. A trapped target or a character who can reach them can use a Skill to make a DC 20 Athletics test, freeing the trapped target on a success; otherwise, the target remains trapped until they're dug out of the stone.
+              - generic [ref=e2232]:
+                - generic [ref=e2233]: 
+                - heading "Unmade Gravitation." [level=3] [ref=e2234]
+                - text: "Costs 1 Investiture. The servant of Yelig-nar chooses one of the following effects: Deadly Leap — They leap up to 40 feet without triggering Reactive Strikes, then use their Shardblade as a single action against a character within reach. When they do so, they can't spend focus to knock the target Prone. Flight — The servant of Yelig-nar gains a flying rate of 40 feet until the start of their next turn. At the start of each of their turns, they can spend 1 Investiture to maintain this effect for an additional round."
+              - generic [ref=e2235]:
+                - generic [ref=e2236]: 
+                - heading "Unmade Transformation." [level=3] [ref=e2237]
+                - text: Costs 1 Investiture. The servant of Yelig-nar chooses a Huge (15-foot) space within 60 feet of them, transforming all air in it to fire. Each character in that area takes 11 (2d10) energy damage, and unaccompanied flammable objects in that area catch on fire.
+              - generic [ref=e2238]:
+                - generic [ref=e2239]: 
+                - heading "Skate." [level=3] [ref=e2240]
+                - text: Costs 1 Focus. The servant of Yelig-nar moves up to their movement rate in a straight line.
+            - heading "STRIKES" [level=2] [ref=e2241]
+            - separator [ref=e2242]
+            - generic [ref=e2243]:
+              - generic [ref=e2244]:
+                - generic [ref=e2245]: 
+                - 'heading "Strike: Shardblade." [level=3] [ref=e2246]'
+                - text: "Attack +12, reach 5 ft., one target. Graze: 9 (2d8) spirit damage. Hit: 25 (2d8 + 16) spirit damage, and the servant of Yelig-nar can spend 1 focus to knock the target Prone."
+              - generic [ref=e2247]:
+                - generic [ref=e2248]: 
+                - 'heading "Strike: Unmade Division." [level=3] [ref=e2249]'
+                - text: "Costs 1 Investiture. Attack +8 vs. Spiritual, reach 5 ft., one target. Graze: 16 (3d10) energy damage. Hit: 24 (3d10 + 8) energy damage, and the target becomes Exhausted [−1]."
+        - generic [ref=e2333]:
+          - generic [ref=e2334]:
+            - button "Edit" [ref=e2335] [cursor=pointer]
+            - button "Download JSON" [ref=e2336] [cursor=pointer]
+            - generic [ref=e2337]:
+              - generic [ref=e2338]: Book
+              - generic [ref=e2339]: Human
+              - code [ref=e2340]: Server
+          - article [ref=e2341]:
+            - generic [ref=e2342]:
+              - heading "Expert" [level=1] [ref=e2343]
+              - text: Tier 1 Rival - Medium Humanoid
+            - generic [ref=e2344]:
+              - generic [ref=e2345]:
+                - generic [ref=e2346]: Physical
+                - generic [ref=e2347]: Cognitive
+                - generic [ref=e2348]: Spiritual
+              - generic [ref=e2349]:
+                - generic [ref=e2350]:
+                  - generic [ref=e2351]:
+                    - generic [ref=e2352]: STR
+                    - generic [ref=e2353]: "1"
+                  - generic [ref=e2354]:
+                    - generic [ref=e2355]: DEF
+                    - generic [ref=e2356]: "12"
+                  - generic [ref=e2357]:
+                    - generic [ref=e2358]: SPD
+                    - generic [ref=e2359]: "1"
+                - generic [ref=e2360]:
+                  - generic [ref=e2361]:
+                    - generic [ref=e2362]: INT
+                    - generic [ref=e2363]: "1"
+                  - generic [ref=e2364]:
+                    - generic [ref=e2365]: DEF
+                    - generic [ref=e2366]: "13"
+                  - generic [ref=e2367]:
+                    - generic [ref=e2368]: WIL
+                    - generic [ref=e2369]: "2"
+                - generic [ref=e2370]:
+                  - generic [ref=e2371]:
+                    - generic [ref=e2372]: AWA
+                    - generic [ref=e2373]: "2"
+                  - generic [ref=e2374]:
+                    - generic [ref=e2375]: DEF
+                    - generic [ref=e2376]: "13"
+                  - generic [ref=e2377]:
+                    - generic [ref=e2378]: PRE
+                    - generic [ref=e2379]: "1"
+            - generic [ref=e2380]:
+              - generic [ref=e2381]:
+                - heading "Health:" [level=3] [ref=e2382]
+                - text: 18 (15-21)
+              - generic [ref=e2383]:
+                - heading "Focus:" [level=3] [ref=e2384]
+                - text: "4"
+              - generic [ref=e2385]:
+                - heading "Investiture:" [level=3] [ref=e2386]
+                - text: "0"
+            - separator [ref=e2387]
+            - generic [ref=e2388]:
+              - generic [ref=e2389]:
+                - heading "Movement:" [level=3] [ref=e2390]
+                - text: 25 ft.
+              - generic [ref=e2391]:
+                - heading "Senses:" [level=3] [ref=e2392]
+                - text: 10 ft. (sight)
+              - generic [ref=e2393]:
+                - heading "Physical Skills:" [level=3] [ref=e2394]
+                - text: Agility +2, Athletics +2, Light-weapons +2
+              - generic [ref=e2395]:
+                - heading "Cognitive Skills:" [level=3] [ref=e2396]
+                - text: Crafting +2, Deduction +2
+              - generic [ref=e2397]:
+                - heading "Spiritual Skills:" [level=3] [ref=e2398]
+                - text: Deception +2, Insight +4, Perception +4, Persuasion +3
+              - generic [ref=e2399]:
+                - heading "Languages:" [level=3] [ref=e2400]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e2401]
+            - separator [ref=e2402]
+            - generic [ref=e2403]:
+              - generic [ref=e2404]:
+                - heading "Capable." [level=3] [ref=e2405]
+                - text: The expert has a utility expertise in one profession, and they gain an advantage on skill tests related to that profession.
+              - generic [ref=e2406]:
+                - heading "Stern Countenance." [level=3] [ref=e2407]
+                - text: After the expert spends focus to resist a character's influence, that character loses 1 focus.
+            - heading "ACTIONS" [level=2] [ref=e2408]
+            - separator [ref=e2409]
+            - generic [ref=e2411]:
+              - generic [ref=e2412]: 
+              - heading "Counter Argument." [level=3] [ref=e2413]
+              - text: During a conversation, the expert makes a Persuasion test against a character's Spiritual defense. On a success, the target loses 3 focus.
+            - heading "STRIKES" [level=2] [ref=e2414]
+            - separator [ref=e2415]
+            - generic [ref=e2417]:
+              - generic [ref=e2418]: 
+              - 'heading "Strike: Improvised Weapon." [level=3] [ref=e2419]'
+              - text: "Attack +2, reach 5 ft., one target. On a Complication, this improvised weapon breaks. Graze: 2 (1d4) impact damage. Hit: 3 (1d4 + 2) impact damage."
+        - generic [ref=e2611]:
+          - generic [ref=e2612]:
+            - button "Edit" [ref=e2613] [cursor=pointer]
+            - button "Download JSON" [ref=e2614] [cursor=pointer]
+            - generic [ref=e2615]:
+              - generic [ref=e2616]: Book
+              - generic [ref=e2617]: Human
+              - generic [ref=e2618]: Soldier
+              - code [ref=e2619]: Server
+          - article [ref=e2620]:
+            - generic [ref=e2621]:
+              - heading "Elite Shardbearer" [level=1] [ref=e2622]
+              - text: Tier 3 Rival - Medium Humanoid
+            - generic [ref=e2623]:
+              - generic [ref=e2624]:
+                - generic [ref=e2625]: Physical
+                - generic [ref=e2626]: Cognitive
+                - generic [ref=e2627]: Spiritual
+              - generic [ref=e2628]:
+                - generic [ref=e2629]:
+                  - generic [ref=e2630]:
+                    - generic [ref=e2631]: STR
+                    - generic [ref=e2632]: "5"
+                  - generic [ref=e2633]:
+                    - generic [ref=e2634]: DEF
+                    - generic [ref=e2635]: "17"
+                  - generic [ref=e2636]:
+                    - generic [ref=e2637]: SPD
+                    - generic [ref=e2638]: "6"
+                - generic [ref=e2639]:
+                  - generic [ref=e2640]:
+                    - generic [ref=e2641]: INT
+                    - generic [ref=e2642]: "1"
+                  - generic [ref=e2643]:
+                    - generic [ref=e2644]: DEF
+                    - generic [ref=e2645]: "16"
+                  - generic [ref=e2646]:
+                    - generic [ref=e2647]: WIL
+                    - generic [ref=e2648]: "5"
+                - generic [ref=e2649]:
+                  - generic [ref=e2650]:
+                    - generic [ref=e2651]: AWA
+                    - generic [ref=e2652]: "3"
+                  - generic [ref=e2653]:
+                    - generic [ref=e2654]: DEF
+                    - generic [ref=e2655]: "17"
+                  - generic [ref=e2656]:
+                    - generic [ref=e2657]: PRE
+                    - generic [ref=e2658]: "4"
+            - generic [ref=e2659]:
+              - generic [ref=e2660]:
+                - heading "Health:" [level=3] [ref=e2661]
+                - text: 55 (44-66)
+              - generic [ref=e2662]:
+                - heading "Focus:" [level=3] [ref=e2663]
+                - text: "7"
+              - generic [ref=e2664]:
+                - heading "Investiture:" [level=3] [ref=e2665]
+                - text: "0"
+            - separator [ref=e2666]
+            - generic [ref=e2667]:
+              - generic [ref=e2668]:
+                - heading "Movement:" [level=3] [ref=e2669]
+                - text: 40 ft.
+              - generic [ref=e2670]:
+                - heading "Senses:" [level=3] [ref=e2671]
+                - text: 20 ft. (sight)
+              - generic [ref=e2672]:
+                - heading "Physical Skills:" [level=3] [ref=e2673]
+                - text: Agility +10, Heavy-weapons +10, Light-weapons +10
+              - generic [ref=e2674]:
+                - heading "Cognitive Skills:" [level=3] [ref=e2675]
+                - text: Discipline +8, Intimidation +9
+              - generic [ref=e2676]:
+                - heading "Spiritual Skills:" [level=3] [ref=e2677]
+                - text: Leadership +9, Perception +7, Persuasion +8
+              - generic [ref=e2678]:
+                - heading "Languages:" [level=3] [ref=e2679]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e2680]
+            - separator [ref=e2681]
+            - generic [ref=e2682]:
+              - generic [ref=e2683]:
+                - heading "Shardplate (4 Charges)." [level=3] [ref=e2684]
+                - text: The elite is equipped with Shardplate. Before they take damage, they can expend a charge (no action required) to increase their deflect value against that damage by 10. While the armor has charges, all Invested tests against the elite gain a disadvantage, and the armor's deflect value applies to all damage types. After the armor runs out of charges, some of the elite's attributes and skills are reduced by 2, along with their related modifiers; these statistics are marked with an asterisk (*).
+              - generic [ref=e2685]:
+                - heading "Breakable Armor." [level=3] [ref=e2686]
+                - text: After the elite is hit by an attack, the attacker can spend an advantage to cause the elite's Shardplate to lose 1 charge.
+            - heading "ACTIONS" [level=2] [ref=e2687]
+            - separator [ref=e2688]
+            - generic [ref=e2689]:
+              - generic [ref=e2690]:
+                - generic [ref=e2691]: 
+                - heading "Test Blow." [level=3] [ref=e2692]
+                - text: "Attack +10*, reach 5 ft., one target. Graze: no effect. Hit: The target takes no damage, but their Physical defense is reduced by 2 until the end of their next turn."
+              - generic [ref=e2693]:
+                - generic [ref=e2694]: 
+                - heading "Change Stance." [level=3] [ref=e2695]
+                - text: "The elite shifts into one of the following stances, losing the effects of any previous stance and gaining the effects of the new stance. Bloodstance: The elite's Opportunity range for attack tests and physical tests increases by 2, and their Physical, Cognitive, and Spiritual defenses decrease by 2. Flamestance: While there's only one enemy within 5 feet of the elite and no allies within 5 feet of them or that enemy, the elite can use an advantage to gain focus, which they can spend only on the Gain Advantage action or on an action that includes an attack test. Ironstance: After an enemy within 5 feet of the elite misses or grazes them with an attack, the elite can use the Reactive Strike reaction against that enemy as if they had voluntarily left the elite's reach."
+              - generic [ref=e2696]:
+                - generic [ref=e2697]: 
+                - heading "Distracting Banter." [level=3] [ref=e2698]
+                - text: The elite baits their enemy into a smug repartee, making an opposed Intimidation test against the target's Discipline. If the elite succeeds, the target loses 1d4 focus.
+              - generic [ref=e2699]:
+                - generic [ref=e2700]: 
+                - heading "Stand Firm." [level=3] [ref=e2701]
+                - text: Before the elite is unwillingly moved or knocked Prone, they ignore that effect.
+            - heading "STRIKES" [level=2] [ref=e2702]
+            - separator [ref=e2703]
+            - generic [ref=e2705]:
+              - generic [ref=e2706]: 
+              - 'heading "Strike: Shardblade." [level=3] [ref=e2707]'
+              - text: "Attack +10*, reach 5 ft., one target. Graze: 9 (2d8) spirit damage. Hit: 22 (2d8 + 10*) spirit damage."
+        - generic [ref=e2708]:
+          - generic [ref=e2709]:
+            - button "Edit" [ref=e2710] [cursor=pointer]
+            - button "Download JSON" [ref=e2711] [cursor=pointer]
+            - generic [ref=e2712]:
+              - generic [ref=e2713]: Homebrew
+              - generic [ref=e2714]: Human
+              - generic [ref=e2715]: Named
+              - code [ref=e2716]: Server
+          - article [ref=e2717]:
+            - generic [ref=e2718]:
+              - heading "Hangar the Traitor" [level=1] [ref=e2719]
+              - text: Tier 1 Rival - Medium Humanoid
+            - generic [ref=e2720]:
+              - generic [ref=e2721]:
+                - generic [ref=e2722]: Physical
+                - generic [ref=e2723]: Cognitive
+                - generic [ref=e2724]: Spiritual
+              - generic [ref=e2725]:
+                - generic [ref=e2726]:
+                  - generic [ref=e2727]:
+                    - generic [ref=e2728]: STR
+                    - generic [ref=e2729]: "1"
+                  - generic [ref=e2730]:
+                    - generic [ref=e2731]: DEF
+                    - generic [ref=e2732]: "15"
+                  - generic [ref=e2733]:
+                    - generic [ref=e2734]: SPD
+                    - generic [ref=e2735]: "4"
+                - generic [ref=e2736]:
+                  - generic [ref=e2737]:
+                    - generic [ref=e2738]: INT
+                    - generic [ref=e2739]: "2"
+                  - generic [ref=e2740]:
+                    - generic [ref=e2741]: DEF
+                    - generic [ref=e2742]: "14"
+                  - generic [ref=e2743]:
+                    - generic [ref=e2744]: WIL
+                    - generic [ref=e2745]: "2"
+                - generic [ref=e2746]:
+                  - generic [ref=e2747]:
+                    - generic [ref=e2748]: AWA
+                    - generic [ref=e2749]: "4"
+                  - generic [ref=e2750]:
+                    - generic [ref=e2751]: DEF
+                    - generic [ref=e2752]: "15"
+                  - generic [ref=e2753]:
+                    - generic [ref=e2754]: PRE
+                    - generic [ref=e2755]: "1"
+            - generic [ref=e2756]:
+              - generic [ref=e2757]:
+                - heading "Health:" [level=3] [ref=e2758]
+                - text: 25 (19-30)
+              - generic [ref=e2759]:
+                - heading "Focus:" [level=3] [ref=e2760]
+                - text: "4"
+              - generic [ref=e2761]:
+                - heading "Investiture:" [level=3] [ref=e2762]
+                - text: "0"
+            - separator [ref=e2763]
+            - generic [ref=e2764]:
+              - generic [ref=e2765]:
+                - heading "Movement:" [level=3] [ref=e2766]
+                - text: 30 ft.
+              - generic [ref=e2767]:
+                - heading "Senses:" [level=3] [ref=e2768]
+                - text: 20 ft. (sight)
+              - generic [ref=e2769]:
+                - heading "Physical Skills:" [level=3] [ref=e2770]
+                - text: Agility +5, Light-weapons +6
+              - generic [ref=e2771]:
+                - heading "Cognitive Skills:" [level=3] [ref=e2772]
+                - text: Discipline +3, Lore +3
+              - generic [ref=e2773]:
+                - heading "Spiritual Skills:" [level=3] [ref=e2774]
+                - text: Perception +5, Survival +6
+              - generic [ref=e2775]:
+                - heading "Languages:" [level=3] [ref=e2776]
+                - text: Herdazian, Alethi
+            - heading "TRAITS" [level=2] [ref=e2777]
+            - separator [ref=e2778]
+            - generic [ref=e2779]:
+              - generic [ref=e2780]:
+                - heading "Marked Quarry." [level=3] [ref=e2781]
+                - text: At the start of each scene, Hangar designates one creature he can see as his Quarry. His ranged attacks against his Quarry deal an extra 1d4 damage on a hit.
+              - generic [ref=e2782]:
+                - heading "Know the Ground." [level=3] [ref=e2783]
+                - text: Hangar has advantage on Survival tests involving navigation or wilderness terrain, and on Perception tests to detect ambushes or hidden threats.
+            - heading "ACTIONS" [level=2] [ref=e2784]
+            - separator [ref=e2785]
+            - generic [ref=e2786]:
+              - generic [ref=e2787]:
+                - generic [ref=e2788]: 
+                - heading "Fade Back." [level=3] [ref=e2789]
+                - text: When a creature moves within 5 feet of Hangar, he immediately moves up to 15 feet away without provoking opportunity attacks. If he ends this movement more than 5 feet from the triggering creature, he can make one Hunting Bow attack against them.
+              - generic [ref=e2790]:
+                - generic [ref=e2791]: 
+                - heading "Suppressing Shot." [level=3] [ref=e2792]
+                - text: Hangar fires to keep a target pinned. One creature within 120 feet of him must succeed on a DC 14 Discipline test or become Immobilized until the start of Hangar's next turn.
+              - generic [ref=e2793]:
+                - generic [ref=e2794]: 
+                - heading "Traitor's Insight." [level=3] [ref=e2795]
+                - text: Once per scene, when a humanoid enemy uses an ability or trait for the first time, Hangar can declare he knows this tactic. He gains advantage on all tests to resist or avoid that ability for the rest of the scene.
+            - heading "STRIKES" [level=2] [ref=e2796]
+            - separator [ref=e2797]
+            - generic [ref=e2798]:
+              - generic [ref=e2799]:
+                - generic [ref=e2800]: 
+                - 'heading "Strike: Hunting Bow." [level=3] [ref=e2801]'
+                - text: "Attack +6, range 120/480 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9 (1d6 + 6) keen damage."
+              - generic [ref=e2802]:
+                - generic [ref=e2803]: 
+                - 'heading "Strike: Hunting Knife." [level=3] [ref=e2804]'
+                - text: "Attack +2, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 4 (1d4 + 2) keen damage."
+        - generic [ref=e2805]:
+          - generic [ref=e2806]:
+            - button "Edit" [ref=e2807] [cursor=pointer]
+            - button "Download JSON" [ref=e2808] [cursor=pointer]
+            - generic [ref=e2809]:
+              - generic [ref=e2810]: Book
+              - generic [ref=e2811]: Human
+              - generic [ref=e2812]: Radiant
+              - code [ref=e2813]: Server
+          - article [ref=e2814]:
+            - generic [ref=e2815]:
+              - heading "Skybreaker of the Fourth Ideal" [level=1] [ref=e2816]
+              - text: Tier 4 Rival - Medium Humanoid
+            - generic [ref=e2817]:
+              - generic [ref=e2818]:
+                - generic [ref=e2819]: Physical
+                - generic [ref=e2820]: Cognitive
+                - generic [ref=e2821]: Spiritual
+              - generic [ref=e2822]:
+                - generic [ref=e2823]:
+                  - generic [ref=e2824]:
+                    - generic [ref=e2825]: STR
+                    - generic [ref=e2826]: "5"
+                  - generic [ref=e2827]:
+                    - generic [ref=e2828]: DEF
+                    - generic [ref=e2829]: "16"
+                  - generic [ref=e2830]:
+                    - generic [ref=e2831]: SPD
+                    - generic [ref=e2832]: "5"
+                - generic [ref=e2833]:
+                  - generic [ref=e2834]:
+                    - generic [ref=e2835]: INT
+                    - generic [ref=e2836]: "5"
+                  - generic [ref=e2837]:
+                    - generic [ref=e2838]: DEF
+                    - generic [ref=e2839]: "19"
+                  - generic [ref=e2840]:
+                    - generic [ref=e2841]: WIL
+                    - generic [ref=e2842]: "4"
+                - generic [ref=e2843]:
+                  - generic [ref=e2844]:
+                    - generic [ref=e2845]: AWA
+                    - generic [ref=e2846]: "5"
+                  - generic [ref=e2847]:
+                    - generic [ref=e2848]: DEF
+                    - generic [ref=e2849]: "18"
+                  - generic [ref=e2850]:
+                    - generic [ref=e2851]: PRE
+                    - generic [ref=e2852]: "3"
+            - generic [ref=e2853]:
+              - generic [ref=e2854]:
+                - heading "Health:" [level=3] [ref=e2855]
+                - text: 65 (50-80)
+              - generic [ref=e2856]:
+                - heading "Focus:" [level=3] [ref=e2857]
+                - text: "6"
+              - generic [ref=e2858]:
+                - heading "Investiture:" [level=3] [ref=e2859]
+                - text: "7"
+            - separator [ref=e2860]
+            - generic [ref=e2861]:
+              - generic [ref=e2862]:
+                - heading "Movement:" [level=3] [ref=e2863]
+                - text: 40 ft.
+              - generic [ref=e2864]:
+                - heading "Senses:" [level=3] [ref=e2865]
+                - text: 50 ft. (sight)
+              - generic [ref=e2866]:
+                - heading "Physical Skills:" [level=3] [ref=e2867]
+                - text: Agility +10, Heavy-weapons +9, Light-weapons +10
+              - generic [ref=e2868]:
+                - heading "Cognitive Skills:" [level=3] [ref=e2869]
+                - text: Deduction +9, Discipline +8, Intimidation +9, Lore +8
+              - generic [ref=e2870]:
+                - heading "Spiritual Skills:" [level=3] [ref=e2871]
+                - text: Insight +9, Leadership +8, Perception +8
+              - generic [ref=e2872]:
+                - heading "Languages:" [level=3] [ref=e2873]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e2874]
+            - separator [ref=e2875]
+            - generic [ref=e2876]:
+              - generic [ref=e2877]:
+                - heading "Radiant Shardplate (4 Charges)." [level=3] [ref=e2878]
+                - text: The Skybreaker is equipped with Shardplate. Before they take damage, they can expend a charge (no action required) to increase their deflect value against that damage by 10. While the armor has charges, all Invested tests against the Skybreaker gain a disadvantage, and the armor's deflect value applies to all damage types. After the armor runs out of charges, some of the Skybreaker's attributes and skills are reduced by 2, along with their related modifiers; these statistics are marked with an asterisk (*).
+              - generic [ref=e2879]:
+                - heading "Breakable Armor." [level=3] [ref=e2880]
+                - text: After the Skybreaker is hit by an attack, the attacker can spend an Opportunity to cause the Skybreaker's Shardplate to lose 1 charge.
+              - generic [ref=e2881]:
+                - heading "Truthseeker." [level=3] [ref=e2882]
+                - text: The Skybreaker gains an advantage on Deduction and Insight tests made to ascertain truth.
+            - heading "ACTIONS" [level=2] [ref=e2883]
+            - separator [ref=e2884]
+            - generic [ref=e2885]:
+              - generic [ref=e2886]:
+                - generic [ref=e2887]: 
+                - heading "Lashing Shot." [level=3] [ref=e2888]
+                - text: "Attack +9*, range 30 ft., one target. Graze: 13 (2d12) keen or impact damage. Hit: 22 (2d12 + 9*) keen or impact damage."
+              - generic [ref=e2889]:
+                - generic [ref=e2890]: 
+                - heading "Inescapable Decay." [level=3] [ref=e2891]
+                - text: "Attack +8, range 30 ft., one target who is touching the same solid surface as the Skybreaker. Graze: 18 (4d8) spirit damage. Hit: 26 (4d8 + 8) spirit damage, and the target must succeed on a DC 16 Agility test or their armor rusts and decays, permanently decreasing its deflect value by 1. Armor damaged in this way can be repaired with proper materials as a downtime activity."
+              - generic [ref=e2892]:
+                - generic [ref=e2893]: 
+                - heading "Gravitational Support." [level=3] [ref=e2894]
+                - text: The Skybreaker gains a flying rate of 40 feet until the start of their next turn. At the start of each of their turns, they can spend 1 Investiture to maintain this effect for an additional round. Alternatively, they can infuse an ally with a flying rate of 40 feet until the end of the ally's next turn. When the Skybreaker does so, they can spend additional Investiture to extend this effect for a number of rounds equal to the Investiture spent.
+              - generic [ref=e2895]:
+                - generic [ref=e2896]: 
+                - heading "Offensive Gravitation." [level=3] [ref=e2897]
+                - text: The Skybreaker makes a Gravitation test against the Physical defense of a target within reach. On a success, they move the target up to 40 feet in any direction, and the target becomes Restrained until the start of the Skybreaker's next turn. If the target hits an object or surface, they take 13 (2d12) impact damage. If the target passes within reach of an object that they aren't going to hit, they can make a DC 16 Agility test, grabbing the object and stopping this forced movement on a success.
+              - generic [ref=e2898]:
+                - generic [ref=e2899]: 
+                - heading "Regenerate." [level=3] [ref=e2900]
+                - text: The Skybreaker recovers 7 (1d6 + 4) health. They can use this free action even while Unconscious or otherwise prevented from using actions.
+              - generic [ref=e2901]:
+                - generic [ref=e2902]: 
+                - heading "Menace." [level=3] [ref=e2903]
+                - text: After the Skybreaker is hit with an attack, they make an Intimidation test against the attacker's Cognitive defense. On a success, the attacker loses 1d4 focus.
+            - heading "STRIKES" [level=2] [ref=e2904]
+            - separator [ref=e2905]
+            - generic [ref=e2907]:
+              - generic [ref=e2908]: 
+              - 'heading "Strike: Shardblade." [level=3] [ref=e2909]'
+              - text: "Attack +9*, reach 5 ft., one target. Graze: 11 (2d10) spirit damage. Hit: 20 (2d10 + 9) spirit damage."
+        - generic [ref=e2910]:
+          - generic [ref=e2911]:
+            - button "Edit" [ref=e2912] [cursor=pointer]
+            - button "Download JSON" [ref=e2913] [cursor=pointer]
+            - generic [ref=e2914]:
+              - generic [ref=e2915]: Book
+              - generic [ref=e2916]: Human
+              - code [ref=e2917]: Server
+          - article [ref=e2918]:
+            - generic [ref=e2919]:
+              - heading "Commoner" [level=1] [ref=e2920]
+              - text: Tier 1 Minion - Medium Humanoid
+            - generic [ref=e2921]:
+              - generic [ref=e2922]:
+                - generic [ref=e2923]: Physical
+                - generic [ref=e2924]: Cognitive
+                - generic [ref=e2925]: Spiritual
+              - generic [ref=e2926]:
+                - generic [ref=e2927]:
+                  - generic [ref=e2928]:
+                    - generic [ref=e2929]: STR
+                    - generic [ref=e2930]: "0"
+                  - generic [ref=e2931]:
+                    - generic [ref=e2932]: DEF
+                    - generic [ref=e2933]: "11"
+                  - generic [ref=e2934]:
+                    - generic [ref=e2935]: SPD
+                    - generic [ref=e2936]: "1"
+                - generic [ref=e2937]:
+                  - generic [ref=e2938]:
+                    - generic [ref=e2939]: INT
+                    - generic [ref=e2940]: "1"
+                  - generic [ref=e2941]:
+                    - generic [ref=e2942]: DEF
+                    - generic [ref=e2943]: "12"
+                  - generic [ref=e2944]:
+                    - generic [ref=e2945]: WIL
+                    - generic [ref=e2946]: "0"
+                - generic [ref=e2947]:
+                  - generic [ref=e2948]:
+                    - generic [ref=e2949]: AWA
+                    - generic [ref=e2950]: "1"
+                  - generic [ref=e2951]:
+                    - generic [ref=e2952]: DEF
+                    - generic [ref=e2953]: "11"
+                  - generic [ref=e2954]:
+                    - generic [ref=e2955]: PRE
+                    - generic [ref=e2956]: "0"
+            - generic [ref=e2957]:
+              - generic [ref=e2958]:
+                - heading "Health:" [level=3] [ref=e2959]
+                - text: 10 (8-12)
+              - generic [ref=e2960]:
+                - heading "Focus:" [level=3] [ref=e2961]
+                - text: "2"
+              - generic [ref=e2962]:
+                - heading "Investiture:" [level=3] [ref=e2963]
+                - text: "0"
+            - separator [ref=e2964]
+            - generic [ref=e2965]:
+              - generic [ref=e2966]:
+                - heading "Movement:" [level=3] [ref=e2967]
+                - text: 25 ft.
+              - generic [ref=e2968]:
+                - heading "Senses:" [level=3] [ref=e2969]
+                - text: 10 ft. (sight)
+              - generic [ref=e2970]:
+                - heading "Physical Skills:" [level=3] [ref=e2971]
+                - text: Athletics +1
+              - generic [ref=e2972]:
+                - heading "Cognitive Skills:" [level=3] [ref=e2973]
+                - text: Crafting +2
+              - generic [ref=e2974]:
+                - heading "Spiritual Skills:" [level=3] [ref=e2975]
+                - text: Insight +2, Perception +2
+              - generic [ref=e2976]:
+                - heading "Languages:" [level=3] [ref=e2977]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e2978]
+            - separator [ref=e2979]
+            - generic [ref=e2980]:
+              - generic [ref=e2981]:
+                - heading "Minion." [level=3] [ref=e2982]
+                - text: The commoner's attacks can't critically hit, and they're immediately defeated when they suffer an injury.
+              - generic [ref=e2983]:
+                - heading "Capable." [level=3] [ref=e2984]
+                - text: The commoner has a utility expertise in one profession, and they gain an advantage on skill tests related to that profession.
+            - heading "ACTIONS" [level=2] [ref=e2985]
+            - separator [ref=e2986]
+            - generic [ref=e2988]:
+              - generic [ref=e2989]: 
+              - heading "Distract." [level=3] [ref=e2990]
+              - text: When an ally makes a test against an enemy who is within reach of the commoner, the commoner grants the ally an advantage on that test.
+            - heading "STRIKES" [level=2] [ref=e2991]
+            - separator [ref=e2992]
+            - generic [ref=e2994]:
+              - generic [ref=e2995]: 
+              - 'heading "Strike: Improvised Weapon." [level=3] [ref=e2996]'
+              - text: "Attack +1, reach 5 ft., one target. On a Complication, this improvised weapon breaks. Graze: 2 (1d4) impact damage. Hit: 3 (1d4 + 1) impact damage."
+        - generic [ref=e2997]:
+          - generic [ref=e2998]:
+            - button "Edit" [ref=e2999] [cursor=pointer]
+            - button "Download JSON" [ref=e3000] [cursor=pointer]
+            - generic [ref=e3001]:
+              - generic [ref=e3002]: Homebrew
+              - generic [ref=e3003]: Human
+              - generic [ref=e3004]: Soldier
+              - code [ref=e3005]: Server
+          - article [ref=e3006]:
+            - generic [ref=e3007]:
+              - heading "Herdaz Resistance Lieutenant" [level=1] [ref=e3008]
+              - text: Tier 2 Rival - Medium Humanoid
+            - generic [ref=e3009]:
+              - generic [ref=e3010]:
+                - generic [ref=e3011]: Physical
+                - generic [ref=e3012]: Cognitive
+                - generic [ref=e3013]: Spiritual
+              - generic [ref=e3014]:
+                - generic [ref=e3015]:
+                  - generic [ref=e3016]:
+                    - generic [ref=e3017]: STR
+                    - generic [ref=e3018]: "3"
+                  - generic [ref=e3019]:
+                    - generic [ref=e3020]: DEF
+                    - generic [ref=e3021]: "17"
+                  - generic [ref=e3022]:
+                    - generic [ref=e3023]: SPD
+                    - generic [ref=e3024]: "4"
+                - generic [ref=e3025]:
+                  - generic [ref=e3026]:
+                    - generic [ref=e3027]: INT
+                    - generic [ref=e3028]: "3"
+                  - generic [ref=e3029]:
+                    - generic [ref=e3030]: DEF
+                    - generic [ref=e3031]: "17"
+                  - generic [ref=e3032]:
+                    - generic [ref=e3033]: WIL
+                    - generic [ref=e3034]: "4"
+                - generic [ref=e3035]:
+                  - generic [ref=e3036]:
+                    - generic [ref=e3037]: AWA
+                    - generic [ref=e3038]: "4"
+                  - generic [ref=e3039]:
+                    - generic [ref=e3040]: DEF
+                    - generic [ref=e3041]: "17"
+                  - generic [ref=e3042]:
+                    - generic [ref=e3043]: PRE
+                    - generic [ref=e3044]: "3"
+            - generic [ref=e3045]:
+              - generic [ref=e3046]:
+                - heading "Health:" [level=3] [ref=e3047]
+                - text: 42 (32-50)
+              - generic [ref=e3048]:
+                - heading "Focus:" [level=3] [ref=e3049]
+                - text: "6"
+              - generic [ref=e3050]:
+                - heading "Investiture:" [level=3] [ref=e3051]
+                - text: "0"
+            - separator [ref=e3052]
+            - generic [ref=e3053]:
+              - generic [ref=e3054]:
+                - heading "Movement:" [level=3] [ref=e3055]
+                - text: 30 ft.
+              - generic [ref=e3056]:
+                - heading "Senses:" [level=3] [ref=e3057]
+                - text: 20 ft. (sight)
+              - generic [ref=e3058]:
+                - heading "Physical Skills:" [level=3] [ref=e3059]
+                - text: Agility +6, Heavy-weapons +7, Light-weapons +6
+              - generic [ref=e3060]:
+                - heading "Cognitive Skills:" [level=3] [ref=e3061]
+                - text: Discipline +6, Intimidation +5
+              - generic [ref=e3062]:
+                - heading "Spiritual Skills:" [level=3] [ref=e3063]
+                - text: Perception +6, Survival +6
+              - generic [ref=e3064]:
+                - heading "Languages:" [level=3] [ref=e3065]
+                - text: Herdazian, Alethi
+            - heading "TRAITS" [level=2] [ref=e3066]
+            - separator [ref=e3067]
+            - generic [ref=e3068]:
+              - generic [ref=e3069]:
+                - heading "Battle-Hardened." [level=3] [ref=e3070]
+                - text: The lieutenant reduces all damage they take by 2 (minimum 1) and is immune to the Surprised condition.
+              - generic [ref=e3071]:
+                - heading "Coordinated Ambush." [level=3] [ref=e3072]
+                - text: Allies within 30 feet of the lieutenant who can hear them gain advantage on their Stealth tests when using the Ambusher trait.
+            - heading "ACTIONS" [level=2] [ref=e3073]
+            - separator [ref=e3074]
+            - generic [ref=e3075]:
+              - generic [ref=e3076]:
+                - generic [ref=e3077]: 
+                - heading "Cover!." [level=3] [ref=e3078]
+                - text: When an enemy targets an ally within 30 feet who can hear the lieutenant with an attack, the lieutenant shouts a warning. That ally can immediately move up to 15 feet without provoking opportunity attacks before the attack resolves.
+              - generic [ref=e3079]:
+                - generic [ref=e3080]: 
+                - heading "Suppressing Volley." [level=3] [ref=e3081]
+                - text: The lieutenant fires rapidly across a 30-foot cone. Each creature in the area must succeed on a DC 15 Agility test or take 10 (3d6) keen damage and become Immobilized until the start of the lieutenant's next turn. On a success, they take half damage only.
+              - generic [ref=e3082]:
+                - generic [ref=e3083]: 
+                - heading "Break and Run." [level=3] [ref=e3084]
+                - text: Once per scene, immediately after the lieutenant hits with an attack, they signal a tactical withdrawal. All allies within 30 feet who can hear the lieutenant can immediately use the Move and Disengage actions as free reactions.
+            - heading "STRIKES" [level=2] [ref=e3085]
+            - separator [ref=e3086]
+            - generic [ref=e3087]:
+              - generic [ref=e3088]:
+                - generic [ref=e3089]: 
+                - 'heading "Strike: Military Sabre." [level=3] [ref=e3090]'
+                - text: "Attack +7, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 11 (1d8 + 7) keen damage."
+              - generic [ref=e3091]:
+                - generic [ref=e3092]: 
+                - 'heading "Strike: Composite Bow." [level=3] [ref=e3093]'
+                - text: "Attack +6, range 80/320 ft., one target. Graze: 4 (1d8) keen damage. Hit: 10 (1d8 + 6) keen damage."
+        - generic [ref=e3094]:
+          - generic [ref=e3095]:
+            - button "Edit" [ref=e3096] [cursor=pointer]
+            - button "Download JSON" [ref=e3097] [cursor=pointer]
+            - generic [ref=e3098]:
+              - generic [ref=e3099]: Book
+              - generic [ref=e3100]: Human
+              - generic [ref=e3101]: Criminal
+              - code [ref=e3102]: Server
+          - article [ref=e3103]:
+            - generic [ref=e3104]:
+              - heading "Bandit" [level=1] [ref=e3105]
+              - text: Tier 1 Minion - Medium Humanoid
+            - generic [ref=e3106]:
+              - generic [ref=e3107]:
+                - generic [ref=e3108]: Physical
+                - generic [ref=e3109]: Cognitive
+                - generic [ref=e3110]: Spiritual
+              - generic [ref=e3111]:
+                - generic [ref=e3112]:
+                  - generic [ref=e3113]:
+                    - generic [ref=e3114]: STR
+                    - generic [ref=e3115]: "1"
+                  - generic [ref=e3116]:
+                    - generic [ref=e3117]: DEF
+                    - generic [ref=e3118]: "12"
+                  - generic [ref=e3119]:
+                    - generic [ref=e3120]: SPD
+                    - generic [ref=e3121]: "1"
+                - generic [ref=e3122]:
+                  - generic [ref=e3123]:
+                    - generic [ref=e3124]: INT
+                    - generic [ref=e3125]: "1"
+                  - generic [ref=e3126]:
+                    - generic [ref=e3127]: DEF
+                    - generic [ref=e3128]: "11"
+                  - generic [ref=e3129]:
+                    - generic [ref=e3130]: WIL
+                    - generic [ref=e3131]: "0"
+                - generic [ref=e3132]:
+                  - generic [ref=e3133]:
+                    - generic [ref=e3134]: AWA
+                    - generic [ref=e3135]: "2"
+                  - generic [ref=e3136]:
+                    - generic [ref=e3137]: DEF
+                    - generic [ref=e3138]: "13"
+                  - generic [ref=e3139]:
+                    - generic [ref=e3140]: PRE
+                    - generic [ref=e3141]: "1"
+            - generic [ref=e3142]:
+              - generic [ref=e3143]:
+                - heading "Health:" [level=3] [ref=e3144]
+                - text: 11 (8-14)
+              - generic [ref=e3145]:
+                - heading "Focus:" [level=3] [ref=e3146]
+                - text: "2"
+              - generic [ref=e3147]:
+                - heading "Investiture:" [level=3] [ref=e3148]
+                - text: "0"
+            - separator [ref=e3149]
+            - generic [ref=e3150]:
+              - generic [ref=e3151]:
+                - heading "Movement:" [level=3] [ref=e3152]
+                - text: 25 ft.
+              - generic [ref=e3153]:
+                - heading "Senses:" [level=3] [ref=e3154]
+                - text: 10 ft. (sight)
+              - generic [ref=e3155]:
+                - heading "Physical Skills:" [level=3] [ref=e3156]
+                - text: Agility +3, Athletics +3, Light-weapons +2
+              - generic [ref=e3157]:
+                - heading "Cognitive Skills:" [level=3] [ref=e3158]
+                - text: Discipline +1, Intimidation +3
+              - generic [ref=e3159]:
+                - heading "Spiritual Skills:" [level=3] [ref=e3160]
+                - text: Perception +3, Survival +3
+              - generic [ref=e3161]:
+                - heading "Languages:" [level=3] [ref=e3162]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e3163]
+            - separator [ref=e3164]
+            - generic [ref=e3165]:
+              - generic [ref=e3166]:
+                - heading "Minion." [level=3] [ref=e3167]
+                - text: The bandit's attacks can't critically hit, and they're immediately defeated when they suffer an injury.
+              - generic [ref=e3168]:
+                - heading "Momentum." [level=3] [ref=e3169]
+                - text: If the bandit moves at least 10 feet in a straight line toward a target then makes a Mace attack against them on that turn, the bandit gains an advantage on that attack.
+            - heading "ACTIONS" [level=2] [ref=e3170]
+            - separator [ref=e3171]
+            - generic [ref=e3173]:
+              - generic [ref=e3174]: 
+              - heading "Trip." [level=3] [ref=e3175]
+              - text: The bandit makes an Athletics test against a target within 5 feet of them, opposed by the target's choice of Athletics or Agility. If the bandit succeeds on this test, the target is knocked Prone.
+            - heading "STRIKES" [level=2] [ref=e3176]
+            - separator [ref=e3177]
+            - generic [ref=e3178]:
+              - generic [ref=e3179]:
+                - generic [ref=e3180]: 
+                - 'heading "Strike: Mace." [level=3] [ref=e3181]'
+                - text: "Attack +2, reach 5 ft., one target. Graze: 3 (1d6) impact damage. Hit: 5 (1d6 + 2) impact damage."
+              - generic [ref=e3182]:
+                - generic [ref=e3183]: 
+                - 'heading "Strike: Shortbow." [level=3] [ref=e3184]'
+                - text: "Attack +2, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 5 (1d6 + 2) keen damage."
+        - generic [ref=e3662]:
+          - generic [ref=e3663]:
+            - button "Edit" [ref=e3664] [cursor=pointer]
+            - button "Download JSON" [ref=e3665] [cursor=pointer]
+            - generic [ref=e3666]:
+              - generic [ref=e3667]: Book
+              - generic [ref=e3668]: Human
+              - generic [ref=e3669]: Radiant
+              - code [ref=e3670]: Server
+          - article [ref=e3671]:
+            - generic [ref=e3672]:
+              - heading "Skybreaker of the Second Ideal" [level=1] [ref=e3673]
+              - text: Tier 2 Rival - Medium Humanoid
+            - generic [ref=e3674]:
+              - generic [ref=e3675]:
+                - generic [ref=e3676]: Physical
+                - generic [ref=e3677]: Cognitive
+                - generic [ref=e3678]: Spiritual
+              - generic [ref=e3679]:
+                - generic [ref=e3680]:
+                  - generic [ref=e3681]:
+                    - generic [ref=e3682]: STR
+                    - generic [ref=e3683]: "2"
+                  - generic [ref=e3684]:
+                    - generic [ref=e3685]: DEF
+                    - generic [ref=e3686]: "15"
+                  - generic [ref=e3687]:
+                    - generic [ref=e3688]: SPD
+                    - generic [ref=e3689]: "3"
+                - generic [ref=e3690]:
+                  - generic [ref=e3691]:
+                    - generic [ref=e3692]: INT
+                    - generic [ref=e3693]: "2"
+                  - generic [ref=e3694]:
+                    - generic [ref=e3695]: DEF
+                    - generic [ref=e3696]: "15"
+                  - generic [ref=e3697]:
+                    - generic [ref=e3698]: WIL
+                    - generic [ref=e3699]: "3"
+                - generic [ref=e3700]:
+                  - generic [ref=e3701]:
+                    - generic [ref=e3702]: AWA
+                    - generic [ref=e3703]: "4"
+                  - generic [ref=e3704]:
+                    - generic [ref=e3705]: DEF
+                    - generic [ref=e3706]: "15"
+                  - generic [ref=e3707]:
+                    - generic [ref=e3708]: PRE
+                    - generic [ref=e3709]: "1"
+            - generic [ref=e3710]:
+              - generic [ref=e3711]:
+                - heading "Health:" [level=3] [ref=e3712]
+                - text: 40 (30-50)
+              - generic [ref=e3713]:
+                - heading "Focus:" [level=3] [ref=e3714]
+                - text: "5"
+              - generic [ref=e3715]:
+                - heading "Investiture:" [level=3] [ref=e3716]
+                - text: "6"
+            - separator [ref=e3717]
+            - generic [ref=e3718]:
+              - generic [ref=e3719]:
+                - heading "Movement:" [level=3] [ref=e3720]
+                - text: 30 ft.
+              - generic [ref=e3721]:
+                - heading "Senses:" [level=3] [ref=e3722]
+                - text: 20 ft. (sight)
+              - generic [ref=e3723]:
+                - heading "Physical Skills:" [level=3] [ref=e3724]
+                - text: Agility +6, Heavy-weapons +5, Light-weapons +6
+              - generic [ref=e3725]:
+                - heading "Cognitive Skills:" [level=3] [ref=e3726]
+                - text: Deduction +5, Discipline +6, Intimidation +6, Lore +4
+              - generic [ref=e3727]:
+                - heading "Spiritual Skills:" [level=3] [ref=e3728]
+                - text: Insight +7, Perception +6
+              - generic [ref=e3729]:
+                - heading "Languages:" [level=3] [ref=e3730]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e3731]
+            - separator [ref=e3732]
+            - generic [ref=e3734]:
+              - heading "Truthseeker." [level=3] [ref=e3735]
+              - text: The Skybreaker gains an advantage on Deduction and Insight tests made to ascertain truth.
+            - heading "ACTIONS" [level=2] [ref=e3736]
+            - separator [ref=e3737]
+            - generic [ref=e3738]:
+              - generic [ref=e3739]:
+                - generic [ref=e3740]: 
+                - heading "Lashing Shot." [level=3] [ref=e3741]
+                - text: "Attack +6, range 30 ft., one target. The Skybreaker touches a Medium or smaller unattended object and launches it at the target. Graze: 9 (2d8) impact or keen damage. Hit: 15 (2d8 + 6) impact or keen damage."
+              - generic [ref=e3742]:
+                - generic [ref=e3743]: 
+                - heading "Offensive Gravitation." [level=3] [ref=e3744]
+                - text: The Skybreaker makes a Gravitation test against the Physical defense of a target within reach. On a success, the Skybreaker moves the target up to 25 feet in any direction, and the target becomes Restrained until the start of the Skybreaker's next turn. If the target hits an object or surface, they take 9 (2d8) impact damage. If the target passes within reach of an object that they aren't going to hit, they can make a DC 16 Agility test, grabbing the object and stopping this forced movement on a success.
+              - generic [ref=e3745]:
+                - generic [ref=e3746]: 
+                - heading "Gravitational Support." [level=3] [ref=e3747]
+                - text: The Skybreaker gains a flying rate of 25 feet until the start of their next turn. At the start of each of their turns, they can spend 1 Investiture to maintain this effect for an additional round. Alternatively, they can infuse an ally with a flying rate of 25 feet until the end of the ally's next turn. When the Skybreaker does so, they can spend additional Investiture to extend this effect for a number of rounds equal to the Investiture spent.
+              - generic [ref=e3748]:
+                - generic [ref=e3749]: 
+                - heading "Regenerate." [level=3] [ref=e3750]
+                - text: The Skybreaker recovers 5 (1d6 + 2) health. They can use this free action even while Unconscious or otherwise prevented from using actions.
+              - generic [ref=e3751]:
+                - generic [ref=e3752]: 
+                - heading "Menace." [level=3] [ref=e3753]
+                - text: After the Skybreaker is hit with an attack, they make an Intimidation test against the attacker's Cognitive defense. On a success, the attacker loses 1 focus.
+            - heading "STRIKES" [level=2] [ref=e3754]
+            - separator [ref=e3755]
+            - generic [ref=e3757]:
+              - generic [ref=e3758]: 
+              - 'heading "Strike: Sidesword." [level=3] [ref=e3759]'
+              - text: "Attack +6, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9 (1d6 + 6) keen damage."
+        - generic [ref=e3760]:
+          - generic [ref=e3761]:
+            - button "Edit" [ref=e3762] [cursor=pointer]
+            - button "Download JSON" [ref=e3763] [cursor=pointer]
+            - generic [ref=e3764]:
+              - generic [ref=e3765]: Book
+              - generic [ref=e3766]: Human
+              - generic [ref=e3767]: Criminal
+              - code [ref=e3768]: Server
+          - article [ref=e3769]:
+            - generic [ref=e3770]:
+              - heading "Crime Boss" [level=1] [ref=e3771]
+              - text: Tier 1 Boss - Medium Humanoid
+            - generic [ref=e3772]:
+              - generic [ref=e3773]:
+                - generic [ref=e3774]: Physical
+                - generic [ref=e3775]: Cognitive
+                - generic [ref=e3776]: Spiritual
+              - generic [ref=e3777]:
+                - generic [ref=e3778]:
+                  - generic [ref=e3779]:
+                    - generic [ref=e3780]: STR
+                    - generic [ref=e3781]: "2"
+                  - generic [ref=e3782]:
+                    - generic [ref=e3783]: DEF
+                    - generic [ref=e3784]: "15"
+                  - generic [ref=e3785]:
+                    - generic [ref=e3786]: SPD
+                    - generic [ref=e3787]: "3"
+                - generic [ref=e3788]:
+                  - generic [ref=e3789]:
+                    - generic [ref=e3790]: INT
+                    - generic [ref=e3791]: "5"
+                  - generic [ref=e3792]:
+                    - generic [ref=e3793]: DEF
+                    - generic [ref=e3794]: "17"
+                  - generic [ref=e3795]:
+                    - generic [ref=e3796]: WIL
+                    - generic [ref=e3797]: "2"
+                - generic [ref=e3798]:
+                  - generic [ref=e3799]:
+                    - generic [ref=e3800]: AWA
+                    - generic [ref=e3801]: "2"
+                  - generic [ref=e3802]:
+                    - generic [ref=e3803]: DEF
+                    - generic [ref=e3804]: "16"
+                  - generic [ref=e3805]:
+                    - generic [ref=e3806]: PRE
+                    - generic [ref=e3807]: "4"
+            - generic [ref=e3808]:
+              - generic [ref=e3809]:
+                - heading "Health:" [level=3] [ref=e3810]
+                - text: 50 (40-60)
+              - generic [ref=e3811]:
+                - heading "Focus:" [level=3] [ref=e3812]
+                - text: "6"
+              - generic [ref=e3813]:
+                - heading "Investiture:" [level=3] [ref=e3814]
+                - text: "0"
+            - separator [ref=e3815]
+            - generic [ref=e3816]:
+              - generic [ref=e3817]:
+                - heading "Movement:" [level=3] [ref=e3818]
+                - text: 30 ft.
+              - generic [ref=e3819]:
+                - heading "Senses:" [level=3] [ref=e3820]
+                - text: 20 ft. (sight)
+              - generic [ref=e3821]:
+                - heading "Physical Skills:" [level=3] [ref=e3822]
+                - text: Light-weapons +6, Thievery +5
+              - generic [ref=e3823]:
+                - heading "Cognitive Skills:" [level=3] [ref=e3824]
+                - text: Deduction +8, Discipline +6, Intimidation +6
+              - generic [ref=e3825]:
+                - heading "Spiritual Skills:" [level=3] [ref=e3826]
+                - text: Deception +7, Leadership +7, Perception +5, Persuasion +6
+              - generic [ref=e3827]:
+                - heading "Languages:" [level=3] [ref=e3828]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e3829]
+            - separator [ref=e3830]
+            - generic [ref=e3831]:
+              - generic [ref=e3832]:
+                - heading "Boss." [level=3] [ref=e3833]
+                - text: The crime boss can take both a fast turn and a slow turn each round. After an enemy finishes a turn, the crime boss can spend 1 focus to immediately use an extra single or free action. Additionally, they can spend 1 focus on their turn to remove a condition from themself.
+              - generic [ref=e3834]:
+                - heading "Compelling Leader." [level=3] [ref=e3835]
+                - text: When the crime boss successfully uses the Gain Advantage action or gains an Opportunity, they can grant that advantage or Opportunity to one of their allies within 60 feet of them.
+              - generic [ref=e3836]:
+                - heading "Cunning Preparations." [level=3] [ref=e3837]
+                - text: At the start of each scene, the crime boss can reveal up to three nasty surprises (no action required). Each nasty surprise creates difficult or dangerous terrain in an area up to 5 feet square. Nasty surprises can't be revealed within 10 feet of an enemy.
+              - generic [ref=e3838]:
+                - heading "Inured to Poison." [level=3] [ref=e3839]
+                - text: The crime boss gains an advantage on tests to resist the effects of poison. Additionally, before the crime boss takes vital damage, they reduce it by 2.
+              - generic [ref=e3840]:
+                - 'heading "Immunity: Surprised." [level=3] [ref=e3841]'
+                - text: The crime boss is immune to the Surprised condition.
+            - heading "ACTIONS" [level=2] [ref=e3842]
+            - separator [ref=e3843]
+            - generic [ref=e3844]:
+              - generic [ref=e3845]:
+                - generic [ref=e3846]: 
+                - heading "Flash Fabrial." [level=3] [ref=e3847]
+                - text: The crime boss activates a fabrial that emits a piercing light from its gemstone. Each character within 10 feet of the crime boss must succeed on a DC 15 Discipline test or become Disoriented until the end of the crime boss's next turn.
+              - generic [ref=e3848]:
+                - generic [ref=e3849]: 
+                - heading "Subdue." [level=3] [ref=e3850]
+                - text: The crime boss menaces a foe, making an opposed Intimidation test against the target's Discipline. If the crime boss succeeds, the target loses 1d4 focus and gains a disadvantage on tests against the crime boss until the end of the crime boss's next turn.
+              - generic [ref=e3851]:
+                - generic [ref=e3852]: 
+                - heading "Firemoss." [level=3] [ref=e3853]
+                - text: The crime boss grinds firemoss and inhales the smoke, regaining 6 focus.
+              - generic [ref=e3854]:
+                - generic [ref=e3855]: 
+                - heading "Don't Disappoint Me." [level=3] [ref=e3856]
+                - text: Before an ally misses with an attack, the crime boss allows them to reroll the d20 for the attack roll, potentially changing the miss into a hit. The ally must use the new result, and they can choose to graze after seeing the result.
+            - heading "STRIKES" [level=2] [ref=e3857]
+            - separator [ref=e3858]
+            - generic [ref=e3860]:
+              - generic [ref=e3861]: 
+              - 'heading "Strike: Knife." [level=3] [ref=e3862]'
+              - text: "Attack +6, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 8 (1d4 + 6) keen damage plus 7 (2d6) vital damage, and the target must succeed on a DC 16 Athletics test or become Exhausted [-1]."
+        - generic [ref=e3955]:
+          - generic [ref=e3956]:
+            - button "Edit" [ref=e3957] [cursor=pointer]
+            - button "Download JSON" [ref=e3958] [cursor=pointer]
+            - generic [ref=e3959]:
+              - generic [ref=e3960]: Book
+              - generic [ref=e3961]: Human
+              - code [ref=e3962]: Server
+          - article [ref=e3963]:
+            - generic [ref=e3964]:
+              - heading "Socialite" [level=1] [ref=e3965]
+              - text: Tier 2 Rival - Medium Humanoid
+            - generic [ref=e3966]:
+              - generic [ref=e3967]:
+                - generic [ref=e3968]: Physical
+                - generic [ref=e3969]: Cognitive
+                - generic [ref=e3970]: Spiritual
+              - generic [ref=e3971]:
+                - generic [ref=e3972]:
+                  - generic [ref=e3973]:
+                    - generic [ref=e3974]: STR
+                    - generic [ref=e3975]: "2"
+                  - generic [ref=e3976]:
+                    - generic [ref=e3977]: DEF
+                    - generic [ref=e3978]: "14"
+                  - generic [ref=e3979]:
+                    - generic [ref=e3980]: SPD
+                    - generic [ref=e3981]: "2"
+                - generic [ref=e3982]:
+                  - generic [ref=e3983]:
+                    - generic [ref=e3984]: INT
+                    - generic [ref=e3985]: "3"
+                  - generic [ref=e3986]:
+                    - generic [ref=e3987]: DEF
+                    - generic [ref=e3988]: "16"
+                  - generic [ref=e3989]:
+                    - generic [ref=e3990]: WIL
+                    - generic [ref=e3991]: "3"
+                - generic [ref=e3992]:
+                  - generic [ref=e3993]:
+                    - generic [ref=e3994]: AWA
+                    - generic [ref=e3995]: "2"
+                  - generic [ref=e3996]:
+                    - generic [ref=e3997]: DEF
+                    - generic [ref=e3998]: "17"
+                  - generic [ref=e3999]:
+                    - generic [ref=e4000]: PRE
+                    - generic [ref=e4001]: "5"
+            - generic [ref=e4002]:
+              - generic [ref=e4003]:
+                - heading "Health:" [level=3] [ref=e4004]
+                - text: 38 (30-46)
+              - generic [ref=e4005]:
+                - heading "Focus:" [level=3] [ref=e4006]
+                - text: "5"
+              - generic [ref=e4007]:
+                - heading "Investiture:" [level=3] [ref=e4008]
+                - text: "0"
+            - separator [ref=e4009]
+            - generic [ref=e4010]:
+              - generic [ref=e4011]:
+                - heading "Movement:" [level=3] [ref=e4012]
+                - text: 25 ft.
+              - generic [ref=e4013]:
+                - heading "Senses:" [level=3] [ref=e4014]
+                - text: 10 ft. (sight)
+              - generic [ref=e4015]:
+                - heading "Physical Skills:" [level=3] [ref=e4016]
+                - text: Light-weapons +6
+              - generic [ref=e4017]:
+                - heading "Cognitive Skills:" [level=3] [ref=e4018]
+                - text: Deduction +4, Discipline +4
+              - generic [ref=e4019]:
+                - heading "Spiritual Skills:" [level=3] [ref=e4020]
+                - text: Deception +8, Perception +5, Persuasion +8
+              - generic [ref=e4021]:
+                - heading "Languages:" [level=3] [ref=e4022]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e4023]
+            - separator [ref=e4024]
+            - generic [ref=e4026]:
+              - heading "Charming Personality." [level=3] [ref=e4027]
+              - text: Once during a conversation, after the socialite spends focus to resist a character's influence, the socialite can choose one character involved in the conversation to lose 2 focus.
+            - heading "ACTIONS" [level=2] [ref=e4028]
+            - separator [ref=e4029]
+            - generic [ref=e4030]:
+              - generic [ref=e4031]:
+                - generic [ref=e4032]: 
+                - heading "Distracting Countenance." [level=3] [ref=e4033]
+                - text: The socialite chooses an enemy within 15 feet who can sense them. The target's deflect value becomes 0 until the end of the socialite's next turn.
+              - generic [ref=e4034]:
+                - generic [ref=e4035]: 
+                - heading "Beguiling Influence." [level=3] [ref=e4036]
+                - text: The socialite makes a Persuasion test against the Spiritual defense of an enemy within 30 feet who can sense them. On a success, the target loses 2 focus.
+              - generic [ref=e4037]:
+                - generic [ref=e4038]: 
+                - heading "Down the Grapevine." [level=3] [ref=e4039]
+                - text: When a character rolls a Complication during a conversation, the socialite reveals they know a compromising secret about one of the characters involved in that conversation.
+            - heading "STRIKES" [level=2] [ref=e4040]
+            - separator [ref=e4041]
+            - generic [ref=e4043]:
+              - generic [ref=e4044]: 
+              - 'heading "Strike: Knife." [level=3] [ref=e4045]'
+              - text: "Attack +6, reach 5 ft., one target. The socialite gains an advantage on their first Knife attack during a scene. Graze: 2 (1d4) keen damage. Hit: 8 (1d4 + 6) keen damage."
+        - generic [ref=e4136]:
+          - generic [ref=e4137]:
+            - button "Edit" [ref=e4138] [cursor=pointer]
+            - button "Download JSON" [ref=e4139] [cursor=pointer]
+            - generic [ref=e4140]:
+              - generic [ref=e4141]: Book
+              - generic [ref=e4142]: Human
+              - generic [ref=e4143]: Radiant
+              - code [ref=e4144]: Server
+          - article [ref=e4145]:
+            - generic [ref=e4146]:
+              - heading "Dustbringer of the Fourth Ideal" [level=1] [ref=e4147]
+              - text: Tier 4 Rival - Medium Humanoid
+            - generic [ref=e4148]:
+              - generic [ref=e4149]:
+                - generic [ref=e4150]: Physical
+                - generic [ref=e4151]: Cognitive
+                - generic [ref=e4152]: Spiritual
+              - generic [ref=e4153]:
+                - generic [ref=e4154]:
+                  - generic [ref=e4155]:
+                    - generic [ref=e4156]: STR
+                    - generic [ref=e4157]: "4"
+                  - generic [ref=e4158]:
+                    - generic [ref=e4159]: DEF
+                    - generic [ref=e4160]: "16"
+                  - generic [ref=e4161]:
+                    - generic [ref=e4162]: SPD
+                    - generic [ref=e4163]: "6"
+                - generic [ref=e4164]:
+                  - generic [ref=e4165]:
+                    - generic [ref=e4166]: INT
+                    - generic [ref=e4167]: "5"
+                  - generic [ref=e4168]:
+                    - generic [ref=e4169]: DEF
+                    - generic [ref=e4170]: "19"
+                  - generic [ref=e4171]:
+                    - generic [ref=e4172]: WIL
+                    - generic [ref=e4173]: "4"
+                - generic [ref=e4174]:
+                  - generic [ref=e4175]:
+                    - generic [ref=e4176]: AWA
+                    - generic [ref=e4177]: "5"
+                  - generic [ref=e4178]:
+                    - generic [ref=e4179]: DEF
+                    - generic [ref=e4180]: "17"
+                  - generic [ref=e4181]:
+                    - generic [ref=e4182]: PRE
+                    - generic [ref=e4183]: "3"
+            - generic [ref=e4184]:
+              - generic [ref=e4185]:
+                - heading "Health:" [level=3] [ref=e4186]
+                - text: 65 (50-80)
+              - generic [ref=e4187]:
+                - heading "Focus:" [level=3] [ref=e4188]
+                - text: "6"
+              - generic [ref=e4189]:
+                - heading "Investiture:" [level=3] [ref=e4190]
+                - text: "7"
+            - separator [ref=e4191]
+            - generic [ref=e4192]:
+              - generic [ref=e4193]:
+                - heading "Movement:" [level=3] [ref=e4194]
+                - text: 50 ft.
+              - generic [ref=e4195]:
+                - heading "Senses:" [level=3] [ref=e4196]
+                - text: 50 ft. (sight)
+              - generic [ref=e4197]:
+                - heading "Physical Skills:" [level=3] [ref=e4198]
+                - text: Agility +11, Light-weapons +10, Stealth +10
+              - generic [ref=e4199]:
+                - heading "Cognitive Skills:" [level=3] [ref=e4200]
+                - text: Discipline +9, Intimidation +8
+              - generic [ref=e4201]:
+                - heading "Spiritual Skills:" [level=3] [ref=e4202]
+                - text: Leadership +7, Perception +8
+              - generic [ref=e4203]:
+                - heading "Languages:" [level=3] [ref=e4204]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e4205]
+            - separator [ref=e4206]
+            - generic [ref=e4207]:
+              - generic [ref=e4208]:
+                - heading "Radiant Shardplate (4 Charges)." [level=3] [ref=e4209]
+                - text: The Dustbringer is equipped with Shardplate. Before they take damage, they can expend a charge (no action required) to increase their deflect value against that damage by 10. While the armor has charges, all Invested tests against the Dustbringer gain a disadvantage, and the armor's deflect value applies to all damage types. After the armor runs out of charges, some of the Dustbringer's attributes and skills are reduced by 2, along with their related modifiers; these statistics are marked with an asterisk (*).
+              - generic [ref=e4210]:
+                - heading "Breakable Armor." [level=3] [ref=e4211]
+                - text: After the Dustbringer is hit by an attack, the attacker can spend an Opportunity to cause the Dustbringer's Shardplate to lose 1 charge.
+              - generic [ref=e4212]:
+                - heading "Slippery." [level=3] [ref=e4213]
+                - text: While they have 1 Investiture or more, the Dustbringer can't be grazed and Reactive Strikes against them gain a disadvantage.
+            - heading "ACTIONS" [level=2] [ref=e4214]
+            - separator [ref=e4215]
+            - generic [ref=e4216]:
+              - generic [ref=e4217]:
+                - generic [ref=e4218]: 
+                - heading "Decaying Touch." [level=3] [ref=e4219]
+                - text: "Costs 1 Investiture. Attack +9 vs. Spiritual, reach 20 ft., one target. Graze: 16 (3d10) spirit damage. Hit: 25 (3d10 + 9) spirit damage, and the target must succeed on a DC 16 Agility test or their armor rusts and decays, permanently decreasing its deflect value by 1. Armor damaged in this way can be repaired with proper materials as a downtime activity."
+              - generic [ref=e4220]:
+                - generic [ref=e4221]: 
+                - heading "Burst of Flame." [level=3] [ref=e4222]
+                - text: Costs 2 Investiture. The Dustbringer emits a burst of fire that deals 6 (1d12) energy damage to each character within 20 feet of them and sets unattended objects in that area ablaze. Additionally, the Dustbringer can spend 1 focus or more to shower sparks onto that number of enemies within 30 feet of them; each target must succeed on a DC 16 Agility test or lose one focus on their next turn.
+              - generic [ref=e4223]:
+                - generic [ref=e4224]: 
+                - heading "Eroding Escape." [level=3] [ref=e4225]
+                - text: Costs 1 Investiture. The Dustbringer targets themself or an ally in reach, ending one condition on them that is either applying the Immobilized condition, the Restrained condition, or a disadvantage on any physical test.
+              - generic [ref=e4226]:
+                - generic [ref=e4227]: 
+                - heading "Regenerate." [level=3] [ref=e4228]
+                - text: Costs 1 Investiture. The Dustbringer recovers 7 (1d6 + 4) health. They can use this free action even while Unconscious or otherwise prevented from using actions.
+              - generic [ref=e4229]:
+                - generic [ref=e4230]: 
+                - heading "Skate." [level=3] [ref=e4231]
+                - text: Costs 1 Focus. The Dustbringer moves up to their movement rate.
+            - heading "STRIKES" [level=2] [ref=e4232]
+            - separator [ref=e4233]
+            - generic [ref=e4234]:
+              - generic [ref=e4235]:
+                - generic [ref=e4236]: 
+                - 'heading "Strike: Shardblade." [level=3] [ref=e4237]'
+                - text: "Attack +10, reach 5 ft., one target. Graze: 11 (2d10) spirit damage. Hit: 21 (2d10 + 10) spirit damage, and the Dustbringer can spend 1 focus to use the Disengage action as a free action."
+              - generic [ref=e4238]:
+                - generic [ref=e4239]: 
+                - 'heading "Strike: Shortbow." [level=3] [ref=e4240]'
+                - text: "Attack +10, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 13 (1d6 + 10) keen damage."
+        - generic [ref=e4427]:
+          - generic [ref=e4428]:
+            - button "Edit" [ref=e4429] [cursor=pointer]
+            - button "Download JSON" [ref=e4430] [cursor=pointer]
+            - generic [ref=e4431]:
+              - generic [ref=e4432]: Book
+              - generic [ref=e4433]: Human
+              - generic [ref=e4434]: Radiant
+              - code [ref=e4435]: Server
+          - article [ref=e4436]:
+            - generic [ref=e4437]:
+              - heading "Dustbringer of the Third Ideal" [level=1] [ref=e4438]
+              - text: Tier 3 Rival - Medium Humanoid
+            - generic [ref=e4439]:
+              - generic [ref=e4440]:
+                - generic [ref=e4441]: Physical
+                - generic [ref=e4442]: Cognitive
+                - generic [ref=e4443]: Spiritual
+              - generic [ref=e4444]:
+                - generic [ref=e4445]:
+                  - generic [ref=e4446]:
+                    - generic [ref=e4447]: STR
+                    - generic [ref=e4448]: "2"
+                  - generic [ref=e4449]:
+                    - generic [ref=e4450]: DEF
+                    - generic [ref=e4451]: "16"
+                  - generic [ref=e4452]:
+                    - generic [ref=e4453]: SPD
+                    - generic [ref=e4454]: "4"
+                - generic [ref=e4455]:
+                  - generic [ref=e4456]:
+                    - generic [ref=e4457]: INT
+                    - generic [ref=e4458]: "4"
+                  - generic [ref=e4459]:
+                    - generic [ref=e4460]: DEF
+                    - generic [ref=e4461]: "17"
+                  - generic [ref=e4462]:
+                    - generic [ref=e4463]: WIL
+                    - generic [ref=e4464]: "3"
+                - generic [ref=e4465]:
+                  - generic [ref=e4466]:
+                    - generic [ref=e4467]: AWA
+                    - generic [ref=e4468]: "4"
+                  - generic [ref=e4469]:
+                    - generic [ref=e4470]: DEF
+                    - generic [ref=e4471]: "15"
+                  - generic [ref=e4472]:
+                    - generic [ref=e4473]: PRE
+                    - generic [ref=e4474]: "1"
+            - generic [ref=e4475]:
+              - generic [ref=e4476]:
+                - heading "Health:" [level=3] [ref=e4477]
+                - text: 47 (37-57)
+              - generic [ref=e4478]:
+                - heading "Focus:" [level=3] [ref=e4479]
+                - text: "5"
+              - generic [ref=e4480]:
+                - heading "Investiture:" [level=3] [ref=e4481]
+                - text: "6"
+            - separator [ref=e4482]
+            - generic [ref=e4483]:
+              - generic [ref=e4484]:
+                - heading "Movement:" [level=3] [ref=e4485]
+                - text: 40 ft.
+              - generic [ref=e4486]:
+                - heading "Senses:" [level=3] [ref=e4487]
+                - text: 20 ft. (sight)
+              - generic [ref=e4488]:
+                - heading "Physical Skills:" [level=3] [ref=e4489]
+                - text: Agility +8, Light-weapons +8, Stealth +8
+              - generic [ref=e4490]:
+                - heading "Cognitive Skills:" [level=3] [ref=e4491]
+                - text: Discipline +6, Intimidation +6
+              - generic [ref=e4492]:
+                - heading "Spiritual Skills:" [level=3] [ref=e4493]
+                - text: Leadership +5, Perception +7
+              - generic [ref=e4494]:
+                - heading "Languages:" [level=3] [ref=e4495]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e4496]
+            - separator [ref=e4497]
+            - generic [ref=e4499]:
+              - heading "Slippery." [level=3] [ref=e4500]
+              - text: While they have 1 Investiture or more, the Dustbringer can't be grazed and Reactive Strikes against them gain a disadvantage.
+            - heading "ACTIONS" [level=2] [ref=e4501]
+            - separator [ref=e4502]
+            - generic [ref=e4503]:
+              - generic [ref=e4504]:
+                - generic [ref=e4505]: 
+                - heading "Decaying Touch." [level=3] [ref=e4506]
+                - text: "Costs 1 Investiture. Attack +8 vs. Spiritual, reach 10 ft., one target. Graze: 16 (3d10) spirit damage. Hit: 24 (3d10 + 8) spirit damage, and the target must succeed on a DC 14 Agility test or their armor rusts and decays, permanently decreasing its deflect value by 1. Armor damaged in this way can be repaired with proper materials as a downtime activity."
+              - generic [ref=e4507]:
+                - generic [ref=e4508]: 
+                - heading "Burst of Flame." [level=3] [ref=e4509]
+                - text: Costs 2 Investiture. The Dustbringer emits a burst of fire that deals 6 (1d12) energy damage to each character within 10 feet of them and sets unattended objects in that area ablaze. Additionally, the Dustbringer can spend 1 focus or more to shower sparks onto that number of enemies within 30 feet of them; each target must succeed on a DC 14 Agility test or lose one action on their next turn.
+              - generic [ref=e4510]:
+                - generic [ref=e4511]: 
+                - heading "Eroding Escape." [level=3] [ref=e4512]
+                - text: Costs 1 Investiture. The Dustbringer targets themself or an ally in reach, ending one condition on them that is either applying the Immobilized condition, the Restrained condition, or a disadvantage on any physical test.
+              - generic [ref=e4513]:
+                - generic [ref=e4514]: 
+                - heading "Regenerate." [level=3] [ref=e4515]
+                - text: Costs 1 Investiture. The Dustbringer recovers 6 (1d6 + 3) health. They can use this free action even while Unconscious or otherwise prevented from using actions.
+              - generic [ref=e4516]:
+                - generic [ref=e4517]: 
+                - heading "Skate." [level=3] [ref=e4518]
+                - text: Costs 1 Focus. The Dustbringer moves up to their movement rate.
+            - heading "STRIKES" [level=2] [ref=e4519]
+            - separator [ref=e4520]
+            - generic [ref=e4521]:
+              - generic [ref=e4522]:
+                - generic [ref=e4523]: 
+                - 'heading "Strike: Shardblade." [level=3] [ref=e4524]'
+                - text: "Attack +8, reach 5 ft., one target. Graze: 11 (2d10) spirit damage. Hit: 19 (2d10 + 8) spirit damage, and the Dustbringer can spend 1 focus to use the Disengage action as a free action."
+              - generic [ref=e4525]:
+                - generic [ref=e4526]: 
+                - 'heading "Strike: Shortbow." [level=3] [ref=e4527]'
+                - text: "Attack +8, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 11 (1d6 + 8) keen damage."
+        - generic [ref=e4718]:
+          - generic [ref=e4719]:
+            - button "Edit" [ref=e4720] [cursor=pointer]
+            - button "Download JSON" [ref=e4721] [cursor=pointer]
+            - generic [ref=e4722]:
+              - generic [ref=e4723]: Book
+              - generic [ref=e4724]: Human
+              - generic [ref=e4725]: Criminal
+              - code [ref=e4726]: Server
+          - article [ref=e4727]:
+            - generic [ref=e4728]:
+              - heading "Ghostblood Enforcer" [level=1] [ref=e4729]
+              - text: Tier 2 Rival - Medium Humanoid
+            - generic [ref=e4730]:
+              - generic [ref=e4731]:
+                - generic [ref=e4732]: Physical
+                - generic [ref=e4733]: Cognitive
+                - generic [ref=e4734]: Spiritual
+              - generic [ref=e4735]:
+                - generic [ref=e4736]:
+                  - generic [ref=e4737]:
+                    - generic [ref=e4738]: STR
+                    - generic [ref=e4739]: "3"
+                  - generic [ref=e4740]:
+                    - generic [ref=e4741]: DEF
+                    - generic [ref=e4742]: "16"
+                  - generic [ref=e4743]:
+                    - generic [ref=e4744]: SPD
+                    - generic [ref=e4745]: "3"
+                - generic [ref=e4746]:
+                  - generic [ref=e4747]:
+                    - generic [ref=e4748]: INT
+                    - generic [ref=e4749]: "2"
+                  - generic [ref=e4750]:
+                    - generic [ref=e4751]: DEF
+                    - generic [ref=e4752]: "15"
+                  - generic [ref=e4753]:
+                    - generic [ref=e4754]: WIL
+                    - generic [ref=e4755]: "3"
+                - generic [ref=e4756]:
+                  - generic [ref=e4757]:
+                    - generic [ref=e4758]: AWA
+                    - generic [ref=e4759]: "4"
+                  - generic [ref=e4760]:
+                    - generic [ref=e4761]: DEF
+                    - generic [ref=e4762]: "18"
+                  - generic [ref=e4763]:
+                    - generic [ref=e4764]: PRE
+                    - generic [ref=e4765]: "4"
+            - generic [ref=e4766]:
+              - generic [ref=e4767]:
+                - heading "Health:" [level=3] [ref=e4768]
+                - text: 42 (34-50)
+              - generic [ref=e4769]:
+                - heading "Focus:" [level=3] [ref=e4770]
+                - text: "5"
+              - generic [ref=e4771]:
+                - heading "Investiture:" [level=3] [ref=e4772]
+                - text: "6"
+            - separator [ref=e4773]
+            - generic [ref=e4774]:
+              - generic [ref=e4775]:
+                - heading "Movement:" [level=3] [ref=e4776]
+                - text: 30 ft.
+              - generic [ref=e4777]:
+                - heading "Senses:" [level=3] [ref=e4778]
+                - text: 20 ft. (sight)
+              - generic [ref=e4779]:
+                - heading "Physical Skills:" [level=3] [ref=e4780]
+                - text: Athletics +5, Heavy-weapons +6, Light-weapons +6
+              - generic [ref=e4781]:
+                - heading "Cognitive Skills:" [level=3] [ref=e4782]
+                - text: Intimidation +6
+              - generic [ref=e4783]:
+                - heading "Spiritual Skills:" [level=3] [ref=e4784]
+                - text: Deception +5, Perception +7
+              - generic [ref=e4785]:
+                - heading "Languages:" [level=3] [ref=e4786]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e4787]
+            - separator [ref=e4788]
+            - generic [ref=e4789]:
+              - generic [ref=e4790]:
+                - heading "Inured to Poison." [level=3] [ref=e4791]
+                - text: The enforcer gains an advantage on tests to resist the effects of poison. Additionally, before the enforcer takes vital damage, they reduce it by 2.
+              - generic [ref=e4792]:
+                - heading "Ruthless." [level=3] [ref=e4793]
+                - text: After the enforcer knocks an enemy Prone, they can make an additional Strike against that target on that turn (even if they've already used that Strike action).
+            - heading "ACTIONS" [level=2] [ref=e4794]
+            - separator [ref=e4795]
+            - generic [ref=e4796]:
+              - generic [ref=e4797]:
+                - generic [ref=e4798]: 
+                - heading "Burn Pewter." [level=3] [ref=e4799]
+                - text: The enforcer uses the Invested Arts of another world to gain Enhanced [Strength +2], Enhanced [Speed +2], and a deflect value of 2 until the start of their next turn. At the start of each of their turns, the enforcer can spend 1 Investiture to maintain this effect for an additional round.
+              - generic [ref=e4800]:
+                - generic [ref=e4801]: 
+                - heading "Intimidate." [level=3] [ref=e4802]
+                - text: The enforcer makes an opposed Intimidation test against the Discipline of a target they can influence. If the enforcer succeeds, the target loses 1 focus and is no longer Focused.
+            - heading "STRIKES" [level=2] [ref=e4803]
+            - separator [ref=e4804]
+            - generic [ref=e4805]:
+              - generic [ref=e4806]:
+                - generic [ref=e4807]: 
+                - 'heading "Strike: Dueling Cane." [level=3] [ref=e4808]'
+                - text: "Attack +6, reach 5 ft., one target. Graze: 3 (1d6) impact damage. Hit: 11 (1d6 + 8) impact damage, and the enforcer can spend 1 focus to knock the target Prone."
+              - generic [ref=e4809]:
+                - generic [ref=e4810]: 
+                - 'heading "Strike: Obsidian Dagger." [level=3] [ref=e4811]'
+                - text: "Attack +6, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 10 (1d4 + 8) keen damage, and if the enforcer had at least one advantage on the attack, it deals an extra 5 (2d4) keen damage. On a Complication, this weapon breaks."
+        - generic [ref=e4907]:
+          - generic [ref=e4908]:
+            - button "Edit" [ref=e4909] [cursor=pointer]
+            - button "Download JSON" [ref=e4910] [cursor=pointer]
+            - generic [ref=e4911]:
+              - generic [ref=e4912]: Book
+              - generic [ref=e4913]: Human
+              - generic [ref=e4914]: Radiant
+              - code [ref=e4915]: Server
+          - article [ref=e4916]:
+            - generic [ref=e4917]:
+              - heading "Dustbringer of the Second Ideal" [level=1] [ref=e4918]
+              - text: Tier 2 Rival - Medium Humanoid
+            - generic [ref=e4919]:
+              - generic [ref=e4920]:
+                - generic [ref=e4921]: Physical
+                - generic [ref=e4922]: Cognitive
+                - generic [ref=e4923]: Spiritual
+              - generic [ref=e4924]:
+                - generic [ref=e4925]:
+                  - generic [ref=e4926]:
+                    - generic [ref=e4927]: STR
+                    - generic [ref=e4928]: "2"
+                  - generic [ref=e4929]:
+                    - generic [ref=e4930]: DEF
+                    - generic [ref=e4931]: "15"
+                  - generic [ref=e4932]:
+                    - generic [ref=e4933]: SPD
+                    - generic [ref=e4934]: "3"
+                - generic [ref=e4935]:
+                  - generic [ref=e4936]:
+                    - generic [ref=e4937]: INT
+                    - generic [ref=e4938]: "3"
+                  - generic [ref=e4939]:
+                    - generic [ref=e4940]: DEF
+                    - generic [ref=e4941]: "15"
+                  - generic [ref=e4942]:
+                    - generic [ref=e4943]: WIL
+                    - generic [ref=e4944]: "2"
+                - generic [ref=e4945]:
+                  - generic [ref=e4946]:
+                    - generic [ref=e4947]: AWA
+                    - generic [ref=e4948]: "3"
+                  - generic [ref=e4949]:
+                    - generic [ref=e4950]: DEF
+                    - generic [ref=e4951]: "14"
+                  - generic [ref=e4952]:
+                    - generic [ref=e4953]: PRE
+                    - generic [ref=e4954]: "1"
+            - generic [ref=e4955]:
+              - generic [ref=e4956]:
+                - heading "Health:" [level=3] [ref=e4957]
+                - text: 40 (30-50)
+              - generic [ref=e4958]:
+                - heading "Focus:" [level=3] [ref=e4959]
+                - text: "4"
+              - generic [ref=e4960]:
+                - heading "Investiture:" [level=3] [ref=e4961]
+                - text: "5"
+            - separator [ref=e4962]
+            - generic [ref=e4963]:
+              - generic [ref=e4964]:
+                - heading "Movement:" [level=3] [ref=e4965]
+                - text: 40 ft.
+              - generic [ref=e4966]:
+                - heading "Senses:" [level=3] [ref=e4967]
+                - text: 20 ft. (sight)
+              - generic [ref=e4968]:
+                - heading "Physical Skills:" [level=3] [ref=e4969]
+                - text: Agility +6, Light-weapons +6, Stealth +6
+              - generic [ref=e4970]:
+                - heading "Cognitive Skills:" [level=3] [ref=e4971]
+                - text: Discipline +4, Intimidation +4
+              - generic [ref=e4972]:
+                - heading "Spiritual Skills:" [level=3] [ref=e4973]
+                - text: Leadership +3, Perception +5
+              - generic [ref=e4974]:
+                - heading "Languages:" [level=3] [ref=e4975]
+                - text: defined by culture
+            - heading "ACTIONS" [level=2] [ref=e4976]
+            - separator [ref=e4977]
+            - generic [ref=e4978]:
+              - generic [ref=e4979]:
+                - generic [ref=e4980]: 
+                - heading "Decaying Touch." [level=3] [ref=e4981]
+                - text: "Costs 1 Investiture. Attack +6 vs. Spiritual, reach 5 ft., one target. Graze: 13 (3d8) spirit damage. Hit: 19 (3d8 + 6) spirit damage, and the target must succeed on a DC 14 Agility test or their armor rusts and decays, permanently decreasing its deflect value by 1. Armor damaged in this way can be repaired with proper materials as a downtime activity."
+              - generic [ref=e4982]:
+                - generic [ref=e4983]: 
+                - heading "Burst of Flame." [level=3] [ref=e4984]
+                - text: Costs 2 Investiture. The Dustbringer emits a burst of fire that deals 4 (1d8) energy damage to each character within 10 feet of them and sets unattended objects in that area ablaze. Additionally, the Dustbringer can spend 1 focus or more to shower sparks onto that many enemies within 30 feet of them; each target must succeed on a DC 14 Agility test or lose one focus on their next turn.
+              - generic [ref=e4985]:
+                - generic [ref=e4986]: 
+                - heading "Eroding Escape." [level=3] [ref=e4987]
+                - text: Costs 1 Investiture. The Dustbringer targets themself or an ally in reach, ending one condition on them that is either applying the Immobilized condition, the Restrained condition, or a disadvantage on a physical test.
+              - generic [ref=e4988]:
+                - generic [ref=e4989]: 
+                - heading "Regenerate." [level=3] [ref=e4990]
+                - text: Costs 1 Investiture. The Dustbringer recovers 5 (1d6 + 2) health. They can use this free action even while Unconscious or otherwise prevented from using actions.
+              - generic [ref=e4991]:
+                - generic [ref=e4992]: 
+                - heading "Skate." [level=3] [ref=e4993]
+                - text: Costs 2 Focus. The Dustbringer moves up to their movement rate in a straight line.
+            - heading "STRIKES" [level=2] [ref=e4994]
+            - separator [ref=e4995]
+            - generic [ref=e4996]:
+              - generic [ref=e4997]:
+                - generic [ref=e4998]: 
+                - 'heading "Strike: Sidesword." [level=3] [ref=e4999]'
+                - text: "Attack +6, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9 (1d6 + 6) keen damage, and the Dustbringer can spend 1 focus to use the Disengage action as a free action."
+              - generic [ref=e5000]:
+                - generic [ref=e5001]: 
+                - 'heading "Strike: Shortbow." [level=3] [ref=e5002]'
+                - text: "Attack +6, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9 (1d6 + 6) keen damage."
+        - generic [ref=e5300]:
+          - generic [ref=e5301]:
+            - button "Edit" [ref=e5302] [cursor=pointer]
+            - button "Download JSON" [ref=e5303] [cursor=pointer]
+            - generic [ref=e5304]:
+              - generic [ref=e5305]: Book
+              - generic [ref=e5306]: Human
+              - generic [ref=e5307]: Criminal
+              - code [ref=e5308]: Server
+          - article [ref=e5309]:
+            - generic [ref=e5310]:
+              - heading "Assassin" [level=1] [ref=e5311]
+              - text: Tier 2 Rival - Medium Humanoid
+            - generic [ref=e5312]:
+              - generic [ref=e5313]:
+                - generic [ref=e5314]: Physical
+                - generic [ref=e5315]: Cognitive
+                - generic [ref=e5316]: Spiritual
+              - generic [ref=e5317]:
+                - generic [ref=e5318]:
+                  - generic [ref=e5319]:
+                    - generic [ref=e5320]: STR
+                    - generic [ref=e5321]: "1"
+                  - generic [ref=e5322]:
+                    - generic [ref=e5323]: DEF
+                    - generic [ref=e5324]: "16"
+                  - generic [ref=e5325]:
+                    - generic [ref=e5326]: SPD
+                    - generic [ref=e5327]: "5"
+                - generic [ref=e5328]:
+                  - generic [ref=e5329]:
+                    - generic [ref=e5330]: INT
+                    - generic [ref=e5331]: "2"
+                  - generic [ref=e5332]:
+                    - generic [ref=e5333]: DEF
+                    - generic [ref=e5334]: "15"
+                  - generic [ref=e5335]:
+                    - generic [ref=e5336]: WIL
+                    - generic [ref=e5337]: "3"
+                - generic [ref=e5338]:
+                  - generic [ref=e5339]:
+                    - generic [ref=e5340]: AWA
+                    - generic [ref=e5341]: "3"
+                  - generic [ref=e5342]:
+                    - generic [ref=e5343]: DEF
+                    - generic [ref=e5344]: "15"
+                  - generic [ref=e5345]:
+                    - generic [ref=e5346]: PRE
+                    - generic [ref=e5347]: "2"
+            - generic [ref=e5348]:
+              - generic [ref=e5349]:
+                - heading "Health:" [level=3] [ref=e5350]
+                - text: 40 (32-48)
+              - generic [ref=e5351]:
+                - heading "Focus:" [level=3] [ref=e5352]
+                - text: "5"
+              - generic [ref=e5353]:
+                - heading "Investiture:" [level=3] [ref=e5354]
+                - text: "0"
+            - separator [ref=e5355]
+            - generic [ref=e5356]:
+              - generic [ref=e5357]:
+                - heading "Movement:" [level=3] [ref=e5358]
+                - text: 40 ft.
+              - generic [ref=e5359]:
+                - heading "Senses:" [level=3] [ref=e5360]
+                - text: 20 ft. (sight)
+              - generic [ref=e5361]:
+                - heading "Physical Skills:" [level=3] [ref=e5362]
+                - text: Agility +8, Athletics +4, Light-weapons +8, Stealth +8
+              - generic [ref=e5363]:
+                - heading "Cognitive Skills:" [level=3] [ref=e5364]
+                - text: Crafting +5, Deduction +5, Intimidation +6
+              - generic [ref=e5365]:
+                - heading "Spiritual Skills:" [level=3] [ref=e5366]
+                - text: Deception +5, Perception +6
+              - generic [ref=e5367]:
+                - heading "Languages:" [level=3] [ref=e5368]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e5369]
+            - separator [ref=e5370]
+            - generic [ref=e5371]:
+              - generic [ref=e5372]:
+                - heading "Skulking Approach." [level=3] [ref=e5373]
+                - text: At the start of each scene, if the assassin is in cover or an area where their enemy's primary sense is obscured, the assassin can make a Stealth test (no action required) with an advantage against the Spiritual defense of each enemy who can sense them. Each enemy they succeed against loses track of them and can no longer sense them until the assassin attacks or takes another action that would expose them.
+              - generic [ref=e5374]:
+                - heading "Stay in the Shadows." [level=3] [ref=e5375]
+                - text: While the assassin is in cover or an area where their enemy's primary sense is obscured, their Physical defense increases by 2 (to 18) against that enemy.
+              - generic [ref=e5376]:
+                - heading "Immunities." [level=3] [ref=e5377]
+                - text: The assassin is immune to the Surprised condition.
+            - heading "ACTIONS" [level=2] [ref=e5378]
+            - separator [ref=e5379]
+            - generic [ref=e5380]:
+              - generic [ref=e5381]:
+                - generic [ref=e5382]: 
+                - heading "Killer Instinct." [level=3] [ref=e5383]
+                - text: After the assassin ends a Move action within 5 feet of an enemy, if the assassin moved at least 20 feet this turn, they can use the Gain Advantage action as a free action.
+              - generic [ref=e5384]:
+                - generic [ref=e5385]: 
+                - heading "Twist the Knife." [level=3] [ref=e5386]
+                - text: Once per turn, when the assassin grazes, they can add their attack test modifier to that graze's damage.
+            - heading "STRIKES" [level=2] [ref=e5387]
+            - separator [ref=e5388]
+            - generic [ref=e5389]:
+              - generic [ref=e5390]:
+                - generic [ref=e5391]: 
+                - 'heading "Strike: Dagger." [level=3] [ref=e5392]'
+                - text: "Attack +8, reach 5 ft. or range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 10 (1d4 + 8) keen damage, and if the assassin had at least one advantage on this attack, they can spend 1 focus to deal an extra 10 (4d4) keen damage."
+              - generic [ref=e5393]:
+                - generic [ref=e5394]: 
+                - 'heading "Strike: Shortbow." [level=3] [ref=e5395]'
+                - text: "Attack +8, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 11 (1d6 + 8) keen damage, and the target must succeed on a DC 13 Athletics test or be Slowed until the end of the target's next turn."
+        - generic [ref=e5396]:
+          - generic [ref=e5397]:
+            - button "Edit" [ref=e5398] [cursor=pointer]
+            - button "Download JSON" [ref=e5399] [cursor=pointer]
+            - generic [ref=e5400]:
+              - generic [ref=e5401]: Book
+              - generic [ref=e5402]: Human
+              - generic [ref=e5403]: Soldier
+              - code [ref=e5404]: Server
+          - article [ref=e5405]:
+            - generic [ref=e5406]:
+              - heading "Swordmaster Ardent" [level=1] [ref=e5407]
+              - text: Tier 1 Rival - Medium Humanoid
+            - generic [ref=e5408]:
+              - generic [ref=e5409]:
+                - generic [ref=e5410]: Physical
+                - generic [ref=e5411]: Cognitive
+                - generic [ref=e5412]: Spiritual
+              - generic [ref=e5413]:
+                - generic [ref=e5414]:
+                  - generic [ref=e5415]:
+                    - generic [ref=e5416]: STR
+                    - generic [ref=e5417]: "1"
+                  - generic [ref=e5418]:
+                    - generic [ref=e5419]: DEF
+                    - generic [ref=e5420]: "14"
+                  - generic [ref=e5421]:
+                    - generic [ref=e5422]: SPD
+                    - generic [ref=e5423]: "3"
+                - generic [ref=e5424]:
+                  - generic [ref=e5425]:
+                    - generic [ref=e5426]: INT
+                    - generic [ref=e5427]: "0"
+                  - generic [ref=e5428]:
+                    - generic [ref=e5429]: DEF
+                    - generic [ref=e5430]: "11"
+                  - generic [ref=e5431]:
+                    - generic [ref=e5432]: WIL
+                    - generic [ref=e5433]: "1"
+                - generic [ref=e5434]:
+                  - generic [ref=e5435]:
+                    - generic [ref=e5436]: AWA
+                    - generic [ref=e5437]: "3"
+                  - generic [ref=e5438]:
+                    - generic [ref=e5439]: DEF
+                    - generic [ref=e5440]: "16"
+                  - generic [ref=e5441]:
+                    - generic [ref=e5442]: PRE
+                    - generic [ref=e5443]: "3"
+            - generic [ref=e5444]:
+              - generic [ref=e5445]:
+                - heading "Health:" [level=3] [ref=e5446]
+                - text: 22 (18-26)
+              - generic [ref=e5447]:
+                - heading "Focus:" [level=3] [ref=e5448]
+                - text: "3"
+              - generic [ref=e5449]:
+                - heading "Investiture:" [level=3] [ref=e5450]
+                - text: "0"
+            - separator [ref=e5451]
+            - generic [ref=e5452]:
+              - generic [ref=e5453]:
+                - heading "Movement:" [level=3] [ref=e5454]
+                - text: 30 ft.
+              - generic [ref=e5455]:
+                - heading "Senses:" [level=3] [ref=e5456]
+                - text: 20 ft. (sight)
+              - generic [ref=e5457]:
+                - heading "Physical Skills:" [level=3] [ref=e5458]
+                - text: Agility +5, Heavy-weapons +3, Light-weapons +5
+              - generic [ref=e5459]:
+                - heading "Cognitive Skills:" [level=3] [ref=e5460]
+                - text: Discipline +3, Lore +2, Medicine +2
+              - generic [ref=e5461]:
+                - heading "Spiritual Skills:" [level=3] [ref=e5462]
+                - text: Insight +5, Leadership +5, Perception +4
+              - generic [ref=e5463]:
+                - heading "Languages:" [level=3] [ref=e5464]
+                - text: defined by culture
+            - heading "TRAITS" [level=2] [ref=e5465]
+            - separator [ref=e5466]
+            - generic [ref=e5468]:
+              - heading "Swordmaster." [level=3] [ref=e5469]
+              - text: The swordmaster gains an advantage on Insight tests against any humanoid they've instructed before.
+            - heading "ACTIONS" [level=2] [ref=e5470]
+            - separator [ref=e5471]
+            - generic [ref=e5472]:
+              - generic [ref=e5473]:
+                - generic [ref=e5474]: 
+                - heading "Staggering Blow." [level=3] [ref=e5475]
+                - text: "Attack +5, reach 5 ft., one target. Graze: 3 (1d6) impact damage. Hit: 8 (1d6 + 5) impact damage, and the target gains a disadvantage on the next Discipline test they make before the end of the swordmaster's next turn."
+              - generic [ref=e5476]:
+                - generic [ref=e5477]: 
+                - heading "Disarm Opponent." [level=3] [ref=e5478]
+                - text: The swordmaster moves up to 10 feet then attempts to disarm an enemy within reach who is wielding a melee weapon. The target must succeed on a DC 15 Discipline test or drop their weapon and have it flung up to 15 feet away in any direction.
+              - generic [ref=e5479]:
+                - generic [ref=e5480]: 
+                - heading "Parry." [level=3] [ref=e5481]
+                - text: Before the swordmaster is hit by a melee attack, they increase their Physical defense by 3 against that attack, potentially causing it to miss. To do so, the swordmaster must sense the attacker and be wielding a melee weapon.
+            - heading "STRIKES" [level=2] [ref=e5482]
+            - separator [ref=e5483]
+            - generic [ref=e5485]:
+              - generic [ref=e5486]: 
+              - 'heading "Strike: Sidesword." [level=3] [ref=e5487]'
+              - text: "Attack +5, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 8 (1d6 + 5) keen damage."

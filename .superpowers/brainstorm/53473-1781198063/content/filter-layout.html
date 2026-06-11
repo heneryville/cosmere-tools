@@ -1,0 +1,82 @@
+<h2>Where should the tag filters live?</h2>
+<p class="subtitle">The current home page is a full-width creature grid. Where do the filter controls go?</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="font-size:12px; padding: 8px;">
+        <div class="mock-nav" style="margin-bottom:6px; font-size:11px;">Cosmere Tools</div>
+        <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px; padding:6px; background:#1a1a2e; border-radius:4px;">
+          <span style="background:#4a4a8a;color:#fff;padding:2px 8px;border-radius:12px;font-size:10px;">Human ✓</span>
+          <span style="background:#2a2a4a;color:#aaa;padding:2px 8px;border-radius:12px;font-size:10px;">Singer</span>
+          <span style="background:#2a2a4a;color:#aaa;padding:2px 8px;border-radius:12px;font-size:10px;">Animal</span>
+          <span style="background:#4a4a8a;color:#fff;padding:2px 8px;border-radius:12px;font-size:10px;">Named ✓</span>
+          <span style="background:#2a2a4a;color:#aaa;padding:2px 8px;border-radius:12px;font-size:10px;">Book</span>
+          <span style="background:#2a2a4a;color:#aaa;padding:2px 8px;border-radius:12px;font-size:10px;">Soldier</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;">
+          <div class="placeholder" style="height:50px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+          <div class="placeholder" style="height:50px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+          <div class="placeholder" style="height:50px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Filter bar above grid</h3>
+      <p>Tag pills sit in a horizontal bar above the creature grid. Click to toggle. Simple, always visible.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="font-size:12px; padding: 8px;">
+        <div class="mock-nav" style="margin-bottom:6px; font-size:11px;">Cosmere Tools</div>
+        <div style="display:flex; gap:8px;">
+          <div style="width:90px; background:#1a1a2e; border-radius:4px; padding:6px; flex-shrink:0;">
+            <div style="font-size:9px;color:#aaa;margin-bottom:4px;text-transform:uppercase;">Tags</div>
+            <div style="display:flex;flex-direction:column;gap:3px;">
+              <span style="background:#4a4a8a;color:#fff;padding:2px 6px;border-radius:3px;font-size:9px;">✓ Human</span>
+              <span style="color:#aaa;padding:2px 6px;font-size:9px;">Singer</span>
+              <span style="color:#aaa;padding:2px 6px;font-size:9px;">Animal</span>
+              <span style="background:#4a4a8a;color:#fff;padding:2px 6px;border-radius:3px;font-size:9px;">✓ Named</span>
+              <span style="color:#aaa;padding:2px 6px;font-size:9px;">Book</span>
+              <span style="color:#aaa;padding:2px 6px;font-size:9px;">Soldier</span>
+            </div>
+          </div>
+          <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+            <div class="placeholder" style="height:45px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+            <div class="placeholder" style="height:45px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+            <div class="placeholder" style="height:45px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+            <div class="placeholder" style="height:45px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Sidebar</h3>
+      <p>Tag list runs down the left side. More room for tags, but narrows the creature grid.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="font-size:12px; padding: 8px;">
+        <div class="mock-nav" style="margin-bottom:6px; font-size:11px;">Cosmere Tools &nbsp;&nbsp; <span style="background:#4a4a8a;color:#fff;padding:2px 8px;border-radius:12px;font-size:10px;">▼ Filter: Human, Named</span></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;">
+          <div class="placeholder" style="height:50px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+          <div class="placeholder" style="height:50px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+          <div class="placeholder" style="height:50px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+          <div class="placeholder" style="height:50px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+          <div class="placeholder" style="height:50px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+          <div class="placeholder" style="height:50px;font-size:9px;display:flex;align-items:center;justify-content:center;">Card</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Dropdown in nav</h3>
+      <p>A filter button in the nav bar opens a dropdown. Grid stays full width. Hidden until needed.</p>
+    </div>
+  </div>
+
+</div>

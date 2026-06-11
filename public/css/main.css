@@ -907,3 +907,52 @@ article.npc .download-json:hover {
   background: #ca9a56;
   color: white;
 }
+.tag-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.tag-pill {
+  padding: 3px 10px;
+  border-radius: 12px;
+  border: 1px solid #ca7a56;
+  background: transparent;
+  color: #1e3c60;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.tag-pill:hover {
+  background: rgba(202, 122, 86, 0.2);
+}
+.tag-pill.active {
+  background: #ca7a56;
+  color: #fff;
+}
+.tag-pill.clear-pill {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+.tag-pill.clear-pill:hover {
+  background: #dc3545;
+  color: #fff;
+}
+.creature-tags {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.creature-tag {
+  padding: 1px 7px;
+  border-radius: 10px;
+  border: 1px solid rgba(202, 122, 86, 0.4);
+  background: rgba(202, 122, 86, 0.08);
+  color: #1e3c60;
+  font-size: 0.65rem;
+}

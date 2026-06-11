@@ -1,0 +1,54 @@
+<h2>Should tags appear on the creature cards?</h2>
+<p class="subtitle">Tags are always used for filtering — this is about whether they're also visible on the cards.</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="padding:10px;font-size:11px;">
+        <div style="background:#1a1a2e;border-radius:6px;padding:10px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;">
+            <div>
+              <div style="font-weight:bold;color:#e0d0b0;">Chasmfiend</div>
+              <div style="color:#aaa;font-size:9px;">Tier 3 Boss · Large Animal</div>
+            </div>
+            <div style="display:flex;gap:3px;flex-wrap:wrap;justify-content:flex-end;max-width:120px;">
+              <span style="background:#2a3a2a;color:#8a8;padding:1px 6px;border-radius:10px;font-size:9px;">Animal</span>
+              <span style="background:#3a2a2a;color:#a88;padding:1px 6px;border-radius:10px;font-size:9px;">Book</span>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;font-size:9px;color:#ccc;">
+            <span>STR 8</span><span>DEF 22</span><span>SPD 2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Tags on cards</h3>
+      <p>Small tag pills visible in the corner of each card. At a glance you can see a creature's categories.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="padding:10px;font-size:11px;">
+        <div style="background:#1a1a2e;border-radius:6px;padding:10px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;">
+            <div>
+              <div style="font-weight:bold;color:#e0d0b0;">Chasmfiend</div>
+              <div style="color:#aaa;font-size:9px;">Tier 3 Boss · Large Animal</div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;font-size:9px;color:#ccc;">
+            <span>STR 8</span><span>DEF 22</span><span>SPD 2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Filter only, no card display</h3>
+      <p>Tags are invisible on cards. Only used behind the scenes to filter. Cleaner cards.</p>
+    </div>
+  </div>
+
+</div>

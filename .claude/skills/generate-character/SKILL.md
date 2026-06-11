@@ -125,6 +125,7 @@ After the user approves the draft, infer tags from the creature's concept and pr
 - `Spren` — spren entities
 - `Soldier` — military role (infantry, guard, mercenary)
 - `Criminal` — thief, bandit, crime boss, assassin
+- `Civilian` — non-military, non-criminal humanoid NPC (commoner, merchant, socialite, etc.)
 - `Named` — a specific one-off named character (not a generic archetype)
 
 Present inferred tags to the user before writing the file:
