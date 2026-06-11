@@ -20,14 +20,15 @@
 
 (defn tag-filter-bar [active-tags]
   [:div.tag-filter-bar
-   (for [tag (all-tags)]
-     ^{:key tag}
-     [:button.tag-pill
-      {:class    (when (contains? @active-tags tag) "active")
-       :on-click #(swap! active-tags
-                         (if (contains? @active-tags tag) disj conj)
-                         tag)}
-      tag])
+   (doall
+    (for [tag (all-tags)]
+      ^{:key tag}
+      [:button.tag-pill
+       {:class    (when (contains? @active-tags tag) "active")
+        :on-click #(swap! active-tags
+                          (if (contains? @active-tags tag) disj conj)
+                          tag)}
+       tag]))
    (when (seq @active-tags)
      [:button.tag-pill.clear-pill
       {:on-click #(reset! active-tags #{})}
