@@ -40,6 +40,7 @@
         }
     },
     "languages": "defined by culture",
+    "tags": ["Book", "Singer"],
     "traits": [
         {
             "name": "Martial Experience",

@@ -41,6 +41,7 @@
         }
     },
     "languages": "Dawnchant",
+    "tags": ["Book", "Fused"],
     "traits": [
         {
             "name": "Invariable Flight",

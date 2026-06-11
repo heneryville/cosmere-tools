@@ -39,6 +39,7 @@
         }
     },
     "languages": "defined by culture",
+    "tags": ["Book", "Singer"],
     "traits": [
         {
             "name": "Water Weakness",

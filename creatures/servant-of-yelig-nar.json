@@ -48,6 +48,7 @@
         }
     },
     "languages": "those known by host",
+    "tags": ["Book", "Human"],
     "traits": [
         {
             "name": "Boss",

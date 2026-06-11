@@ -38,6 +38,7 @@
         }
     },
     "languages": "Dawnchant",
+    "tags": ["Book", "Fused"],
     "traits": [
         {
             "name": "Mobile",

@@ -41,6 +41,7 @@
         }
     },
     "languages": "defined by culture",
+    "tags": ["Book", "Singer"],
     "traits": [
         {
             "name": "Deadly Speed",

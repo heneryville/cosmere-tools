@@ -37,6 +37,7 @@
         }
     },
     "languages": "none",
+    "tags": ["Book", "Spren"],
     "traits": [
         {
             "name": "Amorphous",

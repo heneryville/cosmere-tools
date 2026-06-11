@@ -40,6 +40,7 @@
         }
     },
     "languages": "Herdazian, Alethi",
+    "tags": ["Homebrew", "Human", "Soldier"],
     "traits": [
         {
             "name": "Battle-Hardened",

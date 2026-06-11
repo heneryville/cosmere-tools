@@ -42,6 +42,7 @@
         }
     },
     "languages": "defined by culture",
+    "tags": ["Book", "Human", "Criminal"],
     "traits": [
         {
             "name": "Skulking Approach",

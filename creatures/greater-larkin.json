@@ -39,6 +39,7 @@
         }
     },
     "languages": "understands every Rosharan language, and can speak short, simple sentences",
+    "tags": ["Book", "Animal"],
     "traits": [
         {
             "name": "Hungry for Light",

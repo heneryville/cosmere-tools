@@ -39,6 +39,7 @@
         }
     },
     "languages": "determined by culture",
+    "tags": ["Book", "Human", "Soldier"],
     "traits": [
         {
             "name": "Raise the Alert!",

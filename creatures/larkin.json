@@ -36,6 +36,7 @@
         }
     },
     "languages": "understands every Rosharan language, but can't speak",
+    "tags": ["Book", "Animal"],
     "traits": [
         {
             "name": "Hungry for Light",

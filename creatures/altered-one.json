@@ -42,6 +42,7 @@
         }
     },
     "languages": "Dawnchant",
+    "tags": ["Book", "Fused"],
     "traits": [
         {
             "name": "Ancient Architect",

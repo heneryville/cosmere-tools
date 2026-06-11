@@ -34,6 +34,7 @@
         "spiritual": {}
     },
     "languages": "understands every Rosharan language but doesn't speak",
+    "tags": ["Book"],
     "traits": [
         {
             "name": "Boss",

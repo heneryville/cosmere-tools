@@ -41,6 +41,7 @@
         }
     },
     "languages": "Dawnchant, two Rosharan languages",
+    "tags": ["Book", "Fused"],
     "traits": [
         {
             "name": "Infiltrator",

@@ -41,6 +41,7 @@
         }
     },
     "languages": "Sleepless language, two other languages",
+    "tags": ["Book"],
     "traits": [
         {
             "name": "Immunities",

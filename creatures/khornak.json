@@ -36,6 +36,7 @@
         }
     },
     "languages": "none",
+    "tags": ["Book", "Animal"],
     "traits": [
         {
             "name": "Terrifying Ambush",

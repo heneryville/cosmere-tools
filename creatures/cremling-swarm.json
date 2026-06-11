@@ -32,6 +32,7 @@
         "spiritual": {}
     },
     "languages": "none",
+    "tags": ["Book", "Animal"],
     "traits": [
         {
             "name": "Swarm",

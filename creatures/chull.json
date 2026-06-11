@@ -34,6 +34,7 @@
         }
     },
     "languages": "none",
+    "tags": ["Book", "Animal"],
     "traits": [
         {
             "name": "Beast of Burden",

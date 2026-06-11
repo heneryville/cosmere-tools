@@ -37,6 +37,7 @@
         }
     },
     "languages": "determined by culture",
+    "tags": ["Book", "Human"],
     "traits": [
         {
             "name": "Soulcaster Essences",

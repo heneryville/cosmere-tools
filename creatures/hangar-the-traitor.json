@@ -39,6 +39,7 @@
         }
     },
     "languages": "Herdazian, Alethi",
+    "tags": ["Homebrew", "Human", "Named"],
     "traits": [
         {
             "name": "Marked Quarry",

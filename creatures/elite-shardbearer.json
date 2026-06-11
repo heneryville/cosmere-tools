@@ -41,6 +41,7 @@
         }
     },
     "languages": "defined by culture",
+    "tags": ["Book", "Human", "Soldier"],
     "traits": [
         {
             "name": "Shardplate (4 Charges)",

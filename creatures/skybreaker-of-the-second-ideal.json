@@ -42,6 +42,7 @@
         }
     },
     "languages": "defined by culture",
+    "tags": ["Book", "Human", "Radiant"],
     "traits": [
         {
             "name": "Truthseeker",

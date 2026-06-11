@@ -39,6 +39,7 @@
         }
     },
     "languages": "Herdazian",
+    "tags": ["Homebrew", "Human", "Soldier"],
     "traits": [
         {
             "name": "Minion",

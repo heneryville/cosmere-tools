@@ -39,6 +39,7 @@
         }
     },
     "languages": "none",
+    "tags": ["Book", "Animal"],
     "traits": [
         {
             "name": "Enhanced Senses",

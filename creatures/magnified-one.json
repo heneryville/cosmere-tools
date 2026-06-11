@@ -39,6 +39,7 @@
         }
     },
     "languages": "Dawnchant",
+    "tags": ["Book", "Fused"],
     "traits": [
         {
             "name": "Boss",

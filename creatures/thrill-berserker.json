@@ -39,6 +39,7 @@
         }
     },
     "languages": "defined by culture",
+    "tags": ["Book", "Human", "Soldier"],
     "traits": [
         {
             "name": "Infectious Thrill",
