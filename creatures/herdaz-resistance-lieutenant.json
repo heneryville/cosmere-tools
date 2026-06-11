@@ -1,0 +1,97 @@
+{
+    "id": "herdaz-resistance-lieutenant",
+    "name": "Herdaz Resistance Lieutenant",
+    "tier": 2,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 3,
+    "physical-defense": 17,
+    "speed": 4,
+    "intellect": 3,
+    "cognitive-defense": 17,
+    "willpower": 4,
+    "awareness": 4,
+    "spiritual-defense": 17,
+    "presence": 3,
+    "health-min": 32,
+    "health-max": 50,
+    "health-avg": 42,
+    "focus": 6,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 2,
+    "deflect-explanation": "breastplate",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 6,
+            "heavy-weapons": 7,
+            "light-weapons": 6
+        },
+        "cognitive": {
+            "discipline": 6,
+            "intimidation": 5
+        },
+        "spiritual": {
+            "perception": 6,
+            "survival": 6
+        }
+    },
+    "languages": "Herdazian, Alethi",
+    "traits": [
+        {
+            "name": "Battle-Hardened",
+            "description": "The lieutenant reduces all damage they take by 2 (minimum 1) and is immune to the Surprised condition."
+        },
+        {
+            "name": "Coordinated Ambush",
+            "description": "Allies within 30 feet of the lieutenant who can hear them gain advantage on their Stealth tests when using the Ambusher trait."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "reaction",
+            "focus": 1,
+            "name": "Cover!",
+            "description": "When an enemy targets an ally within 30 feet who can hear the lieutenant with an attack, the lieutenant shouts a warning. That ally can immediately move up to 15 feet without provoking opportunity attacks before the attack resolves."
+        },
+        {
+            "action-cost": "double",
+            "focus": 2,
+            "name": "Suppressing Volley",
+            "description": "The lieutenant fires rapidly across a 30-foot cone. Each creature in the area must succeed on a DC 15 Agility test or take 10 (3d6) keen damage and become Immobilized until the start of the lieutenant's next turn. On a success, they take half damage only."
+        },
+        {
+            "action-cost": "free",
+            "focus": 1,
+            "name": "Break and Run",
+            "description": "Once per scene, immediately after the lieutenant hits with an attack, they signal a tactical withdrawal. All allies within 30 feet who can hear the lieutenant can immediately use the Move and Disengage actions as free reactions."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Military Sabre",
+            "skill": "heavy-weapons",
+            "reach": 5,
+            "range": null,
+            "damage-base": "1d8",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +7, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 11 (1d8 + 7) keen damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Composite Bow",
+            "skill": "light-weapons",
+            "reach": null,
+            "range": [80, 320],
+            "damage-base": "1d8",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +6, range 80/320 ft., one target. Graze: 4 (1d8) keen damage. Hit: 10 (1d8 + 6) keen damage."
+        }
+    ]
+}

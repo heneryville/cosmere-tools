@@ -1,0 +1,95 @@
+{
+    "id": "hangar-the-traitor",
+    "name": "Hangar the Traitor",
+    "tier": 1,
+    "role": "rival",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 1,
+    "physical-defense": 15,
+    "speed": 4,
+    "intellect": 2,
+    "cognitive-defense": 14,
+    "willpower": 2,
+    "awareness": 4,
+    "spiritual-defense": 15,
+    "presence": 1,
+    "health-min": 19,
+    "health-max": 30,
+    "health-avg": 25,
+    "focus": 4,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 1,
+    "deflect-explanation": "leather",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 5,
+            "light-weapons": 6
+        },
+        "cognitive": {
+            "discipline": 3,
+            "lore": 3
+        },
+        "spiritual": {
+            "perception": 5,
+            "survival": 6
+        }
+    },
+    "languages": "Herdazian, Alethi",
+    "traits": [
+        {
+            "name": "Marked Quarry",
+            "description": "At the start of each scene, Hangar designates one creature he can see as his Quarry. His ranged attacks against his Quarry deal an extra 1d4 damage on a hit."
+        },
+        {
+            "name": "Know the Ground",
+            "description": "Hangar has advantage on Survival tests involving navigation or wilderness terrain, and on Perception tests to detect ambushes or hidden threats."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "reaction",
+            "focus": 1,
+            "name": "Fade Back",
+            "description": "When a creature moves within 5 feet of Hangar, he immediately moves up to 15 feet away without provoking opportunity attacks. If he ends this movement more than 5 feet from the triggering creature, he can make one Hunting Bow attack against them."
+        },
+        {
+            "action-cost": "single",
+            "focus": 1,
+            "name": "Suppressing Shot",
+            "description": "Hangar fires to keep a target pinned. One creature within 120 feet of him must succeed on a DC 14 Discipline test or become Immobilized until the start of Hangar's next turn."
+        },
+        {
+            "action-cost": "free",
+            "name": "Traitor's Insight",
+            "description": "Once per scene, when a humanoid enemy uses an ability or trait for the first time, Hangar can declare he knows this tactic. He gains advantage on all tests to resist or avoid that ability for the rest of the scene."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Hunting Bow",
+            "skill": "light-weapons",
+            "reach": null,
+            "range": [120, 480],
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +6, range 120/480 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9 (1d6 + 6) keen damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Hunting Knife",
+            "skill": "light-weapons",
+            "reach": 5,
+            "range": null,
+            "damage-base": "1d4",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +2, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 4 (1d4 + 2) keen damage."
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "id": "herdaz-resistance-fighter",
+    "name": "Herdaz Resistance Fighter",
+    "tier": 1,
+    "role": "minion",
+    "size": "medium",
+    "type": "humanoid",
+    "strength": 2,
+    "physical-defense": 15,
+    "speed": 3,
+    "intellect": 1,
+    "cognitive-defense": 13,
+    "willpower": 2,
+    "awareness": 3,
+    "spiritual-defense": 14,
+    "presence": 1,
+    "health-min": 12,
+    "health-max": 19,
+    "health-avg": 16,
+    "focus": 4,
+    "investiture": 0,
+    "movement": 30,
+    "deflect": 1,
+    "deflect-explanation": "leather",
+    "sense-range": 20,
+    "sense-primary": "sight",
+    "skills": {
+        "physical": {
+            "agility": 4,
+            "athletics": 3,
+            "light-weapons": 4
+        },
+        "cognitive": {
+            "discipline": 3
+        },
+        "spiritual": {
+            "perception": 4,
+            "survival": 4
+        }
+    },
+    "languages": "Herdazian",
+    "traits": [
+        {
+            "name": "Minion",
+            "description": "The fighter's attacks can't critically hit, and they're immediately defeated when they suffer an injury."
+        },
+        {
+            "name": "Hit and Run",
+            "description": "After the fighter hits with an attack on their turn, they can use the Disengage action as a free action."
+        },
+        {
+            "name": "Ambusher",
+            "description": "At the start of each scene, if the fighter is in cover or terrain that obscures an enemy's primary sense, they can make a Stealth test (no action required) against each nearby enemy's Spiritual defense. Enemies they succeed against are Surprised until the end of the first round."
+        }
+    ],
+    "actions": [
+        {
+            "action-cost": "single",
+            "focus": 1,
+            "name": "Covering Fire",
+            "description": "The fighter makes a Hunting Bow attack against one target within 80 feet. Whether the attack hits or misses, the target must succeed on a DC 13 Discipline test or become Immobilized until the start of the fighter's next turn."
+        }
+    ],
+    "strikes": [
+        {
+            "action-cost": "single",
+            "name": "Hatchet",
+            "skill": "light-weapons",
+            "reach": 5,
+            "range": [20, 60],
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +4, reach 5 ft. or range 20/60 ft., one target. Graze: 3 (1d6) keen damage. Hit: 7 (1d6 + 4) keen damage."
+        },
+        {
+            "action-cost": "single",
+            "name": "Hunting Bow",
+            "skill": "light-weapons",
+            "reach": null,
+            "range": [80, 320],
+            "damage-base": "1d6",
+            "damage-type": "keen",
+            "on-hit": null,
+            "description": "Attack +4, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 7 (1d6 + 4) keen damage."
+        }
+    ]
+}
