@@ -84,18 +84,6 @@
      ^{:key skill}
      [skill-input creature on-change skill-type skill])])
 
-;; MKHTODO re-write in terms of changes
-(defn handle-role-change [creature new-role on-change]
-  (-> creature
-      (write [:role] new-role)
-      ((fn [creature]
-         (if (= "minion" new-role)
-         ;; MKHTODO consolidate traits
-           (write creature [:traits] (conj (:traits creature)
-                                           traits/minion))
-           (write creature [:traits] (remove #(= (:name %) "Minion") (:traits creature))))))
-      (on-change)))
-
 (defn creature-editor [{:keys [creature on-change]}]
   (let [changes (fn [change-pairs]
                   (on-change

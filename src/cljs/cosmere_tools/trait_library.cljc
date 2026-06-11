@@ -11,7 +11,7 @@
        
 (def minion
   {:name "Minion"
-   :description "The bandit's attacks can't critcally hit, and they are immediatly defeated when they suffer an injury."})
+   :description "The bandit's attacks can't critically hit, and they are immediately defeated when they suffer an injury."})
 
 (defn consolidate-traits
   "Enforces that there can only be one trait of a given name in a list of traits.

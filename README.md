@@ -1,38 +1,37 @@
 # Cosmere Tools
-This is a project for creating and managing NPCs in your Cosmere campaign.
 
+A web app for creating and managing NPC stat blocks for Cosmere TTRPG campaigns. Build creatures with auto-calculated stats, traits, actions, and strikes, then export them as JSON.
 
-## Project Structure
+## Setup
 
+```bash
+npm install
+npm run dev
+```
 
-## Setup Instructions
+Open `http://localhost:8084`.
 
-1. **Clone the repository:**
-   ```
-   git clone <repository-url>
-   cd cosmere-tools
-   ```
+## Scripts
 
-2. **Install dependencies:**
-   Make sure you have Node.js and npm installed. Then run:
-   ```
-   npm install
-   ```
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start ClojureScript + Less watchers in parallel |
+| `npm run build` | Production build |
+| `npm run release` | Build and deploy to S3 |
+| `npm run watch:less` | Less watcher only |
+| `npm run build:less` | One-off Less compile |
+| `npm run clean` | Remove compiled output |
 
-3. **Start the development server:**
-   Use Shadow CLJS to start the server:
-   ```
-   npx shadow-cljs watch app
-   ```
+## Stack
 
-4. **Open your browser:**
-   Navigate to `http://localhost:3000` to view the application.
+- **ClojureScript + Reagent** — React components written in Hiccup syntax
+- **Shadow CLJS** — build tooling and hot reload
+- **Less** — styles compiled from `src/less/`
+- **bide** — client-side HTML5 pushState routing
+- No backend — creature data stored in `localStorage`
 
-## Usage
+## Creature Data
 
-- The main application logic can be found in `src/cosmere-tools/core.cljs`.
-- Modify `public/index.html` to change the HTML structure or add additional assets.
+Static/built-in creatures are defined in `src/cljs/cosmere_tools/static_creatures.cljc`. User-created creatures are persisted to `localStorage` under keys like `creature-{id}`.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
+The editor auto-calculates derived stats (defenses, health, movement, senses) whenever their source attributes change, but respects manual overrides.

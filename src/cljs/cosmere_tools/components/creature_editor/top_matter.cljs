@@ -8,7 +8,7 @@
   (change [:role] new-role)
   (if (= "minion" new-role)
     (change [:traits] (conj (:traits creature) traits/minion))
-    (change [:traits] (remove #(= (:name %) "Minion") (:traits creature)))))
+    (change [:traits] (vec (remove #(= (:name %) "Minion") (:traits creature))))))
 
 (defn top-matter [{:keys [creature change]}]
   [:div.top-matter

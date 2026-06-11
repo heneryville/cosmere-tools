@@ -60,7 +60,7 @@
     (when sense-primary (str " (" sense-primary ")"))]
    [skills "Physical Skills" physical]
    [skills "Cognitive Skills" cognitive]
-   [skills "Spiritual Skils" spiritual]
+   [skills "Spiritual Skills" spiritual]
    [:div [:h3 "Languages"] (or languages "none")]])
 
 (defn traits-section [traits]
@@ -91,7 +91,7 @@
    [:hr]
    [skills-section creature]
 
-   (when (seq actions)
+   (when (seq traits)
      [:<>
       [:h2 "TRAITS"]
       [:hr]

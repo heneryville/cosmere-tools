@@ -9,4 +9,4 @@
                 :modules {:main {:init-fn cosmere-tools.core/init}}
                 :devtools {:after-load cosmere-tools.core/init
                            :http-root "public"
-                           :http-port 8080}}}}
+                           :http-port 8084}}}}
