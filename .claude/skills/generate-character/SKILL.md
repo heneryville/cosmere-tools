@@ -111,6 +111,29 @@ Present the full creature as a prose summary (not the raw JSON) so the user can 
 
 Ask: "Does this feel right? Anything to change before I write the file?"
 
+## Step 5.5: Propose Tags
+
+After the user approves the draft, infer tags from the creature's concept and propose them for confirmation.
+
+**Inference rules (apply all that match):**
+- Always assign exactly one of: `Book` (appears in Stormlight canon) or `Homebrew` (invented/custom). Creatures created with this skill are `Homebrew` by default unless the user says otherwise.
+- `Human` — humanoid type, not Singer/Fused
+- `Singer` — Singer humanoids (Warform, Nimbleform, Regals)
+- `Fused` — Odium's Fused (the "One" suffix creatures)
+- `Radiant` — Surgebinders / Knights Radiant
+- `Animal` — non-humanoid fauna
+- `Spren` — spren entities
+- `Soldier` — military role (infantry, guard, mercenary)
+- `Criminal` — thief, bandit, crime boss, assassin
+- `Named` — a specific one-off named character (not a generic archetype)
+
+Present inferred tags to the user before writing the file:
+
+> **Proposed tags:** `Homebrew`, `Human`, `Named`
+> Anything to add or remove?
+
+Wait for confirmation or adjustment, then include the agreed tags in the JSON.
+
 ## Step 6: Write the JSON File
 
 Once approved, write to `creatures/<kebab-case-id>.json`. Use this schema:
@@ -137,6 +160,7 @@ Once approved, write to `creatures/<kebab-case-id>.json`. Use this schema:
     "spiritual": {}
   },
   "languages": "none",
+  "tags": ["Homebrew"],
   "traits": [{"name": "...", "description": "..."}],
   "actions": [{"action-cost": "single|double|free|reaction", "name": "...", "description": "..."}],
   "strikes": [{
