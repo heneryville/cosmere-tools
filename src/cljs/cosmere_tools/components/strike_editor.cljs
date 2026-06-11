@@ -5,7 +5,7 @@
    [cosmere-tools.components.toggle-button :refer [action-toggle-button]]
    [cosmere-tools.creature-constants :as const]
    [cosmere-tools.strike-library :as strikes]
-   [cosmere-tools.utils :as utils]
+   [cosmere-tools.utils :as utils :refer [prevent-default]]
    [reagent.core :as r]))
 
 (defn damage-selector [path strike change]
@@ -50,7 +50,7 @@
             :on-change #(reset! name-r (.. % -target -value))
             :on-blur #(change (conj path :name) @name-r)}]
           [:button.remove-strike
-           {:on-click on-remove}
+           {:on-click (prevent-default on-remove)}
            "×"]]
 
          [:div.strike-details

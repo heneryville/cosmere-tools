@@ -1,9 +1,10 @@
 (ns cosmere-tools.pages.edit
   (:require
-   [cosmere-tools.components.creature-card :refer [creature-card download-json]]
+   [cosmere-tools.components.creature-card :refer [download-json]]
    [cosmere-tools.components.creature-editor :refer [creature-editor]]
    [cosmere-tools.creature-library :as creatures]
    [cosmere-tools.router :as router]
+   [cosmere-tools.utils :refer [prevent-default]]
    [reagent.core :as r]))
 
 (defn handle-file-select [creature-atom]
@@ -24,13 +25,17 @@
 (defn edit-controls [creature]
   [:div.edit-controls
    [:button.load-button 
-    {:on-click #(handle-file-select creature)} 
+    {:on-click (prevent-default #(handle-file-select creature))} 
     "Load from File"]
    [:button.download-button
-    {:on-click #(download-json @creature)}
+    {:on-click (prevent-default #(download-json @creature))}
     "Download"]
    [:button.save-button
-    {:on-click #(creatures/save-creature! @creature)}
+    {:on-click (prevent-default (fn []
+                                  (let [saved-creature (creatures/save-creature! @creature)]
+                   ;; Only navigate if we're on create page (no id in params)
+                                    (when-not (get-in @router/current-route [:params :id])
+                                      (router/navigate! :edit {:id (:id saved-creature)})))))}
     (if (creatures/static-creature? @creature) 
       "Save As" 
       "Save")]])

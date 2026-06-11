@@ -25,6 +25,25 @@
       ^{:key (name attr)}
       [stat-input creature change {:attr attr}])]
 
+   [:div.movement-sense-section
+    [stat-input creature change 
+     {:attr :movement
+      :label "Movement (ft.)"}]
+    [:div.sense-row
+     [stat-input creature change 
+      {:attr :sense-range
+       :label "Sense Range (ft.)"
+       :step 5
+       :class "sense-range-input"}]
+     [:div.form-group
+      [:label "Primary Sense"]
+      [:select {:value (or (:sense-primary creature) "")
+                :on-change #(change [:sense-primary] (.. % -target -value))}
+       [:option {:value ""} "None"]
+       (for [sense const/sense-types]
+         ^{:key sense}
+         [:option {:value sense} (str/capitalize sense)])]]]]
+
    [:div.derived-stats-section
     [stat-input creature change
      {:attr :health-avg

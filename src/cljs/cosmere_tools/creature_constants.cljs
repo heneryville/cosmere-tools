@@ -5,7 +5,7 @@
 (def sizes ["small" "medium" "large" "huge" "gargantuan"])
 (def roles ["minion" "rival" "boss"])
 (def preset-types ["animal" "humanoid" "swarm"])
-(def sense-types ["sight" "smell" "hearing" "life" "investiture" "metallic"])
+(def sense-types ["sight" "smell" "hearing" "life" "touch" "investiture" "metallic" ])
 (def attributes [:strength :speed :intellect :willpower :awareness :presence])
 (def defenses [:physical-defense :cognitive-defense :spiritual-defense])
 

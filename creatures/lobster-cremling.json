@@ -1,0 +1,71 @@
+{
+  "role": "minion",
+  "spiritual-defense": 11,
+  "movement": 30,
+  "tier": 1,
+  "intellect": 0,
+  "presence": 0,
+  "speed": 2,
+  "name": "Lobster Kremling",
+  "deflect": 1,
+  "health-max": 11,
+  "type": "humanoid",
+  "actions": [
+    {
+      "action-cost": "single",
+      "name": "Scuttle",
+      "description": "While within 5 feet of an opponent, may travel through one or several opponents up to it's movement to another unoccupied space."
+    }
+  ],
+  "sense-range": 10,
+  "size": "medium",
+  "willpower": 0,
+  "deflect-explanation": "Shell",
+  "cognitive-defense": 10,
+  "strength": 1,
+  "skills": {
+    "physical": {
+      "athletics": 2
+    },
+    "cognitive": {},
+    "spiritual": {
+      "perception": 2,
+      "survival": 1
+    }
+  },
+  "sense-primary": "touch",
+  "id": "lobster-kremling",
+  "health-min": 7,
+  "focus": 0,
+  "physical-defense": 13,
+  "health-avg": 9,
+  "languages": "None",
+  "investiture": 0,
+  "awareness": 1,
+  "strikes": [
+    {
+      "action-cost": "single",
+      "name": "Bite",
+      "skill": "athletics",
+      "reach": 5,
+      "damage-base": "1d4",
+      "damage-type": "keen",
+      "on-hit": "and the axehoud can spend 1 focus to knock the target Prhone, then move up to 10 feet while dragging the target along.",
+      "description": "Attack +2, reach 5 ft., one target. Graze: 3 (1d4) keen damage. Hit: 5 (1d4+2) keen damage. "
+    }
+  ],
+  "traits": [
+    {
+      "name": "Enhanced Senses",
+      "description": "Gains an advantage on non-attack tests that rely on smell"
+    },
+    {
+      "name": "Combat Pheromones",
+      "description": "When an ally within 15 ft. deals damage to an opponent, this creature may move 10 ft. toward that opponent as a free action. "
+    },
+    {
+      "name": "Minion",
+      "description": "The axehound's attacks can't critcally hit, and they are immediatly defeated when they suffer an injury"
+    }
+  ]
+}

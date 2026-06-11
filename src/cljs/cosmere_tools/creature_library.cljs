@@ -37,7 +37,9 @@
     (js/localStorage.setItem key value)
     ;; Refresh the app's creature list
     (set! creatures (load-from-storage!))
-    (set! creatures-by-id (into {} (map (fn [c] [(:id c) c]) creatures)))))
+    (set! creatures-by-id (into {} (map (fn [c] [(:id c) c]) creatures)))
+    ;; Return the saved creature
+    new-creature))
 
 
 (defn delete-creature! [creature]

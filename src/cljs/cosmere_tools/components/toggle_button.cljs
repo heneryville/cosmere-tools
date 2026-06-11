@@ -1,6 +1,7 @@
 (ns cosmere-tools.components.toggle-button
   (:require
-   [cosmere-tools.creature-constants :as const]))
+   [cosmere-tools.creature-constants :as const]
+   [cosmere-tools.utils :refer [prevent-default]]))
 
 (defn next-option [current-value options]
   (let [current-idx (.indexOf options current-value)]
@@ -12,7 +13,7 @@
   (let [selected-option (or (first (filter #(= value (:value %)) options))
                             (first options))]
     [:button.toggle-button
-     {:on-click #(on-change (:value (next-option selected-option options)))}
+     {:on-click (prevent-default #(on-change (:value (next-option selected-option options))))}
      (:ui selected-option)]))
 
 (defn action-toggle-button [{:keys [value on-change]}]
